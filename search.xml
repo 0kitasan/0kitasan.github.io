@@ -165,10 +165,13 @@ c0 110 84 276 504 276s502.4-166 502.4-276z'/></svg></span></span></span><span cl
     <url>/2023/04/29/1_%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E4%B8%8E%E5%9F%BA%E7%A1%80%E9%85%8D%E7%BD%AE/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>第一次尝试搭建个人博客。<br>
 本博客使用<a href="https://www.bilibili.com/video/BV1ts4y1f7Gu">b站教程</a>，<a href="https://hexo.io/zh-cn/index.html">hexo</a>开源项目，以及<a href="https://shen-yu.gitee.io/2019/ayer/">ayer</a>主题。<br>
-具体流程：下载<a href="https://git-scm.com/">git</a>，<a href="https://nodejs.org/zh-cn/">Node.js</a></p>
+具体流程：下载<a href="https://git-scm.com/">git</a>，<a href="https://nodejs.org/zh-cn/">node.js</a></p>
 <span id="more"></span>
-<h3 id="1-git与node-js环境搭建">1.git与node.js环境搭建</h3>
-<p>下载<a href="https://git-scm.com/">git</a>，<a href="https://nodejs.org/zh-cn/">Node.js</a>。</p>
+<h3 id="1-git-hexo-node-js环境搭建">1.git、hexo、node.js环境搭建</h3>
+<p>下载<a href="https://git-scm.com/">git</a>，<a href="https://nodejs.org/zh-cn/">Node.js</a>。<br>
+git下载完毕后，在cmd窗口中输入<code>node-v</code>查看版本号，如果出现版本号，则说明安装成功。<br>
+新建一个下载hexo的文件夹，进入后右键选择git bash打开git窗口，分别输入<a href="https://hexo.io/zh-cn/index.html">hexo官网</a>的命令。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 1下载</span><br><span class="line">npm install hexo-cli -g </span><br><span class="line"># 2初始化博客，运行完毕会出现blog文件夹</span><br><span class="line">hexo init blog</span><br><span class="line"># 3进入博客</span><br><span class="line">cd blog</span><br><span class="line"># 4下载 </span><br><span class="line">npm install</span><br><span class="line"># 5运行博客（为原始版本、默认主题，之后可以下载其他主题）</span><br><span class="line">hexo server </span><br></pre></td></tr></table></figure>
 <h3 id="2-hexo与hexo主题下载">2.hexo与hexo主题下载</h3>
 <p><a href="https://hexo.io/zh-cn/index.html">hexo</a>，<a href="https://shen-yu.gitee.io/2019/ayer/">ayer</a>主题。</p>
 <h3 id="3-配置">3.配置</h3>
