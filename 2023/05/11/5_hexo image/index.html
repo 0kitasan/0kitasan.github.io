@@ -11,7 +11,7 @@
         name="viewport"
         content="width=device-width, initial-scale=1, maximum-scale=1"
       />
-      <title>代码块 |  myblog</title>
+      <title>hexo图片引用 |  myblog</title>
   <meta name="generator" content="hexo-theme-ayer">
       
       <link rel="shortcut icon" href="/favicon.ico" />
@@ -51,13 +51,10 @@
   <div id="app">
     
       
-      <canvas width="1777" height="841"
-        style="position: fixed; left: 0px; top: 0px; z-index: 99999; pointer-events: none;"></canvas>
-      
     <main class="content on">
       <section class="outer">
   <article
-  id="post-4_test"
+  id="post-5_hexo image"
   class="article article-type-post"
   itemscope
   itemprop="blogPost"
@@ -68,7 +65,7 @@
     <header class="article-header">
        
 <h1 class="article-title sea-center" style="border-left:0" itemprop="name">
-  代码块
+  hexo图片引用
 </h1>
  
 
@@ -77,10 +74,10 @@
      
     <div class="article-meta">
       <a href="" class="article-date">
-  <time datetime="2023-05-02T14:01:24.000Z" itemprop="datePublished">2023-05-02</time>
+  <time datetime="2023-05-11T11:13:48.000Z" itemprop="datePublished">2023-05-11</time>
 </a> 
   <div class="article-category">
-    <a class="article-category-link" href="../../../../categories/3/">3</a>
+    <a class="article-category-link" href="../../../../categories/2/">2</a>
   </div>
   
 <div class="word_count">
@@ -88,7 +85,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> Word count:</span>
-            <span class="post-count">179</span>
+            <span class="post-count">476</span>
         </span>
     </span>
 
@@ -97,7 +94,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-book-open-line"></i>
             <span class="post-meta-item-text"> Reading time≈</span>
-            <span class="post-count">1 min</span>
+            <span class="post-count">2 min</span>
         </span>
     </span>
 </div>
@@ -112,27 +109,43 @@
   
     <div class="article-entry" itemprop="articleBody">
        
-  <p>关于hexo中代码块与代码高亮的笔记。</p>
+  <p>hexo图片引用测试</p>
 <span id="more"></span>
-
-<h3 id="第一种写法：代码块"><a href="#第一种写法：代码块" class="headerlink" title="第一种写法：代码块"></a>第一种写法：代码块</h3><p>缺点是并不会在markdown中被渲染。</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;% codeblock [title] [lang:language] [url] [link text] [additional options] %&#125;</span><br><span class="line">code snippet # 注意，写代码时不用加上方括号[]</span><br><span class="line">&#123;% endcodeblock %&#125;</span><br></pre></td></tr></table></figure>
-<p>效果如下：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">code snippet</span><br></pre></td></tr></table></figure>
-
-<h3 id="第二种写法：反引号代码块"><a href="#第二种写法：反引号代码块" class="headerlink" title="第二种写法：反引号代码块"></a>第二种写法：反引号代码块</h3><p>此方法在markdown中也会被渲染，极力推荐。</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">\``` [language] [title] [url] [link text] [additional options]</span><br><span class="line">code snippet # 注意，写代码时要去除反义符号“\”，并且不用加上方括号[]</span><br><span class="line">\```</span><br></pre></td></tr></table></figure>
-
-<p>效果如下：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">code snippet</span><br></pre></td></tr></table></figure>
-
-<h3 id="实例测试"><a href="#实例测试" class="headerlink" title="实例测试"></a>实例测试</h3><p>python</p>
-<figure class="highlight python"><figcaption><span>python高亮</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">0</span>,<span class="number">100</span>):</span><br><span class="line">    s = s+<span class="number">1</span></span><br></pre></td></tr></table></figure>
-
-<p>c++</p>
-<figure class="highlight c++"><figcaption><span>c++高亮</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Hello Markdown\n&quot;</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>url &#x3D; <a target="_blank" rel="noopener" href="https://www.bilibili.com/">https://www.bilibili.com/</a></p>
+<p>hexo图片引用是比较复杂的。引用图床（url）格式的图片还好，文件路径写相应的url就行，但是引用本地文件时择总是出问题。<br>
+解决方法：下载插件<a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo-renderer-marked">hexo-renderer-marked</a>。<br>
+在git bash中输入如下代码进行下载</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-renderer-marked --save</span><br></pre></td></tr></table></figure>
+<p>进行下载<br>
+依据github说明配置<code>config.yml</code>文件即可</p>
+<p>这里推荐以如下的的html格式进行配置：<br>
+<code>&lt;img src=&quot;relative path&quot; alt=&quot;title&quot; width=&quot;50%&quot;&gt;</code><br>
+这样既能在本地markdown编辑器的预览页中看到，又可以在网站中显示，还能调整标题与大小。</p>
+<p>注意，relative path指的是相对路径，例如：<br>
+文章的md文件路径<code>D:/hexo/blog/source/_posts</code><br>
+图片路径<code>D:/hexo/blog/source/_posts/image_example/img.png</code><br>
+那么相对路径为<code>/image_example/img.png</code></p>
+<p>下面进行测试：</p>
+<h1>1 html格式进行引用</h1>
+<p>第一种方式（相对路径）：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;/5_hexo image quatation/LaTeX_logo.svg&quot;</span> <span class="attr">alt</span>=<span class="string">&quot;LaTeX logo1&quot;</span> <span class="attr">width</span>=<span class="string">&quot;70&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>效果如下（markdown中可以显示，且网页中能显示，极力推荐）：<br>
+<img src="/2023/05/11/5_hexo%20image/LaTeX_logo.svg" alt="LaTeX logo1" width="70"><br>
+width的值决定图片宽度。1000=100%，70=7%，数字与百分比可以互相转换。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;LaTeX_logo.svg&quot;</span> <span class="attr">alt</span>=<span class="string">&quot;LaTeX logo2&quot;</span> <span class="attr">width</span>=<span class="string">&quot;70&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>请注意：图片的长宽比始终保持不变。<br>
+<br></p>
+<p>第二种方式（hexo-renderer-marked使文件路径默认解析至资源文件夹）：<br>
+效果如下（markdown中不能显示，但网页中能显示）：<br>
+<img src="/2023/05/11/5_hexo%20image/LaTeX_logo.svg" alt="LaTeX logo2" width="70"></p>
+<p>第三种方式：<br>
+使用markdown语法（由hexo-renderer-marked插件支持）</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![<span class="string">LaTeX logo3</span>](<span class="link">LaTeX_logo.svg</span>)</span><br></pre></td></tr></table></figure>
+<p>效果如下（markdown中不能显示，但网页中能显示，且调整不了大小）：<br>
+<img src="/2023/05/11/5_hexo%20image/LaTeX_logo.svg" alt="LaTeX logo3"></p>
+<h1>2 url格式引用</h1>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;https://katex.org/img/katex-logo-black.svg&quot;</span> <span class="attr">alt</span>=<span class="string">&quot;KaTeX logo&quot;</span> <span class="attr">width</span>=<span class="string">&quot;70&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure>
+<p>效果如下（markdown中可以显示，且网页中能显示）：<br>
+<img src="https://katex.org/img/katex-logo-black.svg" alt="KaTeX logo" width="70"></p>
  
       <!-- reward -->
       
@@ -185,12 +198,12 @@
     <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://example.com/2023/05/02/4_test/" alt="微信分享二维码">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://example.com/2023/05/11/5_hexo%20image/" alt="微信分享二维码">
     </div>
 </div>
 
 <div id="share-mask"></div>  
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="../../../../tags/2/" rel="tag">2</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="../../../../tags/1/" rel="tag">1</a></li></ul>
 
     </footer>
   </div>
@@ -199,9 +212,9 @@
   <nav class="article-nav">
     
     
-      <a href="../../01/3_markdown%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0/" class="article-nav-link">
+      <a href="../../02/4_code%20snippet/" class="article-nav-link">
         <strong class="article-nav-caption">下一篇</strong>
-        <div class="article-nav-title">markdown语法学习</div>
+        <div class="article-nav-title">代码块</div>
       </a>
     
   </nav>
@@ -390,112 +403,7 @@
 <script src="../../../../dist/main.js"></script>
 
 <!-- ImageViewer -->
- <!-- Root element of PhotoSwipe. Must have class pswp. -->
-<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
 
-    <!-- Background of PhotoSwipe. 
-         It's a separate element as animating opacity is faster than rgba(). -->
-    <div class="pswp__bg"></div>
-
-    <!-- Slides wrapper with overflow:hidden. -->
-    <div class="pswp__scroll-wrap">
-
-        <!-- Container that holds slides. 
-            PhotoSwipe keeps only 3 of them in the DOM to save memory.
-            Don't modify these 3 pswp__item elements, data is added later on. -->
-        <div class="pswp__container">
-            <div class="pswp__item"></div>
-            <div class="pswp__item"></div>
-            <div class="pswp__item"></div>
-        </div>
-
-        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
-        <div class="pswp__ui pswp__ui--hidden">
-
-            <div class="pswp__top-bar">
-
-                <!--  Controls are self-explanatory. Order can be changed. -->
-
-                <div class="pswp__counter"></div>
-
-                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-
-                <button class="pswp__button pswp__button--share" style="display:none" title="Share"></button>
-
-                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-
-                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-
-                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
-                <!-- element will get class pswp__preloader--active when preloader is running -->
-                <div class="pswp__preloader">
-                    <div class="pswp__preloader__icn">
-                        <div class="pswp__preloader__cut">
-                            <div class="pswp__preloader__donut"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                <div class="pswp__share-tooltip"></div>
-            </div>
-
-            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
-            </button>
-
-            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
-            </button>
-
-            <div class="pswp__caption">
-                <div class="pswp__caption__center"></div>
-            </div>
-
-        </div>
-
-    </div>
-
-</div>
-
-<link rel="stylesheet" href="https://cdn.staticfile.org/photoswipe/4.1.3/photoswipe.min.css">
-<link rel="stylesheet" href="https://cdn.staticfile.org/photoswipe/4.1.3/default-skin/default-skin.min.css">
-<script src="https://cdn.staticfile.org/photoswipe/4.1.3/photoswipe.min.js"></script>
-<script src="https://cdn.staticfile.org/photoswipe/4.1.3/photoswipe-ui-default.min.js"></script>
-
-<script>
-    function viewer_init() {
-        let pswpElement = document.querySelectorAll('.pswp')[0];
-        let $imgArr = document.querySelectorAll(('.article-entry img:not(.reward-img)'))
-
-        $imgArr.forEach(($em, i) => {
-            $em.onclick = () => {
-                // slider展开状态
-                // todo: 这样不好，后面改成状态
-                if (document.querySelector('.left-col.show')) return
-                let items = []
-                $imgArr.forEach(($em2, i2) => {
-                    let img = $em2.getAttribute('data-idx', i2)
-                    let src = $em2.getAttribute('data-target') || $em2.getAttribute('src')
-                    let title = $em2.getAttribute('alt')
-                    // 获得原图尺寸
-                    const image = new Image()
-                    image.src = src
-                    items.push({
-                        src: src,
-                        w: image.width || $em2.width,
-                        h: image.height || $em2.height,
-                        title: title
-                    })
-                })
-                var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, {
-                    index: parseInt(i)
-                });
-                gallery.init()
-            }
-        })
-    }
-    viewer_init()
-</script> 
 <!-- MathJax -->
  <script type="text/x-mathjax-config">
   MathJax.Hub.Config({
@@ -536,13 +444,13 @@
 <script src="../../../../js/busuanzi-2.3.pure.min.js"></script>
  
 <!-- ClickLove -->
-
+ 
+<script src="../../../../js/clickLove.js"></script>
+ 
 <!-- ClickBoom1 -->
 
 <!-- ClickBoom2 -->
- 
-<script src="../../../../js/clickBoom2.js"></script>
- 
+
 <!-- CodeCopy -->
  
 <link rel="stylesheet" href="../../../../css/clipboard.css">

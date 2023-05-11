@@ -11,7 +11,7 @@
         name="viewport"
         content="width=device-width, initial-scale=1, maximum-scale=1"
       />
-      <title>博客搭建与基础配置 |  myblog</title>
+      <title>代码块 |  myblog</title>
   <meta name="generator" content="hexo-theme-ayer">
       
       <link rel="shortcut icon" href="/favicon.ico" />
@@ -51,13 +51,10 @@
   <div id="app">
     
       
-      <canvas width="1777" height="841"
-        style="position: fixed; left: 0px; top: 0px; z-index: 99999; pointer-events: none;"></canvas>
-      
     <main class="content on">
       <section class="outer">
   <article
-  id="post-1_博客搭建与基础配置"
+  id="post-4_code snippet"
   class="article article-type-post"
   itemscope
   itemprop="blogPost"
@@ -68,7 +65,7 @@
     <header class="article-header">
        
 <h1 class="article-title sea-center" style="border-left:0" itemprop="name">
-  博客搭建与基础配置
+  代码块
 </h1>
  
 
@@ -77,10 +74,10 @@
      
     <div class="article-meta">
       <a href="" class="article-date">
-  <time datetime="2023-04-29T02:56:08.270Z" itemprop="datePublished">2023-04-29</time>
+  <time datetime="2023-05-02T14:01:24.000Z" itemprop="datePublished">2023-05-02</time>
 </a> 
   <div class="article-category">
-    <a class="article-category-link" href="../../../../categories/1/">1</a>
+    <a class="article-category-link" href="../../../../categories/3/">3</a>
   </div>
   
 <div class="word_count">
@@ -88,7 +85,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> Word count:</span>
-            <span class="post-count">218</span>
+            <span class="post-count">178</span>
         </span>
     </span>
 
@@ -112,15 +109,24 @@
   
     <div class="article-entry" itemprop="articleBody">
        
-  <p>第一次尝试搭建个人博客。<br>本博客使用<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1ts4y1f7Gu">b站教程</a>，<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/index.html">hexo</a>开源项目，以及<a target="_blank" rel="noopener" href="https://shen-yu.gitee.io/2019/ayer/">ayer</a>主题。<br>具体流程：下载<a target="_blank" rel="noopener" href="https://git-scm.com/">git</a>，<a target="_blank" rel="noopener" href="https://nodejs.org/zh-cn/">node.js</a></p>
+  <p>关于hexo中代码块与代码高亮的笔记。</p>
 <span id="more"></span>
-
-<h3 id="1-git、hexo、node-js环境搭建"><a href="#1-git、hexo、node-js环境搭建" class="headerlink" title="1.git、hexo、node.js环境搭建"></a>1.git、hexo、node.js环境搭建</h3><p>下载<a target="_blank" rel="noopener" href="https://git-scm.com/">git</a>，<a target="_blank" rel="noopener" href="https://nodejs.org/zh-cn/">Node.js</a>。<br>git下载完毕后，在cmd窗口中输入<code>node-v</code>查看版本号，如果出现版本号，则说明安装成功。<br>新建一个下载hexo的文件夹，进入后右键选择git bash打开git窗口，分别输入<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/index.html">hexo官网</a>的命令。</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"># 1下载</span><br><span class="line">npm install hexo-cli -g </span><br><span class="line"># 2初始化博客，运行完毕会出现blog文件夹</span><br><span class="line">hexo init blog</span><br><span class="line"># 3进入博客</span><br><span class="line">cd blog</span><br><span class="line"># 4下载 </span><br><span class="line">npm install</span><br><span class="line"># 5运行博客（为原始版本、默认主题，之后可以下载其他主题）</span><br><span class="line">hexo server </span><br></pre></td></tr></table></figure>
-
-
-<h3 id="2-hexo与hexo主题下载"><a href="#2-hexo与hexo主题下载" class="headerlink" title="2.hexo与hexo主题下载"></a>2.hexo与hexo主题下载</h3><p><a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/index.html">hexo</a>，<a target="_blank" rel="noopener" href="https://shen-yu.gitee.io/2019/ayer/">ayer</a>主题。</p>
-<h3 id="3-配置"><a href="#3-配置" class="headerlink" title="3.配置"></a>3.配置</h3><p>修改<code>config.yml</code>与<code>config.ayer.yml</code>中的具体配置<br>插件详见下一篇文章。</p>
+<h3 id="第一种写法：代码块">第一种写法：代码块</h3>
+<p>缺点是并不会在markdown中被渲染。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;% codeblock [title] [lang:language] [url] [link text] [additional options] %&#125;</span><br><span class="line">code snippet # 注意，写代码时不用加上方括号[]</span><br><span class="line">&#123;% endcodeblock %&#125;</span><br></pre></td></tr></table></figure>
+<p>效果如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">code snippet</span><br></pre></td></tr></table></figure>
+<h3 id="第二种写法：反引号代码块">第二种写法：反引号代码块</h3>
+<p>此方法在markdown中也会被渲染，极力推荐。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">\``` [language] [title] [url] [link text] [additional options]</span><br><span class="line">code snippet # 注意，写代码时要去除反义符号“\”，并且不用加上方括号[]</span><br><span class="line">\```</span><br></pre></td></tr></table></figure>
+<p>效果如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">code snippet</span><br></pre></td></tr></table></figure>
+<h3 id="实例测试">实例测试</h3>
+<p>python</p>
+<figure class="highlight python"><figcaption><span>python高亮</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">0</span>,<span class="number">100</span>):</span><br><span class="line">    s = s+<span class="number">1</span></span><br></pre></td></tr></table></figure>
+<p>c++</p>
+<figure class="highlight c++"><figcaption><span>c++高亮</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Hello Markdown\n&quot;</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>url = <a target="_blank" rel="noopener" href="https://www.bilibili.com/">https://www.bilibili.com/</a></p>
  
       <!-- reward -->
       
@@ -173,12 +179,12 @@
     <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://example.com/2023/04/29/1_%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E4%B8%8E%E5%9F%BA%E7%A1%80%E9%85%8D%E7%BD%AE/" alt="微信分享二维码">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://example.com/2023/05/02/4_code%20snippet/" alt="微信分享二维码">
     </div>
 </div>
 
 <div id="share-mask"></div>  
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="../../../../tags/1/" rel="tag">1</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="../../../../tags/2/" rel="tag">2</a></li></ul>
 
     </footer>
   </div>
@@ -186,15 +192,20 @@
    
   <nav class="article-nav">
     
-      <a href="../../../05/01/2_hexo%20image%20quatation/" class="article-nav-link">
+      <a href="../../11/5_hexo%20image/" class="article-nav-link">
         <strong class="article-nav-caption">上一篇</strong>
         <div class="article-nav-title">
           
-            hexo图片引用测试
+            hexo图片引用
           
         </div>
       </a>
     
+    
+      <a href="../../01/3_markdown%20grammer%20learning/" class="article-nav-link">
+        <strong class="article-nav-caption">下一篇</strong>
+        <div class="article-nav-title">markdown语法学习</div>
+      </a>
     
   </nav>
 
@@ -382,112 +393,7 @@
 <script src="../../../../dist/main.js"></script>
 
 <!-- ImageViewer -->
- <!-- Root element of PhotoSwipe. Must have class pswp. -->
-<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
 
-    <!-- Background of PhotoSwipe. 
-         It's a separate element as animating opacity is faster than rgba(). -->
-    <div class="pswp__bg"></div>
-
-    <!-- Slides wrapper with overflow:hidden. -->
-    <div class="pswp__scroll-wrap">
-
-        <!-- Container that holds slides. 
-            PhotoSwipe keeps only 3 of them in the DOM to save memory.
-            Don't modify these 3 pswp__item elements, data is added later on. -->
-        <div class="pswp__container">
-            <div class="pswp__item"></div>
-            <div class="pswp__item"></div>
-            <div class="pswp__item"></div>
-        </div>
-
-        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
-        <div class="pswp__ui pswp__ui--hidden">
-
-            <div class="pswp__top-bar">
-
-                <!--  Controls are self-explanatory. Order can be changed. -->
-
-                <div class="pswp__counter"></div>
-
-                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-
-                <button class="pswp__button pswp__button--share" style="display:none" title="Share"></button>
-
-                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-
-                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-
-                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
-                <!-- element will get class pswp__preloader--active when preloader is running -->
-                <div class="pswp__preloader">
-                    <div class="pswp__preloader__icn">
-                        <div class="pswp__preloader__cut">
-                            <div class="pswp__preloader__donut"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                <div class="pswp__share-tooltip"></div>
-            </div>
-
-            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
-            </button>
-
-            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
-            </button>
-
-            <div class="pswp__caption">
-                <div class="pswp__caption__center"></div>
-            </div>
-
-        </div>
-
-    </div>
-
-</div>
-
-<link rel="stylesheet" href="https://cdn.staticfile.org/photoswipe/4.1.3/photoswipe.min.css">
-<link rel="stylesheet" href="https://cdn.staticfile.org/photoswipe/4.1.3/default-skin/default-skin.min.css">
-<script src="https://cdn.staticfile.org/photoswipe/4.1.3/photoswipe.min.js"></script>
-<script src="https://cdn.staticfile.org/photoswipe/4.1.3/photoswipe-ui-default.min.js"></script>
-
-<script>
-    function viewer_init() {
-        let pswpElement = document.querySelectorAll('.pswp')[0];
-        let $imgArr = document.querySelectorAll(('.article-entry img:not(.reward-img)'))
-
-        $imgArr.forEach(($em, i) => {
-            $em.onclick = () => {
-                // slider展开状态
-                // todo: 这样不好，后面改成状态
-                if (document.querySelector('.left-col.show')) return
-                let items = []
-                $imgArr.forEach(($em2, i2) => {
-                    let img = $em2.getAttribute('data-idx', i2)
-                    let src = $em2.getAttribute('data-target') || $em2.getAttribute('src')
-                    let title = $em2.getAttribute('alt')
-                    // 获得原图尺寸
-                    const image = new Image()
-                    image.src = src
-                    items.push({
-                        src: src,
-                        w: image.width || $em2.width,
-                        h: image.height || $em2.height,
-                        title: title
-                    })
-                })
-                var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, {
-                    index: parseInt(i)
-                });
-                gallery.init()
-            }
-        })
-    }
-    viewer_init()
-</script> 
 <!-- MathJax -->
  <script type="text/x-mathjax-config">
   MathJax.Hub.Config({
@@ -528,13 +434,13 @@
 <script src="../../../../js/busuanzi-2.3.pure.min.js"></script>
  
 <!-- ClickLove -->
-
+ 
+<script src="../../../../js/clickLove.js"></script>
+ 
 <!-- ClickBoom1 -->
 
 <!-- ClickBoom2 -->
- 
-<script src="../../../../js/clickBoom2.js"></script>
- 
+
 <!-- CodeCopy -->
  
 <link rel="stylesheet" href="../../../../css/clipboard.css">
