@@ -1,45 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>hexo图片引用</title>
-    <url>/2023/05/11/5_hexo%20image/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>hexo图片引用测试</p>
-<span id="more"></span>
-<p>hexo图片引用是比较复杂的。引用图床（url）格式的图片还好，文件路径写相应的url就行，但是引用本地文件时择总是出问题。<br>
-解决方法：下载插件<a href="https://github.com/hexojs/hexo-renderer-marked">hexo-renderer-marked</a>。<br>
-在git bash中输入如下代码进行下载</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-renderer-marked --save</span><br></pre></td></tr></table></figure>
-<p>进行下载<br>
-依据github说明配置<code>config.yml</code>文件即可</p>
-<p>这里推荐以如下的的html格式进行配置：<br>
-<code>&lt;img src=&quot;relative path&quot; alt=&quot;title&quot; width=&quot;50%&quot;&gt;</code><br>
-这样既能在本地markdown编辑器的预览页中看到，又可以在网站中显示，还能调整标题与大小。</p>
-<p>注意，relative path指的是相对路径，例如：<br>
-文章的md文件路径<code>D:/hexo/blog/source/_posts</code><br>
-图片路径<code>D:/hexo/blog/source/_posts/image_example/img.png</code><br>
-那么相对路径为<code>/image_example/img.png</code></p>
-<p>下面进行测试：</p>
-<h1>1 html格式进行引用</h1>
-<p>第一种方式（相对路径）：</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;/5_hexo image quatation/LaTeX_logo.svg&quot;</span> <span class="attr">alt</span>=<span class="string">&quot;LaTeX logo1&quot;</span> <span class="attr">width</span>=<span class="string">&quot;70&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p>效果如下（markdown中可以显示，且网页中能显示，极力推荐）：<br>
-<img src="/2023/05/11/5_hexo%20image/LaTeX_logo.svg" alt="LaTeX logo1" width="70"><br>
-width的值决定图片宽度。1000=100%，70=7%，数字与百分比可以互相转换。</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;LaTeX_logo.svg&quot;</span> <span class="attr">alt</span>=<span class="string">&quot;LaTeX logo2&quot;</span> <span class="attr">width</span>=<span class="string">&quot;70&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p>请注意：图片的长宽比始终保持不变。<br>
-<br></p>
-<p>第二种方式（hexo-renderer-marked使文件路径默认解析至资源文件夹）：<br>
-效果如下（markdown中不能显示，但网页中能显示）：<br>
-<img src="/2023/05/11/5_hexo%20image/LaTeX_logo.svg" alt="LaTeX logo2" width="70"></p>
-<p>第三种方式：<br>
-使用markdown语法（由hexo-renderer-marked插件支持）</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">![<span class="string">LaTeX logo3</span>](<span class="link">LaTeX_logo.svg</span>)</span><br></pre></td></tr></table></figure>
-<p>效果如下（markdown中不能显示，但网页中能显示，且调整不了大小）：<br>
-<img src="/2023/05/11/5_hexo%20image/LaTeX_logo.svg" alt="LaTeX logo3"></p>
-<h1>2 url格式引用</h1>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;https://katex.org/img/katex-logo-black.svg&quot;</span> <span class="attr">alt</span>=<span class="string">&quot;KaTeX logo&quot;</span> <span class="attr">width</span>=<span class="string">&quot;70&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure>
-<p>效果如下（markdown中可以显示，且网页中能显示）：<br>
-<img src="https://katex.org/img/katex-logo-black.svg" alt="KaTeX logo" width="70"></p>
+    <title>hexo具体配置</title>
+    <url>/2023/05/01/2_hexo%20specific%20configuration/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1>1.主题自带</h1>
+<h2 id="katex配置">KaTeX配置</h2>
+<p>为了方便使用<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>LaTeX</mtext></mrow><annotation encoding="application/x-tex">\LaTeX</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.89883em;vertical-align:-0.2155em;"></span><span class="mord text"><span class="mord textrm">L</span><span class="mspace" style="margin-right:-0.36em;"></span><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.68333em;"><span style="top:-2.904999em;"><span class="pstrut" style="height:2.7em;"></span><span class="mord"><span class="mord textrm mtight sizing reset-size6 size3">A</span></span></span></span></span></span><span class="mspace" style="margin-right:-0.15em;"></span><span class="mord text"><span class="mord textrm">T</span><span class="mspace" style="margin-right:-0.1667em;"></span><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.46782999999999997em;"><span style="top:-2.7845em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord textrm">E</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2155em;"><span></span></span></span></span><span class="mspace" style="margin-right:-0.125em;"></span><span class="mord textrm">X</span></span></span></span></span></span>来书写漂亮的数学公式，我们需要使网页支持<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>KaTeX</mtext></mrow><annotation encoding="application/x-tex">\KaTeX</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.89883em;vertical-align:-0.2155em;"></span><span class="mord text"><span class="mord textrm">K</span><span class="mspace" style="margin-right:-0.17em;"></span><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.68333em;"><span style="top:-2.904999em;"><span class="pstrut" style="height:2.7em;"></span><span class="mord"><span class="mord textrm mtight sizing reset-size6 size3">A</span></span></span></span></span></span><span class="mspace" style="margin-right:-0.15em;"></span><span class="mord text"><span class="mord textrm">T</span><span class="mspace" style="margin-right:-0.1667em;"></span><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.46782999999999997em;"><span style="top:-2.7845em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord textrm">E</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2155em;"><span></span></span></span></span><span class="mspace" style="margin-right:-0.125em;"></span><span class="mord textrm">X</span></span></span></span></span></span></p>
+<h2 id="友情链接-广告设置">友情链接、广告设置</h2>
+<p>设置友情链接和广告</p>
+<h1>2.插件（非主题自带）</h1>
+<h2 id="播放器">播放器</h2>
+<p>aplayer插件下载</p>
+<h2 id="代码高亮">代码高亮</h2>
+<p>highligt.js</p>
+<h2 id="图片引用">图片引用</h2>
+<p>hexo-renderer-marked</p>
 ]]></content>
       <categories>
         <category>2</category>
@@ -49,73 +24,9 @@ width的值决定图片宽度。1000=100%，70=7%，数字与百分比可以互�
       </tags>
   </entry>
   <entry>
-    <title>代码块</title>
-    <url>/2023/05/02/4_code%20snippet/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>关于hexo中代码块与代码高亮的笔记。</p>
-<span id="more"></span>
-<h3 id="第一种写法：代码块">第一种写法：代码块</h3>
-<p>缺点是并不会在markdown中被渲染。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% codeblock [title] [lang:language] [url] [link text] [additional options] %&#125;</span><br><span class="line">code snippet # 注意，写代码时不用加上方括号[]</span><br><span class="line">&#123;% endcodeblock %&#125;</span><br></pre></td></tr></table></figure>
-<p>效果如下：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">code snippet</span><br></pre></td></tr></table></figure>
-<h3 id="第二种写法：反引号代码块">第二种写法：反引号代码块</h3>
-<p>此方法在markdown中也会被渲染，极力推荐。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">\``` [language] [title] [url] [link text] [additional options]</span><br><span class="line">code snippet # 注意，写代码时要去除反义符号“\”，并且不用加上方括号[]</span><br><span class="line">\```</span><br></pre></td></tr></table></figure>
-<p>效果如下：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">code snippet</span><br></pre></td></tr></table></figure>
-<h3 id="实例测试">实例测试</h3>
-<p>python</p>
-<figure class="highlight python"><figcaption><span>python高亮</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">0</span>,<span class="number">100</span>):</span><br><span class="line">    s = s+<span class="number">1</span></span><br></pre></td></tr></table></figure>
-<p>c++</p>
-<figure class="highlight c++"><figcaption><span>c++高亮</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Hello Markdown\n&quot;</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>url = <a href="https://www.bilibili.com/">https://www.bilibili.com/</a></p>
-]]></content>
-      <categories>
-        <category>3</category>
-      </categories>
-      <tags>
-        <tag>2</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>博客搭建与基础配置</title>
-    <url>/2023/04/29/1_blog%20building%20and%20basic%20settings/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>第一次尝试搭建个人博客。<br>
-本博客使用<a href="https://www.bilibili.com/video/BV1ts4y1f7Gu">b站教程</a>，<a href="https://hexo.io/zh-cn/index.html">hexo</a>开源项目，以及<a href="https://shen-yu.gitee.io/2019/ayer/">ayer</a>主题。<br>
-具体流程：下载<a href="https://git-scm.com/">git</a>，<a href="https://nodejs.org/zh-cn/">node.js</a></p>
-<span id="more"></span>
-<h3 id="1-git-hexo-node-js环境搭建">1.git、hexo、node.js环境搭建</h3>
-<p>下载<a href="https://git-scm.com/">git</a>，<a href="https://nodejs.org/zh-cn/">Node.js</a>。<br>
-git下载完毕后，在cmd窗口中输入<code>node-v</code>查看版本号，如果出现版本号，则说明安装成功。<br>
-新建一个下载hexo的文件夹，进入后右键选择git bash打开git窗口，分别输入<a href="https://hexo.io/zh-cn/index.html">hexo官网</a>的命令。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 1下载</span><br><span class="line">npm install hexo-cli -g </span><br><span class="line"># 2初始化博客，运行完毕会出现blog文件夹</span><br><span class="line">hexo init blog</span><br><span class="line"># 3进入博客</span><br><span class="line">cd blog</span><br><span class="line"># 4下载 </span><br><span class="line">npm install</span><br><span class="line"># 5运行博客（为原始版本、默认主题，之后可以下载其他主题）</span><br><span class="line">hexo server </span><br></pre></td></tr></table></figure>
-<h3 id="2-hexo与hexo主题下载">2.hexo与hexo主题下载</h3>
-<p><a href="https://hexo.io/zh-cn/index.html">hexo</a>，<a href="https://shen-yu.gitee.io/2019/ayer/">ayer</a>主题。</p>
-<h3 id="3-配置">3.配置</h3>
-<p>根据需求，修改<code>config.yml</code>与<code>config.ayer.yml</code>中的具体配置<br>
-<code>config.ayer.yml</code>中可以修改网页封面、公告栏、鼠标样式、广告图标、友情链接</p>
-<h3 id="4-tips">4.Tips</h3>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo clean </span><br></pre></td></tr></table></figure>
-<p>清除缓存(public文件夹)能解决大部分无法更新的问题。<br>
-也因此，请不要把重要的文件存在public文件夹下。</p>
-<h3 id="5-具体配置与插件">5.具体配置与插件</h3>
-<p>详见下一篇文章。</p>
-<h3 id="6-将静态网页放在gitee-pages上">6.将静态网页放在gitee pages上</h3>
-<p>详见<a href="https://www.bilibili.com/video/BV1ts4y1f7Gu">b站教程</a></p>
-]]></content>
-      <categories>
-        <category>1</category>
-      </categories>
-      <tags>
-        <tag>1</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>markdown语法学习</title>
     <url>/2023/05/01/3_markdown%20grammer%20learning/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>关于markdown语法的笔记。</p>
-<span id="more"></span>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">*斜体文本*</span><br><span class="line">_斜体文本_</span><br><span class="line">**粗体文本**</span><br><span class="line">__粗体文本__</span><br><span class="line">***粗斜体文本***</span><br><span class="line">___粗斜体文本___</span><br></pre></td></tr></table></figure>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">*斜体文本*</span><br><span class="line">_斜体文本_</span><br><span class="line">**粗体文本**</span><br><span class="line">__粗体文本__</span><br><span class="line">***粗斜体文本***</span><br><span class="line">___粗斜体文本___</span><br></pre></td></tr></table></figure>
 <p><em>斜体文本</em><br>
 <em>斜体文本</em><br>
 <strong>粗体文本</strong><br>
@@ -199,20 +110,107 @@ c0 110 84 276 504 276s502.4-166 502.4-276z"/></svg></span></span></span><span cl
       </tags>
   </entry>
   <entry>
-    <title>hexo具体配置</title>
-    <url>/2023/05/01/2_hexo%20specific%20configuration/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1>主题自带</h1>
-<h2 id="katex配置">KaTeX配置</h2>
-<p>为了方便使用<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>LaTeX</mtext></mrow><annotation encoding="application/x-tex">\LaTeX</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.89883em;vertical-align:-0.2155em;"></span><span class="mord text"><span class="mord textrm">L</span><span class="mspace" style="margin-right:-0.36em;"></span><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.68333em;"><span style="top:-2.904999em;"><span class="pstrut" style="height:2.7em;"></span><span class="mord"><span class="mord textrm mtight sizing reset-size6 size3">A</span></span></span></span></span></span><span class="mspace" style="margin-right:-0.15em;"></span><span class="mord text"><span class="mord textrm">T</span><span class="mspace" style="margin-right:-0.1667em;"></span><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.46782999999999997em;"><span style="top:-2.7845em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord textrm">E</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2155em;"><span></span></span></span></span><span class="mspace" style="margin-right:-0.125em;"></span><span class="mord textrm">X</span></span></span></span></span></span>来书写漂亮的数学公式，我们需要使网页支持<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>KaTeX</mtext></mrow><annotation encoding="application/x-tex">\KaTeX</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.89883em;vertical-align:-0.2155em;"></span><span class="mord text"><span class="mord textrm">K</span><span class="mspace" style="margin-right:-0.17em;"></span><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.68333em;"><span style="top:-2.904999em;"><span class="pstrut" style="height:2.7em;"></span><span class="mord"><span class="mord textrm mtight sizing reset-size6 size3">A</span></span></span></span></span></span><span class="mspace" style="margin-right:-0.15em;"></span><span class="mord text"><span class="mord textrm">T</span><span class="mspace" style="margin-right:-0.1667em;"></span><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.46782999999999997em;"><span style="top:-2.7845em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord textrm">E</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2155em;"><span></span></span></span></span><span class="mspace" style="margin-right:-0.125em;"></span><span class="mord textrm">X</span></span></span></span></span></span></p>
-<h2 id="友情链接-广告设置">友情链接、广告设置</h2>
-<p>设置友情链接和广告</p>
-<h1>插件（主题不自带）</h1>
-<h2 id="播放器">播放器</h2>
-<p>aplayer插件下载</p>
-<h2 id="代码高亮">代码高亮</h2>
-<p>highligt.js</p>
-<h2 id="图片引用">图片引用</h2>
-<p>hexo-renderer-marked</p>
+    <title>博客搭建与基础配置</title>
+    <url>/2023/04/29/1_blog%20building%20and%20basic%20settings/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>第一次尝试搭建个人博客。<br>
+本博客使用<a href="https://www.bilibili.com/video/BV1ts4y1f7Gu">b站教程</a>，<a href="https://hexo.io/zh-cn/index.html">hexo</a>开源项目，以及<a href="https://shen-yu.gitee.io/2019/ayer/">ayer</a>主题。<br>
+具体流程：下载<a href="https://git-scm.com/">git</a>，<a href="https://nodejs.org/zh-cn/">node.js</a></p>
+<span id="more"></span>
+<h3 id="1-git-hexo-node-js环境搭建">1.git、hexo、node.js环境搭建</h3>
+<p>下载<a href="https://git-scm.com/">git</a>，<a href="https://nodejs.org/zh-cn/">Node.js</a>。<br>
+git下载完毕后，在cmd窗口中输入<code>node-v</code>查看版本号，如果出现版本号，则说明安装成功。<br>
+新建一个下载hexo的文件夹，进入后右键选择git bash打开git窗口，分别输入<a href="https://hexo.io/zh-cn/index.html">hexo官网</a>的命令。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 1下载</span><br><span class="line">npm install hexo-cli -g </span><br><span class="line"># 2初始化博客，运行完毕会出现blog文件夹</span><br><span class="line">hexo init blog</span><br><span class="line"># 3进入博客</span><br><span class="line">cd blog</span><br><span class="line"># 4下载 </span><br><span class="line">npm install</span><br><span class="line"># 5运行博客（为原始版本、默认主题，之后可以下载其他主题）</span><br><span class="line">hexo server </span><br></pre></td></tr></table></figure>
+<h3 id="2-hexo与hexo主题下载">2.hexo与hexo主题下载</h3>
+<p><a href="https://hexo.io/zh-cn/index.html">hexo</a>，<a href="https://shen-yu.gitee.io/2019/ayer/">ayer</a>主题。</p>
+<h3 id="3-配置">3.配置</h3>
+<p>根据需求，修改<code>config.yml</code>与<code>config.ayer.yml</code>中的具体配置<br>
+<code>config.ayer.yml</code>中可以修改网页封面、公告栏、鼠标样式、广告图标、友情链接</p>
+<h3 id="4-tips">4.Tips</h3>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo clean </span><br></pre></td></tr></table></figure>
+<p>清除缓存(public文件夹)能解决大部分无法更新的问题。<br>
+也因此，请不要把重要的文件存在public文件夹下。</p>
+<h3 id="5-具体配置与插件">5.具体配置与插件</h3>
+<p>详见下一篇文章。</p>
+<h3 id="6-将静态网页放在gitee-pages上">6.将静态网页放在gitee pages上</h3>
+<p>详见<a href="https://www.bilibili.com/video/BV1ts4y1f7Gu">b站教程</a></p>
+]]></content>
+      <categories>
+        <category>1</category>
+      </categories>
+      <tags>
+        <tag>1</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>代码块</title>
+    <url>/2023/05/02/4_code%20snippet/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>关于hexo中代码块与代码高亮的笔记。</p>
+<span id="more"></span>
+<h3 id="第一种写法：代码块">第一种写法：代码块</h3>
+<p>缺点是并不会在markdown中被渲染。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% codeblock [title] [lang:language] [url] [link text] [additional options] %&#125;</span><br><span class="line">code snippet # 注意，写代码时不用加上方括号[]</span><br><span class="line">&#123;% endcodeblock %&#125;</span><br></pre></td></tr></table></figure>
+<p>效果如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">code snippet</span><br></pre></td></tr></table></figure>
+<h3 id="第二种写法：反引号代码块">第二种写法：反引号代码块</h3>
+<p>此方法在markdown中也会被渲染，极力推荐。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">\``` [language] [title] [url] [link text] [additional options]</span><br><span class="line">code snippet # 注意，写代码时要去除反义符号“\”，并且不用加上方括号[]</span><br><span class="line">\```</span><br></pre></td></tr></table></figure>
+<p>效果如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">code snippet</span><br></pre></td></tr></table></figure>
+<h3 id="实例测试">实例测试</h3>
+<p>python</p>
+<figure class="highlight python"><figcaption><span>python高亮</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">0</span>,<span class="number">100</span>):</span><br><span class="line">    s = s+<span class="number">1</span></span><br></pre></td></tr></table></figure>
+<p>c++</p>
+<figure class="highlight c++"><figcaption><span>c++高亮</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Hello Markdown\n&quot;</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>url = <a href="https://www.bilibili.com/">https://www.bilibili.com/</a></p>
+]]></content>
+      <categories>
+        <category>3</category>
+      </categories>
+      <tags>
+        <tag>2</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>hexo图片引用</title>
+    <url>/2023/05/11/5_hexo%20image/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>hexo图片引用测试</p>
+<span id="more"></span>
+<p>hexo图片引用是比较复杂的。引用图床（url）格式的图片还好，文件路径写相应的url就行，但是引用本地文件时择总是出问题。<br>
+解决方法：下载插件<a href="https://github.com/hexojs/hexo-renderer-marked">hexo-renderer-marked</a>。<br>
+在git bash中输入如下代码进行下载</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-renderer-marked --save</span><br></pre></td></tr></table></figure>
+<p>进行下载<br>
+依据github说明配置<code>config.yml</code>文件即可</p>
+<p>这里推荐以如下的的html格式进行配置：<br>
+<code>&lt;img src=&quot;relative path&quot; alt=&quot;title&quot; width=&quot;50%&quot;&gt;</code><br>
+这样既能在本地markdown编辑器的预览页中看到，又可以在网站中显示，还能调整标题与大小。</p>
+<p>注意，relative path指的是相对路径，例如：<br>
+文章的md文件路径<code>D:/hexo/blog/source/_posts</code><br>
+图片路径<code>D:/hexo/blog/source/_posts/image_example/img.png</code><br>
+那么相对路径为<code>/image_example/img.png</code></p>
+<p>下面进行测试：</p>
+<h1>1.html格式进行引用</h1>
+<p>第一种方式（相对路径）：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;/5_hexo image quatation/LaTeX_logo.svg&quot;</span> <span class="attr">alt</span>=<span class="string">&quot;LaTeX logo1&quot;</span> <span class="attr">width</span>=<span class="string">&quot;70&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>效果如下（markdown中可以显示，且网页中能显示，极力推荐）：<br>
+<img src="/2023/05/11/5_hexo%20image/LaTeX_logo.svg" alt="LaTeX logo1" width="70"><br>
+width的值决定图片宽度。1000=100%，70=7%，数字与百分比可以互相转换。</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;LaTeX_logo.svg&quot;</span> <span class="attr">alt</span>=<span class="string">&quot;LaTeX logo2&quot;</span> <span class="attr">width</span>=<span class="string">&quot;70&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>请注意：图片的长宽比始终保持不变。<br>
+<br></p>
+<p>第二种方式（hexo-renderer-marked使文件路径默认解析至资源文件夹）：<br>
+效果如下（markdown中不能显示，但网页中能显示）：<br>
+<img src="/2023/05/11/5_hexo%20image/LaTeX_logo.svg" alt="LaTeX logo2" width="70"></p>
+<p>第三种方式：<br>
+使用markdown语法（由hexo-renderer-marked插件支持）</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">![<span class="string">LaTeX logo3</span>](<span class="link">LaTeX_logo.svg</span>)</span><br></pre></td></tr></table></figure>
+<p>效果如下（markdown中不能显示，但网页中能显示，且调整不了大小）：<br>
+<img src="/2023/05/11/5_hexo%20image/LaTeX_logo.svg" alt="LaTeX logo3"></p>
+<h1>2.url格式引用</h1>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;https://katex.org/img/katex-logo-black.svg&quot;</span> <span class="attr">alt</span>=<span class="string">&quot;KaTeX logo&quot;</span> <span class="attr">width</span>=<span class="string">&quot;70&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure>
+<p>效果如下（markdown中可以显示，且网页中能显示）：<br>
+<img src="https://katex.org/img/katex-logo-black.svg" alt="KaTeX logo" width="70"></p>
 ]]></content>
       <categories>
         <category>2</category>
