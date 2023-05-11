@@ -11,7 +11,7 @@
         name="viewport"
         content="width=device-width, initial-scale=1, maximum-scale=1"
       />
-      <title>markdown图片引用测试 |  myblog</title>
+      <title>hexo图片引用测试 |  myblog</title>
   <meta name="generator" content="hexo-theme-ayer">
       
       <link rel="shortcut icon" href="/favicon.ico" />
@@ -68,7 +68,7 @@
     <header class="article-header">
        
 <h1 class="article-title sea-center" style="border-left:0" itemprop="name">
-  markdown图片引用测试
+  hexo图片引用测试
 </h1>
  
 
@@ -88,7 +88,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> Word count:</span>
-            <span class="post-count">22</span>
+            <span class="post-count">457</span>
         </span>
     </span>
 
@@ -104,30 +104,43 @@
  
     </div>
       
+    <div class="tocbot"></div>
+
 
 
 
   
     <div class="article-entry" itemprop="articleBody">
        
-  <p>markdown图片引用测试。</p>
+  <p>hexo图片引用测试</p>
 <span id="more"></span>
-
-
-
-<img src="/2023/05/01/5_hexo%20image%20quatation/LaTeX_logo.svg" alt="LaTeX logo1" width="70">
-
-<img src="/2023/05/01/5_hexo%20image%20quatation/LaTeX_logo.svg" alt="LaTeX logo2" width="70">
-
-<img src="https://katex.org/img/katex-logo-black.svg" alt="KaTeX logo" width="70">
-
-
-<img src="/2023/05/01/5_hexo%20image%20quatation/persona.jpg" alt="persona1" width="1000">
-
-<p><img src="/2023/05/01/5_hexo%20image%20quatation/LaTeX_logo.svg" alt="persona2"></p>
-<p><img src="/2023/05/01/5_hexo%20image%20quatation/persona.jpg" alt="persona3"></p>
-<p>![persona4](5_hexo image quatation&#x2F;persona.jpg)</p>
-<p>![persona5](&#x2F;5_hexo image quatation&#x2F;persona.jpg)</p>
+<p>hexo图片引用是比较复杂的。引用图床（url）格式的图片还好，文件路径写相应的url就行，但是引用本地文件时择总是出问题。<br>
+解决方法：下载插件<a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo-renderer-marked">hexo-renderer-marked</a>。<br>
+在git bash中输入<code>$ npm install hexo-renderer-marked --save</code>进行下载<br>
+依据github说明配置<code>config.yml</code>文件即可<br>
+这里推荐以<code>&lt;img src=&quot;relative path&quot; alt=&quot;title&quot; width=&quot;50%&quot;&gt;</code>的html格式进行配置，这样既能在本地markdown编辑器的预览页中看到，又可以在网站中显示，还能调整标题与大小。<br>
+注意，relative path指的是相对路径，例如文章的md文件路径<code>D:/hexo/blog/source/_posts</code>，图片路径<code>D:/hexo/blog/source/_posts/image_example/img.png</code>，那么相对路径为<code>/image_example/img.png</code></p>
+<p>下面进行测试：</p>
+<h1>1 html格式进行引用</h1>
+<p>第一种方式（相对路径）：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;/5_hexo image quatation/LaTeX_logo.svg&quot;</span> <span class="attr">alt</span>=<span class="string">&quot;LaTeX logo1&quot;</span> <span class="attr">width</span>=<span class="string">&quot;70&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>效果如下（markdown中可以显示，且网页中能显示，极力推荐）：<br>
+<img src="/2023/05/01/5_hexo%20image%20quatation/LaTeX_logo.svg" alt="LaTeX logo1" width="70"><br>
+width的值决定图片宽度。1000=100%，70=7%，数字与百分之可以互相转换，且长宽比保持不变。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;LaTeX_logo.svg&quot;</span> <span class="attr">alt</span>=<span class="string">&quot;LaTeX logo2&quot;</span> <span class="attr">width</span>=<span class="string">&quot;70&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<br>
+<p>第二种方式（hexo-renderer-marked使文件路径默认解析至资源文件夹）：<br>
+效果如下（markdown中不能显示，但网页中能显示）：<br>
+<img src="/2023/05/01/5_hexo%20image%20quatation/LaTeX_logo.svg" alt="LaTeX logo2" width="70"></p>
+<p>第三种方式：<br>
+使用markdown语法（由hexo-renderer-marked插件支持）</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![<span class="string">LaTeX logo3</span>](<span class="link">LaTeX_logo.svg</span>)</span><br></pre></td></tr></table></figure>
+<p>效果如下（markdown中不能显示，但网页中能显示，且调整不了大小）：<br>
+<img src="/2023/05/01/5_hexo%20image%20quatation/LaTeX_logo.svg" alt="LaTeX logo3"></p>
+<h1>2 url格式引用</h1>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;https://katex.org/img/katex-logo-black.svg&quot;</span> <span class="attr">alt</span>=<span class="string">&quot;KaTeX logo&quot;</span> <span class="attr">width</span>=<span class="string">&quot;70&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure>
+<p>效果如下（markdown中可以显示，且网页中能显示）：<br>
+<img src="https://katex.org/img/katex-logo-black.svg" alt="KaTeX logo" width="70"></p>
  
       <!-- reward -->
       
