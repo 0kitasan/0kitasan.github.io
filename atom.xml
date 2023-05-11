@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-05-02T14:58:41.405Z</updated>
+  <updated>2023-05-11T07:22:50.726Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>testimage</title>
+    <link href="http://example.com/2023/05/11/testimage/"/>
+    <id>http://example.com/2023/05/11/testimage/</id>
+    <published>2023-05-11T06:31:14.000Z</published>
+    <updated>2023-05-11T07:22:50.726Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;&#92;assets&#92;css&#92;APlayer.min.css&quot;&gt;&lt;script src=&quot;&#92;assets&#92;js&#92;APlayer.min.js&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>代码块</title>
@@ -55,14 +76,14 @@
   </entry>
   
   <entry>
-    <title>指令与进阶配置</title>
-    <link href="http://example.com/2023/05/01/2_%E6%8C%87%E4%BB%A4%E4%B8%8E%E8%BF%9B%E9%98%B6%E9%85%8D%E7%BD%AE%E9%85%8D%E7%BD%AE/"/>
-    <id>http://example.com/2023/05/01/2_%E6%8C%87%E4%BB%A4%E4%B8%8E%E8%BF%9B%E9%98%B6%E9%85%8D%E7%BD%AE%E9%85%8D%E7%BD%AE/</id>
+    <title>markdown图片引用测试</title>
+    <link href="http://example.com/2023/05/01/5_markdown%E5%9B%BE%E7%89%87%E5%BC%95%E7%94%A8%E6%B5%8B%E8%AF%95/"/>
+    <id>http://example.com/2023/05/01/5_markdown%E5%9B%BE%E7%89%87%E5%BC%95%E7%94%A8%E6%B5%8B%E8%AF%95/</id>
     <published>2023-05-01T03:13:02.000Z</published>
-    <updated>2023-05-02T15:04:50.923Z</updated>
+    <updated>2023-05-11T06:55:47.227Z</updated>
     
     
-    <summary type="html">&lt;p&gt;为了防止忘记，记录一下一些hexo/git的基本指令与本博客的具体配置。&lt;/p&gt;</summary>
+    <summary type="html">&lt;p&gt;markdown图片引用测试。&lt;/p&gt;</summary>
     
     
     

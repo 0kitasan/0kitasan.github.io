@@ -118,49 +118,6 @@ c0 110 84 276 504 276s502.4-166 502.4-276z'/></svg></span></span></span><span cl
       </tags>
   </entry>
   <entry>
-    <title>指令与进阶配置</title>
-    <url>/2023/05/01/2_%E6%8C%87%E4%BB%A4%E4%B8%8E%E8%BF%9B%E9%98%B6%E9%85%8D%E7%BD%AE%E9%85%8D%E7%BD%AE/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>为了防止忘记，记录一下一些hexo/git的基本指令与本博客的具体配置。</p>
-<span id="more"></span>
-<h2 id="1-hexo本地指令-自带">1.hexo本地指令(自带)</h2>
-<h3 id="1-create-a-new-post">(1).Create a new post</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="2-run-server">(2).Run server</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="3-generate-static-files">(3).Generate static files</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="4-deploy-to-remote-sites">(4).Deploy to remote sites</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-<h2 id="2-进阶配置">2.进阶配置</h2>
-<h3 id="1-插件">(1).插件</h3>
-<p>添加播放器<a href="https://github.com/MoePlayer/hexo-tag-aplayer/blob/master/docs/README-zh_cn.md">aplayer</a></p>
-<p>二次元live2d看板娘(<a href="https://github.com/EYHN/hexo-helper-live2d/blob/master/README.zh-CN.md">https://github.com/EYHN/hexo-helper-live2d/blob/master/README.zh-CN.md</a>)</p>
-<h3 id="2-渲染">(2).渲染</h3>
-<h4 id="公式渲染">公式渲染</h4>
-<p>公式渲染改用<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>KaTeX</mtext></mrow><annotation encoding="application/x-tex">\KaTeX</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.89883em;vertical-align:-0.2155em;"></span><span class="mord text"><span class="mord textrm">K</span><span class="mspace" style="margin-right:-0.17em;"></span><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.68333em;"><span style="top:-2.904999em;"><span class="pstrut" style="height:2.7em;"></span><span class="mord"><span class="mord textrm mtight sizing reset-size6 size3">A</span></span></span></span></span></span><span class="mspace" style="margin-right:-0.15em;"></span><span class="mord text"><span class="mord textrm">T</span><span class="mspace" style="margin-right:-0.1667em;"></span><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.46782999999999997em;"><span style="top:-2.7845em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord textrm">E</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2155em;"><span></span></span></span></span><span class="mspace" style="margin-right:-0.125em;"></span><span class="mord textrm">X</span></span></span></span></span></span>，在<code>config.yml</code>中修改即可</p>
-<figure class="highlight latex"><table><tr><td class="code"><pre><span class="line"><span class="built_in">$</span><span class="keyword">\KaTeX</span><span class="built_in">$</span></span><br><span class="line"><span class="keyword">\KaTeX</span></span><br><span class="line"><span class="built_in">$</span><span class="keyword">\LaTeX</span><span class="built_in">$</span></span><br><span class="line"><span class="keyword">\LaTeX</span></span><br></pre></td></tr></table></figure>
-<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>LaTeX</mtext></mrow><annotation encoding="application/x-tex">\LaTeX</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.89883em;vertical-align:-0.2155em;"></span><span class="mord text"><span class="mord textrm">L</span><span class="mspace" style="margin-right:-0.36em;"></span><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.68333em;"><span style="top:-2.904999em;"><span class="pstrut" style="height:2.7em;"></span><span class="mord"><span class="mord textrm mtight sizing reset-size6 size3">A</span></span></span></span></span></span><span class="mspace" style="margin-right:-0.15em;"></span><span class="mord text"><span class="mord textrm">T</span><span class="mspace" style="margin-right:-0.1667em;"></span><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.46782999999999997em;"><span style="top:-2.7845em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord textrm">E</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2155em;"><span></span></span></span></span><span class="mspace" style="margin-right:-0.125em;"></span><span class="mord textrm">X</span></span></span></span></span></span></p>
-<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>KaTeX</mtext></mrow><annotation encoding="application/x-tex">\KaTeX</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.89883em;vertical-align:-0.2155em;"></span><span class="mord text"><span class="mord textrm">K</span><span class="mspace" style="margin-right:-0.17em;"></span><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.68333em;"><span style="top:-2.904999em;"><span class="pstrut" style="height:2.7em;"></span><span class="mord"><span class="mord textrm mtight sizing reset-size6 size3">A</span></span></span></span></span></span><span class="mspace" style="margin-right:-0.15em;"></span><span class="mord text"><span class="mord textrm">T</span><span class="mspace" style="margin-right:-0.1667em;"></span><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.46782999999999997em;"><span style="top:-2.7845em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord textrm">E</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2155em;"><span></span></span></span></span><span class="mspace" style="margin-right:-0.125em;"></span><span class="mord textrm">X</span></span></span></span></span></span></p>
-<img src="https://upload.wikimedia.org/wikipedia/commons/9/92/LaTeX_logo.svg" alt="LaTeX logo" width="70"/>
-<p><br>
-<img src="https://katex.org/img/katex-logo-black.svg" alt="KaTeX logo" width="70"/></p>
-<h4 id="代码高亮">代码高亮</h4>
-<p>官网：<a href="https://highlightjs.org/">highlight.js</a></p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ npm install highlight.js</span><br></pre></td></tr></table></figure>
-<p>安装路径：blog\node_modules\highlight.js</p>
-]]></content>
-      <categories>
-        <category>2</category>
-      </categories>
-      <tags>
-        <tag>1</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>博客搭建与基础配置</title>
     <url>/2023/04/29/1_%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E4%B8%8E%E5%9F%BA%E7%A1%80%E9%85%8D%E7%BD%AE/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>第一次尝试搭建个人博客。<br>
@@ -184,5 +141,59 @@ git下载完毕后，在cmd窗口中输入<code>node-v</code>查看版本号，�
       <tags>
         <tag>1</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>markdown图片引用测试</title>
+    <url>/2023/05/01/5_markdown%E5%9B%BE%E7%89%87%E5%BC%95%E7%94%A8%E6%B5%8B%E8%AF%95/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>markdown图片引用测试。</p>
+<span id="more"></span>
+
+
+
+<img src="persona.jpg">
+
+
+<img src="/blog/source/images/persona.jpg">
+
+<img src="D:///hexo/blog/source/images/persona.jpg">
+
+<img src="D:///hexo/blog/source/images/persona.jpg" />
+
+<p><img src="/blog/source/images/persona.jpg" alt="test"></p>
+<p><img src="/source/images/persona.jpg" alt="test"></p>
+<p><img src="/persona.jpg" alt="test"></p>
+<img src="https://katex.org/img/katex-logo-black.svg" alt="KaTeX logo" width="70"/>
+
+]]></content>
+      <categories>
+        <category>2</category>
+      </categories>
+      <tags>
+        <tag>1</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>testimage</title>
+    <url>/2023/05/11/testimage/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>本文title属性testimage</p>
+<p>1、下载hexo-renderer-marked插件后，使用<code>hexo new</code>创建文件后，会生成与文章同名、处在同一级目录中的资源文件夹，用markdown语法引用图片<code>![1](1.png)</code>则会自动解析文件路径，但是在markdown语法编辑器中，如果不跳帧默认路径，则不会体现（比如vscode）<br><img src="/2023/05/11/testimage/1.png" alt="1"></p>
+<p>2、使用html格式引用本地文件（与md文件同级的文件夹），在markdown中支持，但是hexo中不知道为什么不支持。注意引用时，路径的连接使用“&#x2F;”而不是“\”。并且，可能在盘路径“：”后，需要加三个斜杠&#x2F;&#x2F;&#x2F;<br>D:\hexo\blog\source_posts\testimage<br><img src="D:///hexo/blog/source/_posts/testimage/2.png" alt="2-1"><br><img src="D:/hexo/blog/source/_posts/testimage/2.png" alt="2-2"></p>
+<img src="d///hexo/blog/source/_posts/testimage/2.png" alt="2-3">
+<img src="d/hexo/blog/source/_posts/testimage/2.png" alt="2-4">
+
+<img src="/hexo/blog/source/_posts/testimage/2.png" alt="2-5">
+<img src="/blog/source/_posts/testimage/2.png" alt="2-6">
+<img src="/source/_posts/testimage/2.png" alt="2-7">
+<img src="/_posts/testimage/2.png" alt="2-8">
+<img src="/testimage/2.png" alt="2-9">
+<img src="/2.png" alt="2-10">
+<img src="2.png" alt="2-11">
+网页上2-11可以显示，看来hexo-renderer-marked插件开启后默认在生成的、与md文件同级的资源文件夹中调用。
+
+<p>3、使用标签插件，在资源文件夹(asset)中引用图片，在markdown中无法显示，且无法调整大小。然而似乎在hexo中也不适用</p>
+
+
+<p>4、使用html格式引用本地文件（存放在source文件夹的images目录下）<br>D:\hexo\blog\source\images<br><img src="D:///hexo/blog/source/images/4.png" alt="4-1"><br><img src="D:/hexo/blog/source/images/4.png" alt="4-2"><br><img src="/hexo/blog/source/images/4.png" alt="4-3"><br><img src="/blog/source/images/4.png" alt="4-4"><br><img src="/source/images/4.png" alt="4-5"><br><img src="/images/4.png" alt="4-6"><br><img src="/images/4.png" alt="4-6"><br><img src="/4.png" alt="4-7"><br><img src="4.png" alt="4-8"><br>markdown中均无法显示，而hexo网页中只有4-6可以显示。</p>
+]]></content>
   </entry>
 </search>
