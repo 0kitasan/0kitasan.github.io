@@ -16,7 +16,8 @@ git下载完毕后，在cmd窗口中输入<code>node-v</code>查看版本号，�
 <p><a href="https://hexo.io/zh-cn/index.html">hexo</a>，<a href="https://shen-yu.gitee.io/2019/ayer/">ayer</a>主题。</p>
 <h3 id="3-配置">3.配置</h3>
 <p>根据需求，修改<code>config.yml</code>与<code>config.ayer.yml</code>中的具体配置<br>
-<code>config.ayer.yml</code>中可以修改网页封面、公告栏、鼠标样式、广告图标、友情链接</p>
+<code>config.ayer.yml</code>中可以修改网页封面、公告栏、鼠标样式、广告图标、友情链接<br>
+注意，<code>config.yml</code>与<code>config.ayer.yml</code>中冒号“：”后均需要加空格，否则报错</p>
 <h3 id="4-tips">4.Tips</h3>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo clean </span><br></pre></td></tr></table></figure>
 <p>清除缓存(public文件夹)能解决大部分无法更新的问题。<br>
