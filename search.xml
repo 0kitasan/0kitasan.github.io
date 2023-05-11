@@ -117,64 +117,25 @@
       </tags>
   </entry>
   <entry>
-    <title>testimage</title>
-    <url>/2023/05/11/testimage/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>testimage</p>
-<span id="more"></span>
-<p>本文title属性testimage<br>通过html的<code>&lt;img&gt;</code>方法引用时，路径格式为&#x2F;path1&#x2F;path2&#x2F;file.format</p>
-<p>1、下载hexo-renderer-marked插件后，使用<code>hexo new</code>创建文件后，会生成与文章同名、处在同一级目录中的资源文件夹，用markdown语法引用图片<code>![1](1.png)</code>则会自动解析文件路径，但是在markdown语法编辑器中，如果不跳帧默认路径，则不会体现（比如vscode）<br><img src="/2023/05/11/testimage/1.png" alt="1-1"><br><img src="D:///hexo/blog/source/_posts/testimage/1.png" alt="1-2"><br><img src="/2023/05/11/testimage/hexo/blog/source/_posts/testimage/1.png" alt="1-3"><br><img src="/2023/05/11/testimage/1.png" alt="1-4"><br><img src="/2023/05/11/testimage/1.png" alt="1-5"></p>
-<p>2、使用html格式引用本地文件（与md文件同级的文件夹），在markdown中支持，但是hexo中不知道为什么不支持。注意引用时，路径的连接使用“&#x2F;”而不是“\”。并且，可能在盘路径“：”后，需要加三个斜杠&#x2F;&#x2F;&#x2F;<br>D:\hexo\blog\source_posts\testimage<br><img src="D:///hexo/blog/source/_posts/testimage/2.png" alt="2-1"><br><img src="/2023/05/11/testimage/hexo/blog/source/_posts/testimage/2.png" alt="2-2"></p>
-<img src="d///hexo/blog/source/_posts/testimage/2.png" alt="2-3">
-<img src="/2023/05/11/testimage/hexo/blog/source/_posts/testimage/2.png" alt="2-4">
-
-<img src="/2023/05/11/testimage/blog/source/_posts/testimage/2.png" alt="2-5">
-<img src="/2023/05/11/testimage/source/_posts/testimage/2.png" alt="2-6">
-<img src="/2023/05/11/testimage/_posts/testimage/2.png" alt="2-7">
-<img src="/2023/05/11/testimage/testimage/2.png" alt="2-8">
-<img src="/2023/05/11/testimage/2.png" alt="2-9">
-<img src="/2023/05/11/testimage/2.png" alt="2-10">
-<img src="/2023/05/11/testimage/2.png" alt="2-11">
-网页上2-11可以显示，看来hexo-renderer-marked插件开启后默认在生成的、与md文件同级的资源文件夹中调用。markdown中2-9可以显示
-
-<p>3、使用标签插件，在资源文件夹(asset)中引用图片，在markdown中无法显示，且无法调整大小。然而似乎在hexo中也不适用</p>
-
-
-<p>4、使用html格式引用本地文件（存放在source文件夹的images目录下）<br>D:\hexo\blog\source\images<br><img src="D:///hexo/blog/source/images/4.png" alt="4-1"><br><img src="D:/hexo/blog/source/images/4.png" alt="4-2"><br><img src="/hexo/blog/source/images/4.png" alt="4-3"><br><img src="/blog/source/images/4.png" alt="4-4"><br><img src="/source/images/4.png" alt="4-5"><br><img src="/images/4.png" alt="4-6"><br><img src="/2023/05/11/testimage/4.png" alt="4-7"><br><img src="/2023/05/11/testimage/4.png" alt="4-8"><br><img src="D:/hexo/blog/source/images/4.png" alt="4"></p>
-<p>markdown中均无法显示，而hexo网页中只有4-6可以显示。</p>
-]]></content>
-  </entry>
-  <entry>
     <title>hexo图片引用测试</title>
-    <url>/2023/05/01/5_hexo%20image%20quatation/</url>
+    <url>/2023/05/01/2_hexo%20image%20quatation/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>hexo图片引用测试</p>
 <span id="more"></span>
-<p>hexo图片引用是比较复杂的。引用图床（url）格式的图片还好，文件路径写相应的url就行，但是引用本地文件时择总是出问题。<br>
-解决方法：下载插件<a href="https://github.com/hexojs/hexo-renderer-marked">hexo-renderer-marked</a>。<br>
-在git bash中输入<code>$ npm install hexo-renderer-marked --save</code>进行下载<br>
-依据github说明配置<code>config.yml</code>文件即可<br>
-这里推荐以<code>&lt;img src=&quot;relative path&quot; alt=&quot;title&quot; width=&quot;50%&quot;&gt;</code>的html格式进行配置，这样既能在本地markdown编辑器的预览页中看到，又可以在网站中显示，还能调整标题与大小。<br>
-注意，relative path指的是相对路径，例如文章的md文件路径<code>D:/hexo/blog/source/_posts</code>，图片路径<code>D:/hexo/blog/source/_posts/image_example/img.png</code>，那么相对路径为<code>/image_example/img.png</code></p>
+<p>hexo图片引用是比较复杂的。引用图床（url）格式的图片还好，文件路径写相应的url就行，但是引用本地文件时择总是出问题。<br>解决方法：下载插件<a href="https://github.com/hexojs/hexo-renderer-marked">hexo-renderer-marked</a>。<br>在git bash中输入<code>$ npm install hexo-renderer-marked --save</code>进行下载<br>依据github说明配置<code>config.yml</code>文件即可<br>这里推荐以<code>&lt;img src=&quot;relative path&quot; alt=&quot;title&quot; width=&quot;50%&quot;&gt;</code>的html格式进行配置，这样既能在本地markdown编辑器的预览页中看到，又可以在网站中显示，还能调整标题与大小。<br>注意，relative path指的是相对路径，例如文章的md文件路径<code>D:/hexo/blog/source/_posts</code>，图片路径<code>D:/hexo/blog/source/_posts/image_example/img.png</code>，那么相对路径为<code>/image_example/img.png</code></p>
 <p>下面进行测试：</p>
-<h1>1 html格式进行引用</h1>
-<p>第一种方式（相对路径）：</p>
+<h1 id="1-html格式进行引用"><a href="#1-html格式进行引用" class="headerlink" title="1 html格式进行引用"></a>1 html格式进行引用</h1><p>第一种方式（相对路径）：</p>
 <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;/5_hexo image quatation/LaTeX_logo.svg&quot;</span> <span class="attr">alt</span>=<span class="string">&quot;LaTeX logo1&quot;</span> <span class="attr">width</span>=<span class="string">&quot;70&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p>效果如下（markdown中可以显示，且网页中能显示，极力推荐）：<br>
-<img src="/2023/05/01/5_hexo%20image%20quatation/LaTeX_logo.svg" alt="LaTeX logo1" width="70"><br>
-width的值决定图片宽度。1000=100%，70=7%，数字与百分之可以互相转换，且长宽比保持不变。</p>
+<p>效果如下（markdown中可以显示，且网页中能显示，极力推荐）：<br><img src="/2023/05/01/2_hexo%20image%20quatation/LaTeX_logo.svg" alt="LaTeX logo1" width="70"><br>width的值决定图片宽度。1000&#x3D;100%，70&#x3D;7%，数字与百分之可以互相转换，且长宽比保持不变。</p>
 <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;LaTeX_logo.svg&quot;</span> <span class="attr">alt</span>=<span class="string">&quot;LaTeX logo2&quot;</span> <span class="attr">width</span>=<span class="string">&quot;70&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <br>
-<p>第二种方式（hexo-renderer-marked使文件路径默认解析至资源文件夹）：<br>
-效果如下（markdown中不能显示，但网页中能显示）：<br>
-<img src="/2023/05/01/5_hexo%20image%20quatation/LaTeX_logo.svg" alt="LaTeX logo2" width="70"></p>
-<p>第三种方式：<br>
-使用markdown语法（由hexo-renderer-marked插件支持）</p>
+
+<p>第二种方式（hexo-renderer-marked使文件路径默认解析至资源文件夹）：<br>效果如下（markdown中不能显示，但网页中能显示）：<br><img src="/2023/05/01/2_hexo%20image%20quatation/LaTeX_logo.svg" alt="LaTeX logo2" width="70"></p>
+<p>第三种方式：<br>使用markdown语法（由hexo-renderer-marked插件支持）</p>
 <figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">![<span class="string">LaTeX logo3</span>](<span class="link">LaTeX_logo.svg</span>)</span><br></pre></td></tr></table></figure>
-<p>效果如下（markdown中不能显示，但网页中能显示，且调整不了大小）：<br>
-<img src="/2023/05/01/5_hexo%20image%20quatation/LaTeX_logo.svg" alt="LaTeX logo3"></p>
-<h1>2 url格式引用</h1>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;https://katex.org/img/katex-logo-black.svg&quot;</span> <span class="attr">alt</span>=<span class="string">&quot;KaTeX logo&quot;</span> <span class="attr">width</span>=<span class="string">&quot;70&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure>
-<p>效果如下（markdown中可以显示，且网页中能显示）：<br>
-<img src="https://katex.org/img/katex-logo-black.svg" alt="KaTeX logo" width="70"></p>
+
+<p>效果如下（markdown中不能显示，但网页中能显示，且调整不了大小）：<br><img src="/2023/05/01/2_hexo%20image%20quatation/LaTeX_logo.svg" alt="LaTeX logo3"></p>
+<h1 id="2-url格式引用"><a href="#2-url格式引用" class="headerlink" title="2 url格式引用"></a>2 url格式引用</h1><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;https://katex.org/img/katex-logo-black.svg&quot;</span> <span class="attr">alt</span>=<span class="string">&quot;KaTeX logo&quot;</span> <span class="attr">width</span>=<span class="string">&quot;70&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure>
+<p>效果如下（markdown中可以显示，且网页中能显示）：<br><img src="https://katex.org/img/katex-logo-black.svg" alt="KaTeX logo" width="70"></p>
 ]]></content>
       <categories>
         <category>2</category>

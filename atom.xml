@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-05-11T09:27:05.039Z</updated>
+  <updated>2023-05-02T14:58:41.405Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,21 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>testimage</title>
-    <link href="http://example.com/2023/05/11/testimage/"/>
-    <id>http://example.com/2023/05/11/testimage/</id>
-    <published>2023-05-11T06:31:14.000Z</published>
-    <updated>2023-05-11T09:27:05.039Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;testimage&lt;/p&gt;</summary>
-    
-    
-    
-    
-  </entry>
   
   <entry>
     <title>代码块</title>
@@ -71,8 +56,8 @@
   
   <entry>
     <title>hexo图片引用测试</title>
-    <link href="http://example.com/2023/05/01/5_hexo%20image%20quatation/"/>
-    <id>http://example.com/2023/05/01/5_hexo%20image%20quatation/</id>
+    <link href="http://example.com/2023/05/01/2_hexo%20image%20quatation/"/>
+    <id>http://example.com/2023/05/01/2_hexo%20image%20quatation/</id>
     <published>2023-05-01T03:13:02.000Z</published>
     <updated>2023-05-11T09:53:28.016Z</updated>
     
