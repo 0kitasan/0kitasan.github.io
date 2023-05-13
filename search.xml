@@ -193,14 +193,14 @@ c0 110 84 276 504 276s502.4-166 502.4-276z"/></svg></span></span></span><span cl
 <p>下面进行测试：</p>
 <h1>1.html格式进行引用</h1>
 <p>第一种方式（相对路径）：</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;/5_hexo image quatation/LaTeX_logo.svg&quot;</span> <span class="attr">alt</span>=<span class="string">&quot;LaTeX logo1&quot;</span> <span class="attr">width</span>=<span class="string">&quot;70&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;/5_hexo image/LaTeX_logo.svg&quot;</span> <span class="attr">alt</span>=<span class="string">&quot;LaTeX logo1&quot;</span> <span class="attr">width</span>=<span class="string">&quot;70&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <p>效果如下（markdown中可以显示，且网页中能显示，极力推荐）：<br>
 <img src="/2023/05/11/5_hexo%20image/LaTeX_logo.svg" alt="LaTeX logo1" width="70"><br>
-width的值决定图片宽度。1000=100%，70=7%，数字与百分比可以互相转换。</p>
+width的值决定图片宽度。1000=100%，70=7%，数字与百分比可以互相转换。<br>
+<br><br>
+第二种方式（hexo-renderer-marked使文件路径默认解析至资源文件夹）：</p>
 <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;LaTeX_logo.svg&quot;</span> <span class="attr">alt</span>=<span class="string">&quot;LaTeX logo2&quot;</span> <span class="attr">width</span>=<span class="string">&quot;70&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <p>请注意：图片的长宽比始终保持不变。<br>
-<br></p>
-<p>第二种方式（hexo-renderer-marked使文件路径默认解析至资源文件夹）：<br>
 效果如下（markdown中不能显示，但网页中能显示）：<br>
 <img src="/2023/05/11/5_hexo%20image/LaTeX_logo.svg" alt="LaTeX logo2" width="70"></p>
 <p>第三种方式：<br>
