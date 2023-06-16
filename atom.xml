@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-05-13T03:10:17.728Z</updated>
+  <updated>2023-06-16T15:10:59.030Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>ubuntu配置静态IP(无线网络)</title>
+    <link href="http://example.com/2023/06/16/6_Static%20IP%20settings%20on%20ubuntu/"/>
+    <id>http://example.com/2023/06/16/6_Static%20IP%20settings%20on%20ubuntu/</id>
+    <published>2023-06-16T14:51:38.000Z</published>
+    <updated>2023-06-16T15:10:59.030Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;在orangpi上(ubuntu系统)配置静态IP(无线网络)&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="2" scheme="http://example.com/categories/2/"/>
+    
+    
+    <category term="1" scheme="http://example.com/tags/1/"/>
+    
+  </entry>
   
   <entry>
     <title>hexo图片引用</title>

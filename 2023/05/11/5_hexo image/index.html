@@ -211,6 +211,15 @@ width的值决定图片宽度。1000=100%，70=7%，数字与百分比可以互�
    
   <nav class="article-nav">
     
+      <a href="../../../06/16/6_Static%20IP%20settings%20on%20ubuntu/" class="article-nav-link">
+        <strong class="article-nav-caption">上一篇</strong>
+        <div class="article-nav-title">
+          
+            ubuntu配置静态IP(无线网络)
+          
+        </div>
+      </a>
+    
     
       <a href="../../02/4_code%20snippet/" class="article-nav-link">
         <strong class="article-nav-caption">下一篇</strong>
@@ -520,42 +529,6 @@ width的值决定图片宽度。1000=100%，70=7%，数字与百分比可以互�
 
     
     
-<script>
-  const password = "123456";
-  const lock_password = window.sessionStorage.getItem("lock_password");
-  console.log(password, lock_password);
-  if (lock_password !== password) {
-    Swal.fire({
-      title: "Please enter password",
-      input: "text",
-      inputAttributes: {
-        autocapitalize: "off",
-      },
-      showCancelButton: false,
-      showLoaderOnConfirm: true,
-      allowOutsideClick: false,
-      confirmButtonText: "Ok",
-    }).then((result) => {
-      console.log(result);
-      if (result.isConfirmed) {
-        console.log(password);
-        if (result.value === password) {
-          window.sessionStorage.setItem("lock_password", result.value);
-        } else {
-          Swal.fire({
-            icon: "error",
-            title: "Incorrect password, please try again",
-            confirmButtonText: "Ok",
-            allowOutsideClick: false,
-          }).then(() => {
-            window.location.reload();
-          });
-        }
-      }
-    });
-  }
-</script>
-
 
   </div>
 </body>

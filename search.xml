@@ -220,4 +220,29 @@ width的值决定图片宽度。1000=100%，70=7%，数字与百分比可以互�
         <tag>1</tag>
       </tags>
   </entry>
+  <entry>
+    <title>ubuntu配置静态IP(无线网络)</title>
+    <url>/2023/06/16/6_Static%20IP%20settings%20on%20ubuntu/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>在orangpi上(ubuntu系统)配置静态IP(无线网络)</p>
+<span id="more"></span>
+<h1>1.ssh(vscode)</h1>
+<p>【如何优雅地访问远程主机？SSH与frp内网穿透配置教程】<br>
+<a href="https://www.bilibili.com/video/BV13L411w7XU/">https://www.bilibili.com/video/BV13L411w7XU/</a></p>
+<h1>2.ifconfig + netplan下载</h1>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo apt ifconfig</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo apt update</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo apt install netplan</span><br></pre></td></tr></table></figure>
+<h1>3.修改netplan配置</h1>
+<p>配置静态ip</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">network:</span><br><span class="line">  version: 2</span><br><span class="line">  wifis:</span><br><span class="line">    wlan0:</span><br><span class="line">      access-points:</span><br><span class="line">        [这里填wifi名称，不需要方括号]:</span><br><span class="line">          password: <span class="string">&quot;这里填wifi密码&quot;</span></span><br><span class="line">      dhcp4: <span class="literal">false</span> <span class="comment">#静态ip</span></span><br><span class="line">      optional: <span class="literal">true</span></span><br><span class="line">      addresses: [192.168.0.112/24] <span class="comment">#前者是ip，后者是子网掩码</span></span><br><span class="line">      gateway4: 192.168.0.1  <span class="comment">#gateway</span></span><br><span class="line">      nameservers:</span><br><span class="line">        addresses: [192.168.0.112,8.8.8.8]  <span class="comment">#前面与ip相同即可</span></span><br></pre></td></tr></table></figure>
+<p>gateway查看：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">route -n</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>2</category>
+      </categories>
+      <tags>
+        <tag>1</tag>
+      </tags>
+  </entry>
 </search>
