@@ -58,35 +58,6 @@ git下载完毕后，在cmd窗口中输入<code>node-v</code>查看版本号，�
       </tags>
   </entry>
   <entry>
-    <title>代码块</title>
-    <url>/2023/05/02/4_code%20snippet/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>关于hexo中代码块与代码高亮的笔记。</p>
-<span id="more"></span>
-<h3 id="第一种写法：代码块">第一种写法：代码块</h3>
-<p>缺点是并不会在markdown中被渲染。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% codeblock [title] [lang:language] [url] [link text] [additional options] %&#125;</span><br><span class="line">code snippet # 注意，写代码时不用加上方括号[]</span><br><span class="line">&#123;% endcodeblock %&#125;</span><br></pre></td></tr></table></figure>
-<p>效果如下：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">code snippet</span><br></pre></td></tr></table></figure>
-<h3 id="第二种写法：反引号代码块">第二种写法：反引号代码块</h3>
-<p>此方法在markdown中也会被渲染，极力推荐。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">\``` [language] [title] [url] [link text] [additional options]</span><br><span class="line">code snippet # 注意，写代码时要去除反义符号“\”，并且不用加上方括号[]</span><br><span class="line">\```</span><br></pre></td></tr></table></figure>
-<p>效果如下：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">code snippet</span><br></pre></td></tr></table></figure>
-<h3 id="实例测试">实例测试</h3>
-<p>python</p>
-<figure class="highlight python"><figcaption><span>python高亮</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">0</span>,<span class="number">100</span>):</span><br><span class="line">    s = s+<span class="number">1</span></span><br></pre></td></tr></table></figure>
-<p>c++</p>
-<figure class="highlight c++"><figcaption><span>c++高亮</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Hello Markdown\n&quot;</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>url = <a href="https://www.bilibili.com/">https://www.bilibili.com/</a></p>
-]]></content>
-      <categories>
-        <category>3</category>
-      </categories>
-      <tags>
-        <tag>2</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>markdown语法学习</title>
     <url>/2023/05/01/3_markdown%20grammer%20learning/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">*斜体文本*</span><br><span class="line">_斜体文本_</span><br><span class="line">**粗体文本**</span><br><span class="line">__粗体文本__</span><br><span class="line">***粗斜体文本***</span><br><span class="line">___粗斜体文本___</span><br></pre></td></tr></table></figure>
@@ -164,6 +135,35 @@ c0 110 84 276 504 276s502.4-166 502.4-276z"/></svg></span></span></span><span cl
 </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:2.2717em;vertical-align:-0.9117em;"></span><span class="mop"><span class="mop op-symbol large-op" style="margin-right:0.44445em;position:relative;top:-0.0009999999999999454em;">∬</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:-0.433369em;"><span style="top:-1.7883000000000002em;margin-left:-0.44445em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.02778em;">D</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.9117em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord mathdefault">x</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">y</span><span class="mclose">)</span><span class="mord mathdefault">d</span><span class="mord mathdefault">x</span><span class="mord mathdefault">d</span><span class="mord mathdefault" style="margin-right:0.03588em;">y</span></span></span></span></span></p>
 <p class="katex-block"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>∭</mo><mi>V</mi></msub><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo separator="true">,</mo><mi>y</mi><mo separator="true">,</mo><mi>z</mi><mo stretchy="false">)</mo><mi>d</mi><mi>x</mi><mi>d</mi><mi>y</mi><mi>d</mi><mi>z</mi></mrow><annotation encoding="application/x-tex">\iiint_{V}f(x,y,z)dxdydz
 </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:2.2717em;vertical-align:-0.9117em;"></span><span class="mop"><span class="mop op-symbol large-op" style="margin-right:0.44445em;position:relative;top:-0.0009999999999999454em;">∭</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:-0.433369em;"><span style="top:-1.7883000000000002em;margin-left:-0.44445em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.22222em;">V</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.9117em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord mathdefault">x</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">y</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.04398em;">z</span><span class="mclose">)</span><span class="mord mathdefault">d</span><span class="mord mathdefault">x</span><span class="mord mathdefault">d</span><span class="mord mathdefault" style="margin-right:0.03588em;">y</span><span class="mord mathdefault">d</span><span class="mord mathdefault" style="margin-right:0.04398em;">z</span></span></span></span></span></p>
+]]></content>
+      <categories>
+        <category>3</category>
+      </categories>
+      <tags>
+        <tag>2</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>代码块</title>
+    <url>/2023/05/02/4_code%20snippet/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>关于hexo中代码块与代码高亮的笔记。</p>
+<span id="more"></span>
+<h3 id="第一种写法：代码块">第一种写法：代码块</h3>
+<p>缺点是并不会在markdown中被渲染。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% codeblock [title] [lang:language] [url] [link text] [additional options] %&#125;</span><br><span class="line">code snippet # 注意，写代码时不用加上方括号[]</span><br><span class="line">&#123;% endcodeblock %&#125;</span><br></pre></td></tr></table></figure>
+<p>效果如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">code snippet</span><br></pre></td></tr></table></figure>
+<h3 id="第二种写法：反引号代码块">第二种写法：反引号代码块</h3>
+<p>此方法在markdown中也会被渲染，极力推荐。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">\``` [language] [title] [url] [link text] [additional options]</span><br><span class="line">code snippet # 注意，写代码时要去除反义符号“\”，并且不用加上方括号[]</span><br><span class="line">\```</span><br></pre></td></tr></table></figure>
+<p>效果如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">code snippet</span><br></pre></td></tr></table></figure>
+<h3 id="实例测试">实例测试</h3>
+<p>python</p>
+<figure class="highlight python"><figcaption><span>python高亮</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">0</span>,<span class="number">100</span>):</span><br><span class="line">    s = s+<span class="number">1</span></span><br></pre></td></tr></table></figure>
+<p>c++</p>
+<figure class="highlight c++"><figcaption><span>c++高亮</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Hello Markdown\n&quot;</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>url = <a href="https://www.bilibili.com/">https://www.bilibili.com/</a></p>
 ]]></content>
       <categories>
         <category>3</category>
