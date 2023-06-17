@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-06-16T15:10:59.030Z</updated>
+  <updated>2023-06-17T02:58:37.145Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://example.com/2023/06/16/6_Static%20IP%20settings%20on%20ubuntu/"/>
     <id>http://example.com/2023/06/16/6_Static%20IP%20settings%20on%20ubuntu/</id>
     <published>2023-06-16T14:51:38.000Z</published>
-    <updated>2023-06-16T15:10:59.030Z</updated>
+    <updated>2023-06-17T02:58:37.145Z</updated>
     
     
     <summary type="html">&lt;p&gt;在orangpi上(ubuntu系统)配置静态IP(无线网络)&lt;/p&gt;</summary>
