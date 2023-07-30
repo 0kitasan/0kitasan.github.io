@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-06-17T02:58:37.145Z</updated>
+  <updated>2023-07-30T07:15:03.212Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,11 +17,36 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>CPU的一些笔记</title>
+    <link href="http://example.com/2023/07/30/7_CPU%20notes/"/>
+    <id>http://example.com/2023/07/30/7_CPU%20notes/</id>
+    <published>2023-07-30T06:43:18.000Z</published>
+    <updated>2023-07-30T07:15:03.212Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;&#92;assets&#92;css&#92;APlayer.min.css&quot;&gt;&lt;script src=&quot;&#92;assets&#92;js&#92;APlayer.min.js&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="3" scheme="http://example.com/categories/3/"/>
+    
+    
+    <category term="2" scheme="http://example.com/tags/2/"/>
+    
+  </entry>
+  
+  <entry>
     <title>ubuntu配置静态IP(无线网络)</title>
     <link href="http://example.com/2023/06/16/6_Static%20IP%20settings%20on%20ubuntu/"/>
     <id>http://example.com/2023/06/16/6_Static%20IP%20settings%20on%20ubuntu/</id>
     <published>2023-06-16T14:51:38.000Z</published>
-    <updated>2023-06-17T02:58:37.145Z</updated>
+    <updated>2023-06-19T06:21:14.403Z</updated>
     
     
     <summary type="html">&lt;p&gt;在orangpi上(ubuntu系统)配置静态IP(无线网络)&lt;/p&gt;</summary>
