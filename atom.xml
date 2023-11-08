@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-11-01T05:44:58.018Z</updated>
+  <updated>2023-11-01T05:50:21.275Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,27 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>博客搭建与基础配置</title>
-    <link href="http://example.com/2023/11/08/9_test/"/>
-    <id>http://example.com/2023/11/08/9_test/</id>
-    <published>2023-11-08T04:11:56.093Z</published>
-    <updated>2023-11-01T05:44:58.018Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;第一次尝试搭建个人博客。&lt;br&gt;
-本博客使用&lt;a href=&quot;https://www.bilibili.com/video/BV1ts4y1f7Gu&quot;&gt;b站教程&lt;/a&gt;，&lt;a href=&quot;https://hexo.io/zh-cn/index.html&quot;&gt;hexo&lt;/a&gt;开源项目，以及&lt;a href=&quot;https://shen-yu.gitee.io/2019/ayer/&quot;&gt;ayer&lt;/a&gt;主题。&lt;br&gt;
-具体流程：下载&lt;a href=&quot;https://git-scm.com/&quot;&gt;git&lt;/a&gt;，&lt;a href=&quot;https://nodejs.org/zh-cn/&quot;&gt;node.js&lt;/a&gt;&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="1" scheme="http://example.com/categories/1/"/>
-    
-    
-    <category term="1" scheme="http://example.com/tags/1/"/>
-    
-  </entry>
   
   <entry>
     <title>公式测试</title>
