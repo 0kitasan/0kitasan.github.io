@@ -11,7 +11,7 @@
 <p>下载<a href="https://git-scm.com/">git</a>，<a href="https://nodejs.org/zh-cn/">Node.js</a>。<br>
 git下载完毕后，在cmd窗口中输入<code>node-v</code>查看版本号，如果出现版本号，则说明安装成功。<br>
 新建一个下载hexo的文件夹，进入后右键选择git bash打开git窗口，分别输入<a href="https://hexo.io/zh-cn/index.html">hexo官网</a>的命令。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 1下载</span><br><span class="line">npm install hexo-cli -g </span><br><span class="line"># 2初始化博客，运行完毕会出现blog文件夹</span><br><span class="line">hexo init blog</span><br><span class="line"># 3进入博客</span><br><span class="line">cd blog</span><br><span class="line"># 4下载 </span><br><span class="line">npm install</span><br><span class="line"># 5运行博客（为原始版本、默认主题，之后可以下载其他主题）</span><br><span class="line">hexo server </span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 1下载</span></span><br><span class="line">npm install hexo-cli -g </span><br><span class="line"><span class="comment"># 2初始化博客，运行完毕会出现blog文件夹</span></span><br><span class="line">hexo init blog</span><br><span class="line"><span class="comment"># 3进入博客</span></span><br><span class="line"><span class="built_in">cd</span> blog</span><br><span class="line"><span class="comment"># 4下载 </span></span><br><span class="line">npm install</span><br><span class="line"><span class="comment"># 5运行博客（为原始版本、默认主题，之后可以下载其他主题）</span></span><br><span class="line">hexo server </span><br></pre></td></tr></table></figure>
 <h3 id="2-hexo与hexo主题下载">2.hexo与hexo主题下载</h3>
 <p><a href="https://hexo.io/zh-cn/index.html">hexo</a>，<a href="https://shen-yu.gitee.io/2019/ayer/">ayer</a>主题。</p>
 <h3 id="3-配置">3.配置</h3>
@@ -19,7 +19,7 @@ git下载完毕后，在cmd窗口中输入<code>node-v</code>查看版本号，�
 <code>config.ayer.yml</code>中可以修改网页封面、公告栏、鼠标样式、广告图标、友情链接<br>
 注意，<code>config.yml</code>与<code>config.ayer.yml</code>中冒号“：”后均需要加空格，否则报错</p>
 <h3 id="4-tips">4.Tips</h3>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo clean </span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo clean </span><br></pre></td></tr></table></figure>
 <p>清除缓存(public文件夹)能解决大部分无法更新的问题。<br>
 也因此，请不要把重要的文件存在public文件夹下。</p>
 <h3 id="5-具体配置与插件">5.具体配置与插件</h3>
@@ -37,17 +37,17 @@ git下载完毕后，在cmd窗口中输入<code>node-v</code>查看版本号，�
   <entry>
     <title>hexo具体配置</title>
     <url>/2023/05/01/2_hexo%20specific%20configuration/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1>1.主题自带</h1>
-<h2 id="katex配置">KaTeX配置</h2>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="1-主题自带">1.主题自带</h2>
+<h3 id="katex配置">KaTeX配置</h3>
 <p>为了方便使用<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>LaTeX</mtext></mrow><annotation encoding="application/x-tex">\LaTeX</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.89883em;vertical-align:-0.2155em;"></span><span class="mord text"><span class="mord textrm">L</span><span class="mspace" style="margin-right:-0.36em;"></span><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.68333em;"><span style="top:-2.904999em;"><span class="pstrut" style="height:2.7em;"></span><span class="mord"><span class="mord textrm mtight sizing reset-size6 size3">A</span></span></span></span></span></span><span class="mspace" style="margin-right:-0.15em;"></span><span class="mord text"><span class="mord textrm">T</span><span class="mspace" style="margin-right:-0.1667em;"></span><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.46782999999999997em;"><span style="top:-2.7845em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord textrm">E</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2155em;"><span></span></span></span></span><span class="mspace" style="margin-right:-0.125em;"></span><span class="mord textrm">X</span></span></span></span></span></span>来书写漂亮的数学公式，我们需要使网页支持<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>KaTeX</mtext></mrow><annotation encoding="application/x-tex">\KaTeX</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.89883em;vertical-align:-0.2155em;"></span><span class="mord text"><span class="mord textrm">K</span><span class="mspace" style="margin-right:-0.17em;"></span><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.68333em;"><span style="top:-2.904999em;"><span class="pstrut" style="height:2.7em;"></span><span class="mord"><span class="mord textrm mtight sizing reset-size6 size3">A</span></span></span></span></span></span><span class="mspace" style="margin-right:-0.15em;"></span><span class="mord text"><span class="mord textrm">T</span><span class="mspace" style="margin-right:-0.1667em;"></span><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.46782999999999997em;"><span style="top:-2.7845em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord textrm">E</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2155em;"><span></span></span></span></span><span class="mspace" style="margin-right:-0.125em;"></span><span class="mord textrm">X</span></span></span></span></span></span></p>
-<h2 id="友情链接-广告设置">友情链接、广告设置</h2>
+<h3 id="友情链接-广告设置">友情链接、广告设置</h3>
 <p>设置友情链接和广告</p>
-<h1>2.插件（非主题自带）</h1>
-<h2 id="播放器">播放器</h2>
+<h2 id="2-插件-非主题自带">2.插件（非主题自带）</h2>
+<h3 id="播放器">播放器</h3>
 <p>aplayer插件下载</p>
-<h2 id="代码高亮">代码高亮</h2>
+<h3 id="代码高亮">代码高亮</h3>
 <p>highligt.js</p>
-<h2 id="图片引用">图片引用</h2>
+<h3 id="图片引用">图片引用</h3>
 <p>hexo-renderer-marked</p>
 ]]></content>
       <categories>
@@ -289,14 +289,14 @@ Finalshell</p>
 <a href="https://minecraft.fandom.com/wiki/Tutorials/Setting_up_a_server">https://minecraft.fandom.com/wiki/Tutorials/Setting_up_a_server</a></p>
 <h3 id="1-java环境安装">1.java环境安装</h3>
 <p>官方推荐安装OpenJDK 8及更高版本。试着根着官方文档下载OpenJDK 8，发现无法启动。故选择OpenJDK 18，经测试能成功启动。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sudo apt update</span><br><span class="line">#更新</span><br><span class="line">sudo apt-get install openjdk-18-jdk-headless</span><br><span class="line">#中间数字是版本号。去掉命令中的“-headless”可以安装完整的Java。</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo apt update</span><br><span class="line"><span class="comment">#更新</span></span><br><span class="line">sudo apt-get install openjdk-18-jdk-headless</span><br><span class="line"><span class="comment">#中间数字是版本号。去掉命令中的“-headless”可以安装完整的Java。</span></span><br></pre></td></tr></table></figure>
 <h3 id="2-minecraft服务器端安装与运行">2.Minecraft服务器端安装与运行</h3>
 <p>先创建MC专用文件夹，用于存放服务端文件，如minecraft_server本体以及地图资源文件等。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">mkdir Minecraft</span><br><span class="line">cd Minecraft</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">mkdir</span> Minecraft</span><br><span class="line"><span class="built_in">cd</span> Minecraft</span><br></pre></td></tr></table></figure>
 <p>根据官网上给的minecraft_server.1.20.2文件，直接使用网址下载。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">wget https://piston-data.mojang.com/v1/objects/5b868151bd02b41319f54c8d4061b8cae84e665c/server.jar</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">wget https://piston-data.mojang.com/v1/objects/5b868151bd02b41319f54c8d4061b8cae84e665c/server.jar</span><br></pre></td></tr></table></figure>
 <p>然后启动即可</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">java -Xmx1024M -Xms1024M -jar minecraft_server.1.20.2.jar nogui</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">java -Xmx1024M -Xms1024M -jar minecraft_server.1.20.2.jar nogui</span><br></pre></td></tr></table></figure>
 <h3 id="3-端口">3.端口</h3>
 <p>如果无法联机，可以查看端口是否开放。<br>
 Minecraft默认端口是25565，可以通过该端口扫描网址查询端口是否开放：<a href="http://www.jsons.cn/port/">http://www.jsons.cn/port/</a><br>
@@ -359,7 +359,7 @@ X3D表示加强版又提高CPU三级缓存，在一些很吃配置的游戏里�
 intel Core i5 <font color="#0000dd">10</font><font color="#dd0000">400</font>F<br>
 6核心12线程<br>
 （超线程技术）</p>
-<h2 id="硬盘">硬盘</h2>
+<h2 id="固态硬盘">固态硬盘</h2>
 <p>先写个标题，具体内容以后再加上。<br>
 233<br>
 233<br>
@@ -393,6 +393,8 @@ intel Core i5 <font color="#0000dd">10</font><font color="#dd0000">400</font>F<b
 233<br>
 233<br>
 233</p>
+<h2 id="内存">内存</h2>
+<h2 id="显卡">显卡</h2>
 <p>图吧工具箱<br>
 <a href="http://www.tbtool.cn/download/202305-3.html">http://www.tbtool.cn/download/202305-3.html</a></p>
 ]]></content>

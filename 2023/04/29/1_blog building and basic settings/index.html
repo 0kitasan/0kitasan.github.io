@@ -117,7 +117,7 @@
 <p>下载<a target="_blank" rel="noopener" href="https://git-scm.com/">git</a>，<a target="_blank" rel="noopener" href="https://nodejs.org/zh-cn/">Node.js</a>。<br>
 git下载完毕后，在cmd窗口中输入<code>node-v</code>查看版本号，如果出现版本号，则说明安装成功。<br>
 新建一个下载hexo的文件夹，进入后右键选择git bash打开git窗口，分别输入<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/index.html">hexo官网</a>的命令。</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"># 1下载</span><br><span class="line">npm install hexo-cli -g </span><br><span class="line"># 2初始化博客，运行完毕会出现blog文件夹</span><br><span class="line">hexo init blog</span><br><span class="line"># 3进入博客</span><br><span class="line">cd blog</span><br><span class="line"># 4下载 </span><br><span class="line">npm install</span><br><span class="line"># 5运行博客（为原始版本、默认主题，之后可以下载其他主题）</span><br><span class="line">hexo server </span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 1下载</span></span><br><span class="line">npm install hexo-cli -g </span><br><span class="line"><span class="comment"># 2初始化博客，运行完毕会出现blog文件夹</span></span><br><span class="line">hexo init blog</span><br><span class="line"><span class="comment"># 3进入博客</span></span><br><span class="line"><span class="built_in">cd</span> blog</span><br><span class="line"><span class="comment"># 4下载 </span></span><br><span class="line">npm install</span><br><span class="line"><span class="comment"># 5运行博客（为原始版本、默认主题，之后可以下载其他主题）</span></span><br><span class="line">hexo server </span><br></pre></td></tr></table></figure>
 <h3 id="2-hexo与hexo主题下载">2.hexo与hexo主题下载</h3>
 <p><a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/index.html">hexo</a>，<a target="_blank" rel="noopener" href="https://shen-yu.gitee.io/2019/ayer/">ayer</a>主题。</p>
 <h3 id="3-配置">3.配置</h3>
@@ -125,7 +125,7 @@ git下载完毕后，在cmd窗口中输入<code>node-v</code>查看版本号，�
 <code>config.ayer.yml</code>中可以修改网页封面、公告栏、鼠标样式、广告图标、友情链接<br>
 注意，<code>config.yml</code>与<code>config.ayer.yml</code>中冒号“：”后均需要加空格，否则报错</p>
 <h3 id="4-tips">4.Tips</h3>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean </span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean </span><br></pre></td></tr></table></figure>
 <p>清除缓存(public文件夹)能解决大部分无法更新的问题。<br>
 也因此，请不要把重要的文件存在public文件夹下。</p>
 <h3 id="5-具体配置与插件">5.具体配置与插件</h3>

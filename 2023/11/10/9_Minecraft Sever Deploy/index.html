@@ -118,14 +118,14 @@ Finalshell</p>
 <a target="_blank" rel="noopener" href="https://minecraft.fandom.com/wiki/Tutorials/Setting_up_a_server">https://minecraft.fandom.com/wiki/Tutorials/Setting_up_a_server</a></p>
 <h3 id="1-java环境安装">1.java环境安装</h3>
 <p>官方推荐安装OpenJDK 8及更高版本。试着根着官方文档下载OpenJDK 8，发现无法启动。故选择OpenJDK 18，经测试能成功启动。</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">sudo apt update</span><br><span class="line">#更新</span><br><span class="line">sudo apt-get install openjdk-18-jdk-headless</span><br><span class="line">#中间数字是版本号。去掉命令中的“-headless”可以安装完整的Java。</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">sudo apt update</span><br><span class="line"><span class="comment">#更新</span></span><br><span class="line">sudo apt-get install openjdk-18-jdk-headless</span><br><span class="line"><span class="comment">#中间数字是版本号。去掉命令中的“-headless”可以安装完整的Java。</span></span><br></pre></td></tr></table></figure>
 <h3 id="2-minecraft服务器端安装与运行">2.Minecraft服务器端安装与运行</h3>
 <p>先创建MC专用文件夹，用于存放服务端文件，如minecraft_server本体以及地图资源文件等。</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">mkdir Minecraft</span><br><span class="line">cd Minecraft</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">mkdir</span> Minecraft</span><br><span class="line"><span class="built_in">cd</span> Minecraft</span><br></pre></td></tr></table></figure>
 <p>根据官网上给的minecraft_server.1.20.2文件，直接使用网址下载。</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget https://piston-data.mojang.com/v1/objects/5b868151bd02b41319f54c8d4061b8cae84e665c/server.jar</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget https://piston-data.mojang.com/v1/objects/5b868151bd02b41319f54c8d4061b8cae84e665c/server.jar</span><br></pre></td></tr></table></figure>
 <p>然后启动即可</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">java -Xmx1024M -Xms1024M -jar minecraft_server.1.20.2.jar nogui</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">java -Xmx1024M -Xms1024M -jar minecraft_server.1.20.2.jar nogui</span><br></pre></td></tr></table></figure>
 <h3 id="3-端口">3.端口</h3>
 <p>如果无法联机，可以查看端口是否开放。<br>
 Minecraft默认端口是25565，可以通过该端口扫描网址查询端口是否开放：<a target="_blank" rel="noopener" href="http://www.jsons.cn/port/">http://www.jsons.cn/port/</a><br>
