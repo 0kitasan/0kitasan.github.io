@@ -323,7 +323,7 @@ intel Core i5 <font color="#0000dd">10</font><font color="#dd0000">400</font>F<b
   </entry>
   <entry>
     <title>Minecraft服务器部署</title>
-    <url>/2023/05/02/9_Minecraft%20Sever%20Deploy/</url>
+    <url>/2023/11/10/9_Minecraft%20Sever%20Deploy/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>购买了一台阿里云的ECS，故尝试在服务器上部署Minecraft服务器</p>
 <span id="more"></span>
 <p>阿里云ECS<br>
