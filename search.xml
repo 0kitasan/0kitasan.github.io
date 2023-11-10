@@ -60,15 +60,24 @@ git下载完毕后，在cmd窗口中输入<code>node-v</code>查看版本号，�
   <entry>
     <title>markdown语法学习</title>
     <url>/2023/05/01/3_markdown%20grammer%20learning/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">*斜体文本*</span><br><span class="line">_斜体文本_</span><br><span class="line">**粗体文本**</span><br><span class="line">__粗体文本__</span><br><span class="line">***粗斜体文本***</span><br><span class="line">___粗斜体文本___</span><br></pre></td></tr></table></figure>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="标题">标题</h2>
+<p>Markdown使用不同数量的井号（#）来表示不同级别的标题。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 一级标题</span><br><span class="line">## 二级标题</span><br><span class="line">### 三级标题</span><br></pre></td></tr></table></figure>
+<p>标题级别最多支持六级。在Markdown中，标题文本通常会自动加粗并按照不同级别进行格式化。<br>
+注意：<br>
+在标准Markdown语法中，只能有一个一级标题，因为一级标题表示文档的最高级别标题，不能重复使用。如果您尝试写两个一级标题，这可能会导致冲突，并且在Markdown渲染时通常只会将第一个一级标题识别为一级标题，而第二个会被识别为普通文本。<br>
+如果需要多个顶级标题，您可以使用二级标题来代替，然后通过其他方式来区分不同的部分或章节，例如使用粗体文本或其他样式来突出显示文本。</p>
+<h2 id="文本">文本</h2>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">*斜体文本*</span><br><span class="line">_斜体文本_</span><br><span class="line">**粗体文本**</span><br><span class="line">__粗体文本__</span><br><span class="line">***粗斜体文本***</span><br><span class="line">___粗斜体文本___</span><br></pre></td></tr></table></figure>
 <p><em>斜体文本</em><br>
 <em>斜体文本</em><br>
 <strong>粗体文本</strong><br>
 <strong>粗体文本</strong><br>
 <em><strong>粗斜体文本</strong></em><br>
 <em><strong>粗斜体文本</strong></em></p>
-<p>代码块</p>
+<h2 id="代码块">代码块</h2>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#include&lt;stdio.h&gt;</span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">    printf(&quot;Hello Markdown\n&quot;);</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="表格">表格</h2>
 <p>Markdown 制作表格使用 | 来分隔不同的单元格，使用 - 来分隔表头和其他行。<br>
 注：表格前后需要空出一行<br>
 这是表格</p>
@@ -115,12 +124,14 @@ git下载完毕后，在cmd窗口中输入<code>node-v</code>查看版本号，�
 </tr>
 </tbody>
 </table>
+<h2 id="链接">链接</h2>
 <p>1.<a href="%E9%93%BE%E6%8E%A5%E5%9C%B0%E5%9D%80">链接名称</a><br>
 例如<a href="https://xn--9krq6qeqfkxx.github.io/">这是名字，不显示地址</a><br>
 2.&lt;链接地址&gt;<br>
 <a href="https://xn--9krq6qeqfkxx.github.io/">https://我的博客.github.io/</a><br>
 直接显示链接</p>
-<p>公式（使用<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>KaTeX</mtext></mrow><annotation encoding="application/x-tex">\KaTeX</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.89883em;vertical-align:-0.2155em;"></span><span class="mord text"><span class="mord textrm">K</span><span class="mspace" style="margin-right:-0.17em;"></span><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.68333em;"><span style="top:-2.904999em;"><span class="pstrut" style="height:2.7em;"></span><span class="mord"><span class="mord textrm mtight sizing reset-size6 size3">A</span></span></span></span></span></span><span class="mspace" style="margin-right:-0.15em;"></span><span class="mord text"><span class="mord textrm">T</span><span class="mspace" style="margin-right:-0.1667em;"></span><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.46782999999999997em;"><span style="top:-2.7845em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord textrm">E</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2155em;"><span></span></span></span></span><span class="mspace" style="margin-right:-0.125em;"></span><span class="mord textrm">X</span></span></span></span></span></span>渲染）<br>
+<h2 id="公式">公式</h2>
+<p>使用<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>KaTeX</mtext></mrow><annotation encoding="application/x-tex">\KaTeX</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.89883em;vertical-align:-0.2155em;"></span><span class="mord text"><span class="mord textrm">K</span><span class="mspace" style="margin-right:-0.17em;"></span><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.68333em;"><span style="top:-2.904999em;"><span class="pstrut" style="height:2.7em;"></span><span class="mord"><span class="mord textrm mtight sizing reset-size6 size3">A</span></span></span></span></span></span><span class="mspace" style="margin-right:-0.15em;"></span><span class="mord text"><span class="mord textrm">T</span><span class="mspace" style="margin-right:-0.1667em;"></span><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.46782999999999997em;"><span style="top:-2.7845em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord textrm">E</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2155em;"><span></span></span></span></span><span class="mspace" style="margin-right:-0.125em;"></span><span class="mord textrm">X</span></span></span></span></span></span>渲染<br>
 行内公式：<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>=</mo><mi>m</mi><msup><mi>c</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">E=mc^2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.05764em;">E</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="mord mathdefault">m</span><span class="mord"><span class="mord mathdefault">c</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span>.<br>
 行间公式：</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$$\int_&#123;a&#125;^&#123;b&#125;f(x)dx$$ </span><br><span class="line">$$\oiint_&#123;D&#125;f(x,y)dxdy$$  # 网页似乎不支持</span><br><span class="line">$$\iint_&#123;D&#125;f(x,y)dxdy$$</span><br><span class="line">$$\iiint_&#123;V&#125;f(x,y,z)dxdydz$$</span><br></pre></td></tr></table></figure>
@@ -306,9 +317,9 @@ Minecraft默认端口是25565，可以通过该端口扫描网址查询端口是
   <entry>
     <title>计算机硬件的一些笔记</title>
     <url>/2023/07/30/7_Notes%20on%20Computer%20Hardware/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1>CPU</h1>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="cpu">CPU</h2>
 <p>【【电脑硬件科普】CPU是什么？11分钟教你认识CPU！】 <a href="https://www.bilibili.com/video/BV1SX4y1d75h">https://www.bilibili.com/video/BV1SX4y1d75h</a></p>
-<h2 id="cpu型号命名">CPU型号命名</h2>
+<h3 id="cpu型号命名">CPU型号命名</h3>
 <p>INTEL<br>
 INTEL CORE（酷睿）</p>
 <p>intel Core i5 <font color="#0000dd">2</font><font color="#dd0000">500</font><br>
@@ -341,20 +352,47 @@ R7 <font color="#0000dd">7</font><font color="#dd0000">800</font>X3D</p>
 命名方式类似</p>
 <p>G是带核显版本 X是加强版 XT表示加强版又改良加强版<br>
 X3D表示加强版又提高CPU三级缓存，在一些很吃配置的游戏里可以提升一些性能</p>
-<h2 id="cpu参数">CPU参数</h2>
+<h3 id="cpu参数">CPU参数</h3>
 <p>intel Core i5 <font color="#0000dd">9</font><font color="#dd0000">400</font>F<br>
 6核心6线程<br>
 （单线程技术）<br>
 intel Core i5 <font color="#0000dd">10</font><font color="#dd0000">400</font>F<br>
 6核心12线程<br>
 （超线程技术）</p>
-<h1>硬盘</h1>
+<h2 id="硬盘">硬盘</h2>
 <p>先写个标题，具体内容以后再加上。<br>
-还需要再研究研究这个分级标题</p>
-<h2 id="pcie">PCIE</h2>
-<p>233</p>
-<h2 id="nvme">NVME</h2>
-<p>233</p>
+233<br>
+233<br>
+233<br>
+233<br>
+233<br>
+233<br>
+233<br>
+233<br>
+233<br>
+233</p>
+<h3 id="pcie">PCIE</h3>
+<p>233<br>
+233<br>
+233<br>
+233<br>
+233<br>
+233<br>
+233<br>
+233<br>
+233<br>
+233</p>
+<h3 id="nvme">NVME</h3>
+<p>233<br>
+233<br>
+233<br>
+233<br>
+233<br>
+233<br>
+233<br>
+233<br>
+233<br>
+233</p>
 <p>图吧工具箱<br>
 <a href="http://www.tbtool.cn/download/202305-3.html">http://www.tbtool.cn/download/202305-3.html</a></p>
 ]]></content>
