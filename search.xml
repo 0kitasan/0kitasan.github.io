@@ -246,61 +246,6 @@ width的值决定图片宽度。1000=100%，70=7%，数字与百分比可以互�
       </tags>
   </entry>
   <entry>
-    <title>CPU的一些笔记</title>
-    <url>/2023/07/30/7_CPU%20notes/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>本文记录一下CPU相关的入门知识，防止自己忘记。</p>
-<p>【【电脑硬件科普】CPU是什么？11分钟教你认识CPU！】 <a href="https://www.bilibili.com/video/BV1SX4y1d75h">https://www.bilibili.com/video/BV1SX4y1d75h</a></p>
-<h1>CPU型号命名</h1>
-<p>INTEL<br>
-INTEL CORE（酷睿）</p>
-<p>intel Core i5 <font color="#0000dd">2</font><font color="#dd0000">500</font><br>
-intel Core i7 <font color="#0000dd">7</font><font color="#dd0000">700</font>K<br>
-intel Core i7 <font color="#0000dd">8</font><font color="#dd0000">700</font>K<br>
-intel Core i9 <font color="#0000dd">9</font><font color="#dd0000">900</font>K<br>
-intel Core i5 <font color="#0000dd">10</font><font color="#dd0000">400</font><br>
-intel Core i7 <font color="#0000dd">11</font><font color="#dd0000">700</font><br>
-intel Core i3 <font color="#0000dd">12</font><font color="#dd0000">100</font>F<br>
-intel Core i5 <font color="#0000dd">13</font><font color="#dd0000">400</font>F<br>
-intel Core i9 <font color="#0000dd">13</font><font color="#dd0000">900</font>KF</p>
-<p><font color="#0000dd">蓝色</font>的表示<strong>代数</strong>，相当于制程工艺更新换代的级别，越大则技术越新。</p>
-<p><font color="#dd0000">红色</font>的表示<strong>数值定位</strong>，基本上数字越大，CPU性能越强。<br>
-K是可超频，F是无核显<br>
-超频会影响CPU寿命，不建议使用。</p>
-<p>注意：<br>
-intel Core i7 <font color="#dd0000">870</font><br>
-为第一代处理器，实际相当于<br>
-intel Core i7 <font color="#0000dd">1</font><font color="#dd0000">870</font></p>
-<p>AMD<br>
-AMD RYZEN（锐龙）<br>
-R5 <font color="#0000dd">1</font><font color="#dd0000">400</font><br>
-R3 <font color="#0000dd">2</font><font color="#dd0000">200</font>G<br>
-R5 <font color="#0000dd">2</font><font color="#dd0000">600</font>X<br>
-R7 <font color="#0000dd">3</font><font color="#dd0000">700</font>X<br>
-R7 <font color="#0000dd">3</font><font color="#dd0000">900</font>XT<br>
-R5 <font color="#0000dd">5</font><font color="#dd0000">600</font>X<br>
-R7 <font color="#0000dd">7</font><font color="#dd0000">800</font>X3D</p>
-<p>2017年后，AMD锐龙处理器对标英特尔酷睿，在这之前都被intel吊着锤<br>
-命名方式类似</p>
-<p>G是带核显版本 X是加强版 XT表示加强版又改良加强版<br>
-X3D表示加强版又提高CPU三级缓存，在一些很吃配置的游戏里可以提升一些性能</p>
-<h1>CPU参数</h1>
-<p>intel Core i5 <font color="#0000dd">9</font><font color="#dd0000">400</font>F<br>
-6核心6线程<br>
-（单线程技术）<br>
-intel Core i5 <font color="#0000dd">10</font><font color="#dd0000">400</font>F<br>
-6核心12线程<br>
-（超线程技术）</p>
-<p>图吧工具箱<br>
-<a href="http://www.tbtool.cn/download/202305-3.html">http://www.tbtool.cn/download/202305-3.html</a></p>
-]]></content>
-      <categories>
-        <category>3</category>
-      </categories>
-      <tags>
-        <tag>2</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>公式测试</title>
     <url>/2023/11/01/8_formula%20test/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>点火公式/Wallis公式</p>
@@ -356,6 +301,66 @@ Minecraft默认端口是25565，可以通过该端口扫描网址查询端口是
       </categories>
       <tags>
         <tag>1</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>计算机硬件的一些笔记</title>
+    <url>/2023/07/30/7_Notes%20on%20Computer%20Hardware/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1>CPU</h1>
+<p>【【电脑硬件科普】CPU是什么？11分钟教你认识CPU！】 <a href="https://www.bilibili.com/video/BV1SX4y1d75h">https://www.bilibili.com/video/BV1SX4y1d75h</a></p>
+<h2 id="cpu型号命名">CPU型号命名</h2>
+<p>INTEL<br>
+INTEL CORE（酷睿）</p>
+<p>intel Core i5 <font color="#0000dd">2</font><font color="#dd0000">500</font><br>
+intel Core i7 <font color="#0000dd">7</font><font color="#dd0000">700</font>K<br>
+intel Core i7 <font color="#0000dd">8</font><font color="#dd0000">700</font>K<br>
+intel Core i9 <font color="#0000dd">9</font><font color="#dd0000">900</font>K<br>
+intel Core i5 <font color="#0000dd">10</font><font color="#dd0000">400</font><br>
+intel Core i7 <font color="#0000dd">11</font><font color="#dd0000">700</font><br>
+intel Core i3 <font color="#0000dd">12</font><font color="#dd0000">100</font>F<br>
+intel Core i5 <font color="#0000dd">13</font><font color="#dd0000">400</font>F<br>
+intel Core i9 <font color="#0000dd">13</font><font color="#dd0000">900</font>KF</p>
+<p><font color="#0000dd">蓝色</font>的表示<strong>代数</strong>，相当于制程工艺更新换代的级别，越大则技术越新。</p>
+<p><font color="#dd0000">红色</font>的表示<strong>数值定位</strong>，基本上数字越大，CPU性能越强。<br>
+K是可超频，F是无核显<br>
+超频会影响CPU寿命，不建议使用。</p>
+<p>注意：<br>
+intel Core i7 <font color="#dd0000">870</font><br>
+为第一代处理器，实际相当于<br>
+intel Core i7 <font color="#0000dd">1</font><font color="#dd0000">870</font></p>
+<p>AMD<br>
+AMD RYZEN（锐龙）<br>
+R5 <font color="#0000dd">1</font><font color="#dd0000">400</font><br>
+R3 <font color="#0000dd">2</font><font color="#dd0000">200</font>G<br>
+R5 <font color="#0000dd">2</font><font color="#dd0000">600</font>X<br>
+R7 <font color="#0000dd">3</font><font color="#dd0000">700</font>X<br>
+R7 <font color="#0000dd">3</font><font color="#dd0000">900</font>XT<br>
+R5 <font color="#0000dd">5</font><font color="#dd0000">600</font>X<br>
+R7 <font color="#0000dd">7</font><font color="#dd0000">800</font>X3D</p>
+<p>2017年后，AMD锐龙处理器对标英特尔酷睿，在这之前都被intel吊着锤<br>
+命名方式类似</p>
+<p>G是带核显版本 X是加强版 XT表示加强版又改良加强版<br>
+X3D表示加强版又提高CPU三级缓存，在一些很吃配置的游戏里可以提升一些性能</p>
+<h2 id="cpu参数">CPU参数</h2>
+<p>intel Core i5 <font color="#0000dd">9</font><font color="#dd0000">400</font>F<br>
+6核心6线程<br>
+（单线程技术）<br>
+intel Core i5 <font color="#0000dd">10</font><font color="#dd0000">400</font>F<br>
+6核心12线程<br>
+（超线程技术）</p>
+<h1>硬盘</h1>
+<h2 id="pcie">PCIE</h2>
+<p>233</p>
+<h2 id="nvme">NVME</h2>
+<p>233</p>
+<p>图吧工具箱<br>
+<a href="http://www.tbtool.cn/download/202305-3.html">http://www.tbtool.cn/download/202305-3.html</a></p>
+]]></content>
+      <categories>
+        <category>3</category>
+      </categories>
+      <tags>
+        <tag>2</tag>
       </tags>
   </entry>
 </search>
