@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-11-10T03:07:21.711Z</updated>
+  <updated>2023-11-16T06:04:14.833Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,11 +17,28 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>hexo公式环境配置</title>
+    <link href="http://example.com/2023/11/16/hexo%20formula%20env%20config/"/>
+    <id>http://example.com/2023/11/16/hexo%20formula%20env%20config/</id>
+    <published>2023-11-16T02:58:29.000Z</published>
+    <updated>2023-11-16T06:04:14.833Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;KaTeX or MathJax？&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="2" scheme="http://example.com/tags/2/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Minecraft服务器部署</title>
-    <link href="http://example.com/2023/11/10/9_Minecraft%20Sever%20Deploy/"/>
-    <id>http://example.com/2023/11/10/9_Minecraft%20Sever%20Deploy/</id>
+    <link href="http://example.com/2023/11/10/Minecraft%20Sever%20Deploy/"/>
+    <id>http://example.com/2023/11/10/Minecraft%20Sever%20Deploy/</id>
     <published>2023-11-10T00:32:24.000Z</published>
-    <updated>2023-11-10T03:07:21.711Z</updated>
+    <updated>2023-11-16T02:23:59.718Z</updated>
     
     
     <summary type="html">&lt;p&gt;购买了一台阿里云的ECS，故尝试在服务器上部署Minecraft服务器&lt;/p&gt;</summary>
@@ -37,10 +54,10 @@
   
   <entry>
     <title>公式测试</title>
-    <link href="http://example.com/2023/11/01/8_formula%20test/"/>
-    <id>http://example.com/2023/11/01/8_formula%20test/</id>
+    <link href="http://example.com/2023/11/01/formula%20test/"/>
+    <id>http://example.com/2023/11/01/formula%20test/</id>
     <published>2023-11-01T05:46:18.000Z</published>
-    <updated>2023-11-01T05:50:21.275Z</updated>
+    <updated>2023-11-16T02:51:54.113Z</updated>
     
     
       
@@ -62,8 +79,8 @@
   
   <entry>
     <title>计算机硬件的一些笔记</title>
-    <link href="http://example.com/2023/07/30/7_Notes%20on%20Computer%20Hardware/"/>
-    <id>http://example.com/2023/07/30/7_Notes%20on%20Computer%20Hardware/</id>
+    <link href="http://example.com/2023/07/30/Notes%20on%20Computer%20Hardware/"/>
+    <id>http://example.com/2023/07/30/Notes%20on%20Computer%20Hardware/</id>
     <published>2023-07-30T06:43:18.000Z</published>
     <updated>2023-11-10T05:34:09.443Z</updated>
     
@@ -87,8 +104,8 @@
   
   <entry>
     <title>ubuntu配置静态IP(无线网络)</title>
-    <link href="http://example.com/2023/06/16/6_Static%20IP%20settings%20on%20ubuntu/"/>
-    <id>http://example.com/2023/06/16/6_Static%20IP%20settings%20on%20ubuntu/</id>
+    <link href="http://example.com/2023/06/16/Static%20IP%20settings%20on%20ubuntu/"/>
+    <id>http://example.com/2023/06/16/Static%20IP%20settings%20on%20ubuntu/</id>
     <published>2023-06-16T14:51:38.000Z</published>
     <updated>2023-06-19T06:21:14.403Z</updated>
     
@@ -106,10 +123,10 @@
   
   <entry>
     <title>hexo图片引用</title>
-    <link href="http://example.com/2023/05/11/5_hexo%20image/"/>
-    <id>http://example.com/2023/05/11/5_hexo%20image/</id>
+    <link href="http://example.com/2023/05/11/hexo%20image/"/>
+    <id>http://example.com/2023/05/11/hexo%20image/</id>
     <published>2023-05-11T11:13:48.000Z</published>
-    <updated>2023-05-13T03:10:17.728Z</updated>
+    <updated>2023-11-16T03:16:28.734Z</updated>
     
     
     <summary type="html">&lt;p&gt;hexo图片引用测试&lt;/p&gt;</summary>
@@ -125,8 +142,8 @@
   
   <entry>
     <title>代码块</title>
-    <link href="http://example.com/2023/05/02/4_code%20snippet/"/>
-    <id>http://example.com/2023/05/02/4_code%20snippet/</id>
+    <link href="http://example.com/2023/05/02/code%20snippet/"/>
+    <id>http://example.com/2023/05/02/code%20snippet/</id>
     <published>2023-05-02T14:01:24.000Z</published>
     <updated>2023-05-02T14:58:41.405Z</updated>
     
@@ -144,10 +161,10 @@
   
   <entry>
     <title>markdown语法学习</title>
-    <link href="http://example.com/2023/05/01/3_markdown%20grammer%20learning/"/>
-    <id>http://example.com/2023/05/01/3_markdown%20grammer%20learning/</id>
+    <link href="http://example.com/2023/05/01/markdown%20grammer%20learning/"/>
+    <id>http://example.com/2023/05/01/markdown%20grammer%20learning/</id>
     <published>2023-05-01T08:28:59.000Z</published>
-    <updated>2023-11-10T01:07:56.860Z</updated>
+    <updated>2023-11-16T02:51:13.710Z</updated>
     
     
       
@@ -168,41 +185,15 @@
   </entry>
   
   <entry>
-    <title>hexo具体配置</title>
-    <link href="http://example.com/2023/05/01/2_hexo%20specific%20configuration/"/>
-    <id>http://example.com/2023/05/01/2_hexo%20specific%20configuration/</id>
-    <published>2023-05-01T03:13:02.000Z</published>
-    <updated>2023-11-10T03:05:34.772Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;&#92;assets&#92;css&#92;APlayer.min.css&quot;&gt;&lt;script src=&quot;&#92;assets&#92;js&#92;APlayer.min.js&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="2" scheme="http://example.com/categories/2/"/>
-    
-    
-    <category term="1" scheme="http://example.com/tags/1/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>博客搭建与基础配置</title>
-    <link href="http://example.com/2023/04/29/1_blog%20building%20and%20basic%20settings/"/>
-    <id>http://example.com/2023/04/29/1_blog%20building%20and%20basic%20settings/</id>
+    <title>博客搭建与配置</title>
+    <link href="http://example.com/2023/04/29/blog%20building%20and%20basic%20settings/"/>
+    <id>http://example.com/2023/04/29/blog%20building%20and%20basic%20settings/</id>
     <published>2023-04-29T02:56:08.000Z</published>
-    <updated>2023-11-10T05:32:32.705Z</updated>
+    <updated>2023-11-16T04:06:18.751Z</updated>
     
     
     <summary type="html">&lt;p&gt;第一次尝试搭建个人博客。&lt;br&gt;
-本博客使用&lt;a href=&quot;https://www.bilibili.com/video/BV1ts4y1f7Gu&quot;&gt;b站教程&lt;/a&gt;，&lt;a href=&quot;https://hexo.io/zh-cn/index.html&quot;&gt;hexo&lt;/a&gt;开源项目，以及&lt;a href=&quot;https://shen-yu.gitee.io/2019/ayer/&quot;&gt;ayer&lt;/a&gt;主题。&lt;br&gt;
-具体流程：下载&lt;a href=&quot;https://git-scm.com/&quot;&gt;git&lt;/a&gt;，&lt;a href=&quot;https://nodejs.org/zh-cn/&quot;&gt;node.js&lt;/a&gt;&lt;/p&gt;</summary>
+本博客目前使用&lt;a href=&quot;https://www.bilibili.com/video/BV1ts4y1f7Gu&quot;&gt;b站教程&lt;/a&gt;，&lt;a href=&quot;https://hexo.io/zh-cn/index.html&quot;&gt;hexo&lt;/a&gt;框架，以及&lt;a href=&quot;https://shen-yu.gitee.io/2019/ayer/&quot;&gt;ayer&lt;/a&gt;主题。&lt;/p&gt;</summary>
     
     
     
