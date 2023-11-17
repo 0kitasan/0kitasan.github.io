@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-11-16T06:04:14.833Z</updated>
+  <updated>2023-11-17T04:02:45.497Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,12 +21,14 @@
     <link href="http://example.com/2023/11/16/hexo%20formula%20env%20config/"/>
     <id>http://example.com/2023/11/16/hexo%20formula%20env%20config/</id>
     <published>2023-11-16T02:58:29.000Z</published>
-    <updated>2023-11-16T06:04:14.833Z</updated>
+    <updated>2023-11-17T04:02:45.497Z</updated>
     
     
     <summary type="html">&lt;p&gt;KaTeX or MathJax？&lt;/p&gt;</summary>
     
     
+    
+    <category term="1" scheme="http://example.com/categories/1/"/>
     
     
     <category term="2" scheme="http://example.com/tags/2/"/>
@@ -49,31 +51,6 @@
     
     
     <category term="1" scheme="http://example.com/tags/1/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>公式测试</title>
-    <link href="http://example.com/2023/11/01/formula%20test/"/>
-    <id>http://example.com/2023/11/01/formula%20test/</id>
-    <published>2023-11-01T05:46:18.000Z</published>
-    <updated>2023-11-16T02:51:54.113Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;&#92;assets&#92;css&#92;APlayer.min.css&quot;&gt;&lt;script src=&quot;&#92;assets&#92;js&#92;APlayer.min.js&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="3" scheme="http://example.com/categories/3/"/>
-    
-    
-    <category term="2" scheme="http://example.com/tags/2/"/>
     
   </entry>
   
@@ -126,7 +103,7 @@
     <link href="http://example.com/2023/05/11/hexo%20image/"/>
     <id>http://example.com/2023/05/11/hexo%20image/</id>
     <published>2023-05-11T11:13:48.000Z</published>
-    <updated>2023-11-16T03:16:28.734Z</updated>
+    <updated>2023-11-17T04:02:16.729Z</updated>
     
     
     <summary type="html">&lt;p&gt;hexo图片引用测试&lt;/p&gt;</summary>
