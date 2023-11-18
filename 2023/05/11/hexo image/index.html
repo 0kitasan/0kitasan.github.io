@@ -30,7 +30,7 @@
 <meta property="og:image" content="http://example.com/2023/05/11/hexo%20image/LaTeX_logo.svg">
 <meta property="og:image" content="https://katex.org/img/katex-logo-black.svg">
 <meta property="article:published_time" content="2023-05-11T11:13:48.000Z">
-<meta property="article:modified_time" content="2023-11-17T04:02:16.729Z">
+<meta property="article:modified_time" content="2023-11-18T11:31:06.618Z">
 <meta property="article:author" content="hamuko">
 <meta property="article:tag" content="1">
 <meta name="twitter:card" content="summary_large_image">
@@ -336,7 +336,7 @@
 图片路径<code>D:/hexo/blog/source/_posts/image_example/img.png</code><br>
 那么相对路径为<code>/image_example/img.png</code></p>
 <p>下面进行测试：</p>
-<h1>1.html格式进行引用</h1>
+<h2 id="1-html格式进行引用">1.html格式进行引用</h2>
 <p>第一种方式（相对路径）：</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;/hexo image/LaTeX_logo.svg&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;LaTeX logo1&quot;</span> <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;70&quot;</span>&gt;</span><br></code></pre></td></tr></table></figure>
 <p>效果如下（markdown中可以显示，且网页中能显示，极力推荐）：<br>
@@ -353,7 +353,7 @@ width的值决定图片宽度。1000=100%，70=7%，数字与百分比可以互�
 <figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs markdown">![<span class="hljs-string">LaTeX logo3</span>](<span class="hljs-link">LaTeX_logo.svg</span>)<br></code></pre></td></tr></table></figure>
 <p>效果如下（markdown中不能显示，但网页中能显示，且调整不了大小）：<br>
 <img src="/2023/05/11/hexo%20image/LaTeX_logo.svg" srcset="/img/loading.gif" lazyload alt="LaTeX logo3"></p>
-<h1>2.url格式引用</h1>
+<h2 id="2-url格式引用">2.url格式引用</h2>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://katex.org/img/katex-logo-black.svg&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;KaTeX logo&quot;</span> <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;70&quot;</span>/&gt;</span><br></code></pre></td></tr></table></figure>
 <p>效果如下（markdown中可以显示，且网页中能显示）：<br>
 <img src="https://katex.org/img/katex-logo-black.svg" srcset="/img/loading.gif" lazyload alt="KaTeX logo" width="70"></p>

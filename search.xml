@@ -87,31 +87,15 @@ intel Core i5 <font color="#0000dd">10</font><font color="#dd0000">400</font>F<b
 233<br>
 233<br>
 233<br>
-233<br>
-233<br>
-233<br>
-233<br>
-233<br>
-233<br>
 233</p>
 <h3 id="PCIE">PCIE</h3>
 <p>233<br>
 233<br>
 233<br>
 233<br>
-233<br>
-233<br>
-233<br>
-233<br>
-233<br>
 233</p>
 <h3 id="NVME">NVME</h3>
 <p>233<br>
-233<br>
-233<br>
-233<br>
-233<br>
-233<br>
 233<br>
 233<br>
 233<br>
@@ -133,14 +117,14 @@ intel Core i5 <font color="#0000dd">10</font><font color="#dd0000">400</font>F<b
     <url>/2023/06/16/Static%20IP%20settings%20on%20ubuntu/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>在orangpi上(ubuntu系统)配置静态IP(无线网络)</p>
 <span id="more"></span>
-<h1>1.ssh(vscode)</h1>
+<h2 id="1-ssh-vscode">1.ssh(vscode)</h2>
 <p>【如何优雅地访问远程主机？SSH与frp内网穿透配置教程】<br>
 <a href="https://www.bilibili.com/video/BV13L411w7XU/">https://www.bilibili.com/video/BV13L411w7XU/</a></p>
-<h1>2.ifconfig + netplan下载</h1>
+<h2 id="2-ifconfig-netplan下载">2.ifconfig + netplan下载</h2>
 <figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">sudo apt install ifconfig<br></code></pre></td></tr></table></figure>
 <figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">sudo apt update<br></code></pre></td></tr></table></figure>
 <figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">sudo apt install netplan<br></code></pre></td></tr></table></figure>
-<h1>3.修改netplan配置</h1>
+<h2 id="3-修改netplan配置">3.修改netplan配置</h2>
 <p>配置静态ip</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">network:<br>  version: 2<br>  wifis:<br>    wlan0:<br>      access-points:<br>        TP-LINK <span class="hljs-comment">#wifi名称</span><br>          password: <span class="hljs-string">&quot;123456&quot;</span> <span class="hljs-comment">#密码</span><br>      dhcp4: <span class="hljs-literal">false</span> <span class="hljs-comment">#静态ip</span><br>      optional: <span class="hljs-literal">true</span><br>      addresses: [192.168.0.112/24] <span class="hljs-comment">#前者是ip，后者是子网掩码</span><br>      gateway4: 192.168.0.1  <span class="hljs-comment">#gateway</span><br>      nameservers:<br>        addresses: [192.168.0.112,8.8.8.8]  <span class="hljs-comment">#前面与ip相同即可</span><br></code></pre></td></tr></table></figure>
 <p>gateway查看：</p>
@@ -279,7 +263,7 @@ git下载完毕后，在cmd窗口中输入<code>node-v</code>查看版本号，�
 图片路径<code>D:/hexo/blog/source/_posts/image_example/img.png</code><br>
 那么相对路径为<code>/image_example/img.png</code></p>
 <p>下面进行测试：</p>
-<h1>1.html格式进行引用</h1>
+<h2 id="1-html格式进行引用">1.html格式进行引用</h2>
 <p>第一种方式（相对路径）：</p>
 <figure class="highlight html"><table><tr><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;/hexo image/LaTeX_logo.svg&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;LaTeX logo1&quot;</span> <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;70&quot;</span>&gt;</span><br></code></pre></td></tr></table></figure>
 <p>效果如下（markdown中可以显示，且网页中能显示，极力推荐）：<br>
@@ -296,7 +280,7 @@ width的值决定图片宽度。1000=100%，70=7%，数字与百分比可以互�
 <figure class="highlight markdown"><table><tr><td class="code"><pre><code class="hljs markdown">![<span class="hljs-string">LaTeX logo3</span>](<span class="hljs-link">LaTeX_logo.svg</span>)<br></code></pre></td></tr></table></figure>
 <p>效果如下（markdown中不能显示，但网页中能显示，且调整不了大小）：<br>
 <img src="/2023/05/11/hexo%20image/LaTeX_logo.svg" alt="LaTeX logo3"></p>
-<h1>2.url格式引用</h1>
+<h2 id="2-url格式引用">2.url格式引用</h2>
 <figure class="highlight html"><table><tr><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://katex.org/img/katex-logo-black.svg&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;KaTeX logo&quot;</span> <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;70&quot;</span>/&gt;</span><br></code></pre></td></tr></table></figure>
 <p>效果如下（markdown中可以显示，且网页中能显示）：<br>
 <img src="https://katex.org/img/katex-logo-black.svg" alt="KaTeX logo" width="70"></p>
@@ -316,7 +300,7 @@ width的值决定图片宽度。1000=100%，70=7%，数字与百分比可以互�
 <figure class="highlight clean"><table><tr><td class="code"><pre><code class="hljs clean"># 一级标题<br>## 二级标题<br>### 三级标题<br></code></pre></td></tr></table></figure>
 <p>标题级别最多支持六级。在Markdown中，标题文本通常会自动加粗并按照不同级别进行格式化。<br>
 注意：<br>
-在标准Markdown语法中，只能有一个一级标题，因为一级标题表示文档的最高级别标题，不能重复使用。如果您尝试写两个一级标题，这可能会导致冲突，并且在Markdown渲染时通常只会将第一个一级标题识别为一级标题，而第二个会被识别为普通文本。<br>
+在标准Markdown语法中，<strong>只能有一个一级标题</strong>，因为一级标题表示文档的最高级别标题，不能重复使用。如果您尝试写两个一级标题，这可能会导致冲突，并且在Markdown渲染时通常只会将第一个一级标题识别为一级标题，而第二个会被识别为普通文本。<br>
 如果需要多个顶级标题，您可以使用二级标题来代替，然后通过其他方式来区分不同的部分或章节，例如使用粗体文本或其他样式来突出显示文本。</p>
 <h2 id="文本">文本</h2>
 <figure class="highlight asciidoc"><table><tr><td class="code"><pre><code class="hljs asciidoc"><span class="hljs-strong">*斜体文本*</span><br><span class="hljs-emphasis">_斜体文本_</span><br><span class="hljs-strong">**粗体文本**</span><br><span class="hljs-emphasis">__粗体文本__</span><br><span class="hljs-strong">***粗斜体文本**</span>*<br><span class="hljs-emphasis">___粗斜体文本__</span>_<br></code></pre></td></tr></table></figure>
