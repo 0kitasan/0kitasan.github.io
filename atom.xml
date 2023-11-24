@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-11-17T04:02:45.497Z</updated>
+  <updated>2023-11-24T06:34:29.864Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,21 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>VS Code设置</title>
+    <link href="http://example.com/2023/11/24/VS%20Code%20Setting/"/>
+    <id>http://example.com/2023/11/24/VS%20Code%20Setting/</id>
+    <published>2023-11-24T06:30:18.000Z</published>
+    <updated>2023-11-24T06:34:29.864Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;VS Code设置&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>hexo公式环境配置</title>
