@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-11-24T06:34:29.864Z</updated>
+  <updated>2023-12-26T16:07:01.888Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,6 +17,23 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Github的基本用法</title>
+    <link href="http://example.com/2023/12/27/About%20Github/"/>
+    <id>http://example.com/2023/12/27/About%20Github/</id>
+    <published>2023-12-26T16:06:31.000Z</published>
+    <updated>2023-12-26T16:07:01.888Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;Github的基本用法&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="1" scheme="http://example.com/tags/1/"/>
+    
+  </entry>
+  
+  <entry>
     <title>VS Code设置</title>
     <link href="http://example.com/2023/11/24/VS%20Code%20Setting/"/>
     <id>http://example.com/2023/11/24/VS%20Code%20Setting/</id>
@@ -25,21 +42,6 @@
     
     
     <summary type="html">&lt;p&gt;VS Code设置&lt;/p&gt;</summary>
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Github的基本用法</title>
-    <link href="http://example.com/2023/11/24/About%20Github/"/>
-    <id>http://example.com/2023/11/24/About%20Github/</id>
-    <published>2023-11-24T06:30:18.000Z</published>
-    <updated>2023-12-26T15:59:31.291Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;Github的基本用法&lt;/p&gt;</summary>
     
     
     

@@ -394,11 +394,11 @@ width的值决定图片宽度。1000=100%，70=7%，数字与百分比可以互�
   </entry>
   <entry>
     <title>Github的基本用法</title>
-    <url>/2023/11/24/About%20Github/</url>
+    <url>/2023/12/27/About%20Github/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>Github的基本用法</p>
 <span id="more"></span>
-<p>初次提交流程：（有一部分给GPT写了）<br>
-初始化</p>
+<p>初次提交流程：（有一部分是GPT写的）</p>
+<p>初始化</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">git init<br></code></pre></td></tr></table></figure>
 <p>添加文件到本地仓库</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">git add &lt;文件名&gt;<br></code></pre></td></tr></table></figure>
@@ -417,5 +417,8 @@ width的值决定图片宽度。1000=100%，70=7%，数字与百分比可以互�
 <p>如果您已经进行了首次推送，以后只需运行以下命令即可：</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">git push origin main<br></code></pre></td></tr></table></figure>
 ]]></content>
+      <tags>
+        <tag>1</tag>
+      </tags>
   </entry>
 </search>
