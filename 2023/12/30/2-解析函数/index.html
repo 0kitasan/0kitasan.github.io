@@ -18,22 +18,22 @@
   <meta name="author" content="hamuko">
   <meta name="keywords" content="">
   
-    <meta name="description" content="Github的基本用法">
+    <meta name="description" content="复变函数笔记">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Github的基本用法">
-<meta property="og:url" content="http://example.com/2023/12/27/About%20Github/index.html">
+<meta property="og:title" content="复变函数">
+<meta property="og:url" content="http://example.com/2023/12/30/2-%E8%A7%A3%E6%9E%90%E5%87%BD%E6%95%B0/index.html">
 <meta property="og:site_name" content="myblog">
-<meta property="og:description" content="Github的基本用法">
+<meta property="og:description" content="复变函数笔记">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-12-26T16:06:31.000Z">
-<meta property="article:modified_time" content="2023-12-26T16:07:01.888Z">
+<meta property="article:published_time" content="2023-12-30T10:33:25.000Z">
+<meta property="article:modified_time" content="2023-12-30T10:33:18.564Z">
 <meta property="article:author" content="hamuko">
 <meta property="article:tag" content="1">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>Github的基本用法 - myblog</title>
+  <title>复变函数 - myblog</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -239,7 +239,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="Github的基本用法"></span>
+            <span id="subtitle" data-typed-text="复变函数"></span>
           
         </div>
 
@@ -250,8 +250,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-12-27 00:06" pubdate>
-          2023年12月27日 凌晨
+        <time datetime="2023-12-30 18:33" pubdate>
+          2023年12月30日 晚上
         </time>
       </span>
     
@@ -262,7 +262,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          539 字
+          1k 字
         
       </span>
     
@@ -273,7 +273,7 @@
         
         
         
-          5 分钟
+          9 分钟
         
       </span>
     
@@ -310,32 +310,64 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">Github的基本用法</h1>
+            <h1 id="seo-header">复变函数</h1>
             
             
               <div class="markdown-body">
                 
-                <p>Github的基本用法</p>
+                <p>复变函数笔记</p>
 <span id="more"></span>
-<p>初次提交流程：（有一部分是GPT写的）</p>
-<p>初始化</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">git init<br></code></pre></td></tr></table></figure>
-<p>添加文件到本地仓库</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">git add &lt;文件名&gt;<br></code></pre></td></tr></table></figure>
-<p>添加目录下的所有文件</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">git add .<br></code></pre></td></tr></table></figure>
-<p>提交更改。m即&quot;message&quot;，引号中的内容用于记录提交的作用或修改</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">git commit -m <span class="hljs-string">&quot;your message&quot;</span><br></code></pre></td></tr></table></figure>
-<p>将本地仓库与GitHub仓库关联：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">git remote add origin &lt;GitHub仓库URL&gt;<br></code></pre></td></tr></table></figure>
-<p>如果您要将本地的 master 分支推送到 GitHub 的 master 分支（或者是 main 分支，取决于您的设置），可以使用以下命令：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">git push --set-upstream origin master<br></code></pre></td></tr></table></figure>
-<p>或者，如果您的 GitHub 仓库的默认分支是 main，则使用以下命令：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">git push --set-upstream origin main<br></code></pre></td></tr></table></figure>
-<p>使用以下命令将本地更改推送到GitHub仓库的&quot;main&quot;分支（或其他主分支名称，如果不是&quot;main&quot;）。如果是首次推送，您需要使用-u选项：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">git push -u origin main<br></code></pre></td></tr></table></figure>
-<p>如果您已经进行了首次推送，以后只需运行以下命令即可：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">git push origin main<br></code></pre></td></tr></table></figure>
+<h1>解析函数</h1>
+<h2 id="复变函数的极限与连续">复变函数的极限与连续</h2>
+<h2 id="复变函数的导数和微分">复变函数的导数和微分</h2>
+<h3 id="定义">定义</h3>
+<h3 id="柯西黎曼条件（可导的必要条件）">柯西黎曼条件（可导的必要条件）</h3>
+<p>$$<br>
+\begin{cases}<br>
+\frac{\partial u}{\partial x}=\frac{\partial v}{\partial y} \<br>
+\frac{\partial u}{\partial y}=-\frac{\partial v}{\partial x}<br>
+\end{cases}<br>
+$$</p>
+<h3 id="可导的充要条件">可导的充要条件</h3>
+<p>可微且满足C-R条件</p>
+<h2 id="调和函数">调和函数</h2>
+<h3 id="定义-2">定义</h3>
+<p>若函数$u$满足拉普拉斯方程<br>
+$$<br>
+\nabla^2u=\frac{\partial^2 u}{\partial x^2}+\frac{\partial^2 u}{\partial y^2}=0<br>
+$$<br>
+则称其为调和函数。</p>
+<h3 id="解析函数与调和函数的关系">解析函数与调和函数的关系</h3>
+<p>若$f(z)=u+iv$为解析函数，则$u$、$v$均为调和函数</p>
+<p>若$u$、$v$均为调和函数，且满足C-R条件，则称$v$为$u$的共轭调和函数</p>
+<p>若$u$为调和函数，则必然存在其共轭调和函数$v$，使得$f(z)=u+iv$为解析函数</p>
+<h4 id="构造调和函数的方法">构造调和函数的方法</h4>
+<p>已知 $$u(x,y)=x^2-x-y^2$$ 求 $f(z)$</p>
+<h5 id="偏积分">偏积分</h5>
+<p>$$v_y=u_x=2x-1$$</p>
+<p>$$v_x=-u_y=2y$$</p>
+<p>$$v=\int v_ydy=\int (2x-1)dy=(2x-1)y+\phi(x)$$</p>
+<p>$$v_x=2y+\phi’(x)=2y$$</p>
+<p>$$v=(2x-1)y+C=2xy-y+C$$</p>
+<h5 id="曲线积分">曲线积分</h5>
+<p>调和函数，积分结果与路径无关</p>
+<p>$$(0,0)\rightarrow(x,y)$$</p>
+<p>$$v=\int_{(0,0)}^{(x,y)} v_xdx+v_ydy+C\=\int_{(0,0)}^{(x,y)} -u_ydx+u_xdy+C\=\int_{(0,0)}^{(x,y)} 2ydx+(2x-1)dy+C$$</p>
+<p>选取路径<br>
+$$(0,0)\rightarrow(x,0)\rightarrow(x,y)$$</p>
+<p>$$v=\int_{(0,0)}^{(x,0)}2ydx+\int_{(x,0)}^{(x,y)}(2x-1)dy+C\=0+\int_{0}^{y}(2x-1)dy+C=2xy-y+C$$</p>
+<h5 id="凑全微分">凑全微分</h5>
+<p>调和函数，可以写成某个函数的全微分</p>
+<p>$$<br>
+\begin{align*}<br>
+dv&amp;=v_xdx+v_ydy\&amp;=-u_ydx+u_xdy\&amp;=2ydx+(2x-1)dy\&amp;=d(2xy-y)<br>
+\end{align*}<br>
+$$</p>
+<h2 id="初等解析函数">初等解析函数</h2>
+<h3 id="指数">指数</h3>
+<h3 id="对数">对数</h3>
+<h3 id="三角">三角</h3>
+<h3 id="双曲">双曲</h3>
 
                 
               </div>
@@ -362,18 +394,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="../../30/2-%E8%A7%A3%E6%9E%90%E5%87%BD%E6%95%B0/" title="复变函数">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">复变函数</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="../../../11/24/VS%20Code%20Setting/" title="VS Code设置">
-                        <span class="hidden-mobile">VS Code设置</span>
+                      <a href="../../27/About%20Github/" title="Github的基本用法">
+                        <span class="hidden-mobile">Github的基本用法</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
