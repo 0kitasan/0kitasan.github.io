@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-12-30T10:44:02.835Z</updated>
+  <updated>2024-01-30T11:16:23.008Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,18 +17,66 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>复变函数</title>
-    <link href="http://example.com/2023/12/30/2-%E8%A7%A3%E6%9E%90%E5%87%BD%E6%95%B0/"/>
-    <id>http://example.com/2023/12/30/2-%E8%A7%A3%E6%9E%90%E5%87%BD%E6%95%B0/</id>
-    <published>2023-12-30T10:33:25.000Z</published>
-    <updated>2023-12-30T10:44:02.835Z</updated>
+    <title>test</title>
+    <link href="http://example.com/2024/01/30/test/"/>
+    <id>http://example.com/2024/01/30/test/</id>
+    <published>2024-01-30T11:16:03.000Z</published>
+    <updated>2024-01-30T11:16:23.008Z</updated>
     
     
-    <summary type="html">&lt;p&gt;复变函数笔记&lt;/p&gt;</summary>
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;&#92;assets&#92;css&#92;APlayer.min.css&quot;&gt;&lt;script src=&quot;&#92;assets&#92;js&#92;APlayer.min.js&quot;</summary>
+        
+      
     
     
     
-    <category term="3" scheme="http://example.com/categories/3/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>v2rayA设置</title>
+    <link href="http://example.com/2024/01/30/v2raya/"/>
+    <id>http://example.com/2024/01/30/v2raya/</id>
+    <published>2024-01-30T07:54:30.000Z</published>
+    <updated>2024-01-30T07:55:03.821Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;&#92;assets&#92;css&#92;APlayer.min.css&quot;&gt;&lt;script src=&quot;&#92;assets&#92;js&#92;APlayer.min.js&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="2" scheme="http://example.com/tags/2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>frp设置</title>
+    <link href="http://example.com/2024/01/30/frp/"/>
+    <id>http://example.com/2024/01/30/frp/</id>
+    <published>2024-01-30T07:54:01.000Z</published>
+    <updated>2024-01-30T07:54:50.334Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;&#92;assets&#92;css&#92;APlayer.min.css&quot;&gt;&lt;script src=&quot;&#92;assets&#92;js&#92;APlayer.min.js&quot;</summary>
+        
+      
+    
+    
     
     
     <category term="1" scheme="http://example.com/tags/1/"/>
@@ -192,7 +240,7 @@
     <link href="http://example.com/2023/05/01/markdown%20grammer%20learning/"/>
     <id>http://example.com/2023/05/01/markdown%20grammer%20learning/</id>
     <published>2023-05-01T08:28:59.000Z</published>
-    <updated>2023-11-18T11:30:50.839Z</updated>
+    <updated>2023-12-31T16:23:24.805Z</updated>
     
     
       

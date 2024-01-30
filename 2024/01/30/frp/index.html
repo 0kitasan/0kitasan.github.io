@@ -18,22 +18,22 @@
   <meta name="author" content="hamuko">
   <meta name="keywords" content="">
   
-    <meta name="description" content="标题 Markdown使用不同数量的井号（#）来表示不同级别的标题。 mathjax: true 123# 一级标题## 二级标题### 三级标题 标题级别最多支持六级。在Markdown中，标题文本通常会自动加粗并按照不同级别进行格式化。 注意： 在标准Markdown语法中，只能有一个一级标题，因为一级标题表示文档的最高级别标题，不能重复使用。如果您尝试写两个一级标题，这可能会导致冲突，并且在">
+    <meta name="description" content="frp 项目地址：https:&#x2F;&#x2F;github.com&#x2F;fatedier&#x2F;frp 本文以ssh为例，简单介绍基于frp的内网穿透的方法。 服务端&#x2F;有公网 12# frps.tomlbindPort &#x3D; 7000 这个7000端口是用来给frp通信的，并不是端口映射 然后启动服务端 .&#x2F;frps -c .&#x2F;frps.toml 客户端&#x2F;无公网 12345678910# frpc.tomlserverA">
 <meta property="og:type" content="article">
-<meta property="og:title" content="markdown语法学习">
-<meta property="og:url" content="http://example.com/2023/05/01/markdown%20grammer%20learning/index.html">
+<meta property="og:title" content="frp设置">
+<meta property="og:url" content="http://example.com/2024/01/30/frp/index.html">
 <meta property="og:site_name" content="myblog">
-<meta property="og:description" content="标题 Markdown使用不同数量的井号（#）来表示不同级别的标题。 mathjax: true 123# 一级标题## 二级标题### 三级标题 标题级别最多支持六级。在Markdown中，标题文本通常会自动加粗并按照不同级别进行格式化。 注意： 在标准Markdown语法中，只能有一个一级标题，因为一级标题表示文档的最高级别标题，不能重复使用。如果您尝试写两个一级标题，这可能会导致冲突，并且在">
+<meta property="og:description" content="frp 项目地址：https:&#x2F;&#x2F;github.com&#x2F;fatedier&#x2F;frp 本文以ssh为例，简单介绍基于frp的内网穿透的方法。 服务端&#x2F;有公网 12# frps.tomlbindPort &#x3D; 7000 这个7000端口是用来给frp通信的，并不是端口映射 然后启动服务端 .&#x2F;frps -c .&#x2F;frps.toml 客户端&#x2F;无公网 12345678910# frpc.tomlserverA">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-05-01T08:28:59.000Z">
-<meta property="article:modified_time" content="2023-12-31T16:23:24.805Z">
+<meta property="article:published_time" content="2024-01-30T07:54:01.000Z">
+<meta property="article:modified_time" content="2024-01-30T07:54:50.334Z">
 <meta property="article:author" content="hamuko">
-<meta property="article:tag" content="2">
+<meta property="article:tag" content="1">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>markdown语法学习 - myblog</title>
+  <title>frp设置 - myblog</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -239,7 +239,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="markdown语法学习"></span>
+            <span id="subtitle" data-typed-text="frp设置"></span>
           
         </div>
 
@@ -250,8 +250,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-05-01 16:28" pubdate>
-          2023年5月1日 下午
+        <time datetime="2024-01-30 15:54" pubdate>
+          2024年1月30日 下午
         </time>
       </span>
     
@@ -262,7 +262,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          942 字
+          1k 字
         
       </span>
     
@@ -273,7 +273,7 @@
         
         
         
-          8 分钟
+          9 分钟
         
       </span>
     
@@ -310,91 +310,35 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">markdown语法学习</h1>
+            <h1 id="seo-header">frp设置</h1>
             
             
               <div class="markdown-body">
                 
-                <h2 id="标题">标题</h2>
-<p>Markdown使用不同数量的井号（#）来表示不同级别的标题。</p>
-<p>mathjax: true</p>
-<figure class="highlight clean"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs clean"># 一级标题<br>## 二级标题<br>### 三级标题<br></code></pre></td></tr></table></figure>
-<p>标题级别最多支持六级。在Markdown中，标题文本通常会自动加粗并按照不同级别进行格式化。<br>
-注意：<br>
-在标准Markdown语法中，<strong>只能有一个一级标题</strong>，因为一级标题表示文档的最高级别标题，不能重复使用。如果您尝试写两个一级标题，这可能会导致冲突，并且在Markdown渲染时通常只会将第一个一级标题识别为一级标题，而第二个会被识别为普通文本。<br>
-如果需要多个顶级标题，您可以使用二级标题来代替，然后通过其他方式来区分不同的部分或章节，例如使用粗体文本或其他样式来突出显示文本。</p>
-<h2 id="文本">文本</h2>
-<figure class="highlight asciidoc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs asciidoc"><span class="hljs-strong">*斜体文本*</span><br><span class="hljs-emphasis">_斜体文本_</span><br><span class="hljs-strong">**粗体文本**</span><br><span class="hljs-emphasis">__粗体文本__</span><br><span class="hljs-strong">***粗斜体文本**</span>*<br><span class="hljs-emphasis">___粗斜体文本__</span>_<br></code></pre></td></tr></table></figure>
-<p><em>斜体文本</em><br>
-<em>斜体文本</em><br>
-<strong>粗体文本</strong><br>
-<strong>粗体文本</strong><br>
-<em><strong>粗斜体文本</strong></em><br>
-<em><strong>粗斜体文本</strong></em></p>
-<h2 id="代码块">代码块</h2>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs cpp"><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;stdio.h&gt;</span></span><br><span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span><br><span class="hljs-function"></span>&#123;<br>    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;Hello Markdown\n&quot;</span>);<br>    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
-<h2 id="表格">表格</h2>
-<p>Markdown 制作表格使用 | 来分隔不同的单元格，使用 - 来分隔表头和其他行。<br>
-注：表格前后需要空出一行<br>
-这是表格</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">左对齐</th>
-<th style="text-align:right">右对齐</th>
-<th style="text-align:center">居中对齐</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">单</td>
-<td style="text-align:right">元</td>
-<td style="text-align:center">格</td>
-</tr>
-<tr>
-<td style="text-align:left">单</td>
-<td style="text-align:right">元</td>
-<td style="text-align:center">格</td>
-</tr>
-</tbody>
-</table>
-<p>左右两侧&quot;|&quot;可以去除</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">左对齐</th>
-<th style="text-align:right">右对齐</th>
-<th style="text-align:center">居中对齐</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">单</td>
-<td style="text-align:right">元</td>
-<td style="text-align:center">格</td>
-</tr>
-<tr>
-<td style="text-align:left">单</td>
-<td style="text-align:right">元</td>
-<td style="text-align:center">格</td>
-</tr>
-</tbody>
-</table>
-<h2 id="链接">链接</h2>
-<p>1.<a href="%E9%93%BE%E6%8E%A5%E5%9C%B0%E5%9D%80">链接名称</a><br>
-例如<a target="_blank" rel="noopener" href="https://xn--9krq6qeqfkxx.github.io/">这是名字，不显示地址</a><br>
-2.&lt;链接地址&gt;<br>
-<a target="_blank" rel="noopener" href="https://xn--9krq6qeqfkxx.github.io/">https://我的博客.github.io/</a><br>
-直接显示链接</p>
-<h2 id="公式">公式</h2>
-<p>使用$\KaTeX$渲染<br>
-行内公式：$E=mc^2$.<br>
-行间公式：</p>
-<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs powershell"><span class="hljs-variable">$</span><span class="hljs-variable">$</span>\int_&#123;a&#125;^&#123;b&#125;f(x)dx<span class="hljs-variable">$</span><span class="hljs-variable">$</span> <br><span class="hljs-variable">$</span><span class="hljs-variable">$</span>\oiint_&#123;D&#125;f(x,y)dxdy<span class="hljs-variable">$</span><span class="hljs-variable">$</span>  <span class="hljs-comment"># 网页似乎不支持</span><br><span class="hljs-variable">$</span><span class="hljs-variable">$</span>\iint_&#123;D&#125;f(x,y)dxdy<span class="hljs-variable">$</span><span class="hljs-variable">$</span><br><span class="hljs-variable">$</span><span class="hljs-variable">$</span>\iiint_&#123;V&#125;f(x,y,z)dxdydz<span class="hljs-variable">$</span><span class="hljs-variable">$</span><br></code></pre></td></tr></table></figure>
-<p>$$\int_{a}^{b}f(x)dx$$<br>
-$$\oiint_{D}f(x,y)dxdy$$<br>
-$$\iint_{D}f(x,y)dxdy$$<br>
-$$\iiint_{V}f(x,y,z)dxdydz$$</p>
+                <h2 id="frp">frp</h2>
+<p>项目地址：<a target="_blank" rel="noopener" href="https://github.com/fatedier/frp">https://github.com/fatedier/frp</a></p>
+<p>本文以ssh为例，简单介绍基于frp的内网穿透的方法。</p>
+<h3 id="服务端-有公网">服务端/有公网</h3>
+<figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs ini"><span class="hljs-comment"># frps.toml</span><br><span class="hljs-attr">bindPort</span> = <span class="hljs-number">7000</span><br></code></pre></td></tr></table></figure>
+<p>这个7000端口是用来给frp通信的，并不是端口映射</p>
+<p>然后启动服务端<br>
+<code>./frps -c ./frps.toml</code></p>
+<h3 id="客户端-无公网">客户端/无公网</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># frpc.toml</span><br>serverAddr = <span class="hljs-string">&quot;x.x.x.x&quot;</span><br>serverPort = 7000<br><br>[[proxies]]<br>name = <span class="hljs-string">&quot;ssh&quot;</span><br><span class="hljs-built_in">type</span> = <span class="hljs-string">&quot;tcp&quot;</span><br>localIP = <span class="hljs-string">&quot;127.0.0.1&quot;</span><br>localPort = 22<br>remotePort = 6000<br></code></pre></td></tr></table></figure>
+<p>启动客户端<br>
+<code>./frpc -c ./frpc.toml</code></p>
+<h3 id="测试frp连接">测试frp连接</h3>
+<p>在不关闭服务端和客户端的bash界面的情况下，运行以下命令</p>
+<p><code>ssh -oPort=6000 test@xx.xx.xx.xx</code></p>
+<p>如果返回timeout或者connection refused的话，可能是某个bash关闭了或者防火墙的问题</p>
+<p>ufw status</p>
+<h3 id="进阶设置-开机自启">进阶设置/开机自启</h3>
+<p>在服务端和客户端的frp的文件夹中，分别编写脚本<code>frps.sh</code>与<code>frpc.sh</code>，里面编写启动命令</p>
+<p>在<code>/etc/systemd/system</code>中，分别创建文件<code>frps.service</code>与<code>frpc.service</code></p>
+<p>这里以<code>frps.service</code>为例</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># frps.service</span><br>[Unit]<br>Description=FrpServer<br>After=network.target<br>[Service]<br>Type=simple<br>ExecStart=/root/frp_0.53.2_linux_amd64/frps.sh<br><span class="hljs-comment"># 服务启动时执行的命令</span><br>WorkingDirectory=/root/frp_0.53.2_linux_amd64/<br><span class="hljs-comment"># 指定脚本运行的目录</span><br>[Install]<br>WantedBy=multi-user.target<br><span class="hljs-comment"># 自定义服务会在多用户模式下启动</span><br></code></pre></td></tr></table></figure>
+<p>如果脚本里就是用绝对路径写的，<code>WorkingDirectory</code> 可以不写</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># 重新加载 Systemd 配置</span><br>sudo systemctl daemon-reload<br><span class="hljs-comment"># 启用自启动，这一步会创建软连接</span><br>sudo systemctl <span class="hljs-built_in">enable</span> frps.service<br><span class="hljs-comment"># 启动服务</span><br>sudo systemctl start frps.service<br></code></pre></td></tr></table></figure>
 
                 
               </div>
@@ -403,32 +347,11 @@ $$\iiint_{V}f(x,y,z)dxdydz$$</p>
             <div>
               <div class="post-metas my-3">
   
-    <div class="post-meta mr-3 d-flex align-items-center">
-      <i class="iconfont icon-category"></i>
-      
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="../../../../categories/3/" class="category-chain-item">3</a>
-  
-  
-
-      </span>
-    
-  
-</span>
-
-    </div>
-  
   
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="../../../../tags/2/" class="print-no-link">#2</a>
+        <a href="../../../../tags/1/" class="print-no-link">#1</a>
       
     </div>
   
@@ -442,9 +365,9 @@ $$\iiint_{V}f(x,y,z)dxdydz$$</p>
                   <article class="post-prev col-6">
                     
                     
-                      <a href="../../02/code%20snippet/" title="代码块">
+                      <a href="../v2raya/" title="v2rayA设置">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">代码块</span>
+                        <span class="hidden-mobile">v2rayA设置</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -452,8 +375,8 @@ $$\iiint_{V}f(x,y,z)dxdydz$$</p>
                   <article class="post-next col-6">
                     
                     
-                      <a href="../../../04/29/blog%20building%20and%20basic%20settings/" title="博客搭建与配置">
-                        <span class="hidden-mobile">博客搭建与配置</span>
+                      <a href="../../../../2023/12/27/About%20Github/" title="Github的基本用法">
+                        <span class="hidden-mobile">Github的基本用法</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
@@ -510,12 +433,6 @@ $$\iiint_{V}f(x,y,z)dxdydz$$</p>
 
 
   
-
-
-  
-  
-
-
 
 
 
@@ -709,49 +626,6 @@ $$\iiint_{V}f(x,y,z)dxdydz$$</p>
 
 
   <script>Fluid.plugins.imageCaption();</script>
-
-  
-      <script>
-        if (!window.MathJax) {
-          window.MathJax = {
-            tex    : {
-              inlineMath: { '[+]': [['$', '$']] }
-            },
-            loader : {
-              load: ['ui/lazy']
-            },
-            options: {
-              renderActions: {
-                insertedScript: [200, () => {
-                  document.querySelectorAll('mjx-container').forEach(node => {
-                    let target = node.parentNode;
-                    if (target.nodeName.toLowerCase() === 'li') {
-                      target.parentNode.classList.add('has-jax');
-                    }
-                  });
-                }, '', false]
-              }
-            }
-          };
-        } else {
-          MathJax.startup.document.state(0);
-          MathJax.texReset();
-          MathJax.typeset();
-          MathJax.typesetPromise();
-        }
-
-        Fluid.events.registerRefreshCallback(function() {
-          if ('MathJax' in window && MathJax.startup.document && typeof MathJax.startup.document.state === 'function') {
-            MathJax.startup.document.state(0);
-            MathJax.texReset();
-            MathJax.typeset();
-            MathJax.typesetPromise();
-          }
-        });
-      </script>
-    
-
-  <script  src="https://lib.baomitu.com/mathjax/3.2.2/es5/tex-mml-chtml.js" ></script>
 
   <script  src="../../../../js/local-search.js" ></script>
 
