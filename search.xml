@@ -260,31 +260,36 @@ git下载完毕后，在cmd窗口中输入<code>node-v</code>查看版本号，�
   <entry>
     <title>frp设置</title>
     <url>/2024/01/30/frp/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="frp">frp</h2>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>本文以ssh为例，简单介绍基于frp的内网穿透的方法。</p>
+<span id="more"></span>
+<h1>frp</h1>
+<p>为了使我们能在其他地方访问在家/公司的内网中的设备，我们需要使用内网穿透工具。最有名的就是frp。</p>
 <p>项目地址：<a href="https://github.com/fatedier/frp">https://github.com/fatedier/frp</a></p>
-<p>本文以ssh为例，简单介绍基于frp的内网穿透的方法。</p>
-<h3 id="服务端-有公网">服务端/有公网</h3>
+<h2 id="服务端-有公网">服务端/有公网</h2>
 <figure class="highlight ini"><table><tr><td class="code"><pre><code class="hljs ini"><span class="hljs-comment"># frps.toml</span><br><span class="hljs-attr">bindPort</span> = <span class="hljs-number">7000</span><br></code></pre></td></tr></table></figure>
 <p>这个7000端口是用来给frp通信的，并不是端口映射</p>
 <p>然后启动服务端<br>
 <code>./frps -c ./frps.toml</code></p>
-<h3 id="客户端-无公网">客户端/无公网</h3>
+<h2 id="客户端-无公网">客户端/无公网</h2>
 <figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># frpc.toml</span><br>serverAddr = <span class="hljs-string">&quot;x.x.x.x&quot;</span><br>serverPort = 7000<br><br>[[proxies]]<br>name = <span class="hljs-string">&quot;ssh&quot;</span><br><span class="hljs-built_in">type</span> = <span class="hljs-string">&quot;tcp&quot;</span><br>localIP = <span class="hljs-string">&quot;127.0.0.1&quot;</span><br>localPort = 22<br>remotePort = 6000<br></code></pre></td></tr></table></figure>
 <p>启动客户端<br>
 <code>./frpc -c ./frpc.toml</code></p>
-<h3 id="测试frp连接">测试frp连接</h3>
+<h2 id="测试frp连接">测试frp连接</h2>
 <p>在不关闭服务端和客户端的bash界面的情况下，运行以下命令</p>
 <p><code>ssh -oPort=6000 test@xx.xx.xx.xx</code></p>
 <p>如果返回timeout或者connection refused的话，可能是某个bash关闭了或者防火墙的问题</p>
-<p>ufw status</p>
-<h3 id="进阶设置-开机自启">进阶设置/开机自启</h3>
+<p>可以使用<code>sudo ufw status</code>来查看端口开放状态。可以运行下面的命令开放特定端口</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># 开放tcp端口</span><br>sudo ufw allow 22/tcp<br><span class="hljs-comment"># 开放udp端口</span><br>sudo ufw allow 53/udp<br><span class="hljs-comment"># 不要忘记重新加载</span><br>sudo ufw reload<br></code></pre></td></tr></table></figure>
+<h2 id="进阶设置-开机自启">进阶设置/开机自启</h2>
 <p>在服务端和客户端的frp的文件夹中，分别编写脚本<code>frps.sh</code>与<code>frpc.sh</code>，里面编写启动命令</p>
 <p>在<code>/etc/systemd/system</code>中，分别创建文件<code>frps.service</code>与<code>frpc.service</code></p>
 <p>这里以<code>frps.service</code>为例</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># frps.service</span><br>[Unit]<br>Description=FrpServer<br>After=network.target<br>[Service]<br>Type=simple<br>ExecStart=/root/frp_0.53.2_linux_amd64/frps.sh<br><span class="hljs-comment"># 服务启动时执行的命令</span><br>WorkingDirectory=/root/frp_0.53.2_linux_amd64/<br><span class="hljs-comment"># 指定脚本运行的目录</span><br>[Install]<br>WantedBy=multi-user.target<br><span class="hljs-comment"># 自定义服务会在多用户模式下启动</span><br></code></pre></td></tr></table></figure>
 <p>如果脚本里就是用绝对路径写的，<code>WorkingDirectory</code> 可以不写</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># 重新加载 Systemd 配置</span><br>sudo systemctl daemon-reload<br><span class="hljs-comment"># 启用自启动，这一步会创建软连接</span><br>sudo systemctl <span class="hljs-built_in">enable</span> frps.service<br><span class="hljs-comment"># 启动服务</span><br>sudo systemctl start frps.service<br></code></pre></td></tr></table></figure>
-]]></content>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># 重新加载 Systemd 配置</span><br>sudo systemctl daemon-reload<br><span class="hljs-comment"># 启用自启动，这一步会创建软连接</span><br>sudo systemctl <span class="hljs-built_in">enable</span> frps.service<br><span class="hljs-comment"># 启动服务，其实这里的.service不用写</span><br>sudo systemctl start frps.service<br></code></pre></td></tr></table></figure>
+<p><code>frps.service</code>的开机自启也是类似，但经过测试发现，如果一开机就启动可能会因为网络未完全连接而失败。<br>
+因此，经测试，设置开机后10秒再启动即可。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># frpc.service</span><br>[Unit]<br>Description=FrpClient<br>After=network.target<br>[Service]<br>Type=simple<br><span class="hljs-comment"># 延迟10s启动</span><br>ExecStartPre=/bin/sleep 10<br>ExecStart=/home/orangepi/frp_0.53.2_linux_arm64/frpc.sh<br><span class="hljs-comment"># 服务启动时执行的命令</span><br>WorkingDirectory=/home/orangepi/frp_0.53.2_linux_arm64/<br><span class="hljs-comment"># 指定脚本运行的目录</span><br>[Install]<br>WantedBy=multi-user.target<br></code></pre></td></tr></table></figure>]]></content>
       <tags>
         <tag>1</tag>
       </tags>
@@ -457,12 +462,13 @@ $$\iiint_{V}f(x,y,z)dxdydz$$</p>
   <entry>
     <title>v2rayA设置</title>
     <url>/2024/01/30/v2raya/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="v2rayA">v2rayA</h2>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>本文简单介绍ubuntu系统如何安装v2rayA。</p>
+<span id="more"></span>
+<h1>v2rayA</h1>
 <p>项目地址：<a href="https://github.com/v2rayA/v2rayA">https://github.com/v2rayA/v2rayA</a></p>
 <p>官方网站：<a href="https://v2raya.org/">https://v2raya.org/</a></p>
-<p>本文简单介绍ubuntu系统如何安装v2rayA。</p>
-<p>由于v2rayA在0.0.0.0:2017开放web服务，因此无需图形界面。</p>
-<h3 id="安装">安装</h3>
+<p>由于v2rayA在0.0.0.0:2017开放web服务，因此无需图形界面，这也是我选择它的理由。</p>
+<h2 id="安装">安装</h2>
 <p>有两种方式可以安装</p>
 <ul>
 <li>手动安装（<a href="https://github.com/v2rayA/v2rayA/releases%EF%BC%89">https://github.com/v2rayA/v2rayA/releases）</a></li>
@@ -471,7 +477,7 @@ $$\iiint_{V}f(x,y,z)dxdydz$$</p>
 <p>由于众所周知的原因，国内经常无法访问github，而一键脚本中使用了github的源，因此失效概率很大。</p>
 <p>因此，只能通过其他方式（使用其他设备或者手动换源），先把安装包下下来，然后自行安装。</p>
 <p>（比如，使用已经配置好代理的windows设备来下载安装包，然后传到linux设备上。毕竟windows配置代理比linux方便不少。）</p>
-<h4 id="v2rayA-2">v2rayA</h4>
+<h3 id="v2rayA">v2rayA</h3>
 <p>根据自己的设备，在release页面安装即可。</p>
 <p>将deb包传到设备上后，安装。</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">dpkg -i package.deb<br></code></pre></td></tr></table></figure>
@@ -479,25 +485,25 @@ $$\iiint_{V}f(x,y,z)dxdydz$$</p>
 <figure class="highlight stylus"><table><tr><td class="code"><pre><code class="hljs stylus">检测到 geosite<span class="hljs-selector-class">.dat</span>, geoip<span class="hljs-selector-class">.dat</span> 文件或 v2ray-core 可能未正确安装，请检查<br></code></pre></td></tr></table></figure>
 <p>等类似的问题，在 <a href="https://github.com/v2rayA/v2rayA/issues/510">https://github.com/v2rayA/v2rayA/issues/510</a> 给出了解决方法。</p>
 <p>笔者也是遇到过这个坑，因此在这里，我们事先先配置好。</p>
-<h4 id="v2ray-core">v2ray-core</h4>
+<h3 id="v2ray-core">v2ray-core</h3>
 <p>下载：<a href="https://github.com/v2fly/v2ray-core/releases">https://github.com/v2fly/v2ray-core/releases</a></p>
 <p>然后使用<code>unzip</code>命令即可</p>
 <p>接着，手动修改v2rayA的配置，<code>/path/to</code>改成自己的路径</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">vi /etc/default/v2raya<br><br><span class="hljs-comment"># 添加配置</span><br>V2RAYA_V2RAY_BIN=/path/to/v2ray-core/v2ray<br>V2RAYA_V2RAY_CONFDIR=/path/to/v2ray-core<br>V2RAYA_V2RAY_ASSETSDIR=/path/to/v2ray-core<br></code></pre></td></tr></table></figure>
 <p>然后重启即可</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">systemctl restart v2raya<br></code></pre></td></tr></table></figure>
-<h3 id="基础设置">基础设置</h3>
+<h2 id="基础设置">基础设置</h2>
 <p>启动服务</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">systemctl start v2raya<br></code></pre></td></tr></table></figure>
 <p>关闭服务</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">systemctl stop v2raya<br></code></pre></td></tr></table></figure>
 <p>如果有图形界面，可以在<code>localhost:2017</code>上查看，如果没有，相应地改成设备所处ip即可。</p>
 <p>不过似乎还需要配置一下本地的代理，可以参考下面的<code>export</code>命令，端口结合自己在web端的设置来修改。</p>
-<h3 id="进阶配置">进阶配置</h3>
+<h2 id="进阶配置">进阶配置</h2>
 <p>由于我个人并不希望代理开机自启，而是希望需要的时候打开，不需要的时候关闭，因此我手动编写了启动与关闭脚本。</p>
-<p><a href="http://v2a-start.sh">v2a-start.sh</a></p>
+<p><code>v2a-start.sh</code></p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash"><span class="hljs-meta">#!/bin/bash</span><br>systemctl start v2raya<br><span class="hljs-built_in">export</span> http_proxy=<span class="hljs-string">&quot;http://127.0.0.1:20171/&quot;</span><br><span class="hljs-built_in">export</span> https_proxy=<span class="hljs-string">&quot;http://127.0.0.1:20173/&quot;</span><br><span class="hljs-built_in">export</span> no_proxy=<span class="hljs-string">&quot;127.0.0.1,localhost&quot;</span><br><span class="hljs-built_in">export</span> HTTP_PROXY=<span class="hljs-string">&quot;http://127.0.0.1:20171/&quot;</span><br><span class="hljs-built_in">export</span> HTTPS_PROXY=<span class="hljs-string">&quot;http://127.0.0.1:20173/&quot;</span><br><span class="hljs-built_in">export</span> NO_PROXY=<span class="hljs-string">&quot;127.0.0.1,localhost&quot;</span><br></code></pre></td></tr></table></figure>
-<p><a href="http://v2a-halt.sh">v2a-halt.sh</a></p>
+<p><code>v2a-halt.sh</code></p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash"><span class="hljs-meta">#!/bin/bash</span><br>systemctl stop v2raya<br><span class="hljs-built_in">unset</span> http_proxy<br><span class="hljs-built_in">unset</span> https_proxy<br><span class="hljs-built_in">unset</span> no_proxy<br><span class="hljs-built_in">unset</span> HTTP_PROXY<br><span class="hljs-built_in">unset</span> NO_PROXY<br></code></pre></td></tr></table></figure>
 ]]></content>
       <tags>
