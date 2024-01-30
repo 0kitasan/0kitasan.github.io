@@ -26,7 +26,7 @@
 <meta property="og:description" content="本文以ssh为例，简单介绍基于frp的内网穿透的方法。">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2024-01-30T07:54:01.000Z">
-<meta property="article:modified_time" content="2024-01-30T12:36:55.197Z">
+<meta property="article:modified_time" content="2024-01-30T14:20:28.351Z">
 <meta property="article:author" content="hamuko">
 <meta property="article:tag" content="1">
 <meta name="twitter:card" content="summary_large_image">
@@ -262,7 +262,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1.6k 字
+          1.7k 字
         
       </span>
     
@@ -343,7 +343,8 @@
 <p>如果脚本里就是用绝对路径写的，<code>WorkingDirectory</code> 可以不写</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># 重新加载 Systemd 配置</span><br>sudo systemctl daemon-reload<br><span class="hljs-comment"># 启用自启动，这一步会创建软连接</span><br>sudo systemctl <span class="hljs-built_in">enable</span> frps.service<br><span class="hljs-comment"># 启动服务，其实这里的.service不用写</span><br>sudo systemctl start frps.service<br></code></pre></td></tr></table></figure>
 <p><code>frps.service</code>的开机自启也是类似，但经过测试发现，如果一开机就启动可能会因为网络未完全连接而失败。<br>
-因此，经测试，设置开机后10秒再启动即可。</p>
+使用<code>systemctl status my-service.service</code>命令查看状态，可以看到类似time out/connection failed的报错。<br>
+经测试，设置开机后10秒再启动，服务即可正常运行。</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># frpc.service</span><br>[Unit]<br>Description=FrpClient<br>After=network.target<br>[Service]<br>Type=simple<br><span class="hljs-comment"># 延迟10s启动</span><br>ExecStartPre=/bin/sleep 10<br>ExecStart=/home/orangepi/frp_0.53.2_linux_arm64/frpc.sh<br><span class="hljs-comment"># 服务启动时执行的命令</span><br>WorkingDirectory=/home/orangepi/frp_0.53.2_linux_arm64/<br><span class="hljs-comment"># 指定脚本运行的目录</span><br>[Install]<br>WantedBy=multi-user.target<br></code></pre></td></tr></table></figure>
                 
               </div>
@@ -423,8 +424,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="../../../../2023/12/27/About%20Github/" title="Github的基本用法">
-                        <span class="hidden-mobile">Github的基本用法</span>
+                      <a href="../../../../2023/12/30/2-%E8%A7%A3%E6%9E%90%E5%87%BD%E6%95%B0/" title="复变函数/公式测试">
+                        <span class="hidden-mobile">复变函数/公式测试</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>

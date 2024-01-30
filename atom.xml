@@ -38,12 +38,31 @@
     <link href="http://example.com/2024/01/30/frp/"/>
     <id>http://example.com/2024/01/30/frp/</id>
     <published>2024-01-30T07:54:01.000Z</published>
-    <updated>2024-01-30T12:36:55.197Z</updated>
+    <updated>2024-01-30T14:20:28.351Z</updated>
     
     
     <summary type="html">&lt;p&gt;本文以ssh为例，简单介绍基于frp的内网穿透的方法。&lt;/p&gt;</summary>
     
     
+    
+    
+    <category term="1" scheme="http://example.com/tags/1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>复变函数/公式测试</title>
+    <link href="http://example.com/2023/12/30/2-%E8%A7%A3%E6%9E%90%E5%87%BD%E6%95%B0/"/>
+    <id>http://example.com/2023/12/30/2-%E8%A7%A3%E6%9E%90%E5%87%BD%E6%95%B0/</id>
+    <published>2023-12-30T10:33:25.000Z</published>
+    <updated>2024-01-30T14:18:08.307Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;复变函数笔记&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="3" scheme="http://example.com/categories/3/"/>
     
     
     <category term="1" scheme="http://example.com/tags/1/"/>
