@@ -6,7 +6,7 @@
   <link href="https://usami-mitsuki.top/atom.xml" rel="self"/>
   
   <link href="https://usami-mitsuki.top/"/>
-  <updated>2024-01-30T12:38:03.661Z</updated>
+  <updated>2024-04-27T14:45:45.818Z</updated>
   <id>https://usami-mitsuki.top/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>hexo博客迁移</title>
+    <link href="https://usami-mitsuki.top/2024/04/27/hexo-migration/"/>
+    <id>https://usami-mitsuki.top/2024/04/27/hexo-migration/</id>
+    <published>2024-04-27T14:37:54.000Z</published>
+    <updated>2024-04-27T14:45:45.818Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;todo list&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="2" scheme="https://usami-mitsuki.top/categories/2/"/>
+    
+    
+    <category term="1" scheme="https://usami-mitsuki.top/tags/1/"/>
+    
+  </entry>
   
   <entry>
     <title>v2rayA设置</title>
@@ -35,10 +54,10 @@
   
   <entry>
     <title>frp设置</title>
-    <link href="https://usami-mitsuki.top/2024/01/30/frp/"/>
-    <id>https://usami-mitsuki.top/2024/01/30/frp/</id>
+    <link href="https://usami-mitsuki.top/2024/01/30/frp%20settings/"/>
+    <id>https://usami-mitsuki.top/2024/01/30/frp%20settings/</id>
     <published>2024-01-30T07:54:01.000Z</published>
-    <updated>2024-01-30T14:20:28.351Z</updated>
+    <updated>2024-03-15T07:52:36.000Z</updated>
     
     
     <summary type="html">&lt;p&gt;本文以ssh为例，简单介绍基于frp的内网穿透的方法。&lt;/p&gt;</summary>
@@ -71,10 +90,10 @@
   
   <entry>
     <title>Github的基本用法</title>
-    <link href="https://usami-mitsuki.top/2023/12/27/About%20Github/"/>
-    <id>https://usami-mitsuki.top/2023/12/27/About%20Github/</id>
+    <link href="https://usami-mitsuki.top/2023/12/27/Git%20tutoiral/"/>
+    <id>https://usami-mitsuki.top/2023/12/27/Git%20tutoiral/</id>
     <published>2023-12-26T16:06:31.000Z</published>
-    <updated>2023-12-26T16:07:01.888Z</updated>
+    <updated>2023-12-26T16:07:02.000Z</updated>
     
     
     <summary type="html">&lt;p&gt;Github的基本用法&lt;/p&gt;</summary>
@@ -248,10 +267,10 @@
   
   <entry>
     <title>博客搭建与配置</title>
-    <link href="https://usami-mitsuki.top/2023/04/29/blog%20building%20and%20basic%20settings/"/>
-    <id>https://usami-mitsuki.top/2023/04/29/blog%20building%20and%20basic%20settings/</id>
+    <link href="https://usami-mitsuki.top/2023/04/29/blog%20building/"/>
+    <id>https://usami-mitsuki.top/2023/04/29/blog%20building/</id>
     <published>2023-04-29T02:56:08.000Z</published>
-    <updated>2024-01-30T13:01:21.765Z</updated>
+    <updated>2024-04-27T14:35:02.451Z</updated>
     
     
     <summary type="html">&lt;p&gt;第一次尝试搭建个人博客。&lt;br&gt;
