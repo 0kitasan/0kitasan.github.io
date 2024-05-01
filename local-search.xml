@@ -8,7 +8,7 @@
     <link href="/2024/04/27/hexo-migration/"/>
     <url>/2024/04/27/hexo-migration/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>todo list</p><span id="more"></span><h2 id="todo">todo</h2><ul><li>写博客，完善tmp</li><li>完善博客公式环境</li><li>源文件管理与命名</li><li>香橙派串口文章</li><li>完善hexo的标签</li><li>完善文章更新规则</li></ul>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>todo list</p><span id="more"></span><h2 id="todo">todo</h2><ul><li>写博客，完善tmp</li><li>完善博客公式环境</li><li>源文件管理与命名</li><li>香橙派串口文章</li><li>完善hexo的标签</li><li>完善文章更新规则</li></ul><p>nmcli connection show</p><p>Wired Connection 1</p><p>sudo nmcli connection modify <name> ipv4.addresses 192.168.1.100/24 ipv4.gateway 192.168.1.1 ipv4.dns 8.8.8.8 ipv4.method manual</name></p><p>sudo systemctl restart NetworkManager</p>]]></content>
     
     
     <categories>

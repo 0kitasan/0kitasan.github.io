@@ -533,6 +533,10 @@ $$\iiint_{V}f(x,y,z)dxdydz$$</p>
 <li>完善hexo的标签</li>
 <li>完善文章更新规则</li>
 </ul>
+<p>nmcli connection show</p>
+<p>Wired Connection 1</p>
+<p>sudo nmcli connection modify <name> ipv4.addresses 192.168.1.100/24 ipv4.gateway 192.168.1.1 ipv4.dns 8.8.8.8 ipv4.method manual</name></p>
+<p>sudo systemctl restart NetworkManager</p>
 ]]></content>
       <categories>
         <category>2</category>
