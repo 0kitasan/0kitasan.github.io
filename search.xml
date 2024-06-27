@@ -1,100 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>博客搭建与配置</title>
-    <url>/2023/04/29/2023-04-29-%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E4%B8%8E%E9%85%8D%E7%BD%AE/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>第一次尝试搭建个人博客。<br>
-本博客目前使用<a href="https://www.bilibili.com/video/BV1ts4y1f7Gu">b站教程</a>，<a href="https://hexo.io/zh-cn/index.html">hexo</a>框架，以及<a href="https://shen-yu.gitee.io/2019/ayer/">ayer</a>主题。</p>
-<span id="more"></span>
-<p>具体流程：下载<a href="https://git-scm.com/">git</a>，<a href="https://nodejs.org/zh-cn/">node.js</a><br>
-这篇文章写的挺早的，现已经过多次修改。</p>
-<h2 id="git、hexo、node-js环境搭建">git、hexo、node.js环境搭建</h2>
-<p>下载<a href="https://git-scm.com/">git</a>，<a href="https://nodejs.org/zh-cn/">Node.js</a>。<br>
-git下载完毕后，在cmd窗口中输入<code>node-v</code>查看版本号，如果出现版本号，则说明安装成功。<br>
-新建一个下载hexo的文件夹，进入后右键选择git bash打开git窗口，分别输入<a href="https://hexo.io/zh-cn/index.html">hexo官网</a>的命令。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># 1下载</span><br>npm install hexo-cli -g <br><span class="hljs-comment"># 2初始化博客，运行完毕会出现blog文件夹</span><br>hexo init blog<br><span class="hljs-comment"># 3进入博客</span><br><span class="hljs-built_in">cd</span> blog<br><span class="hljs-comment"># 4下载 </span><br>npm install<br><span class="hljs-comment"># 5运行博客（为原始版本、默认主题，之后可以下载其他主题）</span><br>hexo server <br></code></pre></td></tr></table></figure>
-<h2 id="hexo与hexo主题下载">hexo与hexo主题下载</h2>
-<p><a href="https://hexo.io/zh-cn/index.html">hexo</a>，<a href="https://shen-yu.gitee.io/2019/ayer/">ayer</a>主题。</p>
-<h2 id="基本配置">基本配置</h2>
-<p>根据需求，修改<code>config.yml</code>与<code>config.ayer.yml</code>中的具体配置<br>
-<code>config.ayer.yml</code>中可以修改网页封面、公告栏、鼠标样式、广告图标、友情链接<br>
-注意，<code>config.yml</code>与<code>config.ayer.yml</code>中冒号“：”后均需要加空格，否则报错</p>
-<h2 id="Tips">Tips</h2>
-<p>当我们使用<code>hexo generate</code>命令时，hexo会生成<code>public</code>文件夹，将<code>source</code>目录中的md文件及一些依赖渲染为html等，并存储在<code>public</code>。</p>
-<p>而<code>hexo clean</code>命令会清除public文件夹，在配置正确的情况下，该命令通常能解决大部分问题。</p>
-<p>2024/4/27：注意，似乎把<code>代码块</code>放在markdown源文件的最前面，在fluid中会出现阴间问题。</p>
-<h2 id="进阶配置与插件">进阶配置与插件</h2>
-<h3 id="KaTeX配置">KaTeX配置</h3>
-<p>为了方便使用<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>LaTeX</mtext></mrow><annotation encoding="application/x-tex">\LaTeX</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8988em;vertical-align:-0.2155em;"></span><span class="mord text"><span class="mord textrm">L</span><span class="mspace" style="margin-right:-0.36em;"></span><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.6833em;"><span style="top:-2.905em;"><span class="pstrut" style="height:2.7em;"></span><span class="mord"><span class="mord textrm mtight sizing reset-size6 size3">A</span></span></span></span></span></span><span class="mspace" style="margin-right:-0.15em;"></span><span class="mord text"><span class="mord textrm">T</span><span class="mspace" style="margin-right:-0.1667em;"></span><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.4678em;"><span style="top:-2.7845em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord textrm">E</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2155em;"><span></span></span></span></span><span class="mspace" style="margin-right:-0.125em;"></span><span class="mord textrm">X</span></span></span></span></span></span>来书写漂亮的数学公式，我们需要使网页支持<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>KaTeX</mtext></mrow><annotation encoding="application/x-tex">\KaTeX</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8988em;vertical-align:-0.2155em;"></span><span class="mord text"><span class="mord textrm">K</span><span class="mspace" style="margin-right:-0.17em;"></span><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.6833em;"><span style="top:-2.905em;"><span class="pstrut" style="height:2.7em;"></span><span class="mord"><span class="mord textrm mtight sizing reset-size6 size3">A</span></span></span></span></span></span><span class="mspace" style="margin-right:-0.15em;"></span><span class="mord text"><span class="mord textrm">T</span><span class="mspace" style="margin-right:-0.1667em;"></span><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.4678em;"><span style="top:-2.7845em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord textrm">E</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2155em;"><span></span></span></span></span><span class="mspace" style="margin-right:-0.125em;"></span><span class="mord textrm">X</span></span></span></span></span></span></p>
-<h3 id="播放器">播放器</h3>
-<p>aplayer插件下载<br>
-<a href="https://github.com/MoePlayer/hexo-tag-aplayer/blob/master/docs/README-zh_cn.md">https://github.com/MoePlayer/hexo-tag-aplayer/blob/master/docs/README-zh_cn.md</a></p>
-<h3 id="代码高亮">代码高亮</h3>
-<p>highligt.js<br>
-<a href="https://highlightjs.org/">https://highlightjs.org/</a></p>
-<h3 id="图片引用">图片引用</h3>
-<p>hexo-renderer-marked</p>
-<h3 id="搜索">搜索</h3>
-<p>hexo-generator-search</p>
-<h2 id="将静态网页放在gitee-pages上">将静态网页放在gitee pages上</h2>
-<p>详见<a href="https://www.bilibili.com/video/BV1ts4y1f7Gu">b站教程</a></p>
-<h2 id="把hexo部署在自己的服务器上！（23年11月更新）">把hexo部署在自己的服务器上！（23年11月更新）</h2>
-<p>Win10环境下基于Hexo的静态博客环境搭建，及其阿里云部署<br>
-<a href="http://www.atangbiji.com/2019/12/22/buildHexoBlog/">http://www.atangbiji.com/2019/12/22/buildHexoBlog/</a></p>
-<p>Ubuntu20.04下，搭建hexo个人博客<br>
-<a href="https://blog.csdn.net/li1055107552/article/details/121897025">https://blog.csdn.net/li1055107552/article/details/121897025</a></p>
-<p>Ubuntu 20.4 + Hexo + Nginx 搭建公网博客<br>
-<a href="https://www.cnblogs.com/Huae/p/16155927.html">https://www.cnblogs.com/Huae/p/16155927.html</a></p>
-<h2 id="hexo推送更新不了的bug（24年1月更新）">hexo推送更新不了的bug（24年1月更新）</h2>
-<p>一直提示<code>fatal: unable to auto-detect email address</code><br>
-看了这篇文章，跟着操作就修好了</p>
-<p>hexo d错误：fatal: unable to auto-detect email address<br>
-<a href="https://blog.csdn.net/IThelei/article/details/104179452">https://blog.csdn.net/IThelei/article/details/104179452</a></p>
-<p>其实就是在博客目录下的<code>.deploy_git/.git/config</code>中添加user信息即可。<br>
-email和name后面的信息随便填都行。</p>
-<figure class="highlight ini"><table><tr><td class="code"><pre><code class="hljs ini"><span class="hljs-section">[user]</span><br><span class="hljs-attr">email</span>=test@example.com<br><span class="hljs-attr">name</span>=test<br></code></pre></td></tr></table></figure>
-<p>加上就解决了，不过这个bug的根本原因还未知。</p>
-]]></content>
-      <categories>
-        <category>计算机/折腾</category>
-        <category>hexo-md特性探索</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>代码块</title>
-    <url>/2023/05/02/2023-05-02-%E4%BB%A3%E7%A0%81%E5%9D%97/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>关于hexo中代码块与代码高亮的笔记。</p>
-<span id="more"></span>
-<h3 id="第一种写法：代码块">第一种写法：代码块</h3>
-<p>缺点是并不会在markdown中被渲染。</p>
-<figure class="highlight css"><table><tr><td class="code"><pre><code class="hljs css">&#123;% codeblock <span class="hljs-selector-attr">[title]</span> <span class="hljs-selector-attr">[lang:language]</span> <span class="hljs-selector-attr">[url]</span> <span class="hljs-selector-attr">[link text]</span> <span class="hljs-selector-attr">[additional options]</span> %&#125;<br><span class="hljs-selector-tag">code</span> snippet # 注意，写代码时不用加上方括号<span class="hljs-selector-attr">[]</span><br>&#123;% endcodeblock %&#125;<br></code></pre></td></tr></table></figure>
-<p>效果如下：</p>
-<figure class="highlight clean"><table><tr><td class="code"><pre><code class="hljs clean"><span class="hljs-keyword">code</span> snippet<br></code></pre></td></tr></table></figure>
-<h3 id="第二种写法：反引号代码块">第二种写法：反引号代码块</h3>
-<p>此方法在markdown中也会被渲染，极力推荐。</p>
-<figure class="highlight css"><table><tr><td class="code"><pre><code class="hljs css">\``` <span class="hljs-selector-attr">[language]</span> <span class="hljs-selector-attr">[title]</span> <span class="hljs-selector-attr">[url]</span> <span class="hljs-selector-attr">[link text]</span> <span class="hljs-selector-attr">[additional options]</span><br><span class="hljs-selector-tag">code</span> snippet # 注意，写代码时要去除反义符号“\”，并且不用加上方括号<span class="hljs-selector-attr">[]</span><br>\```<br></code></pre></td></tr></table></figure>
-<p>效果如下：</p>
-<figure class="highlight clean"><table><tr><td class="code"><pre><code class="hljs clean"><span class="hljs-keyword">code</span> snippet<br></code></pre></td></tr></table></figure>
-<h3 id="实例测试">实例测试</h3>
-<p>python</p>
-<figure class="highlight python"><figcaption><span>python高亮</span></figcaption><table><tr><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">0</span>,<span class="hljs-number">100</span>):<br>    s = s+<span class="hljs-number">1</span><br></code></pre></td></tr></table></figure>
-<p>c++</p>
-<figure class="highlight c++"><figcaption><span>c++高亮</span></figcaption><table><tr><td class="code"><pre><code class="hljs c++"><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;stdio.h&gt;</span></span><br><span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span><br><span class="hljs-function"></span>&#123;<br>    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;Hello Markdown\n&quot;</span>);<br>    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
-<p>url = <a href="https://www.bilibili.com/">https://www.bilibili.com/</a></p>
-]]></content>
-      <categories>
-        <category>计算机/折腾</category>
-        <category>hexo-md特性探索</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>markdown</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>markdown语法学习</title>
     <url>/2023/05/01/2023-05-01-markdown%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="标题">标题</h2>
@@ -193,32 +99,97 @@ c0 110 84 276 504 276s502.4-166 502.4-276z"/></svg></span></span></span><span cl
       </tags>
   </entry>
   <entry>
-    <title>ubuntu配置静态IP(无线网络)</title>
-    <url>/2023/06/16/2023-06-16-ubuntu%E9%9D%99%E6%80%81IP%E9%85%8D%E7%BD%AE/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>在 orangpi 上(ubuntu系统)配置静态IP(无线网络)</p>
+    <title>博客搭建与配置</title>
+    <url>/2023/04/29/2023-04-29-%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E4%B8%8E%E9%85%8D%E7%BD%AE/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>第一次尝试搭建个人博客。<br>
+本博客目前使用<a href="https://www.bilibili.com/video/BV1ts4y1f7Gu">b站教程</a>，<a href="https://hexo.io/zh-cn/index.html">hexo</a>框架，以及<a href="https://shen-yu.gitee.io/2019/ayer/">ayer</a>主题。</p>
 <span id="more"></span>
-<h2 id="1-ssh-vscode">1.ssh(vscode)</h2>
-<p>【如何优雅地访问远程主机？SSH与frp内网穿透配置教程】<br>
-<a href="https://www.bilibili.com/video/BV13L411w7XU/">https://www.bilibili.com/video/BV13L411w7XU/</a></p>
-<h2 id="2-ifconfig-netplan下载">2.ifconfig + netplan下载</h2>
-<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">sudo apt install ifconfig<br></code></pre></td></tr></table></figure>
-<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">sudo apt update<br></code></pre></td></tr></table></figure>
-<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">sudo apt install netplan<br></code></pre></td></tr></table></figure>
-<h2 id="3-修改netplan配置">3.修改netplan配置</h2>
-<p>配置静态ip</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">network:<br>  version: 2<br>  wifis:<br>    wlan0:<br>      access-points:<br>        TP-LINK <span class="hljs-comment">#wifi名称</span><br>          password: <span class="hljs-string">&quot;123456&quot;</span> <span class="hljs-comment">#密码</span><br>      dhcp4: <span class="hljs-literal">false</span> <span class="hljs-comment">#静态ip</span><br>      optional: <span class="hljs-literal">true</span><br>      addresses: [192.168.0.112/24] <span class="hljs-comment">#前者是ip，后者是子网掩码</span><br>      gateway4: 192.168.0.1  <span class="hljs-comment">#gateway</span><br>      nameservers:<br>        addresses: [192.168.0.112,8.8.8.8]  <span class="hljs-comment">#前面与ip相同即可</span><br></code></pre></td></tr></table></figure>
-<p>gateway查看：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">route -n<br></code></pre></td></tr></table></figure>
-<p>2024-06-12更新：在较为新版的ubuntu设备上，直接使用 <code>nmcli</code> 即可</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># 列出可用wifi</span><br>nmcli connection show<br><br><span class="hljs-comment"># 如果是有线连接，一般都是这个名称</span><br>Wired Connection 1<br><br><span class="hljs-comment"># 根据连接名称修改&lt;name&gt;，根据需求修改ip，注意设备的不同网段不要有冲突</span><br>sudo nmcli connection modify &lt;name&gt; ipv4.addresses 192.168.1.100/24 ipv4.gateway 192.168.1.1 ipv4.dns 8.8.8.8 ipv4.method manual<br><br><span class="hljs-comment"># 重启 NetworkManager</span><br>sudo systemctl restart NetworkManager<br></code></pre></td></tr></table></figure>
+<p>具体流程：下载<a href="https://git-scm.com/">git</a>，<a href="https://nodejs.org/zh-cn/">node.js</a><br>
+这篇文章写的挺早的，现已经过多次修改。</p>
+<h2 id="git、hexo、node-js环境搭建">git、hexo、node.js环境搭建</h2>
+<p>下载<a href="https://git-scm.com/">git</a>，<a href="https://nodejs.org/zh-cn/">Node.js</a>。<br>
+git下载完毕后，在cmd窗口中输入<code>node-v</code>查看版本号，如果出现版本号，则说明安装成功。<br>
+新建一个下载hexo的文件夹，进入后右键选择git bash打开git窗口，分别输入<a href="https://hexo.io/zh-cn/index.html">hexo官网</a>的命令。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># 1下载</span><br>npm install hexo-cli -g <br><span class="hljs-comment"># 2初始化博客，运行完毕会出现blog文件夹</span><br>hexo init blog<br><span class="hljs-comment"># 3进入博客</span><br><span class="hljs-built_in">cd</span> blog<br><span class="hljs-comment"># 4下载 </span><br>npm install<br><span class="hljs-comment"># 5运行博客（为原始版本、默认主题，之后可以下载其他主题）</span><br>hexo server <br></code></pre></td></tr></table></figure>
+<h2 id="hexo与hexo主题下载">hexo与hexo主题下载</h2>
+<p><a href="https://hexo.io/zh-cn/index.html">hexo</a>，<a href="https://shen-yu.gitee.io/2019/ayer/">ayer</a>主题。</p>
+<h2 id="基本配置">基本配置</h2>
+<p>根据需求，修改<code>config.yml</code>与<code>config.ayer.yml</code>中的具体配置<br>
+<code>config.ayer.yml</code>中可以修改网页封面、公告栏、鼠标样式、广告图标、友情链接<br>
+注意，<code>config.yml</code>与<code>config.ayer.yml</code>中冒号“：”后均需要加空格，否则报错</p>
+<h2 id="Tips">Tips</h2>
+<p>当我们使用<code>hexo generate</code>命令时，hexo会生成<code>public</code>文件夹，将<code>source</code>目录中的md文件及一些依赖渲染为html等，并存储在<code>public</code>。</p>
+<p>而<code>hexo clean</code>命令会清除public文件夹，在配置正确的情况下，该命令通常能解决大部分问题。</p>
+<p>2024/4/27：注意，似乎把<code>代码块</code>放在markdown源文件的最前面，在fluid中会出现阴间问题。</p>
+<h2 id="进阶配置与插件">进阶配置与插件</h2>
+<h3 id="KaTeX配置">KaTeX配置</h3>
+<p>为了方便使用<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>LaTeX</mtext></mrow><annotation encoding="application/x-tex">\LaTeX</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8988em;vertical-align:-0.2155em;"></span><span class="mord text"><span class="mord textrm">L</span><span class="mspace" style="margin-right:-0.36em;"></span><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.6833em;"><span style="top:-2.905em;"><span class="pstrut" style="height:2.7em;"></span><span class="mord"><span class="mord textrm mtight sizing reset-size6 size3">A</span></span></span></span></span></span><span class="mspace" style="margin-right:-0.15em;"></span><span class="mord text"><span class="mord textrm">T</span><span class="mspace" style="margin-right:-0.1667em;"></span><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.4678em;"><span style="top:-2.7845em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord textrm">E</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2155em;"><span></span></span></span></span><span class="mspace" style="margin-right:-0.125em;"></span><span class="mord textrm">X</span></span></span></span></span></span>来书写漂亮的数学公式，我们需要使网页支持<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>KaTeX</mtext></mrow><annotation encoding="application/x-tex">\KaTeX</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8988em;vertical-align:-0.2155em;"></span><span class="mord text"><span class="mord textrm">K</span><span class="mspace" style="margin-right:-0.17em;"></span><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.6833em;"><span style="top:-2.905em;"><span class="pstrut" style="height:2.7em;"></span><span class="mord"><span class="mord textrm mtight sizing reset-size6 size3">A</span></span></span></span></span></span><span class="mspace" style="margin-right:-0.15em;"></span><span class="mord text"><span class="mord textrm">T</span><span class="mspace" style="margin-right:-0.1667em;"></span><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.4678em;"><span style="top:-2.7845em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord textrm">E</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2155em;"><span></span></span></span></span><span class="mspace" style="margin-right:-0.125em;"></span><span class="mord textrm">X</span></span></span></span></span></span></p>
+<h3 id="播放器">播放器</h3>
+<p>aplayer插件下载<br>
+<a href="https://github.com/MoePlayer/hexo-tag-aplayer/blob/master/docs/README-zh_cn.md">https://github.com/MoePlayer/hexo-tag-aplayer/blob/master/docs/README-zh_cn.md</a></p>
+<h3 id="代码高亮">代码高亮</h3>
+<p>highligt.js<br>
+<a href="https://highlightjs.org/">https://highlightjs.org/</a></p>
+<h3 id="图片引用">图片引用</h3>
+<p>hexo-renderer-marked</p>
+<h3 id="搜索">搜索</h3>
+<p>hexo-generator-search</p>
+<h2 id="将静态网页放在gitee-pages上">将静态网页放在gitee pages上</h2>
+<p>详见<a href="https://www.bilibili.com/video/BV1ts4y1f7Gu">b站教程</a></p>
+<h2 id="把hexo部署在自己的服务器上！（23年11月更新）">把hexo部署在自己的服务器上！（23年11月更新）</h2>
+<p>Win10环境下基于Hexo的静态博客环境搭建，及其阿里云部署<br>
+<a href="http://www.atangbiji.com/2019/12/22/buildHexoBlog/">http://www.atangbiji.com/2019/12/22/buildHexoBlog/</a></p>
+<p>Ubuntu20.04下，搭建hexo个人博客<br>
+<a href="https://blog.csdn.net/li1055107552/article/details/121897025">https://blog.csdn.net/li1055107552/article/details/121897025</a></p>
+<p>Ubuntu 20.4 + Hexo + Nginx 搭建公网博客<br>
+<a href="https://www.cnblogs.com/Huae/p/16155927.html">https://www.cnblogs.com/Huae/p/16155927.html</a></p>
+<h2 id="hexo推送更新不了的bug（24年1月更新）">hexo推送更新不了的bug（24年1月更新）</h2>
+<p>一直提示<code>fatal: unable to auto-detect email address</code><br>
+看了这篇文章，跟着操作就修好了</p>
+<p>hexo d错误：fatal: unable to auto-detect email address<br>
+<a href="https://blog.csdn.net/IThelei/article/details/104179452">https://blog.csdn.net/IThelei/article/details/104179452</a></p>
+<p>其实就是在博客目录下的<code>.deploy_git/.git/config</code>中添加user信息即可。<br>
+email和name后面的信息随便填都行。</p>
+<figure class="highlight ini"><table><tr><td class="code"><pre><code class="hljs ini"><span class="hljs-section">[user]</span><br><span class="hljs-attr">email</span>=test@example.com<br><span class="hljs-attr">name</span>=test<br></code></pre></td></tr></table></figure>
+<p>加上就解决了，不过这个bug的根本原因还未知。</p>
 ]]></content>
       <categories>
         <category>计算机/折腾</category>
-        <category>网络</category>
+        <category>hexo-md特性探索</category>
       </categories>
       <tags>
-        <tag>linux</tag>
-        <tag>网络</tag>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>代码块</title>
+    <url>/2023/05/02/2023-05-02-%E4%BB%A3%E7%A0%81%E5%9D%97/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>关于hexo中代码块与代码高亮的笔记。</p>
+<span id="more"></span>
+<h3 id="第一种写法：代码块">第一种写法：代码块</h3>
+<p>缺点是并不会在markdown中被渲染。</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><code class="hljs css">&#123;% codeblock <span class="hljs-selector-attr">[title]</span> <span class="hljs-selector-attr">[lang:language]</span> <span class="hljs-selector-attr">[url]</span> <span class="hljs-selector-attr">[link text]</span> <span class="hljs-selector-attr">[additional options]</span> %&#125;<br><span class="hljs-selector-tag">code</span> snippet # 注意，写代码时不用加上方括号<span class="hljs-selector-attr">[]</span><br>&#123;% endcodeblock %&#125;<br></code></pre></td></tr></table></figure>
+<p>效果如下：</p>
+<figure class="highlight clean"><table><tr><td class="code"><pre><code class="hljs clean"><span class="hljs-keyword">code</span> snippet<br></code></pre></td></tr></table></figure>
+<h3 id="第二种写法：反引号代码块">第二种写法：反引号代码块</h3>
+<p>此方法在markdown中也会被渲染，极力推荐。</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><code class="hljs css">\``` <span class="hljs-selector-attr">[language]</span> <span class="hljs-selector-attr">[title]</span> <span class="hljs-selector-attr">[url]</span> <span class="hljs-selector-attr">[link text]</span> <span class="hljs-selector-attr">[additional options]</span><br><span class="hljs-selector-tag">code</span> snippet # 注意，写代码时要去除反义符号“\”，并且不用加上方括号<span class="hljs-selector-attr">[]</span><br>\```<br></code></pre></td></tr></table></figure>
+<p>效果如下：</p>
+<figure class="highlight clean"><table><tr><td class="code"><pre><code class="hljs clean"><span class="hljs-keyword">code</span> snippet<br></code></pre></td></tr></table></figure>
+<h3 id="实例测试">实例测试</h3>
+<p>python</p>
+<figure class="highlight python"><figcaption><span>python高亮</span></figcaption><table><tr><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">0</span>,<span class="hljs-number">100</span>):<br>    s = s+<span class="hljs-number">1</span><br></code></pre></td></tr></table></figure>
+<p>c++</p>
+<figure class="highlight c++"><figcaption><span>c++高亮</span></figcaption><table><tr><td class="code"><pre><code class="hljs c++"><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;stdio.h&gt;</span></span><br><span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span><br><span class="hljs-function"></span>&#123;<br>    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;Hello Markdown\n&quot;</span>);<br>    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
+<p>url = <a href="https://www.bilibili.com/">https://www.bilibili.com/</a></p>
+]]></content>
+      <categories>
+        <category>计算机/折腾</category>
+        <category>hexo-md特性探索</category>
+      </categories>
+      <tags>
+        <tag>markdown</tag>
+        <tag>hexo</tag>
       </tags>
   </entry>
   <entry>
@@ -267,8 +238,75 @@ width的值决定图片宽度。1000=100%，70=7%，数字与百分比可以互�
         <category>hexo-md特性探索</category>
       </categories>
       <tags>
-        <tag>hexo</tag>
         <tag>markdown</tag>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>ubuntu配置静态IP(无线网络)</title>
+    <url>/2023/06/16/2023-06-16-ubuntu%E9%9D%99%E6%80%81IP%E9%85%8D%E7%BD%AE/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>在 orangpi 上(ubuntu系统)配置静态IP(无线网络)</p>
+<span id="more"></span>
+<h2 id="1-ssh-vscode">1.ssh(vscode)</h2>
+<p>【如何优雅地访问远程主机？SSH与frp内网穿透配置教程】<br>
+<a href="https://www.bilibili.com/video/BV13L411w7XU/">https://www.bilibili.com/video/BV13L411w7XU/</a></p>
+<h2 id="2-ifconfig-netplan下载">2.ifconfig + netplan下载</h2>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">sudo apt install ifconfig<br></code></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">sudo apt update<br></code></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">sudo apt install netplan<br></code></pre></td></tr></table></figure>
+<h2 id="3-修改netplan配置">3.修改netplan配置</h2>
+<p>配置静态ip</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">network:<br>  version: 2<br>  wifis:<br>    wlan0:<br>      access-points:<br>        TP-LINK <span class="hljs-comment">#wifi名称</span><br>          password: <span class="hljs-string">&quot;123456&quot;</span> <span class="hljs-comment">#密码</span><br>      dhcp4: <span class="hljs-literal">false</span> <span class="hljs-comment">#静态ip</span><br>      optional: <span class="hljs-literal">true</span><br>      addresses: [192.168.0.112/24] <span class="hljs-comment">#前者是ip，后者是子网掩码</span><br>      gateway4: 192.168.0.1  <span class="hljs-comment">#gateway</span><br>      nameservers:<br>        addresses: [192.168.0.112,8.8.8.8]  <span class="hljs-comment">#前面与ip相同即可</span><br></code></pre></td></tr></table></figure>
+<p>gateway查看：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">route -n<br></code></pre></td></tr></table></figure>
+<p>2024-06-12更新：在较为新版的ubuntu设备上，直接使用 <code>nmcli</code> 即可</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># 列出可用wifi</span><br>nmcli connection show<br><br><span class="hljs-comment"># 如果是有线连接，一般都是这个名称</span><br>Wired Connection 1<br><br><span class="hljs-comment"># 根据连接名称修改&lt;name&gt;，根据需求修改ip，注意设备的不同网段不要有冲突</span><br>sudo nmcli connection modify &lt;name&gt; ipv4.addresses 192.168.1.100/24 ipv4.gateway 192.168.1.1 ipv4.dns 8.8.8.8 ipv4.method manual<br><br><span class="hljs-comment"># 重启 NetworkManager</span><br>sudo systemctl restart NetworkManager<br></code></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>计算机/折腾</category>
+        <category>网络</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
+        <tag>网络</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Minecraft服务器部署</title>
+    <url>/2023/11/10/2023-11-10-Minecraft%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%83%A8%E7%BD%B2/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>购买了一台阿里云的ECS，故尝试在服务器上部署Minecraft服务器</p>
+<span id="more"></span>
+<p>阿里云ECS<br>
+Ubuntu22.04<br>
+FinalShell</p>
+<p><a href="https://www.minecraft.net/zh-hans/download/server">https://www.minecraft.net/zh-hans/download/server</a><br>
+<a href="https://minecraft.fandom.com/wiki/Tutorials/Setting_up_a_server">https://minecraft.fandom.com/wiki/Tutorials/Setting_up_a_server</a></p>
+<h3 id="1-java环境安装">1.java环境安装</h3>
+<p>官方推荐安装OpenJDK 8及更高版本。试着根着官方文档下载OpenJDK 8，发现无法启动。故选择OpenJDK 18，经测试能成功启动。</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><code class="hljs sh">sudo apt update<br><span class="hljs-comment">#更新</span><br>sudo apt-get install openjdk-18-jdk-headless<br><span class="hljs-comment">#中间数字是版本号。去掉命令中的“-headless”可以安装完整的Java。</span><br></code></pre></td></tr></table></figure>
+<h3 id="2-Minecraft服务器端安装与运行">2.Minecraft服务器端安装与运行</h3>
+<p>先创建MC专用文件夹，用于存放服务端文件，如minecraft_server本体以及地图资源文件等。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">mkdir</span> Minecraft<br><span class="hljs-built_in">cd</span> Minecraft<br></code></pre></td></tr></table></figure>
+<p>根据官网上给的minecraft_server.1.20.2文件，直接使用网址下载。</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><code class="hljs sh">wget https://piston-data.mojang.com/v1/objects/5b868151bd02b41319f54c8d4061b8cae84e665c/server.jar<br></code></pre></td></tr></table></figure>
+<p>然后启动即可</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">java -Xmx1024M -Xms1024M -jar minecraft_server.1.20.2.jar nogui<br></code></pre></td></tr></table></figure>
+<h3 id="3-端口">3.端口</h3>
+<p>如果无法联机，可以查看端口是否开放。<br>
+Minecraft默认端口是25565，可以通过该端口扫描网址查询端口是否开放：<a href="http://www.jsons.cn/port/">http://www.jsons.cn/port/</a><br>
+也可以自行修改端口。</p>
+<h3 id="4-Docker">4.Docker</h3>
+<p>Docker可以大幅简化Minecraft服务器部署流程。这部分下次再写。</p>
+<details>
+<summary>2333</summary>
+<p>23333</p>
+</details>]]></content>
+      <categories>
+        <category>计算机/折腾</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
+        <tag>网络</tag>
       </tags>
   </entry>
   <entry>
@@ -393,46 +431,24 @@ intel Core i5 <font color="#0000dd">10</font><font color="#dd0000">400</font>F<b
         <category>hexo-md特性探索</category>
       </categories>
       <tags>
-        <tag>hexo</tag>
         <tag>markdown</tag>
+        <tag>hexo</tag>
       </tags>
   </entry>
   <entry>
-    <title>Minecraft服务器部署</title>
-    <url>/2023/11/10/2023-11-10-Minecraft%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%83%A8%E7%BD%B2/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>购买了一台阿里云的ECS，故尝试在服务器上部署Minecraft服务器</p>
+    <title>VSCode设置</title>
+    <url>/2023/11/24/2023-11-24-VSCode%E8%AE%BE%E7%BD%AE/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>VSCode设置，目的是在win上能右键调出VSCode。</p>
 <span id="more"></span>
-<p>阿里云ECS<br>
-Ubuntu22.04<br>
-FinalShell</p>
-<p><a href="https://www.minecraft.net/zh-hans/download/server">https://www.minecraft.net/zh-hans/download/server</a><br>
-<a href="https://minecraft.fandom.com/wiki/Tutorials/Setting_up_a_server">https://minecraft.fandom.com/wiki/Tutorials/Setting_up_a_server</a></p>
-<h3 id="1-java环境安装">1.java环境安装</h3>
-<p>官方推荐安装OpenJDK 8及更高版本。试着根着官方文档下载OpenJDK 8，发现无法启动。故选择OpenJDK 18，经测试能成功启动。</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><code class="hljs sh">sudo apt update<br><span class="hljs-comment">#更新</span><br>sudo apt-get install openjdk-18-jdk-headless<br><span class="hljs-comment">#中间数字是版本号。去掉命令中的“-headless”可以安装完整的Java。</span><br></code></pre></td></tr></table></figure>
-<h3 id="2-Minecraft服务器端安装与运行">2.Minecraft服务器端安装与运行</h3>
-<p>先创建MC专用文件夹，用于存放服务端文件，如minecraft_server本体以及地图资源文件等。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">mkdir</span> Minecraft<br><span class="hljs-built_in">cd</span> Minecraft<br></code></pre></td></tr></table></figure>
-<p>根据官网上给的minecraft_server.1.20.2文件，直接使用网址下载。</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><code class="hljs sh">wget https://piston-data.mojang.com/v1/objects/5b868151bd02b41319f54c8d4061b8cae84e665c/server.jar<br></code></pre></td></tr></table></figure>
-<p>然后启动即可</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">java -Xmx1024M -Xms1024M -jar minecraft_server.1.20.2.jar nogui<br></code></pre></td></tr></table></figure>
-<h3 id="3-端口">3.端口</h3>
-<p>如果无法联机，可以查看端口是否开放。<br>
-Minecraft默认端口是25565，可以通过该端口扫描网址查询端口是否开放：<a href="http://www.jsons.cn/port/">http://www.jsons.cn/port/</a><br>
-也可以自行修改端口。</p>
-<h3 id="4-Docker">4.Docker</h3>
-<p>Docker可以大幅简化Minecraft服务器部署流程。这部分下次再写。</p>
-<details>
-<summary>2333</summary>
-<p>23333</p>
-</details>]]></content>
+<p>在Windows中，为了能右键调出VS Code，需要修改注册表。新建一个txt文件：输入如下内容：</p>
+<figure class="highlight lsl"><table><tr><td class="code"><pre><code class="hljs lsl">Windows Registry Editor Version <span class="hljs-number">5.00</span><br><br>[HKEY_CLASSES_ROOT\*\shell\VSCode]<br>@=<span class="hljs-string">&quot;Open with Code&quot;</span><br><span class="hljs-string">&quot;Icon&quot;</span>=<span class="hljs-string">&quot;D:<span class="hljs-subst">\\</span>VS Code<span class="hljs-subst">\\</span>Code.exe&quot;</span><br><br>[HKEY_CLASSES_ROOT\*\shell\VSCode\command]<br>@=<span class="hljs-string">&quot;<span class="hljs-subst">\&quot;</span>D:<span class="hljs-subst">\\</span>VS Code<span class="hljs-subst">\\</span>Code.exe<span class="hljs-subst">\&quot;</span> <span class="hljs-subst">\&quot;</span>%1<span class="hljs-subst">\&quot;</span>&quot;</span><br><br>Windows Registry Editor Version <span class="hljs-number">5.00</span><br><br>[HKEY_CLASSES_ROOT\Directory\shell\VSCode]<br>@=<span class="hljs-string">&quot;Open with Code&quot;</span><br><span class="hljs-string">&quot;Icon&quot;</span>=<span class="hljs-string">&quot;D:<span class="hljs-subst">\\</span>VS Code<span class="hljs-subst">\\</span>Code.exe&quot;</span><br><br>[HKEY_CLASSES_ROOT\Directory\shell\VSCode\command]<br>@=<span class="hljs-string">&quot;<span class="hljs-subst">\&quot;</span>D:<span class="hljs-subst">\\</span>VS Code<span class="hljs-subst">\\</span>Code.exe<span class="hljs-subst">\&quot;</span> <span class="hljs-subst">\&quot;</span>%V<span class="hljs-subst">\&quot;</span>&quot;</span><br><br>Windows Registry Editor Version <span class="hljs-number">5.00</span><br><br>[HKEY_CLASSES_ROOT\Directory\Background\shell\VSCode]<br>@=<span class="hljs-string">&quot;Open with Code&quot;</span><br><span class="hljs-string">&quot;Icon&quot;</span>=<span class="hljs-string">&quot;D:<span class="hljs-subst">\\</span>VS Code<span class="hljs-subst">\\</span>Code.exe&quot;</span><br><br>[HKEY_CLASSES_ROOT\Directory\Background\shell\VSCode\command]<br>@=<span class="hljs-string">&quot;<span class="hljs-subst">\&quot;</span>D:<span class="hljs-subst">\\</span>VS Code<span class="hljs-subst">\\</span>Code.exe<span class="hljs-subst">\&quot;</span> <span class="hljs-subst">\&quot;</span>%V<span class="hljs-subst">\&quot;</span>&quot;</span><br></code></pre></td></tr></table></figure>
+<p>将txt改为reg，然后点开即可修改注册表。此时即可右键调出VS Code（包括右键文件、右键空白处）</p>
+]]></content>
       <categories>
         <category>计算机/折腾</category>
       </categories>
       <tags>
-        <tag>linux</tag>
-        <tag>网络</tag>
+        <tag>VSCode</tag>
       </tags>
   </entry>
   <entry>
@@ -465,22 +481,6 @@ Minecraft默认端口是25565，可以通过该端口扫描网址查询端口是
       </categories>
       <tags>
         <tag>git</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>VSCode设置</title>
-    <url>/2023/11/24/2023-11-24-VSCode%E8%AE%BE%E7%BD%AE/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>VSCode设置，目的是在win上能右键调出VSCode。</p>
-<span id="more"></span>
-<p>在Windows中，为了能右键调出VS Code，需要修改注册表。新建一个txt文件：输入如下内容：</p>
-<figure class="highlight lsl"><table><tr><td class="code"><pre><code class="hljs lsl">Windows Registry Editor Version <span class="hljs-number">5.00</span><br><br>[HKEY_CLASSES_ROOT\*\shell\VSCode]<br>@=<span class="hljs-string">&quot;Open with Code&quot;</span><br><span class="hljs-string">&quot;Icon&quot;</span>=<span class="hljs-string">&quot;D:<span class="hljs-subst">\\</span>VS Code<span class="hljs-subst">\\</span>Code.exe&quot;</span><br><br>[HKEY_CLASSES_ROOT\*\shell\VSCode\command]<br>@=<span class="hljs-string">&quot;<span class="hljs-subst">\&quot;</span>D:<span class="hljs-subst">\\</span>VS Code<span class="hljs-subst">\\</span>Code.exe<span class="hljs-subst">\&quot;</span> <span class="hljs-subst">\&quot;</span>%1<span class="hljs-subst">\&quot;</span>&quot;</span><br><br>Windows Registry Editor Version <span class="hljs-number">5.00</span><br><br>[HKEY_CLASSES_ROOT\Directory\shell\VSCode]<br>@=<span class="hljs-string">&quot;Open with Code&quot;</span><br><span class="hljs-string">&quot;Icon&quot;</span>=<span class="hljs-string">&quot;D:<span class="hljs-subst">\\</span>VS Code<span class="hljs-subst">\\</span>Code.exe&quot;</span><br><br>[HKEY_CLASSES_ROOT\Directory\shell\VSCode\command]<br>@=<span class="hljs-string">&quot;<span class="hljs-subst">\&quot;</span>D:<span class="hljs-subst">\\</span>VS Code<span class="hljs-subst">\\</span>Code.exe<span class="hljs-subst">\&quot;</span> <span class="hljs-subst">\&quot;</span>%V<span class="hljs-subst">\&quot;</span>&quot;</span><br><br>Windows Registry Editor Version <span class="hljs-number">5.00</span><br><br>[HKEY_CLASSES_ROOT\Directory\Background\shell\VSCode]<br>@=<span class="hljs-string">&quot;Open with Code&quot;</span><br><span class="hljs-string">&quot;Icon&quot;</span>=<span class="hljs-string">&quot;D:<span class="hljs-subst">\\</span>VS Code<span class="hljs-subst">\\</span>Code.exe&quot;</span><br><br>[HKEY_CLASSES_ROOT\Directory\Background\shell\VSCode\command]<br>@=<span class="hljs-string">&quot;<span class="hljs-subst">\&quot;</span>D:<span class="hljs-subst">\\</span>VS Code<span class="hljs-subst">\\</span>Code.exe<span class="hljs-subst">\&quot;</span> <span class="hljs-subst">\&quot;</span>%V<span class="hljs-subst">\&quot;</span>&quot;</span><br></code></pre></td></tr></table></figure>
-<p>将txt改为reg，然后点开即可修改注册表。此时即可右键调出VS Code（包括右键文件、右键空白处）</p>
-]]></content>
-      <categories>
-        <category>计算机/折腾</category>
-      </categories>
-      <tags>
-        <tag>VSCode</tag>
       </tags>
   </entry>
   <entry>
@@ -1367,6 +1367,107 @@ M834 80h400000v40h-400000z"/></svg></span></span></span><span class="vlist-s">�
       <tags>
         <tag>学习</tag>
         <tag>数学</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>v2rayA设置</title>
+    <url>/2024/01/30/2024-1-30-v2rayA%E8%AE%BE%E7%BD%AE/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>本文简单介绍ubuntu系统如何安装v2rayA。</p>
+<span id="more"></span>
+<h1>v2rayA</h1>
+<p>项目地址：<a href="https://github.com/v2rayA/v2rayA">https://github.com/v2rayA/v2rayA</a></p>
+<p>官方网站：<a href="https://v2raya.org/">https://v2raya.org/</a></p>
+<p>由于v2rayA在0.0.0.0:2017开放web服务，因此无需图形界面，这也是我选择它的理由。</p>
+<h2 id="安装">安装</h2>
+<p>有两种方式可以安装</p>
+<ul>
+<li>手动安装（<a href="https://github.com/v2rayA/v2rayA/releases%EF%BC%89">https://github.com/v2rayA/v2rayA/releases）</a></li>
+<li>一键脚本（<a href="https://github.com/233boy/v2ray%EF%BC%89">https://github.com/233boy/v2ray）</a></li>
+</ul>
+<p>由于众所周知的原因，国内经常无法访问github，而一键脚本中使用了github的源，因此失效概率很大。</p>
+<p>因此，只能通过其他方式（使用其他设备或者手动换源），先把安装包下下来，然后自行安装。</p>
+<p>（比如，使用已经配置好代理的windows设备来下载安装包，然后传到linux设备上。毕竟windows配置代理比linux方便不少。）</p>
+<h3 id="v2rayA">v2rayA</h3>
+<p>根据自己的设备，在release页面安装即可。</p>
+<p>将deb包传到设备上后，安装。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">dpkg -i package.deb<br></code></pre></td></tr></table></figure>
+<p>请注意：如果你的设备没有预先装过v2ray，手动安装deb包时，不会自动安装v2ray，可能会遇到</p>
+<figure class="highlight stylus"><table><tr><td class="code"><pre><code class="hljs stylus">检测到 geosite<span class="hljs-selector-class">.dat</span>, geoip<span class="hljs-selector-class">.dat</span> 文件或 v2ray-core 可能未正确安装，请检查<br></code></pre></td></tr></table></figure>
+<p>等类似的问题，在 <a href="https://github.com/v2rayA/v2rayA/issues/510">https://github.com/v2rayA/v2rayA/issues/510</a> 给出了解决方法。</p>
+<p>笔者也是遇到过这个坑，因此在这里，我们事先先配置好。</p>
+<h3 id="v2ray-core">v2ray-core</h3>
+<p>下载：<a href="https://github.com/v2fly/v2ray-core/releases">https://github.com/v2fly/v2ray-core/releases</a></p>
+<p>然后使用<code>unzip</code>命令即可</p>
+<p>接着，手动修改v2rayA的配置，<code>/path/to</code>改成自己的路径</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">vi /etc/default/v2raya<br><br><span class="hljs-comment"># 添加配置</span><br>V2RAYA_V2RAY_BIN=/path/to/v2ray-core/v2ray<br>V2RAYA_V2RAY_CONFDIR=/path/to/v2ray-core<br>V2RAYA_V2RAY_ASSETSDIR=/path/to/v2ray-core<br></code></pre></td></tr></table></figure>
+<p>然后重启即可</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">systemctl restart v2raya<br></code></pre></td></tr></table></figure>
+<h2 id="基础设置">基础设置</h2>
+<p>启动服务</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">systemctl start v2raya<br></code></pre></td></tr></table></figure>
+<p>关闭服务</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">systemctl stop v2raya<br></code></pre></td></tr></table></figure>
+<p>如果有图形界面，可以在<code>localhost:2017</code>上查看，如果没有，相应地改成设备所处ip即可。</p>
+<p>不过似乎还需要配置一下本地的代理，可以参考下面的<code>export</code>命令，端口结合自己在web端的设置来修改。</p>
+<h2 id="进阶配置">进阶配置</h2>
+<p>由于我个人并不希望代理开机自启，而是希望需要的时候打开，不需要的时候关闭，因此我手动编写了启动与关闭脚本。</p>
+<p><code>v2a-start.sh</code></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash"><span class="hljs-meta">#!/bin/bash</span><br>systemctl start v2raya<br><span class="hljs-built_in">export</span> http_proxy=<span class="hljs-string">&quot;http://127.0.0.1:20171/&quot;</span><br><span class="hljs-built_in">export</span> https_proxy=<span class="hljs-string">&quot;http://127.0.0.1:20173/&quot;</span><br><span class="hljs-built_in">export</span> no_proxy=<span class="hljs-string">&quot;127.0.0.1,localhost&quot;</span><br><span class="hljs-built_in">export</span> HTTP_PROXY=<span class="hljs-string">&quot;http://127.0.0.1:20171/&quot;</span><br><span class="hljs-built_in">export</span> HTTPS_PROXY=<span class="hljs-string">&quot;http://127.0.0.1:20173/&quot;</span><br><span class="hljs-built_in">export</span> NO_PROXY=<span class="hljs-string">&quot;127.0.0.1,localhost&quot;</span><br></code></pre></td></tr></table></figure>
+<p><code>v2a-halt.sh</code></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash"><span class="hljs-meta">#!/bin/bash</span><br>systemctl stop v2raya<br><span class="hljs-built_in">unset</span> http_proxy<br><span class="hljs-built_in">unset</span> https_proxy<br><span class="hljs-built_in">unset</span> no_proxy<br><span class="hljs-built_in">unset</span> HTTP_PROXY<br><span class="hljs-built_in">unset</span> NO_PROXY<br></code></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>计算机/折腾</category>
+        <category>网络</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
+        <tag>网络</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>frp设置</title>
+    <url>/2024/01/30/2024-1-30-frp%E8%AE%BE%E7%BD%AE/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>本文以ssh为例，简单介绍基于frp的内网穿透的方法。</p>
+<span id="more"></span>
+<h1>frp</h1>
+<p>为了使我们能在其他地方访问在家/公司的内网中的设备，我们需要使用内网穿透工具。最有名的就是frp。</p>
+<p>项目地址：<a href="https://github.com/fatedier/frp">https://github.com/fatedier/frp</a></p>
+<h2 id="服务端-有公网">服务端/有公网</h2>
+<figure class="highlight ini"><table><tr><td class="code"><pre><code class="hljs ini"><span class="hljs-comment"># frps.toml</span><br><span class="hljs-attr">bindPort</span> = <span class="hljs-number">7000</span><br></code></pre></td></tr></table></figure>
+<p>这个7000端口是用来给frp通信的，并不是端口映射</p>
+<p>然后启动服务端<br>
+<code>./frps -c ./frps.toml</code></p>
+<h2 id="客户端-无公网">客户端/无公网</h2>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># frpc.toml</span><br>serverAddr = <span class="hljs-string">&quot;x.x.x.x&quot;</span><br>serverPort = 7000<br><br>[[proxies]]<br>name = <span class="hljs-string">&quot;ssh&quot;</span><br><span class="hljs-built_in">type</span> = <span class="hljs-string">&quot;tcp&quot;</span><br>localIP = <span class="hljs-string">&quot;127.0.0.1&quot;</span><br>localPort = 22<br>remotePort = 6000<br></code></pre></td></tr></table></figure>
+<p>启动客户端<br>
+<code>./frpc -c ./frpc.toml</code></p>
+<h2 id="测试frp连接">测试frp连接</h2>
+<p>在不关闭服务端和客户端的bash界面的情况下，运行以下命令</p>
+<p><code>ssh -oPort=6000 test@xx.xx.xx.xx</code></p>
+<p>如果返回timeout或者connection refused的话，可能是某个bash关闭了或者防火墙的问题</p>
+<p>可以使用<code>sudo ufw status</code>来查看端口开放状态。可以运行下面的命令开放特定端口</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># 开放tcp端口</span><br>sudo ufw allow 22/tcp<br><span class="hljs-comment"># 开放udp端口</span><br>sudo ufw allow 53/udp<br><span class="hljs-comment"># 不要忘记重新加载</span><br>sudo ufw reload<br></code></pre></td></tr></table></figure>
+<h2 id="进阶设置-开机自启">进阶设置/开机自启</h2>
+<p>在服务端和客户端的frp的文件夹中，分别编写脚本<code>frps.sh</code>与<code>frpc.sh</code>，里面编写启动命令</p>
+<p>在<code>/etc/systemd/system</code>中，分别创建文件<code>frps.service</code>与<code>frpc.service</code></p>
+<p>这里以<code>frps.service</code>为例</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># frps.service</span><br>[Unit]<br>Description=FrpServer<br>After=network.target<br>[Service]<br>Type=simple<br>ExecStart=/root/frp_0.53.2_linux_amd64/frps.sh<br><span class="hljs-comment"># 服务启动时执行的命令</span><br>WorkingDirectory=/root/frp_0.53.2_linux_amd64/<br><span class="hljs-comment"># 指定脚本运行的目录</span><br>[Install]<br>WantedBy=multi-user.target<br><span class="hljs-comment"># 自定义服务会在多用户模式下启动</span><br></code></pre></td></tr></table></figure>
+<p>如果脚本里就是用绝对路径写的，<code>WorkingDirectory</code> 可以不写</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># 重新加载 Systemd 配置</span><br>sudo systemctl daemon-reload<br><span class="hljs-comment"># 启用自启动，这一步会创建软连接</span><br>sudo systemctl <span class="hljs-built_in">enable</span> frps.service<br><span class="hljs-comment"># 启动服务，其实这里的.service不用写</span><br>sudo systemctl start frps.service<br></code></pre></td></tr></table></figure>
+<p><code>frps.service</code>的开机自启也是类似，但经过测试发现，如果一开机就启动可能会因为网络未完全连接而失败。<br>
+使用<code>systemctl status my-service.service</code>命令查看状态，可以看到类似time out/connection failed的报错。<br>
+经测试，设置开机后10秒再启动，服务即可正常运行。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># frpc.service</span><br>[Unit]<br>Description=FrpClient<br>After=network.target<br>[Service]<br>Type=simple<br><span class="hljs-comment"># 延迟10s启动</span><br>ExecStartPre=/bin/sleep 10<br>ExecStart=/home/orangepi/frp_0.53.2_linux_arm64/frpc.sh<br><span class="hljs-comment"># 服务启动时执行的命令</span><br>WorkingDirectory=/home/orangepi/frp_0.53.2_linux_arm64/<br><span class="hljs-comment"># 指定脚本运行的目录</span><br>[Install]<br>WantedBy=multi-user.target<br></code></pre></td></tr></table></figure>
+<p>现在，在windows中，可以通过powershell命令来连接到主机</p>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><code class="hljs powershell">ssh <span class="hljs-literal">-oPort</span>=<span class="hljs-number">6000</span> orangepi@xx.xx.xx.xx<br></code></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>计算机/折腾</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
+        <tag>网络</tag>
       </tags>
   </entry>
   <entry>
@@ -2359,107 +2460,6 @@ M834 80h400000v40h-400000z"/></svg></span></span></span><span class="vlist-s">�
       <tags>
         <tag>学习</tag>
         <tag>C++</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>frp设置</title>
-    <url>/2024/01/30/2024-1-30-frp%E8%AE%BE%E7%BD%AE/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>本文以ssh为例，简单介绍基于frp的内网穿透的方法。</p>
-<span id="more"></span>
-<h1>frp</h1>
-<p>为了使我们能在其他地方访问在家/公司的内网中的设备，我们需要使用内网穿透工具。最有名的就是frp。</p>
-<p>项目地址：<a href="https://github.com/fatedier/frp">https://github.com/fatedier/frp</a></p>
-<h2 id="服务端-有公网">服务端/有公网</h2>
-<figure class="highlight ini"><table><tr><td class="code"><pre><code class="hljs ini"><span class="hljs-comment"># frps.toml</span><br><span class="hljs-attr">bindPort</span> = <span class="hljs-number">7000</span><br></code></pre></td></tr></table></figure>
-<p>这个7000端口是用来给frp通信的，并不是端口映射</p>
-<p>然后启动服务端<br>
-<code>./frps -c ./frps.toml</code></p>
-<h2 id="客户端-无公网">客户端/无公网</h2>
-<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># frpc.toml</span><br>serverAddr = <span class="hljs-string">&quot;x.x.x.x&quot;</span><br>serverPort = 7000<br><br>[[proxies]]<br>name = <span class="hljs-string">&quot;ssh&quot;</span><br><span class="hljs-built_in">type</span> = <span class="hljs-string">&quot;tcp&quot;</span><br>localIP = <span class="hljs-string">&quot;127.0.0.1&quot;</span><br>localPort = 22<br>remotePort = 6000<br></code></pre></td></tr></table></figure>
-<p>启动客户端<br>
-<code>./frpc -c ./frpc.toml</code></p>
-<h2 id="测试frp连接">测试frp连接</h2>
-<p>在不关闭服务端和客户端的bash界面的情况下，运行以下命令</p>
-<p><code>ssh -oPort=6000 test@xx.xx.xx.xx</code></p>
-<p>如果返回timeout或者connection refused的话，可能是某个bash关闭了或者防火墙的问题</p>
-<p>可以使用<code>sudo ufw status</code>来查看端口开放状态。可以运行下面的命令开放特定端口</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># 开放tcp端口</span><br>sudo ufw allow 22/tcp<br><span class="hljs-comment"># 开放udp端口</span><br>sudo ufw allow 53/udp<br><span class="hljs-comment"># 不要忘记重新加载</span><br>sudo ufw reload<br></code></pre></td></tr></table></figure>
-<h2 id="进阶设置-开机自启">进阶设置/开机自启</h2>
-<p>在服务端和客户端的frp的文件夹中，分别编写脚本<code>frps.sh</code>与<code>frpc.sh</code>，里面编写启动命令</p>
-<p>在<code>/etc/systemd/system</code>中，分别创建文件<code>frps.service</code>与<code>frpc.service</code></p>
-<p>这里以<code>frps.service</code>为例</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># frps.service</span><br>[Unit]<br>Description=FrpServer<br>After=network.target<br>[Service]<br>Type=simple<br>ExecStart=/root/frp_0.53.2_linux_amd64/frps.sh<br><span class="hljs-comment"># 服务启动时执行的命令</span><br>WorkingDirectory=/root/frp_0.53.2_linux_amd64/<br><span class="hljs-comment"># 指定脚本运行的目录</span><br>[Install]<br>WantedBy=multi-user.target<br><span class="hljs-comment"># 自定义服务会在多用户模式下启动</span><br></code></pre></td></tr></table></figure>
-<p>如果脚本里就是用绝对路径写的，<code>WorkingDirectory</code> 可以不写</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># 重新加载 Systemd 配置</span><br>sudo systemctl daemon-reload<br><span class="hljs-comment"># 启用自启动，这一步会创建软连接</span><br>sudo systemctl <span class="hljs-built_in">enable</span> frps.service<br><span class="hljs-comment"># 启动服务，其实这里的.service不用写</span><br>sudo systemctl start frps.service<br></code></pre></td></tr></table></figure>
-<p><code>frps.service</code>的开机自启也是类似，但经过测试发现，如果一开机就启动可能会因为网络未完全连接而失败。<br>
-使用<code>systemctl status my-service.service</code>命令查看状态，可以看到类似time out/connection failed的报错。<br>
-经测试，设置开机后10秒再启动，服务即可正常运行。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># frpc.service</span><br>[Unit]<br>Description=FrpClient<br>After=network.target<br>[Service]<br>Type=simple<br><span class="hljs-comment"># 延迟10s启动</span><br>ExecStartPre=/bin/sleep 10<br>ExecStart=/home/orangepi/frp_0.53.2_linux_arm64/frpc.sh<br><span class="hljs-comment"># 服务启动时执行的命令</span><br>WorkingDirectory=/home/orangepi/frp_0.53.2_linux_arm64/<br><span class="hljs-comment"># 指定脚本运行的目录</span><br>[Install]<br>WantedBy=multi-user.target<br></code></pre></td></tr></table></figure>
-<p>现在，在windows中，可以通过powershell命令来连接到主机</p>
-<figure class="highlight powershell"><table><tr><td class="code"><pre><code class="hljs powershell">ssh <span class="hljs-literal">-oPort</span>=<span class="hljs-number">6000</span> orangepi@xx.xx.xx.xx<br></code></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>计算机/折腾</category>
-      </categories>
-      <tags>
-        <tag>linux</tag>
-        <tag>网络</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>v2rayA设置</title>
-    <url>/2024/01/30/2024-1-30-v2rayA%E8%AE%BE%E7%BD%AE/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>本文简单介绍ubuntu系统如何安装v2rayA。</p>
-<span id="more"></span>
-<h1>v2rayA</h1>
-<p>项目地址：<a href="https://github.com/v2rayA/v2rayA">https://github.com/v2rayA/v2rayA</a></p>
-<p>官方网站：<a href="https://v2raya.org/">https://v2raya.org/</a></p>
-<p>由于v2rayA在0.0.0.0:2017开放web服务，因此无需图形界面，这也是我选择它的理由。</p>
-<h2 id="安装">安装</h2>
-<p>有两种方式可以安装</p>
-<ul>
-<li>手动安装（<a href="https://github.com/v2rayA/v2rayA/releases%EF%BC%89">https://github.com/v2rayA/v2rayA/releases）</a></li>
-<li>一键脚本（<a href="https://github.com/233boy/v2ray%EF%BC%89">https://github.com/233boy/v2ray）</a></li>
-</ul>
-<p>由于众所周知的原因，国内经常无法访问github，而一键脚本中使用了github的源，因此失效概率很大。</p>
-<p>因此，只能通过其他方式（使用其他设备或者手动换源），先把安装包下下来，然后自行安装。</p>
-<p>（比如，使用已经配置好代理的windows设备来下载安装包，然后传到linux设备上。毕竟windows配置代理比linux方便不少。）</p>
-<h3 id="v2rayA">v2rayA</h3>
-<p>根据自己的设备，在release页面安装即可。</p>
-<p>将deb包传到设备上后，安装。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">dpkg -i package.deb<br></code></pre></td></tr></table></figure>
-<p>请注意：如果你的设备没有预先装过v2ray，手动安装deb包时，不会自动安装v2ray，可能会遇到</p>
-<figure class="highlight stylus"><table><tr><td class="code"><pre><code class="hljs stylus">检测到 geosite<span class="hljs-selector-class">.dat</span>, geoip<span class="hljs-selector-class">.dat</span> 文件或 v2ray-core 可能未正确安装，请检查<br></code></pre></td></tr></table></figure>
-<p>等类似的问题，在 <a href="https://github.com/v2rayA/v2rayA/issues/510">https://github.com/v2rayA/v2rayA/issues/510</a> 给出了解决方法。</p>
-<p>笔者也是遇到过这个坑，因此在这里，我们事先先配置好。</p>
-<h3 id="v2ray-core">v2ray-core</h3>
-<p>下载：<a href="https://github.com/v2fly/v2ray-core/releases">https://github.com/v2fly/v2ray-core/releases</a></p>
-<p>然后使用<code>unzip</code>命令即可</p>
-<p>接着，手动修改v2rayA的配置，<code>/path/to</code>改成自己的路径</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">vi /etc/default/v2raya<br><br><span class="hljs-comment"># 添加配置</span><br>V2RAYA_V2RAY_BIN=/path/to/v2ray-core/v2ray<br>V2RAYA_V2RAY_CONFDIR=/path/to/v2ray-core<br>V2RAYA_V2RAY_ASSETSDIR=/path/to/v2ray-core<br></code></pre></td></tr></table></figure>
-<p>然后重启即可</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">systemctl restart v2raya<br></code></pre></td></tr></table></figure>
-<h2 id="基础设置">基础设置</h2>
-<p>启动服务</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">systemctl start v2raya<br></code></pre></td></tr></table></figure>
-<p>关闭服务</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">systemctl stop v2raya<br></code></pre></td></tr></table></figure>
-<p>如果有图形界面，可以在<code>localhost:2017</code>上查看，如果没有，相应地改成设备所处ip即可。</p>
-<p>不过似乎还需要配置一下本地的代理，可以参考下面的<code>export</code>命令，端口结合自己在web端的设置来修改。</p>
-<h2 id="进阶配置">进阶配置</h2>
-<p>由于我个人并不希望代理开机自启，而是希望需要的时候打开，不需要的时候关闭，因此我手动编写了启动与关闭脚本。</p>
-<p><code>v2a-start.sh</code></p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash"><span class="hljs-meta">#!/bin/bash</span><br>systemctl start v2raya<br><span class="hljs-built_in">export</span> http_proxy=<span class="hljs-string">&quot;http://127.0.0.1:20171/&quot;</span><br><span class="hljs-built_in">export</span> https_proxy=<span class="hljs-string">&quot;http://127.0.0.1:20173/&quot;</span><br><span class="hljs-built_in">export</span> no_proxy=<span class="hljs-string">&quot;127.0.0.1,localhost&quot;</span><br><span class="hljs-built_in">export</span> HTTP_PROXY=<span class="hljs-string">&quot;http://127.0.0.1:20171/&quot;</span><br><span class="hljs-built_in">export</span> HTTPS_PROXY=<span class="hljs-string">&quot;http://127.0.0.1:20173/&quot;</span><br><span class="hljs-built_in">export</span> NO_PROXY=<span class="hljs-string">&quot;127.0.0.1,localhost&quot;</span><br></code></pre></td></tr></table></figure>
-<p><code>v2a-halt.sh</code></p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash"><span class="hljs-meta">#!/bin/bash</span><br>systemctl stop v2raya<br><span class="hljs-built_in">unset</span> http_proxy<br><span class="hljs-built_in">unset</span> https_proxy<br><span class="hljs-built_in">unset</span> no_proxy<br><span class="hljs-built_in">unset</span> HTTP_PROXY<br><span class="hljs-built_in">unset</span> NO_PROXY<br></code></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>计算机/折腾</category>
-        <category>网络</category>
-      </categories>
-      <tags>
-        <tag>linux</tag>
-        <tag>网络</tag>
       </tags>
   </entry>
 </search>
