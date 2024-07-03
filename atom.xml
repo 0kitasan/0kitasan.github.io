@@ -6,7 +6,7 @@
   <link href="https://0kitasan.github.io/atom.xml" rel="self"/>
   
   <link href="https://0kitasan.github.io/"/>
-  <updated>2024-06-20T07:40:02.400Z</updated>
+  <updated>2024-07-03T09:45:11.343Z</updated>
   <id>https://0kitasan.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>ubuntu的一些命令</title>
+    <link href="https://0kitasan.github.io/2024/07/03/2024-07-03-ubuntu%E7%9A%84%E4%B8%80%E4%BA%9B%E5%91%BD%E4%BB%A4/"/>
+    <id>https://0kitasan.github.io/2024/07/03/2024-07-03-ubuntu%E7%9A%84%E4%B8%80%E4%BA%9B%E5%91%BD%E4%BB%A4/</id>
+    <published>2024-07-03T09:45:22.000Z</published>
+    <updated>2024-07-03T09:45:11.343Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;本文列举一些 ubuntu 的命令,因为不是很常用所以容易忘记。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="学习" scheme="https://0kitasan.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="学习" scheme="https://0kitasan.github.io/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="C++" scheme="https://0kitasan.github.io/tags/C/"/>
+    
+  </entry>
   
   <entry>
     <title>C++笔记</title>
@@ -65,10 +86,10 @@
     <link href="https://0kitasan.github.io/2024/04/27/2024-04-27-hexo%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB/"/>
     <id>https://0kitasan.github.io/2024/04/27/2024-04-27-hexo%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB/</id>
     <published>2024-04-27T14:37:54.000Z</published>
-    <updated>2024-06-11T16:20:33.141Z</updated>
+    <updated>2024-07-03T11:25:54.099Z</updated>
     
     
-    <summary type="html">&lt;p&gt;todo list&lt;/p&gt;</summary>
+    <summary type="html">&lt;p&gt;疑似直接迁移文件夹就行。&lt;/p&gt;</summary>
     
     
     
@@ -201,9 +222,9 @@
     <category term="hexo-md特性探索" scheme="https://0kitasan.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA-%E6%8A%98%E8%85%BE/hexo-md%E7%89%B9%E6%80%A7%E6%8E%A2%E7%B4%A2/"/>
     
     
-    <category term="markdown" scheme="https://0kitasan.github.io/tags/markdown/"/>
-    
     <category term="hexo" scheme="https://0kitasan.github.io/tags/hexo/"/>
+    
+    <category term="markdown" scheme="https://0kitasan.github.io/tags/markdown/"/>
     
   </entry>
   
@@ -293,9 +314,9 @@
     <category term="hexo-md特性探索" scheme="https://0kitasan.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA-%E6%8A%98%E8%85%BE/hexo-md%E7%89%B9%E6%80%A7%E6%8E%A2%E7%B4%A2/"/>
     
     
-    <category term="markdown" scheme="https://0kitasan.github.io/tags/markdown/"/>
-    
     <category term="hexo" scheme="https://0kitasan.github.io/tags/hexo/"/>
+    
+    <category term="markdown" scheme="https://0kitasan.github.io/tags/markdown/"/>
     
   </entry>
   
@@ -316,9 +337,9 @@
     <category term="hexo-md特性探索" scheme="https://0kitasan.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA-%E6%8A%98%E8%85%BE/hexo-md%E7%89%B9%E6%80%A7%E6%8E%A2%E7%B4%A2/"/>
     
     
-    <category term="markdown" scheme="https://0kitasan.github.io/tags/markdown/"/>
-    
     <category term="hexo" scheme="https://0kitasan.github.io/tags/hexo/"/>
+    
+    <category term="markdown" scheme="https://0kitasan.github.io/tags/markdown/"/>
     
   </entry>
   

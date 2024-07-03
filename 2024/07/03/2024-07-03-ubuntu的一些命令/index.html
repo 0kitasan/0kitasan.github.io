@@ -18,28 +18,23 @@
   <meta name="author" content="hamuko">
   <meta name="keywords" content="">
   
-    <meta name="description" content="hexo图片引用测试">
+    <meta name="description" content="本文列举一些 ubuntu 的命令,因为不是很常用所以容易忘记。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="hexo图片引用">
-<meta property="og:url" content="https://0kitasan.github.io/2023/05/11/2023-05-11-hexo%E5%9B%BE%E7%89%87%E5%BC%95%E7%94%A8/index.html">
+<meta property="og:title" content="ubuntu的一些命令">
+<meta property="og:url" content="https://0kitasan.github.io/2024/07/03/2024-07-03-ubuntu%E7%9A%84%E4%B8%80%E4%BA%9B%E5%91%BD%E4%BB%A4/index.html">
 <meta property="og:site_name" content="myblog">
-<meta property="og:description" content="hexo图片引用测试">
+<meta property="og:description" content="本文列举一些 ubuntu 的命令,因为不是很常用所以容易忘记。">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://0kitasan.github.io/2023/05/11/2023-05-11-hexo%E5%9B%BE%E7%89%87%E5%BC%95%E7%94%A8/LaTeX_logo.svg">
-<meta property="og:image" content="https://0kitasan.github.io/2023/05/11/2023-05-11-hexo%E5%9B%BE%E7%89%87%E5%BC%95%E7%94%A8/LaTeX_logo.svg">
-<meta property="og:image" content="https://0kitasan.github.io/2023/05/11/2023-05-11-hexo%E5%9B%BE%E7%89%87%E5%BC%95%E7%94%A8/LaTeX_logo.svg">
-<meta property="og:image" content="https://katex.org/img/katex-logo-black.svg">
-<meta property="article:published_time" content="2023-05-11T11:13:48.000Z">
-<meta property="article:modified_time" content="2024-06-11T16:16:18.306Z">
+<meta property="article:published_time" content="2024-07-03T09:45:22.000Z">
+<meta property="article:modified_time" content="2024-07-03T09:45:11.343Z">
 <meta property="article:author" content="hamuko">
-<meta property="article:tag" content="hexo">
-<meta property="article:tag" content="markdown">
+<meta property="article:tag" content="学习">
+<meta property="article:tag" content="C++">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://0kitasan.github.io/2023/05/11/2023-05-11-hexo%E5%9B%BE%E7%89%87%E5%BC%95%E7%94%A8/LaTeX_logo.svg">
   
   
   
-  <title>hexo图片引用 - myblog</title>
+  <title>ubuntu的一些命令 - myblog</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -245,7 +240,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="hexo图片引用"></span>
+            <span id="subtitle" data-typed-text="ubuntu的一些命令"></span>
           
         </div>
 
@@ -256,8 +251,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-05-11 19:13" pubdate>
-          2023年5月11日 晚上
+        <time datetime="2024-07-03 17:45" pubdate>
+          2024年7月3日 下午
         </time>
       </span>
     
@@ -268,7 +263,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1.1k 字
+          1.3k 字
         
       </span>
     
@@ -279,7 +274,7 @@
         
         
         
-          10 分钟
+          12 分钟
         
       </span>
     
@@ -316,48 +311,69 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">hexo图片引用</h1>
+            <h1 id="seo-header">ubuntu的一些命令</h1>
             
             
               <div class="markdown-body">
                 
-                <p>hexo图片引用测试</p>
+                <p>本文列举一些 ubuntu 的命令,因为不是很常用所以容易忘记。</p>
 <span id="more"></span>
-<p>hexo图片引用是比较复杂的。引用图床（url）格式的图片还好，文件路径写相应的url就行，但是引用本地文件时择总是出问题。<br>
-解决方法：下载插件<a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo-renderer-marked">hexo-renderer-marked</a>。<br>
-在git bash中输入如下代码进行下载</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ npm install hexo-renderer-marked --save<br></code></pre></td></tr></table></figure>
-<p>进行下载<br>
-依据github说明配置<code>config.yml</code>文件即可</p>
-<p>这里推荐以如下的的html格式进行配置：</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;relative path&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;title&quot;</span> <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;50%&quot;</span>&gt;</span><br></code></pre></td></tr></table></figure>
-<p>这样既能在本地markdown编辑器的预览页中看到，又可以在网站中显示，还能调整标题与大小。</p>
-<p>注意，relative path指的是相对路径，例如：<br>
-文章的md文件路径<code>D:/hexo/blog/source/_posts</code><br>
-图片路径<code>D:/hexo/blog/source/_posts/image_example/img.png</code><br>
-那么相对路径为<code>/image_example/img.png</code></p>
-<p>下面进行测试：</p>
-<h2 id="1-html格式进行引用">1.html格式进行引用</h2>
-<p>第一种方式（相对路径）：</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;/2023-05-11-hexo图片引用/LaTeX_logo.svg&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;LaTeX logo1&quot;</span> <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;70&quot;</span>&gt;</span><br></code></pre></td></tr></table></figure>
-<p>效果如下（markdown中可以显示，且网页中能显示，极力推荐）：</p>
-<img src="/2023/05/11/2023-05-11-hexo%E5%9B%BE%E7%89%87%E5%BC%95%E7%94%A8/LaTeX_logo.svg" srcset="/img/loading.gif" lazyload alt="LaTeX logo1" width="70">
-width的值决定图片宽度。1000=100%，70=7%，数字与百分比可以互相转换。
-<br>
-<p>第二种方式（hexo-renderer-marked使文件路径默认解析至资源文件夹）：</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;LaTeX_logo.svg&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;LaTeX logo2&quot;</span> <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;70&quot;</span>&gt;</span><br></code></pre></td></tr></table></figure>
-<p>请注意：图片的长宽比始终保持不变。<br>
-效果如下（markdown中不能显示，但网页中能显示）：<br>
-<img src="/2023/05/11/2023-05-11-hexo%E5%9B%BE%E7%89%87%E5%BC%95%E7%94%A8/LaTeX_logo.svg" srcset="/img/loading.gif" lazyload alt="LaTeX logo2" width="70"></p>
-<p>第三种方式：<br>
-使用markdown语法（由hexo-renderer-marked插件支持）</p>
-<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs markdown">![<span class="hljs-string">LaTeX logo3</span>](<span class="hljs-link">LaTeX_logo.svg</span>)<br></code></pre></td></tr></table></figure>
-<p>效果如下（markdown中不能显示，但网页中能显示，且调整不了大小）：<br>
-<img src="/2023/05/11/2023-05-11-hexo%E5%9B%BE%E7%89%87%E5%BC%95%E7%94%A8/LaTeX_logo.svg" srcset="/img/loading.gif" lazyload alt="LaTeX logo3"></p>
-<h2 id="2-url格式引用">2.url格式引用</h2>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://katex.org/img/katex-logo-black.svg&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;KaTeX logo&quot;</span> <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;70&quot;</span>/&gt;</span><br></code></pre></td></tr></table></figure>
-<p>效果如下（markdown中可以显示，且网页中能显示）：<br>
-<img src="https://katex.org/img/katex-logo-black.svg" srcset="/img/loading.gif" lazyload alt="KaTeX logo" width="70"></p>
+<h2 id="查找文件位置（mlocate）">查找文件位置（mlocate）</h2>
+<p>安装 <code>mlocate</code> 或 <code>plocate</code></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">sudo apt install mlocate<br></code></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">updatedb<br><br></code></pre></td></tr></table></figure>
+<h2 id="查看-CPU-温度（orangepi-上）">查看 CPU 温度（orangepi 上）</h2>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">sensors<br></code></pre></td></tr></table></figure>
+<h2 id="设置时区（timedatectl）">设置时区（timedatectl）</h2>
+<p>实例:将时区设置为上海</p>
+<p>查看当前时区：使用以下命令查看当前时区：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">timedatectl<br></code></pre></td></tr></table></figure>
+<p>列出所有可用时区：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">timedatectl list-timezones<br></code></pre></td></tr></table></figure>
+<p>设置时区为上海：<br>
+使用以下命令将时区设置为上海：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">sudo timedatectl set-timezone Asia/Shanghai<br></code></pre></td></tr></table></figure>
+<p>验证时区设置：</p>
+<p>再次使用 <code>timedatectl</code> 命令验证时区是否已正确设置：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">timedatectl<br></code></pre></td></tr></table></figure>
+<h2 id="设置时间（date-s）">设置时间（date -s）</h2>
+<p>在一些 arm 设备上,没有自动校准时间的功能,如果又是处于没有联网的环境,那就连接不到 ntp 服务器,也就无法校准时间了。<br>
+这可能导致增量编译出现问题。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">sudo <span class="hljs-built_in">date</span> -s <span class="hljs-string">&quot;2024-07-03 14:30:00&quot;</span><br></code></pre></td></tr></table></figure>
+<p>只想设置日期，而不改变时间:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">sudo <span class="hljs-built_in">date</span> -s <span class="hljs-string">&quot;2024-07-03&quot;</span><br></code></pre></td></tr></table></figure>
+<h2 id="压缩与解压缩（zip）">压缩与解压缩（zip）</h2>
+<p>在 Ubuntu 中，你可以使用 <code>zip</code> 命令行工具来将文件或目录(解)压缩成 ZIP 文件。以下是一些常见的用法示例：</p>
+<h3 id="安装-zip-工具">安装 <code>zip</code> 工具</h3>
+<p>在大多数情况下，<code>zip</code> 工具默认已经安装在 Ubuntu 上。如果没有，可以通过以下命令安装：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">sudo apt update<br>sudo apt install zip<br></code></pre></td></tr></table></figure>
+<h3 id="解压-ZIP-文件">解压 ZIP 文件</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">unzip filename.zip<br></code></pre></td></tr></table></figure>
+<p>这将在当前目录中解压 ZIP 文件内容。</p>
+<h3 id="将文件解压到指定目录">将文件解压到指定目录</h3>
+<p>如果你想将文件解压到特定的目录，可以使用 <code>-d</code> 选项：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">unzip filename.zip -d /path/to/destination<br></code></pre></td></tr></table></figure>
+<p>例如：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">unzip myfiles.zip -d /home/user/extracted_files<br></code></pre></td></tr></table></figure>
+<h3 id="压缩单个文件">压缩单个文件</h3>
+<p>要将单个文件压缩成 ZIP 文件，可以使用以下命令：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">zip archive_name.zip file_to_compress<br></code></pre></td></tr></table></figure>
+<p>例如，将 <code>example.txt</code> 压缩成 <code>example.zip</code>：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">zip example.zip example.txt<br></code></pre></td></tr></table></figure>
+<h3 id="压缩多个文件">压缩多个文件</h3>
+<p>要将多个文件压缩成一个 ZIP 文件，可以将文件名依次列出：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">zip archive_name.zip file1 file2 file3<br></code></pre></td></tr></table></figure>
+<p>例如，将 <code>file1.txt</code>、<code>file2.txt</code> 和 <code>file3.txt</code> 压缩成 <code>files.zip</code>：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">zip files.zip file1.txt file2.txt file3.txt<br></code></pre></td></tr></table></figure>
+<h3 id="压缩整个目录">压缩整个目录</h3>
+<p>要将整个目录及其子目录中的所有文件压缩成 ZIP 文件，可以使用 <code>-r</code> 选项：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">zip -r archive_name.zip directory_to_compress<br></code></pre></td></tr></table></figure>
+<p>例如，将 <code>my_folder</code> 目录及其内容压缩成 <code>my_folder.zip</code>：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">zip -r my_folder.zip my_folder<br></code></pre></td></tr></table></figure>
+<h2 id="todo-vscode-的-markdown-设置-以及-tar-gz">todo: vscode 的 markdown 设置,以及 tar.gz</h2>
+<p>todo: Prettier 扩展<br>
+打开 vscode 设置:Ctrl+,<br>
+搜索 Default Formatter 设置。</p>
 
                 
               </div>
@@ -376,15 +392,8 @@ width的值决定图片宽度。1000=100%，70=7%，数字与百分比可以互�
     
       <span class="category-chain">
         
-  <a href="../../../../categories/%E8%AE%A1%E7%AE%97%E6%9C%BA-%E6%8A%98%E8%85%BE/" class="category-chain-item">计算机/折腾</a>
+  <a href="../../../../categories/%E5%AD%A6%E4%B9%A0/" class="category-chain-item">学习</a>
   
-  
-    <span>></span>
-    
-  <a href="../../../../categories/%E8%AE%A1%E7%AE%97%E6%9C%BA-%E6%8A%98%E8%85%BE/hexo-md%E7%89%B9%E6%80%A7%E6%8E%A2%E7%B4%A2/" class="category-chain-item">hexo-md特性探索</a>
-  
-  
-
   
 
       </span>
@@ -398,9 +407,9 @@ width的值决定图片宽度。1000=100%，70=7%，数字与百分比可以互�
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="../../../../tags/hexo/" class="print-no-link">#hexo</a>
+        <a href="../../../../tags/%E5%AD%A6%E4%B9%A0/" class="print-no-link">#学习</a>
       
-        <a href="../../../../tags/markdown/" class="print-no-link">#markdown</a>
+        <a href="../../../../tags/C/" class="print-no-link">#C++</a>
       
     </div>
   
@@ -412,8 +421,8 @@ width的值决定图片宽度。1000=100%，70=7%，数字与百分比可以互�
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>hexo图片引用</div>
-      <div>https://0kitasan.github.io/2023/05/11/2023-05-11-hexo图片引用/</div>
+      <div>ubuntu的一些命令</div>
+      <div>https://0kitasan.github.io/2024/07/03/2024-07-03-ubuntu的一些命令/</div>
     </div>
     <div class="license-meta">
       
@@ -425,7 +434,7 @@ width的值决定图片宽度。1000=100%，70=7%，数字与百分比可以互�
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2023年5月11日</div>
+          <div>2024年7月3日</div>
         </div>
       
       
@@ -457,18 +466,12 @@ width的值决定图片宽度。1000=100%，70=7%，数字与百分比可以互�
                   <article class="post-prev col-6">
                     
                     
-                      <a href="../../../06/16/2023-06-16-ubuntu%E9%9D%99%E6%80%81IP%E9%85%8D%E7%BD%AE/" title="ubuntu配置静态IP(无线网络)">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">ubuntu配置静态IP(无线网络)</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="../../02/2023-05-02-%E4%BB%A3%E7%A0%81%E5%9D%97/" title="代码块">
-                        <span class="hidden-mobile">代码块</span>
+                      <a href="../../../06/20/2024-06-20-C++%E7%AC%94%E8%AE%B0/" title="C++笔记">
+                        <span class="hidden-mobile">C++笔记</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
