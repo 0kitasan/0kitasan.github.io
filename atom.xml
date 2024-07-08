@@ -6,7 +6,7 @@
   <link href="https://0kitasan.github.io/atom.xml" rel="self"/>
   
   <link href="https://0kitasan.github.io/"/>
-  <updated>2024-07-06T08:05:16.051Z</updated>
+  <updated>2024-07-08T12:32:02.818Z</updated>
   <id>https://0kitasan.github.io/</id>
   
   <author>
@@ -21,19 +21,17 @@
     <link href="https://0kitasan.github.io/2024/07/03/2024-07-03-ubuntu%E7%9A%84%E4%B8%80%E4%BA%9B%E5%91%BD%E4%BB%A4/"/>
     <id>https://0kitasan.github.io/2024/07/03/2024-07-03-ubuntu%E7%9A%84%E4%B8%80%E4%BA%9B%E5%91%BD%E4%BB%A4/</id>
     <published>2024-07-03T09:45:22.000Z</published>
-    <updated>2024-07-06T08:05:16.051Z</updated>
+    <updated>2024-07-08T12:32:02.818Z</updated>
     
     
-    <summary type="html">&lt;p&gt;本文列举一些 ubuntu 的命令,因为不是很常用所以容易忘记。&lt;/p&gt;</summary>
+    <summary type="html">&lt;p&gt;本文列举一些 ubuntu 的命令，因为不是很常用所以容易忘记。&lt;/p&gt;</summary>
     
     
     
-    <category term="学习" scheme="https://0kitasan.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
+    <category term="计算机/折腾" scheme="https://0kitasan.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA-%E6%8A%98%E8%85%BE/"/>
     
     
-    <category term="学习" scheme="https://0kitasan.github.io/tags/%E5%AD%A6%E4%B9%A0/"/>
-    
-    <category term="C++" scheme="https://0kitasan.github.io/tags/C/"/>
+    <category term="linux" scheme="https://0kitasan.github.io/tags/linux/"/>
     
   </entry>
   
@@ -128,10 +126,10 @@
     <link href="https://0kitasan.github.io/2024/01/30/2024-1-30-frp%E8%AE%BE%E7%BD%AE/"/>
     <id>https://0kitasan.github.io/2024/01/30/2024-1-30-frp%E8%AE%BE%E7%BD%AE/</id>
     <published>2024-01-30T07:54:01.000Z</published>
-    <updated>2024-06-11T16:19:47.319Z</updated>
+    <updated>2024-07-08T12:31:06.486Z</updated>
     
     
-    <summary type="html">&lt;p&gt;本文以ssh为例，简单介绍基于frp的内网穿透的方法。&lt;/p&gt;</summary>
+    <summary type="html">&lt;p&gt;本文以 ssh 为例，简单介绍基于 frp 的内网穿透的方法。&lt;/p&gt;</summary>
     
     
     
