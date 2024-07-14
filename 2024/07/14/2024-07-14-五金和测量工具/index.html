@@ -18,22 +18,22 @@
   <meta name="author" content="hamuko">
   <meta name="keywords" content="">
   
-    <meta name="description" content="本文列举一些 ubuntu 的命令，因为不是很常用所以容易忘记。">
+    <meta name="description" content="常用五金和测量工具品牌推荐">
 <meta property="og:type" content="article">
-<meta property="og:title" content="ubuntu的一些命令">
-<meta property="og:url" content="https://0kitasan.github.io/2024/07/03/2024-07-03-ubuntu%E7%9A%84%E4%B8%80%E4%BA%9B%E5%91%BD%E4%BB%A4/index.html">
+<meta property="og:title" content="五金和测量工具">
+<meta property="og:url" content="https://0kitasan.github.io/2024/07/14/2024-07-14-%E4%BA%94%E9%87%91%E5%92%8C%E6%B5%8B%E9%87%8F%E5%B7%A5%E5%85%B7/index.html">
 <meta property="og:site_name" content="myblog">
-<meta property="og:description" content="本文列举一些 ubuntu 的命令，因为不是很常用所以容易忘记。">
+<meta property="og:description" content="常用五金和测量工具品牌推荐">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2024-07-03T09:45:22.000Z">
-<meta property="article:modified_time" content="2024-07-08T12:32:02.818Z">
+<meta property="article:published_time" content="2024-07-14T07:33:05.000Z">
+<meta property="article:modified_time" content="2024-07-14T07:47:53.134Z">
 <meta property="article:author" content="hamuko">
-<meta property="article:tag" content="linux">
+<meta property="article:tag" content="五金">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>ubuntu的一些命令 - myblog</title>
+  <title>五金和测量工具 - myblog</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -239,7 +239,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="ubuntu的一些命令"></span>
+            <span id="subtitle" data-typed-text="五金和测量工具"></span>
           
         </div>
 
@@ -250,8 +250,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2024-07-03 17:45" pubdate>
-          2024年7月3日 下午
+        <time datetime="2024-07-14 15:33" pubdate>
+          2024年7月14日 下午
         </time>
       </span>
     
@@ -262,7 +262,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1.4k 字
+          1.2k 字
         
       </span>
     
@@ -273,7 +273,7 @@
         
         
         
-          12 分钟
+          11 分钟
         
       </span>
     
@@ -310,71 +310,108 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">ubuntu的一些命令</h1>
+            <h1 id="seo-header">五金和测量工具</h1>
             
             
               <div class="markdown-body">
                 
-                <p>本文列举一些 ubuntu 的命令，因为不是很常用所以容易忘记。</p>
+                <p>常用五金和测量工具品牌推荐</p>
 <span id="more"></span>
-<h2 id="查找文件位置（mlocate）">查找文件位置（mlocate）</h2>
-<p>安装 <code>mlocate</code> 或 <code>plocate</code></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">sudo apt install mlocate<br></code></pre></td></tr></table></figure>
-<p>这个工具是静态地查找文件位置，所以使用前有必要更新一下其数据库：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">sudo updatedb<br></code></pre></td></tr></table></figure>
-<h2 id="查看-CPU-温度（orangepi-上）">查看 CPU 温度（orangepi 上）</h2>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">sensors<br></code></pre></td></tr></table></figure>
-<h2 id="设置时区（timedatectl）">设置时区（timedatectl）</h2>
-<p>实例:将时区设置为上海</p>
-<p>查看当前时区：使用以下命令查看当前时区：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">timedatectl<br></code></pre></td></tr></table></figure>
-<p>列出所有可用时区：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">timedatectl list-timezones<br></code></pre></td></tr></table></figure>
-<p>设置时区为上海：<br>
-使用以下命令将时区设置为上海：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">sudo timedatectl set-timezone Asia/Shanghai<br></code></pre></td></tr></table></figure>
-<p>验证时区设置：</p>
-<p>再次使用 <code>timedatectl</code> 命令验证时区是否已正确设置：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">timedatectl<br></code></pre></td></tr></table></figure>
-<h2 id="设置时间（date-s）">设置时间（date -s）</h2>
-<p>在一些 arm 设备上,没有自动校准时间的功能,如果又是处于没有联网的环境,那就连接不到 ntp 服务器,也就无法校准时间了。<br>
-这可能导致增量编译出现问题。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">sudo <span class="hljs-built_in">date</span> -s <span class="hljs-string">&quot;2024-07-03 14:30:00&quot;</span><br></code></pre></td></tr></table></figure>
-<p>只想设置日期，而不改变时间:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">sudo <span class="hljs-built_in">date</span> -s <span class="hljs-string">&quot;2024-07-03&quot;</span><br></code></pre></td></tr></table></figure>
-<h2 id="压缩与解压缩（zip）">压缩与解压缩（zip）</h2>
-<p>在 Ubuntu 中，你可以使用 <code>zip</code> 命令行工具来将文件或目录(解)压缩成 ZIP 文件。以下是一些常见的用法示例：</p>
-<h3 id="安装-zip-工具">安装 <code>zip</code> 工具</h3>
-<p>在大多数情况下，<code>zip</code> 工具默认已经安装在 Ubuntu 上。如果没有，可以通过以下命令安装：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">sudo apt update<br>sudo apt install zip<br></code></pre></td></tr></table></figure>
-<h3 id="解压-ZIP-文件">解压 ZIP 文件</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">unzip filename.zip<br></code></pre></td></tr></table></figure>
-<p>这将在当前目录中解压 ZIP 文件内容。</p>
-<h3 id="将文件解压到指定目录">将文件解压到指定目录</h3>
-<p>如果你想将文件解压到特定的目录，可以使用 <code>-d</code> 选项：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">unzip filename.zip -d /path/to/destination<br></code></pre></td></tr></table></figure>
-<p>例如：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">unzip myfiles.zip -d /home/user/extracted_files<br></code></pre></td></tr></table></figure>
-<h3 id="压缩单个文件">压缩单个文件</h3>
-<p>要将单个文件压缩成 ZIP 文件，可以使用以下命令：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">zip archive_name.zip file_to_compress<br></code></pre></td></tr></table></figure>
-<p>例如，将 <code>example.txt</code> 压缩成 <code>example.zip</code>：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">zip example.zip example.txt<br></code></pre></td></tr></table></figure>
-<h3 id="压缩多个文件">压缩多个文件</h3>
-<p>要将多个文件压缩成一个 ZIP 文件，可以将文件名依次列出：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">zip archive_name.zip file1 file2 file3<br></code></pre></td></tr></table></figure>
-<p>例如，将 <code>file1.txt</code>、<code>file2.txt</code> 和 <code>file3.txt</code> 压缩成 <code>files.zip</code>：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">zip files.zip file1.txt file2.txt file3.txt<br></code></pre></td></tr></table></figure>
-<h3 id="压缩整个目录">压缩整个目录</h3>
-<p>要将整个目录及其子目录中的所有文件压缩成 ZIP 文件，可以使用 <code>-r</code> 选项：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">zip -r archive_name.zip directory_to_compress<br></code></pre></td></tr></table></figure>
-<p>例如，将 <code>my_folder</code> 目录及其内容压缩成 <code>my_folder.zip</code>：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">zip -r my_folder.zip my_folder<br></code></pre></td></tr></table></figure>
-<h2 id="todo-vscode-的-markdown-设置-以及-tar-gz">todo: vscode 的 markdown 设置,以及 tar.gz</h2>
-<p>todo: Prettier 扩展<br>
-打开 vscode 设置:Ctrl+,<br>
-搜索 Default Formatter 设置。<br>
-将来应该写到 vscode 那一篇里</p>
+<p>在日常生活和工作中，五金和测量工具是不可或缺的。选择合适的品牌和工具不仅能提高工作效率，还能保证工作的精度和质量。网上介绍五金品牌的文章和视频似乎并不是很多，<br>
+因此，本文将简要介绍几个知名的五金和测量工具品牌，并根据性价比和使用需求，推荐适合的购买选择。</p>
+<h2 id="品牌和工具推荐">品牌和工具推荐</h2>
+<h3 id="1-三丰-Mitutoyo">1. 三丰 (Mitutoyo)</h3>
+<p>三丰是日本著名的精密测量工具品牌，成立于 1934 年。三丰的产品以高精度和耐用性著称，是许多专业人士的首选。然而，三丰的价格相对较高，适合预算较充足且对精度要求极高的用户。</p>
+<ul>
+<li><strong>推荐工具</strong>：
+<ul>
+<li><strong>游标卡尺</strong></li>
+<li><strong>千分尺</strong></li>
+</ul>
+</li>
+</ul>
+<h3 id="2-广陆-Guilin-Guanglu-Measuring-Instrument-Co-Ltd">2. 广陆 (Guilin Guanglu Measuring Instrument Co., Ltd.)</h3>
+<p>广陆是中国知名的测量仪器制造商，成立于 1993 年。广陆专注于生产高精度且性价比高的测量工具，如数显卡尺、千分尺等。广陆的产品在国内外市场上都有很好的口碑，适合对价格敏感且需要高精度的用户。</p>
+<ul>
+<li><strong>推荐工具</strong>：
+<ul>
+<li><strong>数显游标卡尺</strong></li>
+<li><strong>千分尺</strong></li>
+</ul>
+</li>
+</ul>
+<h3 id="3-上工-Shanghai-Tool-Works-Ltd">3. 上工 (Shanghai Tool Works Ltd.)</h3>
+<p>上工成立于 1949 年，是中国历史悠久的工具制造企业。上工以生产高质量的手工具、切削工具和量具而闻名。上工的测量工具性价比高，适合预算有限但需要可靠性的用户。</p>
+<ul>
+<li><strong>推荐工具</strong>：
+<ul>
+<li><strong>游标卡尺</strong></li>
+<li><strong>深度尺</strong></li>
+</ul>
+</li>
+</ul>
+<h3 id="4-史丹利-Stanley">4. 史丹利 (Stanley)</h3>
+<p>史丹利是一个历史悠久的品牌，以其耐用的手工具和五金产品而闻名。史丹利的产品线覆盖广泛，适用于家庭和专业用途。其产品价格适中，质量可靠，是许多用户的常备选择。</p>
+<ul>
+<li><strong>推荐工具</strong>：
+<ul>
+<li><strong>螺丝刀</strong></li>
+<li><strong>锤子</strong></li>
+</ul>
+</li>
+</ul>
+<h3 id="5-博世-Bosch">5. 博世 (Bosch)</h3>
+<p>博世提供各种电动工具和附件，以其创新技术和高质量标准闻名。博世的电动工具性能优越，但价格相对较高，适合对工具性能有较高要求且预算较充足的用户。</p>
+<ul>
+<li><strong>推荐工具</strong>：
+<ul>
+<li><strong>电钻</strong></li>
+<li><strong>电锤</strong></li>
+</ul>
+</li>
+</ul>
+<h3 id="6-世达-SATA">6. 世达 (SATA)</h3>
+<p>世达是一个知名的手工具品牌，提供各种高质量的工具。世达的工具以高性价比和可靠性受到广泛好评，适合需要多种手工具且预算有限的用户。</p>
+<ul>
+<li><strong>推荐工具</strong>：
+<ul>
+<li><strong>扳手</strong></li>
+<li><strong>内六角</strong></li>
+</ul>
+</li>
+</ul>
+<h2 id="工具推荐总结">工具推荐总结</h2>
+<ul>
+<li>
+<p><strong>测量工具</strong></p>
+<ul>
+<li><strong>游标卡尺</strong>：如果预算充足且要求高精度，推荐三丰；如果需要高性价比，推荐广陆和上工。</li>
+<li><strong>千分尺</strong>：推荐广陆，性价比高；三丰适合预算较高的专业用户。</li>
+<li><strong>数显游标卡尺</strong>：广陆提供了高性价比的选择。</li>
+</ul>
+</li>
+<li>
+<p><strong>五金工具</strong></p>
+<ul>
+<li><strong>螺丝刀</strong>：推荐史丹利，质量可靠且价格适中。</li>
+<li><strong>扳手</strong>：推荐世达，高性价比且种类丰富。</li>
+<li><strong>内六角</strong>：推荐世达，强度高且耐用。</li>
+<li><strong>锤子</strong>：推荐史丹利，适用于家庭和专业用途。</li>
+</ul>
+</li>
+<li>
+<p><strong>电动工具</strong></p>
+<ul>
+<li><strong>电钻</strong>、<strong>电锤</strong>：推荐博世，性能优越，适合对工具性能要求高的用户。</li>
+</ul>
+</li>
+</ul>
+<h2 id="一些补充">一些补充</h2>
+<p>绿林：纯纯的工业垃圾，好在足够便宜，不要相信他的广告“高精度、耐用”等就行了</p>
+<p>得力：美工刀、剪刀之类的“办公工具”还可以用用，更进一步的五金工具好像就一般般了</p>
+<p>螺丝刀我不是很了解，小米的螺丝刀套件个人感觉在处理小部件的时候还是够用的。</p>
+<p>螺丝我都是随便买的，感觉都够用。</p>
+<p>个人目前使用：世达的内六角、活动扳手，以及绿林的游标卡尺（不带数显的是金属材质，但是感觉有点烂，还算能用；数显的那款塑料的属于是一坨大便了）</p>
 
                 
               </div>
@@ -393,7 +430,7 @@
     
       <span class="category-chain">
         
-  <a href="../../../../categories/%E8%AE%A1%E7%AE%97%E6%9C%BA-%E6%8A%98%E8%85%BE/" class="category-chain-item">计算机/折腾</a>
+  <a href="../../../../categories/%E5%AD%A6%E4%B9%A0/" class="category-chain-item">学习</a>
   
   
 
@@ -408,7 +445,7 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="../../../../tags/linux/" class="print-no-link">#linux</a>
+        <a href="../../../../tags/%E4%BA%94%E9%87%91/" class="print-no-link">#五金</a>
       
     </div>
   
@@ -420,8 +457,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>ubuntu的一些命令</div>
-      <div>https://0kitasan.github.io/2024/07/03/2024-07-03-ubuntu的一些命令/</div>
+      <div>五金和测量工具</div>
+      <div>https://0kitasan.github.io/2024/07/14/2024-07-14-五金和测量工具/</div>
     </div>
     <div class="license-meta">
       
@@ -433,7 +470,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2024年7月3日</div>
+          <div>2024年7月14日</div>
         </div>
       
       
@@ -465,18 +502,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="../../14/2024-07-14-%E4%BA%94%E9%87%91%E5%92%8C%E6%B5%8B%E9%87%8F%E5%B7%A5%E5%85%B7/" title="五金和测量工具">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">五金和测量工具</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="../../../06/20/2024-06-20-C++%E7%AC%94%E8%AE%B0/" title="C++笔记">
-                        <span class="hidden-mobile">C++笔记</span>
+                      <a href="../../03/2024-07-03-ubuntu%E7%9A%84%E4%B8%80%E4%BA%9B%E5%91%BD%E4%BB%A4/" title="ubuntu的一些命令">
+                        <span class="hidden-mobile">ubuntu的一些命令</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
