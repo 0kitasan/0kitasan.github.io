@@ -243,81 +243,6 @@ width的值决定图片宽度。1000=100%，70=7%，数字与百分比可以互�
       </tags>
   </entry>
   <entry>
-    <title>电脑硬件笔记</title>
-    <url>/2023/07/30/2023-07-30-%E7%94%B5%E8%84%91%E7%A1%AC%E4%BB%B6%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="CPU">CPU</h2>
-<p>【【电脑硬件科普】CPU是什么？11分钟教你认识CPU！】 <a href="https://www.bilibili.com/video/BV1SX4y1d75h">https://www.bilibili.com/video/BV1SX4y1d75h</a></p>
-<h3 id="CPU型号命名">CPU型号命名</h3>
-<p>INTEL<br>
-INTEL CORE（酷睿）</p>
-<p>intel Core i5 <font color="#0000dd">2</font><font color="#dd0000">500</font><br>
-intel Core i7 <font color="#0000dd">7</font><font color="#dd0000">700</font>K<br>
-intel Core i7 <font color="#0000dd">8</font><font color="#dd0000">700</font>K<br>
-intel Core i9 <font color="#0000dd">9</font><font color="#dd0000">900</font>K<br>
-intel Core i5 <font color="#0000dd">10</font><font color="#dd0000">400</font><br>
-intel Core i7 <font color="#0000dd">11</font><font color="#dd0000">700</font><br>
-intel Core i3 <font color="#0000dd">12</font><font color="#dd0000">100</font>F<br>
-intel Core i5 <font color="#0000dd">13</font><font color="#dd0000">400</font>F<br>
-intel Core i9 <font color="#0000dd">13</font><font color="#dd0000">900</font>KF</p>
-<p><font color="#0000dd">蓝色</font>的表示<strong>代数</strong>，相当于制程工艺更新换代的级别，越大则技术越新。</p>
-<p><font color="#dd0000">红色</font>的表示<strong>数值定位</strong>，基本上数字越大，CPU性能越强。<br>
-K是可超频，F是无核显<br>
-超频会影响CPU寿命，不建议使用。</p>
-<p>注意：<br>
-intel Core i7 <font color="#dd0000">870</font><br>
-为第一代处理器，实际相当于<br>
-intel Core i7 <font color="#0000dd">1</font><font color="#dd0000">870</font></p>
-<p>AMD<br>
-AMD RYZEN（锐龙）<br>
-R5 <font color="#0000dd">1</font><font color="#dd0000">400</font><br>
-R3 <font color="#0000dd">2</font><font color="#dd0000">200</font>G<br>
-R5 <font color="#0000dd">2</font><font color="#dd0000">600</font>X<br>
-R7 <font color="#0000dd">3</font><font color="#dd0000">700</font>X<br>
-R7 <font color="#0000dd">3</font><font color="#dd0000">900</font>XT<br>
-R5 <font color="#0000dd">5</font><font color="#dd0000">600</font>X<br>
-R7 <font color="#0000dd">7</font><font color="#dd0000">800</font>X3D</p>
-<p>2017年后，AMD锐龙处理器对标英特尔酷睿，在这之前都被intel吊着锤<br>
-命名方式类似</p>
-<p>G是带核显版本 X是加强版 XT表示加强版又改良加强版<br>
-X3D表示加强版又提高CPU三级缓存，在一些很吃配置的游戏里可以提升一些性能</p>
-<h3 id="CPU参数">CPU参数</h3>
-<p>intel Core i5 <font color="#0000dd">9</font><font color="#dd0000">400</font>F<br>
-6核心6线程<br>
-（单线程技术）<br>
-intel Core i5 <font color="#0000dd">10</font><font color="#dd0000">400</font>F<br>
-6核心12线程<br>
-（超线程技术）</p>
-<h2 id="固态硬盘">固态硬盘</h2>
-<p>先写个标题，具体内容以后再加上。<br>
-233<br>
-233<br>
-233<br>
-233</p>
-<h3 id="PCIE">PCIE</h3>
-<p>233<br>
-233<br>
-233<br>
-233<br>
-233</p>
-<h3 id="NVME">NVME</h3>
-<p>233<br>
-233<br>
-233<br>
-233<br>
-233</p>
-<h2 id="内存">内存</h2>
-<h2 id="显卡">显卡</h2>
-<p>图吧工具箱<br>
-<a href="http://www.tbtool.cn/download/202305-3.html">http://www.tbtool.cn/download/202305-3.html</a></p>
-]]></content>
-      <categories>
-        <category>计算机/折腾</category>
-      </categories>
-      <tags>
-        <tag>电脑硬件</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>ubuntu配置静态IP(无线网络)</title>
     <url>/2023/06/16/2023-06-16-ubuntu%E9%9D%99%E6%80%81IP%E9%85%8D%E7%BD%AE/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>在 orangpi 上(ubuntu系统)配置静态IP(无线网络)</p>
@@ -452,6 +377,81 @@ Minecraft默认端口是25565，可以通过该端口扫描网址查询端口是
       </tags>
   </entry>
   <entry>
+    <title>电脑硬件笔记</title>
+    <url>/2023/07/30/2023-07-30-%E7%94%B5%E8%84%91%E7%A1%AC%E4%BB%B6%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="CPU">CPU</h2>
+<p>【【电脑硬件科普】CPU是什么？11分钟教你认识CPU！】 <a href="https://www.bilibili.com/video/BV1SX4y1d75h">https://www.bilibili.com/video/BV1SX4y1d75h</a></p>
+<h3 id="CPU型号命名">CPU型号命名</h3>
+<p>INTEL<br>
+INTEL CORE（酷睿）</p>
+<p>intel Core i5 <font color="#0000dd">2</font><font color="#dd0000">500</font><br>
+intel Core i7 <font color="#0000dd">7</font><font color="#dd0000">700</font>K<br>
+intel Core i7 <font color="#0000dd">8</font><font color="#dd0000">700</font>K<br>
+intel Core i9 <font color="#0000dd">9</font><font color="#dd0000">900</font>K<br>
+intel Core i5 <font color="#0000dd">10</font><font color="#dd0000">400</font><br>
+intel Core i7 <font color="#0000dd">11</font><font color="#dd0000">700</font><br>
+intel Core i3 <font color="#0000dd">12</font><font color="#dd0000">100</font>F<br>
+intel Core i5 <font color="#0000dd">13</font><font color="#dd0000">400</font>F<br>
+intel Core i9 <font color="#0000dd">13</font><font color="#dd0000">900</font>KF</p>
+<p><font color="#0000dd">蓝色</font>的表示<strong>代数</strong>，相当于制程工艺更新换代的级别，越大则技术越新。</p>
+<p><font color="#dd0000">红色</font>的表示<strong>数值定位</strong>，基本上数字越大，CPU性能越强。<br>
+K是可超频，F是无核显<br>
+超频会影响CPU寿命，不建议使用。</p>
+<p>注意：<br>
+intel Core i7 <font color="#dd0000">870</font><br>
+为第一代处理器，实际相当于<br>
+intel Core i7 <font color="#0000dd">1</font><font color="#dd0000">870</font></p>
+<p>AMD<br>
+AMD RYZEN（锐龙）<br>
+R5 <font color="#0000dd">1</font><font color="#dd0000">400</font><br>
+R3 <font color="#0000dd">2</font><font color="#dd0000">200</font>G<br>
+R5 <font color="#0000dd">2</font><font color="#dd0000">600</font>X<br>
+R7 <font color="#0000dd">3</font><font color="#dd0000">700</font>X<br>
+R7 <font color="#0000dd">3</font><font color="#dd0000">900</font>XT<br>
+R5 <font color="#0000dd">5</font><font color="#dd0000">600</font>X<br>
+R7 <font color="#0000dd">7</font><font color="#dd0000">800</font>X3D</p>
+<p>2017年后，AMD锐龙处理器对标英特尔酷睿，在这之前都被intel吊着锤<br>
+命名方式类似</p>
+<p>G是带核显版本 X是加强版 XT表示加强版又改良加强版<br>
+X3D表示加强版又提高CPU三级缓存，在一些很吃配置的游戏里可以提升一些性能</p>
+<h3 id="CPU参数">CPU参数</h3>
+<p>intel Core i5 <font color="#0000dd">9</font><font color="#dd0000">400</font>F<br>
+6核心6线程<br>
+（单线程技术）<br>
+intel Core i5 <font color="#0000dd">10</font><font color="#dd0000">400</font>F<br>
+6核心12线程<br>
+（超线程技术）</p>
+<h2 id="固态硬盘">固态硬盘</h2>
+<p>先写个标题，具体内容以后再加上。<br>
+233<br>
+233<br>
+233<br>
+233</p>
+<h3 id="PCIE">PCIE</h3>
+<p>233<br>
+233<br>
+233<br>
+233<br>
+233</p>
+<h3 id="NVME">NVME</h3>
+<p>233<br>
+233<br>
+233<br>
+233<br>
+233</p>
+<h2 id="内存">内存</h2>
+<h2 id="显卡">显卡</h2>
+<p>图吧工具箱<br>
+<a href="http://www.tbtool.cn/download/202305-3.html">http://www.tbtool.cn/download/202305-3.html</a></p>
+]]></content>
+      <categories>
+        <category>计算机/折腾</category>
+      </categories>
+      <tags>
+        <tag>电脑硬件</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Git的基本用法</title>
     <url>/2023/12/27/2023-12-27-Git%E7%9A%84%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>Git的基本用法（大部分是GPT写的）</p>
@@ -481,6 +481,32 @@ Minecraft默认端口是25565，可以通过该端口扫描网址查询端口是
       </categories>
       <tags>
         <tag>git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>hexo博客迁移</title>
+    <url>/2024/04/27/2024-04-27-hexo%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>疑似直接迁移文件夹就行。</p>
+<span id="more"></span>
+<p>我原先是在一台 win 的笔记本上写博客的，由于购入了台式，准备更换。<br>
+首先在一台 ubuntu 笔记本上测试，好像 nodejs 的环境会很奇怪，遂作罢；<br>
+在 win 台式机上就很方便了，疑似直接迁移文件夹就行。</p>
+<p>todo list</p>
+<h2 id="todo">todo</h2>
+<ul>
+<li>写博客，完善 tmp</li>
+<li>完善博客公式环境</li>
+<li>源文件管理与命名</li>
+<li>香橙派串口文章</li>
+<li>完善 hexo 的标签</li>
+<li>完善文章更新规则</li>
+</ul>
+]]></content>
+      <categories>
+        <category>计算机/折腾</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
       </tags>
   </entry>
   <entry>
@@ -579,77 +605,6 @@ Minecraft默认端口是25565，可以通过该端口扫描网址查询端口是
       <tags>
         <tag>学习</tag>
         <tag>数学</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>hexo博客迁移</title>
-    <url>/2024/04/27/2024-04-27-hexo%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>疑似直接迁移文件夹就行。</p>
-<span id="more"></span>
-<p>我原先是在一台 win 的笔记本上写博客的，由于购入了台式，准备更换。<br>
-首先在一台 ubuntu 笔记本上测试，好像 nodejs 的环境会很奇怪，遂作罢；<br>
-在 win 台式机上就很方便了，疑似直接迁移文件夹就行。</p>
-<p>todo list</p>
-<h2 id="todo">todo</h2>
-<ul>
-<li>写博客，完善 tmp</li>
-<li>完善博客公式环境</li>
-<li>源文件管理与命名</li>
-<li>香橙派串口文章</li>
-<li>完善 hexo 的标签</li>
-<li>完善文章更新规则</li>
-</ul>
-]]></content>
-      <categories>
-        <category>计算机/折腾</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>frp设置</title>
-    <url>/2024/01/30/2024-1-30-frp%E8%AE%BE%E7%BD%AE/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>本文以 ssh 为例，简单介绍基于 frp 的内网穿透的方法。</p>
-<span id="more"></span>
-<h1>frp</h1>
-<p>为了使我们能在其他地方访问在家/公司的内网中的设备，我们需要使用内网穿透工具。最有名的就是 frp。</p>
-<p>项目地址：<a href="https://github.com/fatedier/frp">https://github.com/fatedier/frp</a></p>
-<h2 id="服务端-有公网">服务端/有公网</h2>
-<figure class="highlight ini"><table><tr><td class="code"><pre><code class="hljs ini"><span class="hljs-comment"># frps.toml</span><br><span class="hljs-attr">bindPort</span> = <span class="hljs-number">7000</span><br></code></pre></td></tr></table></figure>
-<p>这个 7000 端口是用来给 frp 通信的，并不是端口映射</p>
-<p>然后启动服务端<br>
-<code>./frps -c ./frps.toml</code></p>
-<h2 id="客户端-无公网">客户端/无公网</h2>
-<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># frpc.toml</span><br>serverAddr = <span class="hljs-string">&quot;x.x.x.x&quot;</span><br>serverPort = 7000<br><br>[[proxies]]<br>name = <span class="hljs-string">&quot;ssh&quot;</span><br><span class="hljs-built_in">type</span> = <span class="hljs-string">&quot;tcp&quot;</span><br>localIP = <span class="hljs-string">&quot;127.0.0.1&quot;</span><br>localPort = 22<br>remotePort = 6000<br></code></pre></td></tr></table></figure>
-<p>启动客户端<br>
-<code>./frpc -c ./frpc.toml</code></p>
-<h2 id="测试-frp-连接">测试 frp 连接</h2>
-<p>在不关闭服务端和客户端的 bash 界面的情况下，运行以下命令</p>
-<p><code>ssh -oPort=6000 test@xx.xx.xx.xx</code></p>
-<p>如果返回 timeout 或者 connection refused 的话，可能是某个 bash 关闭了或者防火墙的问题</p>
-<p>可以使用<code>sudo ufw status</code>来查看端口开放状态。可以运行下面的命令开放特定端口</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># 开放tcp端口</span><br>sudo ufw allow 22/tcp<br><span class="hljs-comment"># 开放udp端口</span><br>sudo ufw allow 53/udp<br><span class="hljs-comment"># 不要忘记重新加载</span><br>sudo ufw reload<br></code></pre></td></tr></table></figure>
-<h2 id="进阶设置-开机自启">进阶设置/开机自启</h2>
-<p>在服务端和客户端的 frp 的文件夹中，分别编写脚本<code>frps.sh</code>与<code>frpc.sh</code>，里面编写启动命令</p>
-<p>在<code>/etc/systemd/system</code>中，分别创建文件<code>frps.service</code>与<code>frpc.service</code></p>
-<p>这里以<code>frps.service</code>为例</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># frps.service</span><br>[Unit]<br>Description=FrpServer<br>After=network.target<br>[Service]<br>Type=simple<br>ExecStart=/root/frp_0.53.2_linux_amd64/frps.sh<br><span class="hljs-comment"># 服务启动时执行的命令</span><br>WorkingDirectory=/root/frp_0.53.2_linux_amd64/<br><span class="hljs-comment"># 指定脚本运行的目录</span><br>[Install]<br>WantedBy=multi-user.target<br><span class="hljs-comment"># 自定义服务会在多用户模式下启动</span><br></code></pre></td></tr></table></figure>
-<p>如果脚本里就是用绝对路径写的，<code>WorkingDirectory</code> 可以不写</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># 重新加载 Systemd 配置</span><br>sudo systemctl daemon-reload<br><span class="hljs-comment"># 启用自启动，这一步会创建软连接</span><br>sudo systemctl <span class="hljs-built_in">enable</span> frps.service<br><span class="hljs-comment"># 启动服务，其实这里的.service不用写</span><br>sudo systemctl start frps.service<br></code></pre></td></tr></table></figure>
-<p><code>frps.service</code>的开机自启也是类似，但经过测试发现，如果一开机就启动可能会因为网络未完全连接而失败。<br>
-使用<code>systemctl status my-service.service</code>命令查看状态，可以看到类似 time out/connection failed 的报错。<br>
-经测试，设置开机后 10 秒再启动，服务即可正常运行。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># frpc.service</span><br>[Unit]<br>Description=FrpClient<br>After=network.target<br>[Service]<br>Type=simple<br><span class="hljs-comment"># 延迟10s启动</span><br>ExecStartPre=/bin/sleep 10<br>ExecStart=/home/orangepi/frp_0.53.2_linux_arm64/frpc.sh<br><span class="hljs-comment"># 服务启动时执行的命令</span><br>WorkingDirectory=/home/orangepi/frp_0.53.2_linux_arm64/<br><span class="hljs-comment"># 指定脚本运行的目录</span><br>[Install]<br>WantedBy=multi-user.target<br></code></pre></td></tr></table></figure>
-<p>现在，在 windows 中，可以通过 powershell 命令来连接到主机</p>
-<figure class="highlight powershell"><table><tr><td class="code"><pre><code class="hljs powershell">ssh <span class="hljs-literal">-oPort</span>=<span class="hljs-number">6000</span> orangepi@xx.xx.xx.xx<br></code></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>计算机/折腾</category>
-      </categories>
-      <tags>
-        <tag>linux</tag>
-        <tag>网络</tag>
       </tags>
   </entry>
   <entry>
@@ -1416,62 +1371,6 @@ M834 80h400000v40h-400000z"/></svg></span></span></span><span class="vlist-s">�
       <tags>
         <tag>学习</tag>
         <tag>数学</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>v2rayA设置</title>
-    <url>/2024/01/30/2024-1-30-v2rayA%E8%AE%BE%E7%BD%AE/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>本文简单介绍ubuntu系统如何安装v2rayA。</p>
-<span id="more"></span>
-<h1>v2rayA</h1>
-<p>项目地址：<a href="https://github.com/v2rayA/v2rayA">https://github.com/v2rayA/v2rayA</a></p>
-<p>官方网站：<a href="https://v2raya.org/">https://v2raya.org/</a></p>
-<p>由于v2rayA在0.0.0.0:2017开放web服务，因此无需图形界面，这也是我选择它的理由。</p>
-<h2 id="安装">安装</h2>
-<p>有两种方式可以安装</p>
-<ul>
-<li>手动安装（<a href="https://github.com/v2rayA/v2rayA/releases%EF%BC%89">https://github.com/v2rayA/v2rayA/releases）</a></li>
-<li>一键脚本（<a href="https://github.com/233boy/v2ray%EF%BC%89">https://github.com/233boy/v2ray）</a></li>
-</ul>
-<p>由于众所周知的原因，国内经常无法访问github，而一键脚本中使用了github的源，因此失效概率很大。</p>
-<p>因此，只能通过其他方式（使用其他设备或者手动换源），先把安装包下下来，然后自行安装。</p>
-<p>（比如，使用已经配置好代理的windows设备来下载安装包，然后传到linux设备上。毕竟windows配置代理比linux方便不少。）</p>
-<h3 id="v2rayA">v2rayA</h3>
-<p>根据自己的设备，在release页面安装即可。</p>
-<p>将deb包传到设备上后，安装。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">dpkg -i package.deb<br></code></pre></td></tr></table></figure>
-<p>请注意：如果你的设备没有预先装过v2ray，手动安装deb包时，不会自动安装v2ray，可能会遇到</p>
-<figure class="highlight stylus"><table><tr><td class="code"><pre><code class="hljs stylus">检测到 geosite<span class="hljs-selector-class">.dat</span>, geoip<span class="hljs-selector-class">.dat</span> 文件或 v2ray-core 可能未正确安装，请检查<br></code></pre></td></tr></table></figure>
-<p>等类似的问题，在 <a href="https://github.com/v2rayA/v2rayA/issues/510">https://github.com/v2rayA/v2rayA/issues/510</a> 给出了解决方法。</p>
-<p>笔者也是遇到过这个坑，因此在这里，我们事先先配置好。</p>
-<h3 id="v2ray-core">v2ray-core</h3>
-<p>下载：<a href="https://github.com/v2fly/v2ray-core/releases">https://github.com/v2fly/v2ray-core/releases</a></p>
-<p>然后使用<code>unzip</code>命令即可</p>
-<p>接着，手动修改v2rayA的配置，<code>/path/to</code>改成自己的路径</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">vi /etc/default/v2raya<br><br><span class="hljs-comment"># 添加配置</span><br>V2RAYA_V2RAY_BIN=/path/to/v2ray-core/v2ray<br>V2RAYA_V2RAY_CONFDIR=/path/to/v2ray-core<br>V2RAYA_V2RAY_ASSETSDIR=/path/to/v2ray-core<br></code></pre></td></tr></table></figure>
-<p>然后重启即可</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">systemctl restart v2raya<br></code></pre></td></tr></table></figure>
-<h2 id="基础设置">基础设置</h2>
-<p>启动服务</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">systemctl start v2raya<br></code></pre></td></tr></table></figure>
-<p>关闭服务</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">systemctl stop v2raya<br></code></pre></td></tr></table></figure>
-<p>如果有图形界面，可以在<code>localhost:2017</code>上查看，如果没有，相应地改成设备所处ip即可。</p>
-<p>不过似乎还需要配置一下本地的代理，可以参考下面的<code>export</code>命令，端口结合自己在web端的设置来修改。</p>
-<h2 id="进阶配置">进阶配置</h2>
-<p>由于我个人并不希望代理开机自启，而是希望需要的时候打开，不需要的时候关闭，因此我手动编写了启动与关闭脚本。</p>
-<p><code>v2a-start.sh</code></p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash"><span class="hljs-meta">#!/bin/bash</span><br>systemctl start v2raya<br><span class="hljs-built_in">export</span> http_proxy=<span class="hljs-string">&quot;http://127.0.0.1:20171/&quot;</span><br><span class="hljs-built_in">export</span> https_proxy=<span class="hljs-string">&quot;http://127.0.0.1:20173/&quot;</span><br><span class="hljs-built_in">export</span> no_proxy=<span class="hljs-string">&quot;127.0.0.1,localhost&quot;</span><br><span class="hljs-built_in">export</span> HTTP_PROXY=<span class="hljs-string">&quot;http://127.0.0.1:20171/&quot;</span><br><span class="hljs-built_in">export</span> HTTPS_PROXY=<span class="hljs-string">&quot;http://127.0.0.1:20173/&quot;</span><br><span class="hljs-built_in">export</span> NO_PROXY=<span class="hljs-string">&quot;127.0.0.1,localhost&quot;</span><br></code></pre></td></tr></table></figure>
-<p><code>v2a-halt.sh</code></p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash"><span class="hljs-meta">#!/bin/bash</span><br>systemctl stop v2raya<br><span class="hljs-built_in">unset</span> http_proxy<br><span class="hljs-built_in">unset</span> https_proxy<br><span class="hljs-built_in">unset</span> no_proxy<br><span class="hljs-built_in">unset</span> HTTP_PROXY<br><span class="hljs-built_in">unset</span> NO_PROXY<br></code></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>计算机/折腾</category>
-        <category>网络</category>
-      </categories>
-      <tags>
-        <tag>linux</tag>
-        <tag>网络</tag>
       </tags>
   </entry>
   <entry>
@@ -2538,6 +2437,51 @@ M834 80h400000v40h-400000z"/></svg></span></span></span><span class="vlist-s">�
       </tags>
   </entry>
   <entry>
+    <title>frp设置</title>
+    <url>/2024/01/30/2024-1-30-frp%E8%AE%BE%E7%BD%AE/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>本文以 ssh 为例，简单介绍基于 frp 的内网穿透的方法。</p>
+<span id="more"></span>
+<h1>frp</h1>
+<p>为了使我们能在其他地方访问在家/公司的内网中的设备，我们需要使用内网穿透工具。最有名的就是 frp。</p>
+<p>项目地址：<a href="https://github.com/fatedier/frp">https://github.com/fatedier/frp</a></p>
+<h2 id="服务端-有公网">服务端/有公网</h2>
+<figure class="highlight ini"><table><tr><td class="code"><pre><code class="hljs ini"><span class="hljs-comment"># frps.toml</span><br><span class="hljs-attr">bindPort</span> = <span class="hljs-number">7000</span><br></code></pre></td></tr></table></figure>
+<p>这个 7000 端口是用来给 frp 通信的，并不是端口映射</p>
+<p>然后启动服务端<br>
+<code>./frps -c ./frps.toml</code></p>
+<h2 id="客户端-无公网">客户端/无公网</h2>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># frpc.toml</span><br>serverAddr = <span class="hljs-string">&quot;x.x.x.x&quot;</span><br>serverPort = 7000<br><br>[[proxies]]<br>name = <span class="hljs-string">&quot;ssh&quot;</span><br><span class="hljs-built_in">type</span> = <span class="hljs-string">&quot;tcp&quot;</span><br>localIP = <span class="hljs-string">&quot;127.0.0.1&quot;</span><br>localPort = 22<br>remotePort = 6000<br></code></pre></td></tr></table></figure>
+<p>启动客户端<br>
+<code>./frpc -c ./frpc.toml</code></p>
+<h2 id="测试-frp-连接">测试 frp 连接</h2>
+<p>在不关闭服务端和客户端的 bash 界面的情况下，运行以下命令</p>
+<p><code>ssh -oPort=6000 test@xx.xx.xx.xx</code></p>
+<p>如果返回 timeout 或者 connection refused 的话，可能是某个 bash 关闭了或者防火墙的问题</p>
+<p>可以使用<code>sudo ufw status</code>来查看端口开放状态。可以运行下面的命令开放特定端口</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># 开放tcp端口</span><br>sudo ufw allow 22/tcp<br><span class="hljs-comment"># 开放udp端口</span><br>sudo ufw allow 53/udp<br><span class="hljs-comment"># 不要忘记重新加载</span><br>sudo ufw reload<br></code></pre></td></tr></table></figure>
+<h2 id="进阶设置-开机自启">进阶设置/开机自启</h2>
+<p>在服务端和客户端的 frp 的文件夹中，分别编写脚本<code>frps.sh</code>与<code>frpc.sh</code>，里面编写启动命令</p>
+<p>在<code>/etc/systemd/system</code>中，分别创建文件<code>frps.service</code>与<code>frpc.service</code></p>
+<p>这里以<code>frps.service</code>为例</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># frps.service</span><br>[Unit]<br>Description=FrpServer<br>After=network.target<br>[Service]<br>Type=simple<br>ExecStart=/root/frp_0.53.2_linux_amd64/frps.sh<br><span class="hljs-comment"># 服务启动时执行的命令</span><br>WorkingDirectory=/root/frp_0.53.2_linux_amd64/<br><span class="hljs-comment"># 指定脚本运行的目录</span><br>[Install]<br>WantedBy=multi-user.target<br><span class="hljs-comment"># 自定义服务会在多用户模式下启动</span><br></code></pre></td></tr></table></figure>
+<p>如果脚本里就是用绝对路径写的，<code>WorkingDirectory</code> 可以不写</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># 重新加载 Systemd 配置</span><br>sudo systemctl daemon-reload<br><span class="hljs-comment"># 启用自启动，这一步会创建软连接</span><br>sudo systemctl <span class="hljs-built_in">enable</span> frps.service<br><span class="hljs-comment"># 启动服务，其实这里的.service不用写</span><br>sudo systemctl start frps.service<br></code></pre></td></tr></table></figure>
+<p><code>frps.service</code>的开机自启也是类似，但经过测试发现，如果一开机就启动可能会因为网络未完全连接而失败。<br>
+使用<code>systemctl status my-service.service</code>命令查看状态，可以看到类似 time out/connection failed 的报错。<br>
+经测试，设置开机后 10 秒再启动，服务即可正常运行。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># frpc.service</span><br>[Unit]<br>Description=FrpClient<br>After=network.target<br>[Service]<br>Type=simple<br><span class="hljs-comment"># 延迟10s启动</span><br>ExecStartPre=/bin/sleep 10<br>ExecStart=/home/orangepi/frp_0.53.2_linux_arm64/frpc.sh<br><span class="hljs-comment"># 服务启动时执行的命令</span><br>WorkingDirectory=/home/orangepi/frp_0.53.2_linux_arm64/<br><span class="hljs-comment"># 指定脚本运行的目录</span><br>[Install]<br>WantedBy=multi-user.target<br></code></pre></td></tr></table></figure>
+<p>现在，在 windows 中，可以通过 powershell 命令来连接到主机</p>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><code class="hljs powershell">ssh <span class="hljs-literal">-oPort</span>=<span class="hljs-number">6000</span> orangepi@xx.xx.xx.xx<br></code></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>计算机/折腾</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
+        <tag>网络</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>五金和测量工具</title>
     <url>/2024/07/14/2024-07-14-%E4%BA%94%E9%87%91%E5%92%8C%E6%B5%8B%E9%87%8F%E5%B7%A5%E5%85%B7/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>常用五金和测量工具品牌推荐</p>
@@ -2644,5 +2588,233 @@ M834 80h400000v40h-400000z"/></svg></span></span></span><span class="vlist-s">�
       <tags>
         <tag>五金</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>v2rayA设置</title>
+    <url>/2024/01/30/2024-1-30-v2rayA%E8%AE%BE%E7%BD%AE/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>本文简单介绍ubuntu系统如何安装v2rayA。</p>
+<span id="more"></span>
+<h1>v2rayA</h1>
+<p>项目地址：<a href="https://github.com/v2rayA/v2rayA">https://github.com/v2rayA/v2rayA</a></p>
+<p>官方网站：<a href="https://v2raya.org/">https://v2raya.org/</a></p>
+<p>由于v2rayA在0.0.0.0:2017开放web服务，因此无需图形界面，这也是我选择它的理由。</p>
+<h2 id="安装">安装</h2>
+<p>有两种方式可以安装</p>
+<ul>
+<li>手动安装（<a href="https://github.com/v2rayA/v2rayA/releases%EF%BC%89">https://github.com/v2rayA/v2rayA/releases）</a></li>
+<li>一键脚本（<a href="https://github.com/233boy/v2ray%EF%BC%89">https://github.com/233boy/v2ray）</a></li>
+</ul>
+<p>由于众所周知的原因，国内经常无法访问github，而一键脚本中使用了github的源，因此失效概率很大。</p>
+<p>因此，只能通过其他方式（使用其他设备或者手动换源），先把安装包下下来，然后自行安装。</p>
+<p>（比如，使用已经配置好代理的windows设备来下载安装包，然后传到linux设备上。毕竟windows配置代理比linux方便不少。）</p>
+<h3 id="v2rayA">v2rayA</h3>
+<p>根据自己的设备，在release页面安装即可。</p>
+<p>将deb包传到设备上后，安装。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">dpkg -i package.deb<br></code></pre></td></tr></table></figure>
+<p>请注意：如果你的设备没有预先装过v2ray，手动安装deb包时，不会自动安装v2ray，可能会遇到</p>
+<figure class="highlight stylus"><table><tr><td class="code"><pre><code class="hljs stylus">检测到 geosite<span class="hljs-selector-class">.dat</span>, geoip<span class="hljs-selector-class">.dat</span> 文件或 v2ray-core 可能未正确安装，请检查<br></code></pre></td></tr></table></figure>
+<p>等类似的问题，在 <a href="https://github.com/v2rayA/v2rayA/issues/510">https://github.com/v2rayA/v2rayA/issues/510</a> 给出了解决方法。</p>
+<p>笔者也是遇到过这个坑，因此在这里，我们事先先配置好。</p>
+<h3 id="v2ray-core">v2ray-core</h3>
+<p>下载：<a href="https://github.com/v2fly/v2ray-core/releases">https://github.com/v2fly/v2ray-core/releases</a></p>
+<p>然后使用<code>unzip</code>命令即可</p>
+<p>接着，手动修改v2rayA的配置，<code>/path/to</code>改成自己的路径</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">vi /etc/default/v2raya<br><br><span class="hljs-comment"># 添加配置</span><br>V2RAYA_V2RAY_BIN=/path/to/v2ray-core/v2ray<br>V2RAYA_V2RAY_CONFDIR=/path/to/v2ray-core<br>V2RAYA_V2RAY_ASSETSDIR=/path/to/v2ray-core<br></code></pre></td></tr></table></figure>
+<p>然后重启即可</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">systemctl restart v2raya<br></code></pre></td></tr></table></figure>
+<h2 id="基础设置">基础设置</h2>
+<p>启动服务</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">systemctl start v2raya<br></code></pre></td></tr></table></figure>
+<p>关闭服务</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">systemctl stop v2raya<br></code></pre></td></tr></table></figure>
+<p>如果有图形界面，可以在<code>localhost:2017</code>上查看，如果没有，相应地改成设备所处ip即可。</p>
+<p>不过似乎还需要配置一下本地的代理，可以参考下面的<code>export</code>命令，端口结合自己在web端的设置来修改。</p>
+<h2 id="进阶配置">进阶配置</h2>
+<p>由于我个人并不希望代理开机自启，而是希望需要的时候打开，不需要的时候关闭，因此我手动编写了启动与关闭脚本。</p>
+<p><code>v2a-start.sh</code></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash"><span class="hljs-meta">#!/bin/bash</span><br>systemctl start v2raya<br><span class="hljs-built_in">export</span> http_proxy=<span class="hljs-string">&quot;http://127.0.0.1:20171/&quot;</span><br><span class="hljs-built_in">export</span> https_proxy=<span class="hljs-string">&quot;http://127.0.0.1:20173/&quot;</span><br><span class="hljs-built_in">export</span> no_proxy=<span class="hljs-string">&quot;127.0.0.1,localhost&quot;</span><br><span class="hljs-built_in">export</span> HTTP_PROXY=<span class="hljs-string">&quot;http://127.0.0.1:20171/&quot;</span><br><span class="hljs-built_in">export</span> HTTPS_PROXY=<span class="hljs-string">&quot;http://127.0.0.1:20173/&quot;</span><br><span class="hljs-built_in">export</span> NO_PROXY=<span class="hljs-string">&quot;127.0.0.1,localhost&quot;</span><br></code></pre></td></tr></table></figure>
+<p><code>v2a-halt.sh</code></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash"><span class="hljs-meta">#!/bin/bash</span><br>systemctl stop v2raya<br><span class="hljs-built_in">unset</span> http_proxy<br><span class="hljs-built_in">unset</span> https_proxy<br><span class="hljs-built_in">unset</span> no_proxy<br><span class="hljs-built_in">unset</span> HTTP_PROXY<br><span class="hljs-built_in">unset</span> NO_PROXY<br></code></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>计算机/折腾</category>
+        <category>网络</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
+        <tag>网络</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>LaTeX符号与希腊字母表</title>
+    <url>/2024/10/30/2024-10-30-LaTeX-%E7%AC%A6%E5%8F%B7%E4%B8%8E%E5%B8%8C%E8%85%8A%E5%AD%97%E6%AF%8D%E8%A1%A8/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="LaTeX-符号">LaTeX 符号</h2>
+<embed src="symbols.pdf" width="600" height="500" type="application/pdf">
+<p><a href="https://www.cmor-faculty.rice.edu/~heinken/latex/symbols.pdf">https://www.cmor-faculty.rice.edu/~heinken/latex/symbols.pdf</a></p>
+<p><a href="https://oeis.org/wiki/List_of_LaTeX_mathematical_symbols">https://oeis.org/wiki/List_of_LaTeX_mathematical_symbols</a></p>
+<p><a href="https://artofproblemsolving.com/wiki/index.php/LaTeX:Symbols">https://artofproblemsolving.com/wiki/index.php/LaTeX:Symbols</a></p>
+<h2 id="希腊字母表">希腊字母表</h2>
+<table>
+<thead>
+<tr>
+<th>希腊字母名称</th>
+<th>大写</th>
+<th>小写</th>
+<th>常用含义或对应英文字母</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Alpha</td>
+<td>Α</td>
+<td>α</td>
+<td>a（常用于角度、系数）</td>
+</tr>
+<tr>
+<td>Beta</td>
+<td>Β</td>
+<td>β</td>
+<td>b（常用于角度、系数）</td>
+</tr>
+<tr>
+<td>Gamma</td>
+<td>Γ</td>
+<td>γ</td>
+<td>g（常用于伽玛射线、曲率）</td>
+</tr>
+<tr>
+<td>Delta</td>
+<td>Δ</td>
+<td>δ</td>
+<td>d（Δ 表示变化量）</td>
+</tr>
+<tr>
+<td>Epsilon</td>
+<td>Ε</td>
+<td>ε</td>
+<td>e（常用于误差、介电常数）</td>
+</tr>
+<tr>
+<td>Zeta</td>
+<td>Ζ</td>
+<td>ζ</td>
+<td>z（阻尼比）</td>
+</tr>
+<tr>
+<td>Eta</td>
+<td>Η</td>
+<td>η</td>
+<td>h（效率）</td>
+</tr>
+<tr>
+<td>Theta</td>
+<td>Θ</td>
+<td>θ</td>
+<td>t（常用于角度）</td>
+</tr>
+<tr>
+<td>Iota</td>
+<td>Ι</td>
+<td>ι</td>
+<td>i（少用）</td>
+</tr>
+<tr>
+<td>Kappa</td>
+<td>Κ</td>
+<td>κ</td>
+<td>k（波数、热传导率）</td>
+</tr>
+<tr>
+<td>Lambda</td>
+<td>Λ</td>
+<td>λ</td>
+<td>l（波长、特征值）</td>
+</tr>
+<tr>
+<td>Mu</td>
+<td>Μ</td>
+<td>μ</td>
+<td>m（微、摩擦系数）</td>
+</tr>
+<tr>
+<td>Nu</td>
+<td>Ν</td>
+<td>ν</td>
+<td>n（频率、黏度）</td>
+</tr>
+<tr>
+<td>Xi</td>
+<td>Ξ</td>
+<td>ξ</td>
+<td>x（随机变量）</td>
+</tr>
+<tr>
+<td>Omicron</td>
+<td>Ο</td>
+<td>ο</td>
+<td>o（少用）</td>
+</tr>
+<tr>
+<td>Pi</td>
+<td>Π</td>
+<td>π</td>
+<td>p（圆周率）</td>
+</tr>
+<tr>
+<td>Rho</td>
+<td>Ρ</td>
+<td>ρ</td>
+<td>r（密度、电阻率）</td>
+</tr>
+<tr>
+<td>Sigma</td>
+<td>Σ</td>
+<td>σ/ς</td>
+<td>s（求和、标准差、应力）</td>
+</tr>
+<tr>
+<td>Tau</td>
+<td>Τ</td>
+<td>τ</td>
+<td>t（时间常数、剪切应力）</td>
+</tr>
+<tr>
+<td>Upsilon</td>
+<td>Υ</td>
+<td>υ</td>
+<td>u（少用）</td>
+</tr>
+<tr>
+<td>Phi</td>
+<td>Φ</td>
+<td>φ</td>
+<td>f（磁通量、黄金比例）</td>
+</tr>
+<tr>
+<td>Chi</td>
+<td>Χ</td>
+<td>χ</td>
+<td>c（统计学中的卡方分布）</td>
+</tr>
+<tr>
+<td>Psi</td>
+<td>Ψ</td>
+<td>ψ</td>
+<td>ps（量子力学中的波函数）</td>
+</tr>
+<tr>
+<td>Omega</td>
+<td>Ω</td>
+<td>ω</td>
+<td>o（电阻、角速度）</td>
+</tr>
+</tbody>
+</table>
+<p>后面这坨之后有空补充和研究，并且需要更新一下之前的&quot;hexo 图片引用&quot;文章</p>
+<h2 id="LaTeX-Suite">LaTeX Suite</h2>
+<figure class="highlight swift"><table><tr><td class="code"><pre><code class="hljs swift">[<br>    <span class="hljs-comment">// Math mode</span><br>	&#123;trigger: <span class="hljs-string">&quot;mk&quot;</span>, replacement: <span class="hljs-string">&quot;$$0$&quot;</span>, options: <span class="hljs-string">&quot;tA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;dm&quot;</span>, replacement: <span class="hljs-string">&quot;$$<span class="hljs-subst">\n</span>$0<span class="hljs-subst">\n</span>$$&quot;</span>, options: <span class="hljs-string">&quot;tAw&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;beg&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>begin&#123;$0&#125;<span class="hljs-subst">\n</span>$1<span class="hljs-subst">\n</span><span class="hljs-subst">\\</span>end&#123;$0&#125;&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br><br>    <span class="hljs-comment">// Dashes</span><br>	<span class="hljs-comment">// &#123;trigger: &quot;--&quot;, replacement: &quot;–&quot;, options: &quot;tA&quot;&#125;,</span><br>	<span class="hljs-comment">// &#123;trigger: &quot;–-&quot;, replacement: &quot;—&quot;, options: &quot;tA&quot;&#125;,</span><br>	<span class="hljs-comment">// &#123;trigger: &quot;—-&quot;, replacement: &quot;---&quot;, options: &quot;tA&quot;&#125;,</span><br><br>    <span class="hljs-comment">// Greek letters</span><br>	&#123;trigger: <span class="hljs-string">&quot;@a&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>alpha&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;@b&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>beta&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;@g&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>gamma&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;@G&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>Gamma&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;@d&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>delta&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;@D&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>Delta&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;@e&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>epsilon&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;:e&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>varepsilon&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;@z&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>zeta&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;@t&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>theta&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;@T&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>Theta&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;:t&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>vartheta&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;@i&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>iota&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;@k&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>kappa&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;@l&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>lambda&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;@L&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>Lambda&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;@s&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>sigma&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;@S&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>Sigma&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;@u&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>upsilon&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;@U&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>Upsilon&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;@o&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>omega&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;@O&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>Omega&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;ome&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>omega&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;Ome&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>Omega&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br><br>    <span class="hljs-comment">// Text environment</span><br>    &#123;trigger: <span class="hljs-string">&quot;text&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>text&#123;$0&#125;$1&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>    &#123;trigger: <span class="hljs-string">&quot;<span class="hljs-subst">\&quot;</span>&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>text&#123;$0&#125;$1&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br><br>    <span class="hljs-comment">// Basic operations</span><br>    &#123;trigger: <span class="hljs-string">&quot;sr&quot;</span>, replacement: <span class="hljs-string">&quot;^&#123;2&#125;&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;cb&quot;</span>, replacement: <span class="hljs-string">&quot;^&#123;3&#125;&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;rd&quot;</span>, replacement: <span class="hljs-string">&quot;^&#123;$0&#125;$1&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;_&quot;</span>, replacement: <span class="hljs-string">&quot;_&#123;$0&#125;$1&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;sts&quot;</span>, replacement: <span class="hljs-string">&quot;_<span class="hljs-subst">\\</span>text&#123;$0&#125;&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;sq&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>sqrt&#123; $0 &#125;$1&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;//&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>frac&#123;$0&#125;&#123;$1&#125;$2&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;ee&quot;</span>, replacement: <span class="hljs-string">&quot;e^&#123; $0 &#125;$1&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>    &#123;trigger: <span class="hljs-string">&quot;invs&quot;</span>, replacement: <span class="hljs-string">&quot;^&#123;-1&#125;&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>    &#123;trigger: <span class="hljs-operator">/</span>([<span class="hljs-type">A</span><span class="hljs-operator">-</span><span class="hljs-type">Za</span><span class="hljs-operator">-</span>z])(\d)<span class="hljs-operator">/</span>, replacement: <span class="hljs-string">&quot;[[0]]_&#123;[[1]]&#125;&quot;</span>, options: <span class="hljs-string">&quot;rmA&quot;</span>, description: <span class="hljs-string">&quot;Auto letter subscript&quot;</span>, priority: <span class="hljs-operator">-</span><span class="hljs-number">1</span>&#125;,<br><br>    &#123;trigger: <span class="hljs-operator">/</span>([<span class="hljs-operator">^</span>\\])(exp<span class="hljs-operator">|</span>log<span class="hljs-operator">|</span>ln)<span class="hljs-operator">/</span>, replacement: <span class="hljs-string">&quot;[[0]]<span class="hljs-subst">\\</span>[[1]]&quot;</span>, options: <span class="hljs-string">&quot;rmA&quot;</span>&#125;,<br>    &#123;trigger: <span class="hljs-string">&quot;conj&quot;</span>, replacement: <span class="hljs-string">&quot;^&#123;*&#125;&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>    &#123;trigger: <span class="hljs-string">&quot;Re&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>mathrm&#123;Re&#125;&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;Im&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>mathrm&#123;Im&#125;&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>    &#123;trigger: <span class="hljs-string">&quot;bf&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>mathbf&#123;$0&#125;&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;rm&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>mathrm&#123;$0&#125;$1&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br><br>    <span class="hljs-comment">// Linear algebra</span><br>    &#123;trigger: <span class="hljs-operator">/</span>([<span class="hljs-operator">^</span>\\])(det)<span class="hljs-operator">/</span>, replacement: <span class="hljs-string">&quot;[[0]]<span class="hljs-subst">\\</span>[[1]]&quot;</span>, options: <span class="hljs-string">&quot;rmA&quot;</span>&#125;,<br>    &#123;trigger: <span class="hljs-string">&quot;trace&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>mathrm&#123;Tr&#125;&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br><br>    <span class="hljs-comment">// More operations</span><br>	&#123;trigger: <span class="hljs-string">&quot;([a-zA-Z])hat&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>hat&#123;[[0]]&#125;&quot;</span>, options: <span class="hljs-string">&quot;rmA&quot;</span>&#125;,<br>    &#123;trigger: <span class="hljs-string">&quot;([a-zA-Z])bar&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>bar&#123;[[0]]&#125;&quot;</span>, options: <span class="hljs-string">&quot;rmA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;([a-zA-Z])dot&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>dot&#123;[[0]]&#125;&quot;</span>, options: <span class="hljs-string">&quot;rmA&quot;</span>, priority: <span class="hljs-operator">-</span><span class="hljs-number">1</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;([a-zA-Z])ddot&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>ddot&#123;[[0]]&#125;&quot;</span>, options: <span class="hljs-string">&quot;rmA&quot;</span>, priority: <span class="hljs-number">1</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;([a-zA-Z])tilde&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>tilde&#123;[[0]]&#125;&quot;</span>, options: <span class="hljs-string">&quot;rmA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;([a-zA-Z])und&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>underline&#123;[[0]]&#125;&quot;</span>, options: <span class="hljs-string">&quot;rmA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;([a-zA-Z])vec&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>vec&#123;[[0]]&#125;&quot;</span>, options: <span class="hljs-string">&quot;rmA&quot;</span>&#125;,<br>    &#123;trigger: <span class="hljs-string">&quot;([a-zA-Z]),<span class="hljs-subst">\\</span>.&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>mathbf&#123;[[0]]&#125;&quot;</span>, options: <span class="hljs-string">&quot;rmA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;([a-zA-Z])<span class="hljs-subst">\\</span>.,&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>mathbf&#123;[[0]]&#125;&quot;</span>, options: <span class="hljs-string">&quot;rmA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span><span class="hljs-subst">\\</span>($&#123;GREEK&#125;),<span class="hljs-subst">\\</span>.&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>boldsymbol&#123;<span class="hljs-subst">\\</span>[[0]]&#125;&quot;</span>, options: <span class="hljs-string">&quot;rmA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span><span class="hljs-subst">\\</span>($&#123;GREEK&#125;)<span class="hljs-subst">\\</span>.,&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>boldsymbol&#123;<span class="hljs-subst">\\</span>[[0]]&#125;&quot;</span>, options: <span class="hljs-string">&quot;rmA&quot;</span>&#125;,<br><br>	&#123;trigger: <span class="hljs-string">&quot;hat&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>hat&#123;$0&#125;$1&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>    &#123;trigger: <span class="hljs-string">&quot;bar&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>bar&#123;$0&#125;$1&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;dot&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>dot&#123;$0&#125;$1&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>, priority: <span class="hljs-operator">-</span><span class="hljs-number">1</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;ddot&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>ddot&#123;$0&#125;$1&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;cdot&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>cdot&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;tilde&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>tilde&#123;$0&#125;$1&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;und&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>underline&#123;$0&#125;$1&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;vec&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>vec&#123;$0&#125;$1&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br><br>    <span class="hljs-comment">// More auto letter subscript</span><br>    &#123;trigger: <span class="hljs-operator">/</span>([<span class="hljs-type">A</span><span class="hljs-operator">-</span><span class="hljs-type">Za</span><span class="hljs-operator">-</span>z])<span class="hljs-keyword">_</span>(\d\d)<span class="hljs-operator">/</span>, replacement: <span class="hljs-string">&quot;[[0]]_&#123;[[1]]&#125;&quot;</span>, options: <span class="hljs-string">&quot;rmA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-operator">/</span>\\hat&#123;([<span class="hljs-type">A</span><span class="hljs-operator">-</span><span class="hljs-type">Za</span><span class="hljs-operator">-</span>z])&#125;(\d)<span class="hljs-operator">/</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>hat&#123;[[0]]&#125;_&#123;[[1]]&#125;&quot;</span>, options: <span class="hljs-string">&quot;rmA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-operator">/</span>\\vec&#123;([<span class="hljs-type">A</span><span class="hljs-operator">-</span><span class="hljs-type">Za</span><span class="hljs-operator">-</span>z])&#125;(\d)<span class="hljs-operator">/</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>vec&#123;[[0]]&#125;_&#123;[[1]]&#125;&quot;</span>, options: <span class="hljs-string">&quot;rmA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-operator">/</span>\\mathbf&#123;([<span class="hljs-type">A</span><span class="hljs-operator">-</span><span class="hljs-type">Za</span><span class="hljs-operator">-</span>z])&#125;(\d)<span class="hljs-operator">/</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>mathbf&#123;[[0]]&#125;_&#123;[[1]]&#125;&quot;</span>, options: <span class="hljs-string">&quot;rmA&quot;</span>&#125;,<br><br>    &#123;trigger: <span class="hljs-string">&quot;xnn&quot;</span>, replacement: <span class="hljs-string">&quot;x_&#123;n&#125;&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;xii&quot;</span>, replacement: <span class="hljs-string">&quot;x_&#123;i&#125;&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;xjj&quot;</span>, replacement: <span class="hljs-string">&quot;x_&#123;j&#125;&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;xp1&quot;</span>, replacement: <span class="hljs-string">&quot;x_&#123;n+1&#125;&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;ynn&quot;</span>, replacement: <span class="hljs-string">&quot;y_&#123;n&#125;&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;yii&quot;</span>, replacement: <span class="hljs-string">&quot;y_&#123;i&#125;&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;yjj&quot;</span>, replacement: <span class="hljs-string">&quot;y_&#123;j&#125;&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br><br>    <span class="hljs-comment">// Symbols</span><br>    &#123;trigger: <span class="hljs-string">&quot;ooo&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>infty&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;sum&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>sum&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;prod&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>prod&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>sum&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>sum_&#123;$&#123;0:i&#125;=$&#123;1:1&#125;&#125;^&#123;$&#123;2:N&#125;&#125; $3&quot;</span>, options: <span class="hljs-string">&quot;m&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>prod&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>prod_&#123;$&#123;0:i&#125;=$&#123;1:1&#125;&#125;^&#123;$&#123;2:N&#125;&#125; $3&quot;</span>, options: <span class="hljs-string">&quot;m&quot;</span>&#125;,<br>    &#123;trigger: <span class="hljs-string">&quot;lim&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>lim_&#123; $&#123;0:n&#125; <span class="hljs-subst">\\</span>to $&#123;1:<span class="hljs-subst">\\</span>infty&#125; &#125; $2&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>    &#123;trigger: <span class="hljs-string">&quot;+-&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>pm&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;-+&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>mp&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>    &#123;trigger: <span class="hljs-string">&quot;...&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>dots&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>    &#123;trigger: <span class="hljs-string">&quot;nabl&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>nabla&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;del&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>nabla&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>    &#123;trigger: <span class="hljs-string">&quot;xx&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>times&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>    &#123;trigger: <span class="hljs-string">&quot;**&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>cdot&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>    &#123;trigger: <span class="hljs-string">&quot;para&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>parallel&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br><br>	&#123;trigger: <span class="hljs-string">&quot;===&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>equiv&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>    &#123;trigger: <span class="hljs-string">&quot;!=&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>neq&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;&gt;=&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>geq&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;&lt;=&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>leq&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;&gt;&gt;&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>gg&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;&lt;&lt;&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>ll&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;simm&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>sim&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;sim=&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>simeq&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>    &#123;trigger: <span class="hljs-string">&quot;prop&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>propto&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br><br><br>    &#123;trigger: <span class="hljs-string">&quot;&lt;-&gt;&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>leftrightarrow &quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;-&gt;&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>to&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;!&gt;&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>mapsto&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>    &#123;trigger: <span class="hljs-string">&quot;=&gt;&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>implies&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;=&lt;&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>impliedby&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br><br>	&#123;trigger: <span class="hljs-string">&quot;and&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>cap&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;orr&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>cup&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;inn&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>in&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;notin&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>not<span class="hljs-subst">\\</span>in&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>    &#123;trigger: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span><span class="hljs-subst">\\</span><span class="hljs-subst">\\</span>&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>setminus&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>    &#123;trigger: <span class="hljs-string">&quot;sub=&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>subseteq&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>    &#123;trigger: <span class="hljs-string">&quot;sup=&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>supseteq&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;eset&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>emptyset&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;set&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>&#123; $0 <span class="hljs-subst">\\</span>&#125;$1&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;e<span class="hljs-subst">\\</span>xi sts&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>exists&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>, priority: <span class="hljs-number">1</span>&#125;,<br><br>	&#123;trigger: <span class="hljs-string">&quot;LL&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>mathcal&#123;L&#125;&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;HH&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>mathcal&#123;H&#125;&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;CC&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>mathbb&#123;C&#125;&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;RR&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>mathbb&#123;R&#125;&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;ZZ&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>mathbb&#123;Z&#125;&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;NN&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>mathbb&#123;N&#125;&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br><br>    <span class="hljs-comment">// Handle spaces and backslashes</span><br><br>    <span class="hljs-comment">// Snippet variables can be used as shortcuts when writing snippets.</span><br>    <span class="hljs-comment">// For example, $&#123;GREEK&#125; below is shorthand for &quot;alpha|beta|gamma|Gamma|delta|...&quot;</span><br>    <span class="hljs-comment">// You can edit snippet variables under the Advanced snippet settings section.</span><br><br>	&#123;trigger: <span class="hljs-string">&quot;([^<span class="hljs-subst">\\</span><span class="hljs-subst">\\</span>])($&#123;GREEK&#125;)&quot;</span>, replacement: <span class="hljs-string">&quot;[[0]]<span class="hljs-subst">\\</span>[[1]]&quot;</span>, options: <span class="hljs-string">&quot;rmA&quot;</span>, description: <span class="hljs-string">&quot;Add backslash before Greek letters&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;([^<span class="hljs-subst">\\</span><span class="hljs-subst">\\</span>])($&#123;SYMBOL&#125;)&quot;</span>, replacement: <span class="hljs-string">&quot;[[0]]<span class="hljs-subst">\\</span>[[1]]&quot;</span>, options: <span class="hljs-string">&quot;rmA&quot;</span>, description: <span class="hljs-string">&quot;Add backslash before symbols&quot;</span>&#125;,<br><br>    <span class="hljs-comment">// Insert space after Greek letters and symbols</span><br>	&#123;trigger: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span><span class="hljs-subst">\\</span>($&#123;GREEK&#125;|$&#123;SYMBOL&#125;|$&#123;MORE_SYMBOLS&#125;)([A-Za-z])&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>[[0]] [[1]]&quot;</span>, options: <span class="hljs-string">&quot;rmA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span><span class="hljs-subst">\\</span>($&#123;GREEK&#125;|$&#123;SYMBOL&#125;) sr&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>[[0]]^&#123;2&#125;&quot;</span>, options: <span class="hljs-string">&quot;rmA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span><span class="hljs-subst">\\</span>($&#123;GREEK&#125;|$&#123;SYMBOL&#125;) cb&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>[[0]]^&#123;3&#125;&quot;</span>, options: <span class="hljs-string">&quot;rmA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span><span class="hljs-subst">\\</span>($&#123;GREEK&#125;|$&#123;SYMBOL&#125;) rd&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>[[0]]^&#123;$0&#125;$1&quot;</span>, options: <span class="hljs-string">&quot;rmA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span><span class="hljs-subst">\\</span>($&#123;GREEK&#125;|$&#123;SYMBOL&#125;) hat&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>hat&#123;<span class="hljs-subst">\\</span>[[0]]&#125;&quot;</span>, options: <span class="hljs-string">&quot;rmA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span><span class="hljs-subst">\\</span>($&#123;GREEK&#125;|$&#123;SYMBOL&#125;) dot&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>dot&#123;<span class="hljs-subst">\\</span>[[0]]&#125;&quot;</span>, options: <span class="hljs-string">&quot;rmA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span><span class="hljs-subst">\\</span>($&#123;GREEK&#125;|$&#123;SYMBOL&#125;) bar&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>bar&#123;<span class="hljs-subst">\\</span>[[0]]&#125;&quot;</span>, options: <span class="hljs-string">&quot;rmA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span><span class="hljs-subst">\\</span>($&#123;GREEK&#125;|$&#123;SYMBOL&#125;) vec&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>vec&#123;<span class="hljs-subst">\\</span>[[0]]&#125;&quot;</span>, options: <span class="hljs-string">&quot;rmA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span><span class="hljs-subst">\\</span>($&#123;GREEK&#125;|$&#123;SYMBOL&#125;) tilde&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>tilde&#123;<span class="hljs-subst">\\</span>[[0]]&#125;&quot;</span>, options: <span class="hljs-string">&quot;rmA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span><span class="hljs-subst">\\</span>($&#123;GREEK&#125;|$&#123;SYMBOL&#125;) und&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>underline&#123;<span class="hljs-subst">\\</span>[[0]]&#125;&quot;</span>, options: <span class="hljs-string">&quot;rmA&quot;</span>&#125;,<br><br><br>    <span class="hljs-comment">// Derivatives and integrals</span><br>    &#123;trigger: <span class="hljs-string">&quot;par&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>frac&#123; <span class="hljs-subst">\\</span>partial $&#123;0:y&#125; &#125;&#123; <span class="hljs-subst">\\</span>partial $&#123;1:x&#125; &#125; $2&quot;</span>, options: <span class="hljs-string">&quot;m&quot;</span>&#125;,<br>    &#123;trigger: <span class="hljs-operator">/</span>pa([<span class="hljs-type">A</span><span class="hljs-operator">-</span><span class="hljs-type">Za</span><span class="hljs-operator">-</span>z])([<span class="hljs-type">A</span><span class="hljs-operator">-</span><span class="hljs-type">Za</span><span class="hljs-operator">-</span>z])<span class="hljs-operator">/</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>frac&#123; <span class="hljs-subst">\\</span>partial [[0]] &#125;&#123; <span class="hljs-subst">\\</span>partial [[1]] &#125; &quot;</span>, options: <span class="hljs-string">&quot;rm&quot;</span>&#125;,<br>    &#123;trigger: <span class="hljs-string">&quot;ddt&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>frac&#123;d&#125;&#123;dt&#125; &quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br><br>    &#123;trigger: <span class="hljs-operator">/</span>([<span class="hljs-operator">^</span>\\])int<span class="hljs-operator">/</span>, replacement: <span class="hljs-string">&quot;[[0]]<span class="hljs-subst">\\</span>int&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>, priority: <span class="hljs-operator">-</span><span class="hljs-number">1</span>&#125;,<br>    &#123;trigger: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>int&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>int $0 <span class="hljs-subst">\\</span>, d$&#123;1:x&#125; $2&quot;</span>, options: <span class="hljs-string">&quot;m&quot;</span>&#125;,<br>    &#123;trigger: <span class="hljs-string">&quot;dint&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>int_&#123;$&#123;0:0&#125;&#125;^&#123;$&#123;1:1&#125;&#125; $2 <span class="hljs-subst">\\</span>, d$&#123;3:x&#125; $4&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>    &#123;trigger: <span class="hljs-string">&quot;oint&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>oint&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;iint&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>iint&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>    &#123;trigger: <span class="hljs-string">&quot;iiint&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>iiint&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>    &#123;trigger: <span class="hljs-string">&quot;oinf&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>int_&#123;0&#125;^&#123;<span class="hljs-subst">\\</span>infty&#125; $0 <span class="hljs-subst">\\</span>, d$&#123;1:x&#125; $2&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;infi&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>int_&#123;-<span class="hljs-subst">\\</span>infty&#125;^&#123;<span class="hljs-subst">\\</span>infty&#125; $0 <span class="hljs-subst">\\</span>, d$&#123;1:x&#125; $2&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br><br><br>    <span class="hljs-comment">// Trigonometry</span><br>    &#123;trigger: <span class="hljs-operator">/</span>([<span class="hljs-operator">^</span>\\])(arcsin<span class="hljs-operator">|</span>sin<span class="hljs-operator">|</span>arccos<span class="hljs-operator">|</span>cos<span class="hljs-operator">|</span>arctan<span class="hljs-operator">|</span>tan<span class="hljs-operator">|</span>csc<span class="hljs-operator">|</span>sec<span class="hljs-operator">|</span>cot)<span class="hljs-operator">/</span>, replacement: <span class="hljs-string">&quot;[[0]]<span class="hljs-subst">\\</span>[[1]]&quot;</span>, options: <span class="hljs-string">&quot;rmA&quot;</span>, description: <span class="hljs-string">&quot;Add backslash before trig funcs&quot;</span>&#125;,<br><br>    &#123;trigger: <span class="hljs-operator">/</span>\\(arcsin<span class="hljs-operator">|</span>sin<span class="hljs-operator">|</span>arccos<span class="hljs-operator">|</span>cos<span class="hljs-operator">|</span>arctan<span class="hljs-operator">|</span>tan<span class="hljs-operator">|</span>csc<span class="hljs-operator">|</span>sec<span class="hljs-operator">|</span>cot)([<span class="hljs-type">A</span><span class="hljs-operator">-</span><span class="hljs-type">Za</span><span class="hljs-operator">-</span>gi<span class="hljs-operator">-</span>z])<span class="hljs-operator">/</span>,<br>     replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>[[0]] [[1]]&quot;</span>, options: <span class="hljs-string">&quot;rmA&quot;</span>,<br>     description: <span class="hljs-string">&quot;Add space after trig funcs. Skips letter h to allow sinh, cosh, etc.&quot;</span>&#125;,<br><br>    &#123;trigger: <span class="hljs-operator">/</span>\\(sinh<span class="hljs-operator">|</span>cosh<span class="hljs-operator">|</span>tanh<span class="hljs-operator">|</span>coth)([<span class="hljs-type">A</span><span class="hljs-operator">-</span><span class="hljs-type">Za</span><span class="hljs-operator">-</span>z])<span class="hljs-operator">/</span>,<br>     replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>[[0]] [[1]]&quot;</span>, options: <span class="hljs-string">&quot;rmA&quot;</span>,<br>     description: <span class="hljs-string">&quot;Add space after hyperbolic trig funcs&quot;</span>&#125;,<br><br><br>    <span class="hljs-comment">// Visual operations</span><br>	&#123;trigger: <span class="hljs-string">&quot;U&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>underbrace&#123; $&#123;VISUAL&#125; &#125;_&#123; $0 &#125;&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;O&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>overbrace&#123; $&#123;VISUAL&#125; &#125;^&#123; $0 &#125;&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;B&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>underset&#123; $0 &#125;&#123; $&#123;VISUAL&#125; &#125;&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;C&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>cancel&#123; $&#123;VISUAL&#125; &#125;&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;K&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>cancelto&#123; $0 &#125;&#123; $&#123;VISUAL&#125; &#125;&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;S&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>sqrt&#123; $&#123;VISUAL&#125; &#125;&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br><br><br>    <span class="hljs-comment">// Physics</span><br>	&#123;trigger: <span class="hljs-string">&quot;kbt&quot;</span>, replacement: <span class="hljs-string">&quot;k_&#123;B&#125;T&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;msun&quot;</span>, replacement: <span class="hljs-string">&quot;M_&#123;<span class="hljs-subst">\\</span>odot&#125;&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br><br>    <span class="hljs-comment">// Quantum mechanics</span><br>    &#123;trigger: <span class="hljs-string">&quot;dag&quot;</span>, replacement: <span class="hljs-string">&quot;^&#123;<span class="hljs-subst">\\</span>dagger&#125;&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;o+&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>oplus &quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;ox&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>otimes &quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>    &#123;trigger: <span class="hljs-string">&quot;bra&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>bra&#123;$0&#125; $1&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;ket&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>ket&#123;$0&#125; $1&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;brk&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>braket&#123; $0 | $1 &#125; $2&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>    &#123;trigger: <span class="hljs-string">&quot;outer&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>ket&#123;$&#123;0:<span class="hljs-subst">\\</span>psi&#125;&#125; <span class="hljs-subst">\\</span>bra&#123;$&#123;0:<span class="hljs-subst">\\</span>psi&#125;&#125; $1&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br><br>    <span class="hljs-comment">// Chemistry</span><br>	&#123;trigger: <span class="hljs-string">&quot;pu&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>pu&#123; $0 &#125;&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;cee&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>ce&#123; $0 &#125;&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;he4&quot;</span>, replacement: <span class="hljs-string">&quot;&#123;&#125;^&#123;4&#125;_&#123;2&#125;He &quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;he3&quot;</span>, replacement: <span class="hljs-string">&quot;&#123;&#125;^&#123;3&#125;_&#123;2&#125;He &quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;iso&quot;</span>, replacement: <span class="hljs-string">&quot;&#123;&#125;^&#123;$&#123;0:4&#125;&#125;_&#123;$&#123;1:2&#125;&#125;$&#123;2:He&#125;&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br><br><br>    <span class="hljs-comment">// Environments</span><br>	&#123;trigger: <span class="hljs-string">&quot;pmat&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>begin&#123;pmatrix&#125;<span class="hljs-subst">\n</span>$0<span class="hljs-subst">\n</span><span class="hljs-subst">\\</span>end&#123;pmatrix&#125;&quot;</span>, options: <span class="hljs-string">&quot;MA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;bmat&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>begin&#123;bmatrix&#125;<span class="hljs-subst">\n</span>$0<span class="hljs-subst">\n</span><span class="hljs-subst">\\</span>end&#123;bmatrix&#125;&quot;</span>, options: <span class="hljs-string">&quot;MA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;Bmat&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>begin&#123;Bmatrix&#125;<span class="hljs-subst">\n</span>$0<span class="hljs-subst">\n</span><span class="hljs-subst">\\</span>end&#123;Bmatrix&#125;&quot;</span>, options: <span class="hljs-string">&quot;MA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;vmat&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>begin&#123;vmatrix&#125;<span class="hljs-subst">\n</span>$0<span class="hljs-subst">\n</span><span class="hljs-subst">\\</span>end&#123;vmatrix&#125;&quot;</span>, options: <span class="hljs-string">&quot;MA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;Vmat&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>begin&#123;Vmatrix&#125;<span class="hljs-subst">\n</span>$0<span class="hljs-subst">\n</span><span class="hljs-subst">\\</span>end&#123;Vmatrix&#125;&quot;</span>, options: <span class="hljs-string">&quot;MA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;matrix&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>begin&#123;matrix&#125;<span class="hljs-subst">\n</span>$0<span class="hljs-subst">\n</span><span class="hljs-subst">\\</span>end&#123;matrix&#125;&quot;</span>, options: <span class="hljs-string">&quot;MA&quot;</span>&#125;,<br><br>	&#123;trigger: <span class="hljs-string">&quot;pmat&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>begin&#123;pmatrix&#125;$0<span class="hljs-subst">\\</span>end&#123;pmatrix&#125;&quot;</span>, options: <span class="hljs-string">&quot;nA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;bmat&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>begin&#123;bmatrix&#125;$0<span class="hljs-subst">\\</span>end&#123;bmatrix&#125;&quot;</span>, options: <span class="hljs-string">&quot;nA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;Bmat&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>begin&#123;Bmatrix&#125;$0<span class="hljs-subst">\\</span>end&#123;Bmatrix&#125;&quot;</span>, options: <span class="hljs-string">&quot;nA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;vmat&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>begin&#123;vmatrix&#125;$0<span class="hljs-subst">\\</span>end&#123;vmatrix&#125;&quot;</span>, options: <span class="hljs-string">&quot;nA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;Vmat&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>begin&#123;Vmatrix&#125;$0<span class="hljs-subst">\\</span>end&#123;Vmatrix&#125;&quot;</span>, options: <span class="hljs-string">&quot;nA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;matrix&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>begin&#123;matrix&#125;$0<span class="hljs-subst">\\</span>end&#123;matrix&#125;&quot;</span>, options: <span class="hljs-string">&quot;nA&quot;</span>&#125;,<br><br>	&#123;trigger: <span class="hljs-string">&quot;cases&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>begin&#123;cases&#125;<span class="hljs-subst">\n</span>$0<span class="hljs-subst">\n</span><span class="hljs-subst">\\</span>end&#123;cases&#125;&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;align&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>begin&#123;align&#125;<span class="hljs-subst">\n</span>$0<span class="hljs-subst">\n</span><span class="hljs-subst">\\</span>end&#123;align&#125;&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;array&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>begin&#123;array&#125;<span class="hljs-subst">\n</span>$0<span class="hljs-subst">\n</span><span class="hljs-subst">\\</span>end&#123;array&#125;&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br><br><br>    <span class="hljs-comment">// Brackets</span><br>	&#123;trigger: <span class="hljs-string">&quot;avg&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>langle $0 <span class="hljs-subst">\\</span>rangle $1&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;norm&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>lvert $0 <span class="hljs-subst">\\</span>rvert $1&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>, priority: <span class="hljs-number">1</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;Norm&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>lVert $0 <span class="hljs-subst">\\</span>rVert $1&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>, priority: <span class="hljs-number">1</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;ceil&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>lceil $0 <span class="hljs-subst">\\</span>rceil $1&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;floor&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>lfloor $0 <span class="hljs-subst">\\</span>rfloor $1&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;mod&quot;</span>, replacement: <span class="hljs-string">&quot;|$0|$1&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;(&quot;</span>, replacement: <span class="hljs-string">&quot;($&#123;VISUAL&#125;)&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;[&quot;</span>, replacement: <span class="hljs-string">&quot;[$&#123;VISUAL&#125;]&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;&#123;&quot;</span>, replacement: <span class="hljs-string">&quot;&#123;$&#123;VISUAL&#125;&#125;&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;(&quot;</span>, replacement: <span class="hljs-string">&quot;($0)$1&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;&#123;&quot;</span>, replacement: <span class="hljs-string">&quot;&#123;$0&#125;$1&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;[&quot;</span>, replacement: <span class="hljs-string">&quot;[$0]$1&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;lr(&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>left( $0 <span class="hljs-subst">\\</span>right) $1&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;lr&#123;&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>left<span class="hljs-subst">\\</span>&#123; $0 <span class="hljs-subst">\\</span>right<span class="hljs-subst">\\</span>&#125; $1&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;lr[&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>left[ $0 <span class="hljs-subst">\\</span>right] $1&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;lr|&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>left| $0 <span class="hljs-subst">\\</span>right| $1&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br>	&#123;trigger: <span class="hljs-string">&quot;lra&quot;</span>, replacement: <span class="hljs-string">&quot;<span class="hljs-subst">\\</span>left&lt; $0 <span class="hljs-subst">\\</span>right&gt; $1&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>&#125;,<br><br><br>    <span class="hljs-comment">// Misc</span><br><br>    <span class="hljs-comment">// Automatically convert standalone letters in text to math (except a, A, I).</span><br>    <span class="hljs-comment">// (Un-comment to enable)</span><br>    <span class="hljs-comment">// &#123;trigger: /([^&#x27;])\b([B-HJ-Zb-z])\b([\n\s.,?!:&#x27;])/, replacement: &quot;[[0]]$[[1]]$[[2]]&quot;, options: &quot;tA&quot;&#125;,</span><br><br>    <span class="hljs-comment">// Automatically convert Greek letters in text to math.</span><br>    <span class="hljs-comment">// &#123;trigger: &quot;($&#123;GREEK&#125;)([\\n\\s.,?!:&#x27;])&quot;, replacement: &quot;$\\[[0]]$[[1]]&quot;, options: &quot;rtAw&quot;&#125;,</span><br><br>    <span class="hljs-comment">// Automatically convert text of the form &quot;x=2&quot; and &quot;x=n+1&quot; to math.</span><br>    <span class="hljs-comment">// &#123;trigger: /([A-Za-z]=\d+)([\n\s.,?!:&#x27;])/, replacement: &quot;$[[0]]$[[1]]&quot;, options: &quot;rtAw&quot;&#125;,</span><br>    <span class="hljs-comment">// &#123;trigger: /([A-Za-z]=[A-Za-z][+-]\d+)([\n\s.,?!:&#x27;])/, replacement: &quot;$[[0]]$[[1]]&quot;, options: &quot;tAw&quot;&#125;,</span><br><br><br>    <span class="hljs-comment">// Snippet replacements can have placeholders.</span><br>	&#123;trigger: <span class="hljs-string">&quot;tayl&quot;</span>, replacement: <span class="hljs-string">&quot;$&#123;0:f&#125;($&#123;1:x&#125; + $&#123;2:h&#125;) = $&#123;0:f&#125;($&#123;1:x&#125;) + $&#123;0:f&#125;&#x27;($&#123;1:x&#125;)$&#123;2:h&#125; + $&#123;0:f&#125;&#x27;&#x27;($&#123;1:x&#125;) <span class="hljs-subst">\\</span>frac&#123;$&#123;2:h&#125;^&#123;2&#125;&#125;&#123;2!&#125; + <span class="hljs-subst">\\</span>dots$3&quot;</span>, options: <span class="hljs-string">&quot;mA&quot;</span>, description: <span class="hljs-string">&quot;Taylor expansion&quot;</span>&#125;,<br><br>    <span class="hljs-comment">// Snippet replacements can also be JavaScript functions.</span><br>    <span class="hljs-comment">// See the documentation for more information.</span><br>	&#123;trigger: <span class="hljs-operator">/</span>iden(\d)<span class="hljs-operator">/</span>, replacement: (match) <span class="hljs-operator">=&gt;</span> &#123;<br>		const n <span class="hljs-operator">=</span> match[<span class="hljs-number">1</span>];<br><br>		<span class="hljs-keyword">let</span> arr <span class="hljs-operator">=</span> [];<br>		<span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> j <span class="hljs-operator">=</span> <span class="hljs-number">0</span>; j <span class="hljs-operator">&lt;</span> n; j<span class="hljs-operator">++</span>) &#123;<br>			arr[j] <span class="hljs-operator">=</span> [];<br>			<span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i <span class="hljs-operator">=</span> <span class="hljs-number">0</span>; i <span class="hljs-operator">&lt;</span> n; i<span class="hljs-operator">++</span>) &#123;<br>				arr[j][i] <span class="hljs-operator">=</span> (i <span class="hljs-operator">===</span> j) <span class="hljs-operator">?</span> <span class="hljs-number">1</span> : <span class="hljs-number">0</span>;<br>			&#125;<br>		&#125;<br><br>		<span class="hljs-keyword">let</span> output <span class="hljs-operator">=</span> arr.map(el <span class="hljs-operator">=&gt;</span> el.join(<span class="hljs-string">&quot; &amp; &quot;</span>)).join(<span class="hljs-string">&quot; <span class="hljs-subst">\\</span><span class="hljs-subst">\\</span><span class="hljs-subst">\n</span>&quot;</span>);<br>		output <span class="hljs-operator">=</span> `\\begin&#123;pmatrix&#125;\n$&#123;output&#125;\n\\end&#123;pmatrix&#125;`;<br>		<span class="hljs-keyword">return</span> output;<br>	&#125;, options: <span class="hljs-string">&quot;mA&quot;</span>, description: <span class="hljs-string">&quot;N x N identity matrix&quot;</span>&#125;,<br>]<br></code></pre></td></tr></table></figure>
+<figure class="highlight routeros"><table><tr><td class="code"><pre><code class="hljs routeros"><span class="hljs-comment">## `&lt;embed&gt;`方法</span><br><br>&lt;embed <span class="hljs-attribute">src</span>=<span class="hljs-string">&quot;./2024-10-30-LaTeX-符号与希腊字母表/symbols.pdf&quot;</span> <span class="hljs-attribute">width</span>=<span class="hljs-string">&quot;600&quot;</span> <span class="hljs-attribute">height</span>=<span class="hljs-string">&quot;500&quot;</span> <span class="hljs-attribute">type</span>=<span class="hljs-string">&quot;application/pdf&quot;</span>&gt;<br><br>&lt;embed <span class="hljs-attribute">src</span>=<span class="hljs-string">&quot;symbols.pdf&quot;</span> <span class="hljs-attribute">width</span>=<span class="hljs-string">&quot;600&quot;</span> <span class="hljs-attribute">height</span>=<span class="hljs-string">&quot;500&quot;</span> <span class="hljs-attribute">type</span>=<span class="hljs-string">&quot;application/pdf&quot;</span>&gt;<br><br><span class="hljs-comment">## `&lt;iframe&gt;`方法</span><br><br>&lt;iframe <span class="hljs-attribute">src</span>=<span class="hljs-string">&quot;2024-10-30-LaTeX-符号与希腊字母表/symbols.pdf&quot;</span> <span class="hljs-attribute">width</span>=<span class="hljs-string">&quot;600&quot;</span> <span class="hljs-attribute">height</span>=<span class="hljs-string">&quot;500&quot;</span>&gt;&lt;/iframe&gt;<br><br>&lt;iframe <span class="hljs-attribute">src</span>=<span class="hljs-string">&quot;symbols.pdf&quot;</span> <span class="hljs-attribute">width</span>=<span class="hljs-string">&quot;600&quot;</span> <span class="hljs-attribute">height</span>=<span class="hljs-string">&quot;500&quot;</span>&gt;&lt;/iframe&gt;<br><br><span class="hljs-comment">## `&lt;img&gt;`测试</span><br><br>&lt;img <span class="hljs-attribute">src</span>=<span class="hljs-string">&quot;/2023-05-11-hexo图片引用/LaTeX_logo.svg&quot;</span> <span class="hljs-attribute">alt</span>=<span class="hljs-string">&quot;LaTeX logo1&quot;</span> <span class="hljs-attribute">width</span>=<span class="hljs-string">&quot;70&quot;</span>&gt;<br></code></pre></td></tr></table></figure>
+<figure class="highlight xquery"><table><tr><td class="code"><pre><code class="hljs xquery"><span class="hljs-keyword">update</span> link as:--&gt;/<span class="hljs-number">2024</span>/<span class="hljs-number">10</span>/<span class="hljs-number">30</span>/<span class="hljs-number">2024</span>-<span class="hljs-number">10</span>-<span class="hljs-number">30</span>-LaTeX-<span class="hljs-meta">%E7</span><span class="hljs-meta">%AC</span><span class="hljs-meta">%A6</span><span class="hljs-meta">%E5</span><span class="hljs-meta">%8F</span><span class="hljs-meta">%B7</span><span class="hljs-meta">%E4</span><span class="hljs-meta">%B8</span><span class="hljs-meta">%8E</span><span class="hljs-meta">%E5</span><span class="hljs-meta">%B8</span><span class="hljs-meta">%8C</span><span class="hljs-meta">%E8</span><span class="hljs-meta">%85</span><span class="hljs-meta">%8A</span><span class="hljs-meta">%E5</span><span class="hljs-meta">%AD</span><span class="hljs-meta">%97</span><span class="hljs-meta">%E6</span><span class="hljs-meta">%AF</span><span class="hljs-meta">%8D</span><span class="hljs-meta">%E8</span><span class="hljs-meta">%A1</span><span class="hljs-meta">%A8</span>/LaTeX_logo.svg<br></code></pre></td></tr></table></figure>
+]]></content>
   </entry>
 </search>
