@@ -6,7 +6,7 @@
   <link href="https://0kitasan.github.io/atom.xml" rel="self"/>
   
   <link href="https://0kitasan.github.io/"/>
-  <updated>2024-12-11T06:34:59.970Z</updated>
+  <updated>2025-01-05T15:25:55.794Z</updated>
   <id>https://0kitasan.github.io/</id>
   
   <author>
@@ -15,6 +15,21 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>排序算法总结</title>
+    <link href="https://0kitasan.github.io/2025/01/05/2025-01-05-%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%E6%80%BB%E7%BB%93/"/>
+    <id>https://0kitasan.github.io/2025/01/05/2025-01-05-%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%E6%80%BB%E7%BB%93/</id>
+    <published>2025-01-05T15:23:13.000Z</published>
+    <updated>2025-01-05T15:25:55.794Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;排序算法总结&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>LaTeX Suite</title>
@@ -149,8 +164,8 @@
   
   <entry>
     <title>v2rayA设置</title>
-    <link href="https://0kitasan.github.io/2024/01/30/2024-1-30-v2rayA%E8%AE%BE%E7%BD%AE/"/>
-    <id>https://0kitasan.github.io/2024/01/30/2024-1-30-v2rayA%E8%AE%BE%E7%BD%AE/</id>
+    <link href="https://0kitasan.github.io/2024/01/30/2024-01-30-v2rayA%E8%AE%BE%E7%BD%AE/"/>
+    <id>https://0kitasan.github.io/2024/01/30/2024-01-30-v2rayA%E8%AE%BE%E7%BD%AE/</id>
     <published>2024-01-30T07:54:30.000Z</published>
     <updated>2024-06-11T16:20:06.554Z</updated>
     
@@ -172,8 +187,8 @@
   
   <entry>
     <title>frp设置</title>
-    <link href="https://0kitasan.github.io/2024/01/30/2024-1-30-frp%E8%AE%BE%E7%BD%AE/"/>
-    <id>https://0kitasan.github.io/2024/01/30/2024-1-30-frp%E8%AE%BE%E7%BD%AE/</id>
+    <link href="https://0kitasan.github.io/2024/01/30/2024-01-30-frp%E8%AE%BE%E7%BD%AE/"/>
+    <id>https://0kitasan.github.io/2024/01/30/2024-01-30-frp%E8%AE%BE%E7%BD%AE/</id>
     <published>2024-01-30T07:54:01.000Z</published>
     <updated>2024-07-08T12:31:06.486Z</updated>
     
@@ -414,28 +429,6 @@
     
     
     <category term="markdown" scheme="https://0kitasan.github.io/tags/markdown/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>博客搭建与配置</title>
-    <link href="https://0kitasan.github.io/2023/04/29/2023-04-29-%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E4%B8%8E%E9%85%8D%E7%BD%AE/"/>
-    <id>https://0kitasan.github.io/2023/04/29/2023-04-29-%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E4%B8%8E%E9%85%8D%E7%BD%AE/</id>
-    <published>2023-04-29T02:56:08.000Z</published>
-    <updated>2024-06-11T16:14:34.690Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;第一次尝试搭建个人博客。&lt;br&gt;
-本博客目前使用&lt;a href=&quot;https://www.bilibili.com/video/BV1ts4y1f7Gu&quot;&gt;b站教程&lt;/a&gt;，&lt;a href=&quot;https://hexo.io/zh-cn/index.html&quot;&gt;hexo&lt;/a&gt;框架，以及&lt;a href=&quot;https://shen-yu.gitee.io/2019/ayer/&quot;&gt;ayer&lt;/a&gt;主题。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="计算机/折腾" scheme="https://0kitasan.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA-%E6%8A%98%E8%85%BE/"/>
-    
-    <category term="hexo-md特性探索" scheme="https://0kitasan.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA-%E6%8A%98%E8%85%BE/hexo-md%E7%89%B9%E6%80%A7%E6%8E%A2%E7%B4%A2/"/>
-    
-    
-    <category term="hexo" scheme="https://0kitasan.github.io/tags/hexo/"/>
     
   </entry>
   

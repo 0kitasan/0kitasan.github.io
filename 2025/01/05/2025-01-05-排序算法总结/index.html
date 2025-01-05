@@ -18,23 +18,23 @@
   <meta name="author" content="hamuko">
   <meta name="keywords" content="">
   
-    <meta name="description" content="本文以 ssh 为例，简单介绍基于 frp 的内网穿透的方法。">
+    <meta name="description" content="排序算法总结">
 <meta property="og:type" content="article">
-<meta property="og:title" content="frp设置">
-<meta property="og:url" content="https://0kitasan.github.io/2024/01/30/2024-1-30-frp%E8%AE%BE%E7%BD%AE/index.html">
+<meta property="og:title" content="排序算法总结">
+<meta property="og:url" content="https://0kitasan.github.io/2025/01/05/2025-01-05-%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%E6%80%BB%E7%BB%93/index.html">
 <meta property="og:site_name" content="myblog">
-<meta property="og:description" content="本文以 ssh 为例，简单介绍基于 frp 的内网穿透的方法。">
+<meta property="og:description" content="排序算法总结">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2024-01-30T07:54:01.000Z">
-<meta property="article:modified_time" content="2024-07-08T12:31:06.486Z">
+<meta property="og:image" content="https://0kitasan.github.io/2025/01/05/2025-01-05-%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%E6%80%BB%E7%BB%93/TableX.svg">
+<meta property="article:published_time" content="2025-01-05T15:23:13.000Z">
+<meta property="article:modified_time" content="2025-01-05T15:25:55.794Z">
 <meta property="article:author" content="hamuko">
-<meta property="article:tag" content="linux">
-<meta property="article:tag" content="网络">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://0kitasan.github.io/2025/01/05/2025-01-05-%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%E6%80%BB%E7%BB%93/TableX.svg">
   
   
   
-  <title>frp设置 - myblog</title>
+  <title>排序算法总结 - myblog</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -240,7 +240,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="frp设置"></span>
+            <span id="subtitle" data-typed-text="排序算法总结"></span>
           
         </div>
 
@@ -251,8 +251,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2024-01-30 15:54" pubdate>
-          2024年1月30日 下午
+        <time datetime="2025-01-05 23:23" pubdate>
+          2025年1月5日 晚上
         </time>
       </span>
     
@@ -263,7 +263,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1.7k 字
+          12 字
         
       </span>
     
@@ -274,7 +274,7 @@
         
         
         
-          15 分钟
+          1 分钟
         
       </span>
     
@@ -311,44 +311,15 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">frp设置</h1>
+            <h1 id="seo-header">排序算法总结</h1>
             
             
               <div class="markdown-body">
                 
-                <p>本文以 ssh 为例，简单介绍基于 frp 的内网穿透的方法。</p>
+                <p>排序算法总结</p>
 <span id="more"></span>
-<h1>frp</h1>
-<p>为了使我们能在其他地方访问在家/公司的内网中的设备，我们需要使用内网穿透工具。最有名的就是 frp。</p>
-<p>项目地址：<a target="_blank" rel="noopener" href="https://github.com/fatedier/frp">https://github.com/fatedier/frp</a></p>
-<h2 id="服务端-有公网">服务端/有公网</h2>
-<figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs ini"><span class="hljs-comment"># frps.toml</span><br><span class="hljs-attr">bindPort</span> = <span class="hljs-number">7000</span><br></code></pre></td></tr></table></figure>
-<p>这个 7000 端口是用来给 frp 通信的，并不是端口映射</p>
-<p>然后启动服务端<br>
-<code>./frps -c ./frps.toml</code></p>
-<h2 id="客户端-无公网">客户端/无公网</h2>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># frpc.toml</span><br>serverAddr = <span class="hljs-string">&quot;x.x.x.x&quot;</span><br>serverPort = 7000<br><br>[[proxies]]<br>name = <span class="hljs-string">&quot;ssh&quot;</span><br><span class="hljs-built_in">type</span> = <span class="hljs-string">&quot;tcp&quot;</span><br>localIP = <span class="hljs-string">&quot;127.0.0.1&quot;</span><br>localPort = 22<br>remotePort = 6000<br></code></pre></td></tr></table></figure>
-<p>启动客户端<br>
-<code>./frpc -c ./frpc.toml</code></p>
-<h2 id="测试-frp-连接">测试 frp 连接</h2>
-<p>在不关闭服务端和客户端的 bash 界面的情况下，运行以下命令</p>
-<p><code>ssh -oPort=6000 test@xx.xx.xx.xx</code></p>
-<p>如果返回 timeout 或者 connection refused 的话，可能是某个 bash 关闭了或者防火墙的问题</p>
-<p>可以使用<code>sudo ufw status</code>来查看端口开放状态。可以运行下面的命令开放特定端口</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># 开放tcp端口</span><br>sudo ufw allow 22/tcp<br><span class="hljs-comment"># 开放udp端口</span><br>sudo ufw allow 53/udp<br><span class="hljs-comment"># 不要忘记重新加载</span><br>sudo ufw reload<br></code></pre></td></tr></table></figure>
-<h2 id="进阶设置-开机自启">进阶设置/开机自启</h2>
-<p>在服务端和客户端的 frp 的文件夹中，分别编写脚本<code>frps.sh</code>与<code>frpc.sh</code>，里面编写启动命令</p>
-<p>在<code>/etc/systemd/system</code>中，分别创建文件<code>frps.service</code>与<code>frpc.service</code></p>
-<p>这里以<code>frps.service</code>为例</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># frps.service</span><br>[Unit]<br>Description=FrpServer<br>After=network.target<br>[Service]<br>Type=simple<br>ExecStart=/root/frp_0.53.2_linux_amd64/frps.sh<br><span class="hljs-comment"># 服务启动时执行的命令</span><br>WorkingDirectory=/root/frp_0.53.2_linux_amd64/<br><span class="hljs-comment"># 指定脚本运行的目录</span><br>[Install]<br>WantedBy=multi-user.target<br><span class="hljs-comment"># 自定义服务会在多用户模式下启动</span><br></code></pre></td></tr></table></figure>
-<p>如果脚本里就是用绝对路径写的，<code>WorkingDirectory</code> 可以不写</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># 重新加载 Systemd 配置</span><br>sudo systemctl daemon-reload<br><span class="hljs-comment"># 启用自启动，这一步会创建软连接</span><br>sudo systemctl <span class="hljs-built_in">enable</span> frps.service<br><span class="hljs-comment"># 启动服务，其实这里的.service不用写</span><br>sudo systemctl start frps.service<br></code></pre></td></tr></table></figure>
-<p><code>frps.service</code>的开机自启也是类似，但经过测试发现，如果一开机就启动可能会因为网络未完全连接而失败。<br>
-使用<code>systemctl status my-service.service</code>命令查看状态，可以看到类似 time out/connection failed 的报错。<br>
-经测试，设置开机后 10 秒再启动，服务即可正常运行。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># frpc.service</span><br>[Unit]<br>Description=FrpClient<br>After=network.target<br>[Service]<br>Type=simple<br><span class="hljs-comment"># 延迟10s启动</span><br>ExecStartPre=/bin/sleep 10<br>ExecStart=/home/orangepi/frp_0.53.2_linux_arm64/frpc.sh<br><span class="hljs-comment"># 服务启动时执行的命令</span><br>WorkingDirectory=/home/orangepi/frp_0.53.2_linux_arm64/<br><span class="hljs-comment"># 指定脚本运行的目录</span><br>[Install]<br>WantedBy=multi-user.target<br></code></pre></td></tr></table></figure>
-<p>现在，在 windows 中，可以通过 powershell 命令来连接到主机</p>
-<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs powershell">ssh <span class="hljs-literal">-oPort</span>=<span class="hljs-number">6000</span> orangepi@xx.xx.xx.xx<br></code></pre></td></tr></table></figure>
+<h2 id="排序算法总结">排序算法总结</h2>
+<p><img src="/2025/01/05/2025-01-05-%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%E6%80%BB%E7%BB%93/TableX.svg" srcset="/img/loading.gif" lazyload alt="排序算法"></p>
 
                 
               </div>
@@ -357,36 +328,6 @@
             <div>
               <div class="post-metas my-3">
   
-    <div class="post-meta mr-3 d-flex align-items-center">
-      <i class="iconfont icon-category"></i>
-      
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="../../../../categories/%E8%AE%A1%E7%AE%97%E6%9C%BA-%E6%8A%98%E8%85%BE/" class="category-chain-item">计算机/折腾</a>
-  
-  
-
-      </span>
-    
-  
-</span>
-
-    </div>
-  
-  
-    <div class="post-meta">
-      <i class="iconfont icon-tags"></i>
-      
-        <a href="../../../../tags/linux/" class="print-no-link">#linux</a>
-      
-        <a href="../../../../tags/%E7%BD%91%E7%BB%9C/" class="print-no-link">#网络</a>
-      
-    </div>
   
 </div>
 
@@ -396,8 +337,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>frp设置</div>
-      <div>https://0kitasan.github.io/2024/01/30/2024-1-30-frp设置/</div>
+      <div>排序算法总结</div>
+      <div>https://0kitasan.github.io/2025/01/05/2025-01-05-排序算法总结/</div>
     </div>
     <div class="license-meta">
       
@@ -409,7 +350,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2024年1月30日</div>
+          <div>2025年1月5日</div>
         </div>
       
       
@@ -441,18 +382,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="../2024-1-30-v2rayA%E8%AE%BE%E7%BD%AE/" title="v2rayA设置">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">v2rayA设置</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="../../../../2023/12/30/2023-12-30-%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0-%E5%85%AC%E5%BC%8F%E6%B5%8B%E8%AF%95/" title="复变函数/公式测试">
-                        <span class="hidden-mobile">复变函数/公式测试</span>
+                      <a href="../../../../2024/12/11/2024-12-11-LaTeX-Suite/" title="LaTeX Suite">
+                        <span class="hidden-mobile">LaTeX Suite</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
