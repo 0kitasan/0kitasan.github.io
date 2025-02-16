@@ -18,15 +18,15 @@
   <meta name="author" content="hamuko">
   <meta name="keywords" content="">
   
-    <meta name="description" content="VSCode设置，目的是在win上能右键调出VSCode。">
+    <meta name="description" content="VSCode 设置，目的是在 win 上能右键调出 VSCode。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="VSCode设置">
 <meta property="og:url" content="https://0kitasan.github.io/2023/11/24/2023-11-24-VSCode%E8%AE%BE%E7%BD%AE/index.html">
 <meta property="og:site_name" content="myblog">
-<meta property="og:description" content="VSCode设置，目的是在win上能右键调出VSCode。">
+<meta property="og:description" content="VSCode 设置，目的是在 win 上能右键调出 VSCode。">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-11-24T06:30:18.000Z">
-<meta property="article:modified_time" content="2024-06-11T16:18:48.305Z">
+<meta property="article:modified_time" content="2025-02-16T08:39:03.247Z">
 <meta property="article:author" content="hamuko">
 <meta property="article:tag" content="VSCode">
 <meta name="twitter:card" content="summary_large_image">
@@ -262,7 +262,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          966 字
+          987 字
         
       </span>
     
@@ -315,11 +315,12 @@
             
               <div class="markdown-body">
                 
-                <p>VSCode设置，目的是在win上能右键调出VSCode。</p>
+                <p>VSCode 设置，目的是在 win 上能右键调出 VSCode。</p>
 <span id="more"></span>
-<p>在Windows中，为了能右键调出VS Code，需要修改注册表。新建一个txt文件：输入如下内容：</p>
+<p>在 Windows 中，为了能右键调出 VS Code，需要修改注册表。</p>
+<p>新建一个 txt 文件：输入如下内容（注意 <code>\</code> 符号数量不能变，有的地方必须要两个）</p>
 <figure class="highlight lsl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><code class="hljs lsl">Windows Registry Editor Version <span class="hljs-number">5.00</span><br><br>[HKEY_CLASSES_ROOT\*\shell\VSCode]<br>@=<span class="hljs-string">&quot;Open with Code&quot;</span><br><span class="hljs-string">&quot;Icon&quot;</span>=<span class="hljs-string">&quot;D:<span class="hljs-subst">\\</span>VS Code<span class="hljs-subst">\\</span>Code.exe&quot;</span><br><br>[HKEY_CLASSES_ROOT\*\shell\VSCode\command]<br>@=<span class="hljs-string">&quot;<span class="hljs-subst">\&quot;</span>D:<span class="hljs-subst">\\</span>VS Code<span class="hljs-subst">\\</span>Code.exe<span class="hljs-subst">\&quot;</span> <span class="hljs-subst">\&quot;</span>%1<span class="hljs-subst">\&quot;</span>&quot;</span><br><br>Windows Registry Editor Version <span class="hljs-number">5.00</span><br><br>[HKEY_CLASSES_ROOT\Directory\shell\VSCode]<br>@=<span class="hljs-string">&quot;Open with Code&quot;</span><br><span class="hljs-string">&quot;Icon&quot;</span>=<span class="hljs-string">&quot;D:<span class="hljs-subst">\\</span>VS Code<span class="hljs-subst">\\</span>Code.exe&quot;</span><br><br>[HKEY_CLASSES_ROOT\Directory\shell\VSCode\command]<br>@=<span class="hljs-string">&quot;<span class="hljs-subst">\&quot;</span>D:<span class="hljs-subst">\\</span>VS Code<span class="hljs-subst">\\</span>Code.exe<span class="hljs-subst">\&quot;</span> <span class="hljs-subst">\&quot;</span>%V<span class="hljs-subst">\&quot;</span>&quot;</span><br><br>Windows Registry Editor Version <span class="hljs-number">5.00</span><br><br>[HKEY_CLASSES_ROOT\Directory\Background\shell\VSCode]<br>@=<span class="hljs-string">&quot;Open with Code&quot;</span><br><span class="hljs-string">&quot;Icon&quot;</span>=<span class="hljs-string">&quot;D:<span class="hljs-subst">\\</span>VS Code<span class="hljs-subst">\\</span>Code.exe&quot;</span><br><br>[HKEY_CLASSES_ROOT\Directory\Background\shell\VSCode\command]<br>@=<span class="hljs-string">&quot;<span class="hljs-subst">\&quot;</span>D:<span class="hljs-subst">\\</span>VS Code<span class="hljs-subst">\\</span>Code.exe<span class="hljs-subst">\&quot;</span> <span class="hljs-subst">\&quot;</span>%V<span class="hljs-subst">\&quot;</span>&quot;</span><br></code></pre></td></tr></table></figure>
-<p>将txt改为reg，然后点开即可修改注册表。此时即可右键调出VS Code（包括右键文件、右键空白处）</p>
+<p>将 txt 改为 reg，然后点开即可修改注册表。此时即可右键调出 VS Code（包括右键文件、右键空白处）</p>
 
                 
               </div>
