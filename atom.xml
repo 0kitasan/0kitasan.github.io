@@ -6,7 +6,7 @@
   <link href="https://0kitasan.github.io/atom.xml" rel="self"/>
   
   <link href="https://0kitasan.github.io/"/>
-  <updated>2025-01-05T15:52:50.111Z</updated>
+  <updated>2025-02-16T06:47:26.596Z</updated>
   <id>https://0kitasan.github.io/</id>
   
   <author>
@@ -15,6 +15,46 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>2025-02-16-指板音阶</title>
+    <link href="https://0kitasan.github.io/2025/02/16/2025-02-16-%E6%8C%87%E6%9D%BF%E9%9F%B3%E9%98%B6/"/>
+    <id>https://0kitasan.github.io/2025/02/16/2025-02-16-%E6%8C%87%E6%9D%BF%E9%9F%B3%E9%98%B6/</id>
+    <published>2025-02-16T05:58:57.000Z</published>
+    <updated>2025-02-16T06:47:26.596Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;&#92;assets&#92;css&#92;APlayer.min.css&quot;&gt;&lt;script src=&quot;&#92;assets&#92;js&#92;APlayer.min.js&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>2025-02-15-自编油猴脚本</title>
+    <link href="https://0kitasan.github.io/2025/02/16/2025-02-15-%E8%87%AA%E7%BC%96%E6%B2%B9%E7%8C%B4%E8%84%9A%E6%9C%AC/"/>
+    <id>https://0kitasan.github.io/2025/02/16/2025-02-15-%E8%87%AA%E7%BC%96%E6%B2%B9%E7%8C%B4%E8%84%9A%E6%9C%AC/</id>
+    <published>2025-02-16T05:58:44.000Z</published>
+    <updated>2025-02-16T06:09:26.822Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;TamperMonkey 自编脚本&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="计算机/折腾" scheme="https://0kitasan.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA-%E6%8A%98%E8%85%BE/"/>
+    
+    
+    <category term="js" scheme="https://0kitasan.github.io/tags/js/"/>
+    
+  </entry>
   
   <entry>
     <title>排序算法总结</title>
@@ -36,13 +76,19 @@
     <link href="https://0kitasan.github.io/2024/12/11/2024-12-11-LaTeX-Suite/"/>
     <id>https://0kitasan.github.io/2024/12/11/2024-12-11-LaTeX-Suite/</id>
     <published>2024-12-11T06:33:16.000Z</published>
-    <updated>2024-12-11T06:34:59.970Z</updated>
+    <updated>2025-02-16T06:09:39.371Z</updated>
     
     
     <summary type="html">&lt;p&gt;obsidian 插件 LaTeX Suite 的用法&lt;/p&gt;</summary>
     
     
     
+    <category term="计算机/折腾" scheme="https://0kitasan.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA-%E6%8A%98%E8%85%BE/"/>
+    
+    
+    <category term="markdown" scheme="https://0kitasan.github.io/tags/markdown/"/>
+    
+    <category term="js" scheme="https://0kitasan.github.io/tags/js/"/>
     
   </entry>
   
@@ -377,56 +423,6 @@
     
     
     <category term="hexo" scheme="https://0kitasan.github.io/tags/hexo/"/>
-    
-    <category term="markdown" scheme="https://0kitasan.github.io/tags/markdown/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>代码块</title>
-    <link href="https://0kitasan.github.io/2023/05/02/2023-05-02-%E4%BB%A3%E7%A0%81%E5%9D%97/"/>
-    <id>https://0kitasan.github.io/2023/05/02/2023-05-02-%E4%BB%A3%E7%A0%81%E5%9D%97/</id>
-    <published>2023-05-02T14:01:24.000Z</published>
-    <updated>2024-06-11T16:14:40.389Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;关于hexo中代码块与代码高亮的笔记。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="计算机/折腾" scheme="https://0kitasan.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA-%E6%8A%98%E8%85%BE/"/>
-    
-    <category term="hexo-md特性探索" scheme="https://0kitasan.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA-%E6%8A%98%E8%85%BE/hexo-md%E7%89%B9%E6%80%A7%E6%8E%A2%E7%B4%A2/"/>
-    
-    
-    <category term="hexo" scheme="https://0kitasan.github.io/tags/hexo/"/>
-    
-    <category term="markdown" scheme="https://0kitasan.github.io/tags/markdown/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>markdown语法学习</title>
-    <link href="https://0kitasan.github.io/2023/05/01/2023-05-01-markdown%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0/"/>
-    <id>https://0kitasan.github.io/2023/05/01/2023-05-01-markdown%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0/</id>
-    <published>2023-05-01T08:28:59.000Z</published>
-    <updated>2024-06-11T16:14:33.153Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;&#92;assets&#92;css&#92;APlayer.min.css&quot;&gt;&lt;script src=&quot;&#92;assets&#92;js&#92;APlayer.min.js&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="计算机/折腾" scheme="https://0kitasan.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA-%E6%8A%98%E8%85%BE/"/>
-    
-    <category term="hexo-md特性探索" scheme="https://0kitasan.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA-%E6%8A%98%E8%85%BE/hexo-md%E7%89%B9%E6%80%A7%E6%8E%A2%E7%B4%A2/"/>
-    
     
     <category term="markdown" scheme="https://0kitasan.github.io/tags/markdown/"/>
     
