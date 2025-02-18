@@ -18,25 +18,21 @@
   <meta name="author" content="hamuko">
   <meta name="keywords" content="">
   
-    <meta name="description" content="指板音阶">
+    <meta name="description" content="地图测试">
 <meta property="og:type" content="article">
-<meta property="og:title" content="指板音阶">
-<meta property="og:url" content="https://0kitasan.github.io/2025/02/16/2025-02-16-%E6%8C%87%E6%9D%BF%E9%9F%B3%E9%98%B6/index.html">
+<meta property="og:title" content="地图测试">
+<meta property="og:url" content="https://0kitasan.github.io/2025/02/19/2025-02-19-%E5%9C%B0%E5%9B%BE%E6%B5%8B%E8%AF%95/index.html">
 <meta property="og:site_name" content="myblog">
-<meta property="og:description" content="指板音阶">
+<meta property="og:description" content="地图测试">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://0kitasan.github.io/2025/02/16/2025-02-16-%E6%8C%87%E6%9D%BF%E9%9F%B3%E9%98%B6/fret.svg">
-<meta property="og:image" content="https://0kitasan.github.io/2025/02/16/2025-02-16-%E6%8C%87%E6%9D%BF%E9%9F%B3%E9%98%B6/fret.svg">
-<meta property="og:image" content="https://0kitasan.github.io/2025/02/16/2025-02-16-%E6%8C%87%E6%9D%BF%E9%9F%B3%E9%98%B6/fret.svg">
-<meta property="article:published_time" content="2025-02-16T05:58:57.000Z">
-<meta property="article:modified_time" content="2025-02-16T08:39:28.297Z">
+<meta property="article:published_time" content="2025-02-18T16:55:59.000Z">
+<meta property="article:modified_time" content="2025-02-18T17:49:26.561Z">
 <meta property="article:author" content="hamuko">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://0kitasan.github.io/2025/02/16/2025-02-16-%E6%8C%87%E6%9D%BF%E9%9F%B3%E9%98%B6/fret.svg">
   
   
   
-  <title>指板音阶 - myblog</title>
+  <title>地图测试 - myblog</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -124,7 +120,7 @@
   <header>
     
 
-<div class="header-inner" style="height: 80vh;">
+<div class="header-inner" style="height: 70vh;">
   <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand" href="../../../../index.html">
@@ -236,13 +232,13 @@
   
 
 <div id="banner" class="banner" parallax=true
-     style="background: url('../../../../images/music/bocchi.png') no-repeat center center; background-size: cover;">
+     style="background: url('../../../../images/cover1.jpg') no-repeat center center; background-size: cover;">
   <div class="full-bg-img">
     <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="指板音阶"></span>
+            <span id="subtitle" data-typed-text="地图测试"></span>
           
         </div>
 
@@ -253,8 +249,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2025-02-16 13:58" pubdate>
-          2025年2月16日 下午
+        <time datetime="2025-02-19 00:55" pubdate>
+          2025年2月19日 凌晨
         </time>
       </span>
     
@@ -265,7 +261,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          4 字
+          325 字
         
       </span>
     
@@ -276,7 +272,7 @@
         
         
         
-          1 分钟
+          3 分钟
         
       </span>
     
@@ -289,10 +285,6 @@
         
       </div>
 
-      
-        <div class="scroll-down-bar">
-          <i class="iconfont icon-arrowdown"></i>
-        </div>
       
     </div>
   </div>
@@ -317,16 +309,30 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">指板音阶</h1>
+            <h1 id="seo-header">地图测试</h1>
             
             
               <div class="markdown-body">
                 
-                <p>指板音阶</p>
+                <p>地图测试</p>
 <span id="more"></span>
-<img src="/2025/02/16/2025-02-16-%E6%8C%87%E6%9D%BF%E9%9F%B3%E9%98%B6/fret.svg" srcset="/img/loading.gif" lazyload alt="指板音阶" width="500">
-<img src="/2025/02/16/2025-02-16-%E6%8C%87%E6%9D%BF%E9%9F%B3%E9%98%B6/fret.svg" srcset="/img/loading.gif" lazyload alt="指板音阶">
-<p><img src="/2025/02/16/2025-02-16-%E6%8C%87%E6%9D%BF%E9%9F%B3%E9%98%B6/fret.svg" srcset="/img/loading.gif" lazyload alt="指板音阶"></p>
+<!-- 这里是嵌入内容的 iframe -->
+<iframe id="mapIframe" width="100%" height="500px" style="border:none;"></iframe>
+<script>
+    // 直接获取 map.txt 文件
+    fetch('map.txt')
+        .then(response => response.text())  // 读取文件内容为文本
+        .then(content => {
+            // 这里的 content 已经是完整的 HTML，所以我们可以直接将它设置为 iframe 的 srcdoc
+            var iframe = document.getElementById('mapIframe');
+            iframe.srcdoc = content;  // 使用 srcdoc 属性嵌入 HTML 内容
+        })
+        .catch(error => {
+            console.error('Error fetching the map.txt file:', error);
+        });
+</script>
+<p>这个还有问题</p>
+<p>这个方法太天才了，但是有点阴间</p>
 
                 
               </div>
@@ -344,8 +350,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>指板音阶</div>
-      <div>https://0kitasan.github.io/2025/02/16/2025-02-16-指板音阶/</div>
+      <div>地图测试</div>
+      <div>https://0kitasan.github.io/2025/02/19/2025-02-19-地图测试/</div>
     </div>
     <div class="license-meta">
       
@@ -357,7 +363,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2025年2月16日</div>
+          <div>2025年2月19日</div>
         </div>
       
       
@@ -389,18 +395,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="../../19/2025-02-19-%E5%9C%B0%E5%9B%BE%E6%B5%8B%E8%AF%95/" title="地图测试">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">地图测试</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="../../15/2025-02-15-%E8%87%AA%E7%BC%96%E6%B2%B9%E7%8C%B4%E8%84%9A%E6%9C%AC/" title="自编油猴脚本">
-                        <span class="hidden-mobile">自编油猴脚本</span>
+                      <a href="../../16/2025-02-16-%E6%8C%87%E6%9D%BF%E9%9F%B3%E9%98%B6/" title="指板音阶">
+                        <span class="hidden-mobile">指板音阶</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>

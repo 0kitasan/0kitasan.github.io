@@ -6,7 +6,7 @@
   <link href="https://0kitasan.github.io/atom.xml" rel="self"/>
   
   <link href="https://0kitasan.github.io/"/>
-  <updated>2025-02-16T08:39:28.297Z</updated>
+  <updated>2025-02-18T17:49:26.561Z</updated>
   <id>https://0kitasan.github.io/</id>
   
   <author>
@@ -15,6 +15,21 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>地图测试</title>
+    <link href="https://0kitasan.github.io/2025/02/19/2025-02-19-%E5%9C%B0%E5%9B%BE%E6%B5%8B%E8%AF%95/"/>
+    <id>https://0kitasan.github.io/2025/02/19/2025-02-19-%E5%9C%B0%E5%9B%BE%E6%B5%8B%E8%AF%95/</id>
+    <published>2025-02-18T16:55:59.000Z</published>
+    <updated>2025-02-18T17:49:26.561Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;地图测试&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>指板音阶</title>
@@ -97,7 +112,7 @@
     <link href="https://0kitasan.github.io/2025/01/25/2025-01-25-%E5%B7%A5%E7%A8%8B%E6%B5%81%E4%BD%93%E5%8A%9B%E5%AD%A6%E7%AC%94%E8%AE%B0-%E6%9C%9F%E4%B8%AD/"/>
     <id>https://0kitasan.github.io/2025/01/25/2025-01-25-%E5%B7%A5%E7%A8%8B%E6%B5%81%E4%BD%93%E5%8A%9B%E5%AD%A6%E7%AC%94%E8%AE%B0-%E6%9C%9F%E4%B8%AD/</id>
     <published>2025-01-24T16:15:18.000Z</published>
-    <updated>2025-02-18T16:46:35.778Z</updated>
+    <updated>2025-02-18T16:56:16.942Z</updated>
     
     
     <summary type="html">&lt;p&gt;工程流体力学笔记(期中部分)&lt;/p&gt;</summary>
@@ -384,29 +399,6 @@
     
     
     <category term="VSCode" scheme="https://0kitasan.github.io/tags/VSCode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>hexo公式环境配置</title>
-    <link href="https://0kitasan.github.io/2023/11/16/2023-11-16-hexo%E5%85%AC%E5%BC%8F%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
-    <id>https://0kitasan.github.io/2023/11/16/2023-11-16-hexo%E5%85%AC%E5%BC%8F%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</id>
-    <published>2023-11-16T02:58:29.000Z</published>
-    <updated>2024-06-11T16:23:51.110Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;KaTeX or MathJax？&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="计算机/折腾" scheme="https://0kitasan.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA-%E6%8A%98%E8%85%BE/"/>
-    
-    <category term="hexo-md特性探索" scheme="https://0kitasan.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA-%E6%8A%98%E8%85%BE/hexo-md%E7%89%B9%E6%80%A7%E6%8E%A2%E7%B4%A2/"/>
-    
-    
-    <category term="hexo" scheme="https://0kitasan.github.io/tags/hexo/"/>
-    
-    <category term="markdown" scheme="https://0kitasan.github.io/tags/markdown/"/>
     
   </entry>
   

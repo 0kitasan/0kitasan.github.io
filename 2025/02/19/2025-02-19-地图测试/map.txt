@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- 引入 Leaflet CSS -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+  />
+
+  <style>
+    /* 设置地图容器的宽高 */
+    #map {
+      width: 100%;
+      height: 600px;
+    }
+    /* 设置文本框样式 */
+    #latlngTextBox {
+      position: absolute;
+      bottom: 80px;
+      left: 20px;
+      padding: 10px;
+      width: 250px;
+      font-size: 14px;
+    }
+    #latlngTextBox2 {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      padding: 10px;
+      width: 250px;
+      font-size: 14px;
+    }
+  </style>
+
+  <body>
+    <h1>Leaflet Map with Shanghai Bounds Limit</h1>
+    <div id="map"></div>
+    <!-- 文本框用于显示经纬度 -->
+    <input type="text" id="latlngTextBox" readonly />
+    <input type="text" id="latlngTextBox2" readonly />
+
+    <!-- 引入 Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script>
+      //上海市中心31度14分，东经121度29分‌
+      var pos = [31.23, 121.48];
+      //SJTU
+      var pos_SJTU = [31.027, 121.432];
+
+      // 创建地图实例，设置地图中心为上海，初始缩放级别为13
+      var map = L.map("map").setView(pos, 13);
+
+      // 添加 OpenStreetMap 瓦片图层到地图中
+      L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        maxZoom: 19,
+        attribution:
+          '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+      }).addTo(map);
+
+      // 添加标记
+      var marker = L.marker(pos).addTo(map);
+      var marker_SJTU = L.marker(pos_SJTU).addTo(map);
+      // 添加圆形
+      var circle = L.circle(pos, {
+        color: "red",
+        fillColor: "#f03",
+        fillOpacity: 0.2,
+        fillOpacity: 0,
+        radius: 13000,
+      }).addTo(map);
+
+      var circle2 = L.circle(pos, {
+        color: "blue",
+        fillOpacity: 0.05,
+        fillOpacity: 0,
+        radius: 70000,
+      }).addTo(map);
+
+      // 添加多边形
+      var polygon = L.polygon([
+        [51.509, -0.08],
+        [51.503, -0.06],
+        [51.51, -0.047],
+      ]).addTo(map);
+
+      var polygon2 = L.polygon(
+        [
+          [30.691701, 120.852326],
+          [31.874634, 120.852326],
+          [31.874634, 122.118227],
+          [30.691701, 122.118227],
+        ],
+        {
+          color: "red",
+          fillColor: "#f03",
+          fillOpacity: 0.2,
+          fillOpacity: 0,
+        }
+      ).addTo(map);
+
+      // 将某些信息附加到地图上的特定对象
+      marker.bindPopup("<b>Hello world!</b><br>I am a popup.").openPopup();
+      circle.bindPopup("I am a circle.");
+      polygon.bindPopup("I am a polygon.");
+      // polygon2.bindPopup("I am a polygon2.");
+      // 上面这句不能加，否则后面的事件无法被捕获
+      // var popup2 = L.popup()
+      //   .setLatLng([51.513, -0.09])
+      //   .setContent("I am a standalone popup.")
+      //   .openOn(map);
+
+      var popup = L.popup();
+
+      // 创建地图点击事件处理函数
+      function onMapClick(e) {
+        // popup
+        //   .setLatLng(e.latlng)
+        //   .setContent("You clicked the map at " + e.latlng.toString())
+        //   .openOn(map);
+
+        // 将经纬度值传到文本框中
+        var latlngTextBox = document.getElementById("latlngTextBox");
+        latlngTextBox.value = e.latlng.toString(); // 设置文本框的值为经纬度字符串
+      }
+
+      // 监听地图上的鼠标移动事件
+      map.on("mousemove", onMapClick);
+
+      function onMapClick2(e) {
+        // 将经纬度值传到文本框中
+        var latlngTextBox = document.getElementById("latlngTextBox2");
+        latlngTextBox.value = e.latlng.toString(); // 设置文本框的值为经纬度字符串
+      }
+      map.on("click", onMapClick2);
+    </script>
+  </body>
+</html>
