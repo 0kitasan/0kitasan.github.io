@@ -6,7 +6,7 @@
   <link href="https://0kitasan.github.io/atom.xml" rel="self"/>
   
   <link href="https://0kitasan.github.io/"/>
-  <updated>2025-02-20T15:04:09.598Z</updated>
+  <updated>2025-02-20T15:10:13.699Z</updated>
   <id>https://0kitasan.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://0kitasan.github.io/2025/02/20/2025-02-20-%E6%8B%89%E6%99%AE%E6%8B%89%E6%96%AF%E5%8F%98%E6%8D%A2/"/>
     <id>https://0kitasan.github.io/2025/02/20/2025-02-20-%E6%8B%89%E6%99%AE%E6%8B%89%E6%96%AF%E5%8F%98%E6%8D%A2/</id>
     <published>2025-02-20T15:00:36.000Z</published>
-    <updated>2025-02-20T15:04:09.598Z</updated>
+    <updated>2025-02-20T15:10:13.699Z</updated>
     
     
     <summary type="html">&lt;p&gt;拉普拉斯变换、逆变换与卷积（暂时还没整理完）。&lt;/p&gt;</summary>
@@ -59,13 +59,17 @@
     <link href="https://0kitasan.github.io/2025/02/16/2025-02-16-%E6%8C%87%E6%9D%BF%E9%9F%B3%E9%98%B6/"/>
     <id>https://0kitasan.github.io/2025/02/16/2025-02-16-%E6%8C%87%E6%9D%BF%E9%9F%B3%E9%98%B6/</id>
     <published>2025-02-16T05:58:57.000Z</published>
-    <updated>2025-02-16T08:39:28.297Z</updated>
+    <updated>2025-02-20T15:09:52.902Z</updated>
     
     
-    <summary type="html">&lt;p&gt;指板音阶&lt;/p&gt;</summary>
+    <summary type="html">&lt;p&gt;指板音阶（以及音乐相关，暂时先放这里）&lt;/p&gt;</summary>
     
     
     
+    <category term="音乐" scheme="https://0kitasan.github.io/categories/%E9%9F%B3%E4%B9%90/"/>
+    
+    
+    <category term="音乐" scheme="https://0kitasan.github.io/tags/%E9%9F%B3%E4%B9%90/"/>
     
   </entry>
   
