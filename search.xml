@@ -4711,6 +4711,98 @@ M834 80h400000v40h-400000z"/></svg></span></span></span><span class="vlist-s">�
 <h2 id="拉普拉斯逆变换">拉普拉斯逆变换</h2>
 <p class="katex-block "><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msup><mi mathvariant="script">L</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup><mo stretchy="false">[</mo><mi>f</mi><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">\mathscr{L}^{-1}[f]
 </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.1141em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathscr" style="margin-right:0.19189em;">L</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8641em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">−</span><span class="mord mtight">1</span></span></span></span></span></span></span></span></span><span class="mopen">[</span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mclose">]</span></span></span></span></span></p>
+<h2 id="性质">性质</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"></th>
+<th style="text-align:center">时域</th>
+<th style="text-align:center">s 域</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">线性叠加</td>
+<td style="text-align:center">$$af(t) + bg(t)$$</td>
+<td style="text-align:center">$$ aF(s) + bG(s) $$</td>
+</tr>
+<tr>
+<td style="text-align:center">s 域一阶微分</td>
+<td style="text-align:center">$$ t f(t) $$</td>
+<td style="text-align:center">$$ -F’(s) $$</td>
+</tr>
+<tr>
+<td style="text-align:center">s 域一般微分</td>
+<td style="text-align:center">$$ t^n f(t) $$</td>
+<td style="text-align:center">$$ (-1)^n F^{(n)}(s) $$</td>
+</tr>
+<tr>
+<td style="text-align:center">时域一阶微分</td>
+<td style="text-align:center">$$ f’(t) $$</td>
+<td style="text-align:center">$$ sF(s) - f(0) $$</td>
+</tr>
+<tr>
+<td style="text-align:center">时域二阶微分</td>
+<td style="text-align:center">$$ f’'(t) $$</td>
+<td style="text-align:center">$$ s^2 F(s) - s f(0) - f’(0) $$</td>
+</tr>
+<tr>
+<td style="text-align:center">时域一般微分</td>
+<td style="text-align:center">$$ f^{(n)}(t) $$</td>
+<td style="text-align:center">$$ s^n F(s) - \sum_{k=1}^{n} s^{k-1} f^{(n-k)}(0) $$</td>
+</tr>
+<tr>
+<td style="text-align:center">s 域积分</td>
+<td style="text-align:center">$$ \frac{1}{t} f(t) $$</td>
+<td style="text-align:center">$$ \int_s^\infty F(\sigma) d\sigma $$</td>
+</tr>
+<tr>
+<td style="text-align:center">时域积分</td>
+<td style="text-align:center">$$ \int_0^t f(\tau) d\tau = (u*f)(t) $$</td>
+<td style="text-align:center">$$ \frac{1}{s} F(s) $$</td>
+</tr>
+<tr>
+<td style="text-align:center">时间标度变换</td>
+<td style="text-align:center">$$ f(at) $$</td>
+<td style="text-align:center">$$ \frac{1}{a} F\left(\frac{s}{a}\right) $$</td>
+</tr>
+<tr>
+<td style="text-align:center">s 域平移</td>
+<td style="text-align:center">$$ e^{at} f(t) $$</td>
+<td style="text-align:center">$$ F(s - a) $$</td>
+</tr>
+<tr>
+<td style="text-align:center">时域平移</td>
+<td style="text-align:center">$$ f(t-a) u(t-a) $$</td>
+<td style="text-align:center">$$ e^{-as} F(s) $$</td>
+</tr>
+<tr>
+<td style="text-align:center">乘法</td>
+<td style="text-align:center">$$ f(t) g(t) $$</td>
+<td style="text-align:center">$$ \frac{1}{2\pi i} \lim*{T \to \infty} \int*{c-iT}^{c+iT} F(\sigma) G(s-\sigma) d\sigma $$</td>
+</tr>
+<tr>
+<td style="text-align:center">卷积</td>
+<td style="text-align:center">$$ (f * g)(t) = \int_0^t f(\tau) g(t-\tau) d\tau $$</td>
+<td style="text-align:center">$$ F(s) \cdot G(s) $$</td>
+</tr>
+<tr>
+<td style="text-align:center">复共轭</td>
+<td style="text-align:center">$$ f^*(t) $$</td>
+<td style="text-align:center">$$ F^<em>(s^</em>) $$</td>
+</tr>
+<tr>
+<td style="text-align:center">互相关</td>
+<td style="text-align:center">$$ f(t) \star g(t) $$</td>
+<td style="text-align:center">$$ F^<em>(-s^</em>) G(s) $$</td>
+</tr>
+<tr>
+<td style="text-align:center">周期函数</td>
+<td style="text-align:center">$$ f(t) $$ (周期 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi></mrow><annotation encoding="application/x-tex">T</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">T</span></span></span></span>)</td>
+<td style="text-align:center">$$ \frac{1}{1 - e^{-Ts}} \int_0^T e^{-st} f(t) dt $$</td>
+</tr>
+</tbody>
+</table>
 <h2 id="符号">符号</h2>
 <p>冲激函数</p>
 <p class="katex-block "><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>δ</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\delta (t)
@@ -4728,6 +4820,7 @@ M834 80h400000v40h-400000z"/></svg></span></span></span><span class="vlist-s">�
 <li>mathcal：<strong>数学字体中的花体字母</strong>（caligraphic font）</li>
 <li>mathscr：<strong>数学字体中的手写风格字母</strong>（script font）</li>
 </ul>
+<p>1</p>
 ]]></content>
       <categories>
         <category>学习</category>
