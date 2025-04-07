@@ -2862,6 +2862,12 @@ M834 80h400000v40h-400000z"/></svg></span></span></span><span class="vlist-s">�
 <p>控制台指令，用于测试麦克风</p>
 <p>voice_loopback 1</p>
 <p>voice_loopback 0</p>
+<h2 id="edge">edge</h2>
+<p>在浏览一些 pdf 时可能公式会出错（基本都是因为 pdf 作者打的公式比较烂），解决方案如下：</p>
+<p>跳转<code>edge://flags/#edge-new-pdf-viewer</code>，将 New PDF Viewer 由 Default 改为 Disabled。</p>
+<h2 id="tailscale">tailscale</h2>
+<p>tailscale 设置出口节点：</p>
+<p><code>sudo tailscale up --advertise-exit-node --advertise-routes=10.80.0.0/16</code></p>
 <h2 id="hexo">hexo</h2>
 <p>hexo 无法渲染上面这个公式</p>
 <figure class="highlight tex"><table><tr><td class="code"><pre><code class="hljs tex"><span class="hljs-keyword">\frac</span>&#123;<span class="hljs-keyword">\bar</span>&#123;u&#125;&#125;&#123;u<span class="hljs-built_in">_</span>&#123;*&#125;&#125;=2.5<span class="hljs-keyword">\ln</span>&#123;<span class="hljs-keyword">\frac</span>&#123;yu<span class="hljs-built_in">_</span>&#123;&#123;*&#125;&#125;&#125;&#123;<span class="hljs-keyword">\nu</span>&#125;&#125;+5.5<br><span class="hljs-keyword">\frac</span>&#123;<span class="hljs-keyword">\bar</span>&#123;u&#125;&#125;&#123;u<span class="hljs-built_in">_</span>&#123;*&#125;&#125;=2.5<span class="hljs-keyword">\ln</span>&#123;<span class="hljs-keyword">\frac</span>&#123;yu<span class="hljs-built_in">_</span>&#123;*&#125;&#125;&#123;<span class="hljs-keyword">\nu</span>&#125;&#125;+5.5<br></code></pre></td></tr></table></figure>
