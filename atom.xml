@@ -6,7 +6,7 @@
   <link href="https://0kitasan.github.io/atom.xml" rel="self"/>
   
   <link href="https://0kitasan.github.io/"/>
-  <updated>2025-03-10T08:16:13.297Z</updated>
+  <updated>2025-05-05T15:30:42.730Z</updated>
   <id>https://0kitasan.github.io/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>一些地图</title>
+    <link href="https://0kitasan.github.io/2025/05/05/2025-05-05-%E4%B8%80%E4%BA%9B%E5%9C%B0%E5%9B%BE/"/>
+    <id>https://0kitasan.github.io/2025/05/05/2025-05-05-%E4%B8%80%E4%BA%9B%E5%9C%B0%E5%9B%BE/</id>
+    <published>2025-05-05T14:45:31.000Z</published>
+    <updated>2025-05-05T15:30:42.730Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;一些地图。&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>常用公共DNS</title>
+    <link href="https://0kitasan.github.io/2025/05/05/2025-05-05-%E5%B8%B8%E7%94%A8%E5%85%AC%E5%85%B1DNS/"/>
+    <id>https://0kitasan.github.io/2025/05/05/2025-05-05-%E5%B8%B8%E7%94%A8%E5%85%AC%E5%85%B1DNS/</id>
+    <published>2025-05-05T14:40:39.000Z</published>
+    <updated>2025-05-05T15:16:19.980Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;常用公共 DNS（自用）。&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>拉普拉斯变换</title>
@@ -162,7 +192,7 @@
     <link href="https://0kitasan.github.io/2025/01/23/2025-01-23-%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB%E7%9A%84%E4%B8%9C%E8%A5%BF/"/>
     <id>https://0kitasan.github.io/2025/01/23/2025-01-23-%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB%E7%9A%84%E4%B8%9C%E8%A5%BF/</id>
     <published>2025-01-23T14:08:57.000Z</published>
-    <updated>2025-04-07T12:17:53.867Z</updated>
+    <updated>2025-05-05T14:47:38.609Z</updated>
     
     
     <summary type="html">&lt;p&gt;不知道该放在哪，全放这里了&lt;/p&gt;</summary>
@@ -365,48 +395,6 @@
     <category term="linux" scheme="https://0kitasan.github.io/tags/linux/"/>
     
     <category term="网络" scheme="https://0kitasan.github.io/tags/%E7%BD%91%E7%BB%9C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>复变函数/公式测试</title>
-    <link href="https://0kitasan.github.io/2023/12/30/2023-12-30-%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0-%E5%85%AC%E5%BC%8F%E6%B5%8B%E8%AF%95/"/>
-    <id>https://0kitasan.github.io/2023/12/30/2023-12-30-%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0-%E5%85%AC%E5%BC%8F%E6%B5%8B%E8%AF%95/</id>
-    <published>2023-12-30T10:33:25.000Z</published>
-    <updated>2024-06-11T16:19:21.356Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;复变函数笔记&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="学习" scheme="https://0kitasan.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
-    
-    <category term="数学" scheme="https://0kitasan.github.io/categories/%E5%AD%A6%E4%B9%A0/%E6%95%B0%E5%AD%A6/"/>
-    
-    
-    <category term="学习" scheme="https://0kitasan.github.io/tags/%E5%AD%A6%E4%B9%A0/"/>
-    
-    <category term="数学" scheme="https://0kitasan.github.io/tags/%E6%95%B0%E5%AD%A6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Git的基本用法</title>
-    <link href="https://0kitasan.github.io/2023/12/27/2023-12-27-Git%E7%9A%84%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/"/>
-    <id>https://0kitasan.github.io/2023/12/27/2023-12-27-Git%E7%9A%84%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/</id>
-    <published>2023-12-26T16:06:31.000Z</published>
-    <updated>2024-06-11T16:18:57.192Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;Git的基本用法（大部分是GPT写的）&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="计算机/折腾" scheme="https://0kitasan.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA-%E6%8A%98%E8%85%BE/"/>
-    
-    
-    <category term="git" scheme="https://0kitasan.github.io/tags/git/"/>
     
   </entry>
   

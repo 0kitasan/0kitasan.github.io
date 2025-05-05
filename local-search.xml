@@ -4,6 +4,32 @@
   
   
   <entry>
+    <title>一些地图</title>
+    <link href="/2025/05/05/2025-05-05-%E4%B8%80%E4%BA%9B%E5%9C%B0%E5%9B%BE/"/>
+    <url>/2025/05/05/2025-05-05-%E4%B8%80%E4%BA%9B%E5%9C%B0%E5%9B%BE/</url>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>一些地图。</p><span id="more"></span><h2 id="上海地图">上海地图</h2><h3 id="普通地图">普通地图</h3><p>官方地图（天地图）：<a href="https://www.tianditu.gov.cn/">https://www.tianditu.gov.cn/</a></p><p>点击省级节点即可：<a href="https://shanghai.tianditu.gov.cn/map/views/">https://shanghai.tianditu.gov.cn/map/views/</a></p><img src="/2025/05/05/2025-05-05-%E4%B8%80%E4%BA%9B%E5%9C%B0%E5%9B%BE/6-上海市地图（有邻省）.jpg" alt="上海市地图"><img src="/2025/05/05/2025-05-05-%E4%B8%80%E4%BA%9B%E5%9C%B0%E5%9B%BE/17-上海市行政区划示意图.jpg" alt="上海市行政区划地图"><h3 id="地铁线路图">地铁线路图</h3><p>上海地铁官方：<a href="https://service.shmetro.com/zlxz/index.htm">https://service.shmetro.com/zlxz/index.htm</a></p><img src="/2025/05/05/2025-05-05-%E4%B8%80%E4%BA%9B%E5%9C%B0%E5%9B%BE/shmetro-map.jpg" alt="上海市地铁"><h2 id="日本地图">日本地图</h2><p>todo</p><img src="/2025/05/05/2025-05-05-%E4%B8%80%E4%BA%9B%E5%9C%B0%E5%9B%BE/日本区划.svg" alt="日本区划">]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>常用公共DNS</title>
+    <link href="/2025/05/05/2025-05-05-%E5%B8%B8%E7%94%A8%E5%85%AC%E5%85%B1DNS/"/>
+    <url>/2025/05/05/2025-05-05-%E5%B8%B8%E7%94%A8%E5%85%AC%E5%85%B1DNS/</url>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>常用公共 DNS（自用）。</p><span id="more"></span><h2 id="国内">国内</h2><h3 id="阿里">阿里</h3><ul><li>ipv4: <code>223.5.5.5</code> <code>223.6.6.6</code></li><li>ipv6: <code>2402:4e00::</code></li></ul><h3 id="腾讯">腾讯</h3><h2 id="国外">国外</h2><h2 id="谷歌-Google">谷歌/Google</h2><ul><li>ipv4: <code>8.8.8.8</code></li></ul><p>要不要做成表格呢</p><p>todo</p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>拉普拉斯变换</title>
     <link href="/2025/02/20/2025-02-20-%E6%8B%89%E6%99%AE%E6%8B%89%E6%96%AF%E5%8F%98%E6%8D%A2/"/>
     <url>/2025/02/20/2025-02-20-%E6%8B%89%E6%99%AE%E6%8B%89%E6%96%AF%E5%8F%98%E6%8D%A2/</url>
@@ -183,7 +209,7 @@
     <link href="/2025/01/23/2025-01-23-%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB%E7%9A%84%E4%B8%9C%E8%A5%BF/"/>
     <url>/2025/01/23/2025-01-23-%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB%E7%9A%84%E4%B8%9C%E8%A5%BF/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>不知道该放在哪，全放这里了</p><span id="more"></span><h2 id="cs2">cs2</h2><p>控制台指令，用于测试麦克风</p><p>voice_loopback 1</p><p>voice_loopback 0</p><h2 id="edge">edge</h2><p>在浏览一些 pdf 时可能公式会出错（基本都是因为 pdf 作者打的公式比较烂），解决方案如下：</p><p>跳转<code>edge://flags/#edge-new-pdf-viewer</code>，将 New PDF Viewer 由 Default 改为 Disabled。</p><h2 id="tailscale">tailscale</h2><p>tailscale 设置出口节点：</p><p><code>sudo tailscale up --advertise-exit-node --advertise-routes=10.80.0.0/16</code></p><h2 id="hexo">hexo</h2><p>hexo 无法渲染上面这个公式</p><figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs tex"><span class="hljs-keyword">\frac</span>&#123;<span class="hljs-keyword">\bar</span>&#123;u&#125;&#125;&#123;u<span class="hljs-built_in">_</span>&#123;*&#125;&#125;=2.5<span class="hljs-keyword">\ln</span>&#123;<span class="hljs-keyword">\frac</span>&#123;yu<span class="hljs-built_in">_</span>&#123;&#123;*&#125;&#125;&#125;&#123;<span class="hljs-keyword">\nu</span>&#125;&#125;+5.5<br><span class="hljs-keyword">\frac</span>&#123;<span class="hljs-keyword">\bar</span>&#123;u&#125;&#125;&#123;u<span class="hljs-built_in">_</span>&#123;*&#125;&#125;=2.5<span class="hljs-keyword">\ln</span>&#123;<span class="hljs-keyword">\frac</span>&#123;yu<span class="hljs-built_in">_</span>&#123;*&#125;&#125;&#123;<span class="hljs-keyword">\nu</span>&#125;&#125;+5.5<br></code></pre></td></tr></table></figure><p>hexo 如何调整图片大小？我希望它能兼容 md 扩展语法</p><p>1985 年 8 月，邓小平接见姆加贝时又说：“社会主义究竟是个什么样子，苏联搞了很多年，也并没有完全搞清楚。可能列宁的思路比较好，搞了个新经济政策，但是后来苏联的模式僵化了。”</p>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>不知道该放在哪，全放这里了</p><span id="more"></span><h2 id="cs2">cs2</h2><p>控制台指令，用于测试麦克风</p><p>voice_loopback 1</p><p>voice_loopback 0</p><h2 id="edge">edge</h2><p>在浏览一些 pdf 时可能公式会出错（基本都是因为 pdf 作者打的公式比较烂），解决方案如下：</p><p>跳转<code>edge://flags/#edge-new-pdf-viewer</code>，将 New PDF Viewer 由 Default 改为 Disabled。</p><h2 id="tailscale">tailscale</h2><p>tailscale 设置出口节点：</p><p><code>sudo tailscale up --advertise-exit-node --advertise-routes=10.80.0.0/16</code></p><h2 id="python-中文字体">python 中文字体</h2><p>windows 下，python 的 <code>matplotlib</code> 会出现中文字体以及负号乱码的现象，解决方案如下：</p><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs py">plt.rcParams[<span class="hljs-string">&#x27;font.family&#x27;</span>] = <span class="hljs-string">&#x27;SimHei&#x27;</span><br>plt.rcParams[<span class="hljs-string">&#x27;axes.unicode_minus&#x27;</span>] = <span class="hljs-literal">False</span><br></code></pre></td></tr></table></figure><h2 id="hexo">hexo</h2><p>hexo 无法渲染上面这个公式</p><figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs tex"><span class="hljs-keyword">\frac</span>&#123;<span class="hljs-keyword">\bar</span>&#123;u&#125;&#125;&#123;u<span class="hljs-built_in">_</span>&#123;*&#125;&#125;=2.5<span class="hljs-keyword">\ln</span>&#123;<span class="hljs-keyword">\frac</span>&#123;yu<span class="hljs-built_in">_</span>&#123;&#123;*&#125;&#125;&#125;&#123;<span class="hljs-keyword">\nu</span>&#125;&#125;+5.5<br><span class="hljs-keyword">\frac</span>&#123;<span class="hljs-keyword">\bar</span>&#123;u&#125;&#125;&#123;u<span class="hljs-built_in">_</span>&#123;*&#125;&#125;=2.5<span class="hljs-keyword">\ln</span>&#123;<span class="hljs-keyword">\frac</span>&#123;yu<span class="hljs-built_in">_</span>&#123;*&#125;&#125;&#123;<span class="hljs-keyword">\nu</span>&#125;&#125;+5.5<br></code></pre></td></tr></table></figure><p>hexo 如何调整图片大小？我希望它能兼容 md 扩展语法</p><p>1985 年 8 月，邓小平接见姆加贝时又说：“社会主义究竟是个什么样子，苏联搞了很多年，也并没有完全搞清楚。可能列宁的思路比较好，搞了个新经济政策，但是后来苏联的模式僵化了。”</p>]]></content>
     
     
     
