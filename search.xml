@@ -2868,9 +2868,6 @@ M834 80h400000v40h-400000z"/></svg></span></span></span><span class="vlist-s">�
 <h2 id="tailscale">tailscale</h2>
 <p>tailscale 设置出口节点：</p>
 <p><code>sudo tailscale up --advertise-exit-node --advertise-routes=10.80.0.0/16</code></p>
-<h2 id="python-中文字体">python 中文字体</h2>
-<p>windows 下，python 的 <code>matplotlib</code> 会出现中文字体以及负号乱码的现象，解决方案如下：</p>
-<figure class="highlight py"><table><tr><td class="code"><pre><code class="hljs py">plt.rcParams[<span class="hljs-string">&#x27;font.family&#x27;</span>] = <span class="hljs-string">&#x27;SimHei&#x27;</span><br>plt.rcParams[<span class="hljs-string">&#x27;axes.unicode_minus&#x27;</span>] = <span class="hljs-literal">False</span><br></code></pre></td></tr></table></figure>
 <h2 id="hexo">hexo</h2>
 <p>hexo 无法渲染上面这个公式</p>
 <figure class="highlight tex"><table><tr><td class="code"><pre><code class="hljs tex"><span class="hljs-keyword">\frac</span>&#123;<span class="hljs-keyword">\bar</span>&#123;u&#125;&#125;&#123;u<span class="hljs-built_in">_</span>&#123;*&#125;&#125;=2.5<span class="hljs-keyword">\ln</span>&#123;<span class="hljs-keyword">\frac</span>&#123;yu<span class="hljs-built_in">_</span>&#123;&#123;*&#125;&#125;&#125;&#123;<span class="hljs-keyword">\nu</span>&#125;&#125;+5.5<br><span class="hljs-keyword">\frac</span>&#123;<span class="hljs-keyword">\bar</span>&#123;u&#125;&#125;&#123;u<span class="hljs-built_in">_</span>&#123;*&#125;&#125;=2.5<span class="hljs-keyword">\ln</span>&#123;<span class="hljs-keyword">\frac</span>&#123;yu<span class="hljs-built_in">_</span>&#123;*&#125;&#125;&#123;<span class="hljs-keyword">\nu</span>&#125;&#125;+5.5<br></code></pre></td></tr></table></figure>
@@ -4879,6 +4876,20 @@ M834 80h400000v40h-400000z"/></svg></span></span></span><span class="vlist-s">�
 <h2 id="日本地图">日本地图</h2>
 <p>todo</p>
 <img src="/2025/05/05/2025-05-05-%E4%B8%80%E4%BA%9B%E5%9C%B0%E5%9B%BE/日本区划.svg" alt="日本区划">
+]]></content>
+  </entry>
+  <entry>
+    <title>解决matplotlib中文乱码问题</title>
+    <url>/2025/05/12/2025-05-12-%E8%A7%A3%E5%86%B3matplotlib%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>解决 matplotlib 中文乱码问题</p>
+<span id="more"></span>
+<p>windows 下（各个系统都可能有这个问题），python 的 <code>matplotlib</code> 会出现<strong>中文字体</strong>以及<strong>负号</strong>乱码的现象，解决方案如下：</p>
+<figure class="highlight py"><table><tr><td class="code"><pre><code class="hljs py"><span class="hljs-keyword">import</span> matplotlib.pyplot <span class="hljs-keyword">as</span> plt<br><br>plt.rcParams[<span class="hljs-string">&#x27;font.family&#x27;</span>] = <span class="hljs-string">&#x27;SimHei&#x27;</span><br>plt.rcParams[<span class="hljs-string">&#x27;axes.unicode_minus&#x27;</span>] = <span class="hljs-literal">False</span><br></code></pre></td></tr></table></figure>
+<p>在 win 中，可以在 <code>powershell</code> 中运行命令 <code>fc-list :lang=zh family</code> 来优雅地查看系统上已安装的中文字体。</p>
+<p>但有时也可能出现意想不到的问题：</p>
+<p><img src="/2025/05/12/2025-05-12-%E8%A7%A3%E5%86%B3matplotlib%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81%E9%97%AE%E9%A2%98/%E6%8A%A5%E9%94%99.png" alt="报错"></p>
+<p>虽然看着像字体不完整的问题，但其实是 <code>matplotlib</code> 自身的的<strong>字体缓存</strong>导致的问题。</p>
+<p>一般缓存位置在系统的用户目录下的 <code>.matplotlib</code> ，在 win 中的文件是 <code>fontlist-v390.json</code> ，删除即可。</p>
 ]]></content>
   </entry>
 </search>

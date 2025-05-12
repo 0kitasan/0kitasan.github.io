@@ -6,7 +6,7 @@
   <link href="https://0kitasan.github.io/atom.xml" rel="self"/>
   
   <link href="https://0kitasan.github.io/"/>
-  <updated>2025-05-05T15:30:42.730Z</updated>
+  <updated>2025-05-12T08:29:32.666Z</updated>
   <id>https://0kitasan.github.io/</id>
   
   <author>
@@ -15,6 +15,21 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>解决matplotlib中文乱码问题</title>
+    <link href="https://0kitasan.github.io/2025/05/12/2025-05-12-%E8%A7%A3%E5%86%B3matplotlib%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81%E9%97%AE%E9%A2%98/"/>
+    <id>https://0kitasan.github.io/2025/05/12/2025-05-12-%E8%A7%A3%E5%86%B3matplotlib%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81%E9%97%AE%E9%A2%98/</id>
+    <published>2025-05-12T08:21:33.000Z</published>
+    <updated>2025-05-12T08:29:32.666Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;解决 matplotlib 中文乱码问题&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>一些地图</title>
@@ -192,7 +207,7 @@
     <link href="https://0kitasan.github.io/2025/01/23/2025-01-23-%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB%E7%9A%84%E4%B8%9C%E8%A5%BF/"/>
     <id>https://0kitasan.github.io/2025/01/23/2025-01-23-%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB%E7%9A%84%E4%B8%9C%E8%A5%BF/</id>
     <published>2025-01-23T14:08:57.000Z</published>
-    <updated>2025-05-05T14:47:38.609Z</updated>
+    <updated>2025-05-12T08:23:55.794Z</updated>
     
     
     <summary type="html">&lt;p&gt;不知道该放在哪，全放这里了&lt;/p&gt;</summary>
@@ -369,27 +384,6 @@
     <category term="计算机/折腾" scheme="https://0kitasan.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA-%E6%8A%98%E8%85%BE/"/>
     
     <category term="网络" scheme="https://0kitasan.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA-%E6%8A%98%E8%85%BE/%E7%BD%91%E7%BB%9C/"/>
-    
-    
-    <category term="linux" scheme="https://0kitasan.github.io/tags/linux/"/>
-    
-    <category term="网络" scheme="https://0kitasan.github.io/tags/%E7%BD%91%E7%BB%9C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>frp设置</title>
-    <link href="https://0kitasan.github.io/2024/01/30/2024-01-30-frp%E8%AE%BE%E7%BD%AE/"/>
-    <id>https://0kitasan.github.io/2024/01/30/2024-01-30-frp%E8%AE%BE%E7%BD%AE/</id>
-    <published>2024-01-30T07:54:01.000Z</published>
-    <updated>2024-07-08T12:31:06.486Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;本文以 ssh 为例，简单介绍基于 frp 的内网穿透的方法。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="计算机/折腾" scheme="https://0kitasan.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA-%E6%8A%98%E8%85%BE/"/>
     
     
     <category term="linux" scheme="https://0kitasan.github.io/tags/linux/"/>
