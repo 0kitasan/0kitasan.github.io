@@ -4890,6 +4890,8 @@ M834 80h400000v40h-400000z"/></svg></span></span></span><span class="vlist-s">�
 <p><img src="/2025/05/12/2025-05-12-%E8%A7%A3%E5%86%B3matplotlib%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81%E9%97%AE%E9%A2%98/%E6%8A%A5%E9%94%99.png" alt="报错"></p>
 <p>虽然看着像字体不完整的问题，但其实是 <code>matplotlib</code> 自身的的<strong>字体缓存</strong>导致的问题。</p>
 <p>一般缓存位置在系统的用户目录下的 <code>.matplotlib</code> ，在 win 中的文件是 <code>fontlist-v390.json</code> ，删除即可。</p>
+<p>补充一点：仅仅使用中文字体可能会导致英文字体很丑，如果想要好看点可以这样写（注意优先级）：</p>
+<figure class="highlight py"><table><tr><td class="code"><pre><code class="hljs py">plt.rcParams[<span class="hljs-string">&quot;font.family&quot;</span>] = [<span class="hljs-string">&quot;Arial&quot;</span>, <span class="hljs-string">&quot;SimHei&quot;</span>]<br></code></pre></td></tr></table></figure>
 ]]></content>
   </entry>
 </search>
