@@ -6,7 +6,7 @@
   <link href="https://0kitasan.github.io/atom.xml" rel="self"/>
   
   <link href="https://0kitasan.github.io/"/>
-  <updated>2025-05-13T16:07:28.761Z</updated>
+  <updated>2025-06-10T16:08:30.566Z</updated>
   <id>https://0kitasan.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>量子力学笔记</title>
+    <link href="https://0kitasan.github.io/2025/06/11/2025-06-11-%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6%E7%AC%94%E8%AE%B0/"/>
+    <id>https://0kitasan.github.io/2025/06/11/2025-06-11-%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6%E7%AC%94%E8%AE%B0/</id>
+    <published>2025-06-10T16:05:29.000Z</published>
+    <updated>2025-06-10T16:08:30.566Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;量子力学笔记&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="学习" scheme="https://0kitasan.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="力学" scheme="https://0kitasan.github.io/categories/%E5%AD%A6%E4%B9%A0/%E5%8A%9B%E5%AD%A6/"/>
+    
+    
+    <category term="学习" scheme="https://0kitasan.github.io/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="力学" scheme="https://0kitasan.github.io/tags/%E5%8A%9B%E5%AD%A6/"/>
+    
+  </entry>
   
   <entry>
     <title>解决matplotlib中文乱码问题</title>
@@ -366,29 +389,6 @@
     
     
     <category term="hexo" scheme="https://0kitasan.github.io/tags/hexo/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>v2rayA设置</title>
-    <link href="https://0kitasan.github.io/2024/01/30/2024-01-30-v2rayA%E8%AE%BE%E7%BD%AE/"/>
-    <id>https://0kitasan.github.io/2024/01/30/2024-01-30-v2rayA%E8%AE%BE%E7%BD%AE/</id>
-    <published>2024-01-30T07:54:30.000Z</published>
-    <updated>2024-06-11T16:20:06.554Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;本文简单介绍ubuntu系统如何安装v2rayA。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="计算机/折腾" scheme="https://0kitasan.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA-%E6%8A%98%E8%85%BE/"/>
-    
-    <category term="网络" scheme="https://0kitasan.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA-%E6%8A%98%E8%85%BE/%E7%BD%91%E7%BB%9C/"/>
-    
-    
-    <category term="linux" scheme="https://0kitasan.github.io/tags/linux/"/>
-    
-    <category term="网络" scheme="https://0kitasan.github.io/tags/%E7%BD%91%E7%BB%9C/"/>
     
   </entry>
   
