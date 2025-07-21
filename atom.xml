@@ -6,7 +6,7 @@
   <link href="https://0kitasan.github.io/atom.xml" rel="self"/>
   
   <link href="https://0kitasan.github.io/"/>
-  <updated>2025-06-10T16:52:27.710Z</updated>
+  <updated>2025-07-21T07:11:40.635Z</updated>
   <id>https://0kitasan.github.io/</id>
   
   <author>
@@ -15,6 +15,40 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>日本攻略</title>
+    <link href="https://0kitasan.github.io/2025/07/18/2025-07-18-%E6%97%A5%E6%9C%AC%E6%94%BB%E7%95%A5/"/>
+    <id>https://0kitasan.github.io/2025/07/18/2025-07-18-%E6%97%A5%E6%9C%AC%E6%94%BB%E7%95%A5/</id>
+    <published>2025-07-18T08:17:37.000Z</published>
+    <updated>2025-07-21T07:11:40.635Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;日本攻略。&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>日语笔记</title>
+    <link href="https://0kitasan.github.io/2025/07/17/2025-07-17-%E6%97%A5%E8%AF%AD%E7%AC%94%E8%AE%B0/"/>
+    <id>https://0kitasan.github.io/2025/07/17/2025-07-17-%E6%97%A5%E8%AF%AD%E7%AC%94%E8%AE%B0/</id>
+    <published>2025-07-17T08:16:18.000Z</published>
+    <updated>2025-07-21T07:08:38.679Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;日语笔记。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="学习" scheme="https://0kitasan.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="学习" scheme="https://0kitasan.github.io/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
   
   <entry>
     <title>量子力学笔记</title>
@@ -347,48 +381,6 @@
     <category term="学习" scheme="https://0kitasan.github.io/tags/%E5%AD%A6%E4%B9%A0/"/>
     
     <category term="C++" scheme="https://0kitasan.github.io/tags/C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>高等数学2笔记</title>
-    <link href="https://0kitasan.github.io/2024/06/11/2024-06-11-%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A62%E7%AC%94%E8%AE%B0/"/>
-    <id>https://0kitasan.github.io/2024/06/11/2024-06-11-%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A62%E7%AC%94%E8%AE%B0/</id>
-    <published>2024-06-11T14:51:38.000Z</published>
-    <updated>2024-06-11T16:48:21.455Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;高等数学2笔记&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="学习" scheme="https://0kitasan.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
-    
-    <category term="数学" scheme="https://0kitasan.github.io/categories/%E5%AD%A6%E4%B9%A0/%E6%95%B0%E5%AD%A6/"/>
-    
-    
-    <category term="学习" scheme="https://0kitasan.github.io/tags/%E5%AD%A6%E4%B9%A0/"/>
-    
-    <category term="数学" scheme="https://0kitasan.github.io/tags/%E6%95%B0%E5%AD%A6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>hexo博客迁移</title>
-    <link href="https://0kitasan.github.io/2024/04/27/2024-04-27-hexo%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB/"/>
-    <id>https://0kitasan.github.io/2024/04/27/2024-04-27-hexo%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB/</id>
-    <published>2024-04-27T14:37:54.000Z</published>
-    <updated>2024-07-06T08:07:29.991Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;疑似直接迁移文件夹就行。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="计算机/折腾" scheme="https://0kitasan.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA-%E6%8A%98%E8%85%BE/"/>
-    
-    
-    <category term="hexo" scheme="https://0kitasan.github.io/tags/hexo/"/>
     
   </entry>
   
