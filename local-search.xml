@@ -4,6 +4,33 @@
   
   
   <entry>
+    <title>openwrt部署邮箱服务</title>
+    <link href="/2025/08/27/2025-08-24-openwrt%E9%83%A8%E7%BD%B2%E9%82%AE%E7%AE%B1%E6%9C%8D%E5%8A%A1/"/>
+    <url>/2025/08/27/2025-08-24-openwrt%E9%83%A8%E7%BD%B2%E9%82%AE%E7%AE%B1%E6%9C%8D%E5%8A%A1/</url>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>openwrt(iStoreOS)部署邮箱服务(msmtp)</p><span id="more"></span><hr><p><a href="https://wangyougx.com:433/blog/index.php/archives/29/">https://wangyougx.com:433/blog/index.php/archives/29/</a></p><p><a href="https://www.itix.fr/blog/send-mails-openwrt-msmtp-gmail/">https://www.itix.fr/blog/send-mails-openwrt-msmtp-gmail/</a></p><p>安装 <code>msmtp</code> 邮件服务：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">opkg install msmtp<br></code></pre></td></tr></table></figure><p>安装好 msmtp 后需要配置，即修改文件 <code>/etc/msmtprc</code>：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs bash">account default<br>host smtp.163.com<br>port 25<br>from mail@163.com <span class="hljs-comment">#改为自己的邮箱账户</span><br>auth login<br>tls off<br>user mail@163.com <span class="hljs-comment">#改为自己的邮箱账户</span><br>password 12345678 <span class="hljs-comment">#改为163令牌，而非登录密码</span><br>account default 163-mail<br></code></pre></td></tr></table></figure><p>记得去 163 邮箱打开 POP3/SMTP/IMAP 服务，并获取令牌。</p><p>测试脚本：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">echo</span> -e <span class="hljs-string">&quot;Subject: Hello!\n\nHello, world!&quot;</span> | sendmail recipient@example.com<br></code></pre></td></tr></table></figure>]]></content>
+    
+    
+    <categories>
+      
+      <category>计算机/折腾</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>linux</tag>
+      
+      <tag>openwrt</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>日本攻略</title>
     <link href="/2025/07/18/2025-07-18-%E6%97%A5%E6%9C%AC%E6%94%BB%E7%95%A5/"/>
     <url>/2025/07/18/2025-07-18-%E6%97%A5%E6%9C%AC%E6%94%BB%E7%95%A5/</url>
@@ -289,7 +316,7 @@
     <link href="/2025/01/23/2025-01-23-%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB%E7%9A%84%E4%B8%9C%E8%A5%BF/"/>
     <url>/2025/01/23/2025-01-23-%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB%E7%9A%84%E4%B8%9C%E8%A5%BF/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>不知道该放在哪，全放这里了</p><span id="more"></span><h2 id="cs2">cs2</h2><p>控制台指令，用于测试麦克风</p><p>开启 <code>voice_loopback 1</code></p><p>关闭 <code>voice_loopback 0</code></p><p>准星设置： <code>CSGO-XtFZP-M8tWn-CofrV-eCmVO-b6FyB</code></p><h2 id="edge">edge</h2><p>在浏览一些 pdf 时可能公式会出错（基本都是因为 pdf 作者打的公式比较烂），解决方案如下：</p><p>跳转<code>edge://flags/#edge-new-pdf-viewer</code>，将 New PDF Viewer 由 Default 改为 Disabled。</p><h2 id="tailscale">tailscale</h2><p>tailscale 设置出口节点：</p><p><code>sudo tailscale up --advertise-exit-node --advertise-routes=10.80.0.0/16</code></p><h2 id="hexo">hexo</h2><p>hexo 无法渲染上面这个公式</p><figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs tex"><span class="hljs-keyword">\frac</span>&#123;<span class="hljs-keyword">\bar</span>&#123;u&#125;&#125;&#123;u<span class="hljs-built_in">_</span>&#123;*&#125;&#125;=2.5<span class="hljs-keyword">\ln</span>&#123;<span class="hljs-keyword">\frac</span>&#123;yu<span class="hljs-built_in">_</span>&#123;&#123;*&#125;&#125;&#125;&#123;<span class="hljs-keyword">\nu</span>&#125;&#125;+5.5<br><span class="hljs-keyword">\frac</span>&#123;<span class="hljs-keyword">\bar</span>&#123;u&#125;&#125;&#123;u<span class="hljs-built_in">_</span>&#123;*&#125;&#125;=2.5<span class="hljs-keyword">\ln</span>&#123;<span class="hljs-keyword">\frac</span>&#123;yu<span class="hljs-built_in">_</span>&#123;*&#125;&#125;&#123;<span class="hljs-keyword">\nu</span>&#125;&#125;+5.5<br></code></pre></td></tr></table></figure><p>hexo 如何调整图片大小？我希望它能兼容 md 扩展语法</p><h2 id="Minecraft">Minecraft</h2><p>动作制作 mine-imator</p><p>其他插件、mod 后面补充</p><h2 id="3D-软件（CG）">3D 软件（CG）</h2><p>3dMax Blender Maya C4D zbrush</p><p>1985 年 8 月，邓小平接见姆加贝时又说：“社会主义究竟是个什么样子，苏联搞了很多年，也并没有完全搞清楚。可能列宁的思路比较好，搞了个新经济政策，但是后来苏联的模式僵化了。”</p>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>不知道该放在哪，全放这里了</p><span id="more"></span><h2 id="cs2">cs2</h2><p>控制台指令，用于测试麦克风</p><p>开启 <code>voice_loopback 1</code></p><p>关闭 <code>voice_loopback 0</code></p><p>准星设置： <code>CSGO-vCarT-CjZF7-zfh2V-eCmVO-b6FyB</code></p><h2 id="edge">edge</h2><p>在浏览一些 pdf 时可能公式会出错（基本都是因为 pdf 作者打的公式比较烂），解决方案如下：</p><p>跳转<code>edge://flags/#edge-new-pdf-viewer</code>，将 New PDF Viewer 由 Default 改为 Disabled。</p><h2 id="tailscale">tailscale</h2><p>tailscale 设置出口节点：</p><p><code>sudo tailscale up --advertise-exit-node --advertise-routes=10.80.0.0/16</code></p><h2 id="hexo">hexo</h2><p>hexo 无法渲染上面这个公式</p><figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs tex"><span class="hljs-keyword">\frac</span>&#123;<span class="hljs-keyword">\bar</span>&#123;u&#125;&#125;&#123;u<span class="hljs-built_in">_</span>&#123;*&#125;&#125;=2.5<span class="hljs-keyword">\ln</span>&#123;<span class="hljs-keyword">\frac</span>&#123;yu<span class="hljs-built_in">_</span>&#123;&#123;*&#125;&#125;&#125;&#123;<span class="hljs-keyword">\nu</span>&#125;&#125;+5.5<br><span class="hljs-keyword">\frac</span>&#123;<span class="hljs-keyword">\bar</span>&#123;u&#125;&#125;&#123;u<span class="hljs-built_in">_</span>&#123;*&#125;&#125;=2.5<span class="hljs-keyword">\ln</span>&#123;<span class="hljs-keyword">\frac</span>&#123;yu<span class="hljs-built_in">_</span>&#123;*&#125;&#125;&#123;<span class="hljs-keyword">\nu</span>&#125;&#125;+5.5<br></code></pre></td></tr></table></figure><p>hexo 如何调整图片大小？我希望它能兼容 md 扩展语法</p><h2 id="Minecraft">Minecraft</h2><p>动作制作 mine-imator</p><p>其他插件、mod 后面补充</p><h2 id="3D-软件（CG）">3D 软件（CG）</h2><p>3dMax Blender Maya C4D zbrush</p><p>1985 年 8 月，邓小平接见姆加贝时又说：“社会主义究竟是个什么样子，苏联搞了很多年，也并没有完全搞清楚。可能列宁的思路比较好，搞了个新经济政策，但是后来苏联的模式僵化了。”</p>]]></content>
     
     
     
