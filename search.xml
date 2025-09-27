@@ -1,59 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>博客搭建与配置</title>
-    <url>/2023/04/29/2023-04-29-%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E4%B8%8E%E9%85%8D%E7%BD%AE/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>第一次尝试搭建个人博客。<br>
-本博客目前使用<a href="https://www.bilibili.com/video/BV1ts4y1f7Gu">b站教程</a>，<a href="https://hexo.io/zh-cn/index.html">hexo</a>框架，以及<a href="https://shen-yu.gitee.io/2019/ayer/">ayer</a>主题。</p>
+    <title>代码块</title>
+    <url>/2023/05/02/2023-05-02-%E4%BB%A3%E7%A0%81%E5%9D%97/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>关于hexo中代码块与代码高亮的笔记。</p>
 <span id="more"></span>
-<p>具体流程：下载<a href="https://git-scm.com/">git</a>，<a href="https://nodejs.org/zh-cn/">node.js</a><br>
-这篇文章写的挺早的，现已经过多次修改。</p>
-<h2 id="git、hexo、node-js环境搭建">git、hexo、node.js环境搭建</h2>
-<p>下载<a href="https://git-scm.com/">git</a>，<a href="https://nodejs.org/zh-cn/">Node.js</a>。<br>
-git下载完毕后，在cmd窗口中输入<code>node-v</code>查看版本号，如果出现版本号，则说明安装成功。<br>
-新建一个下载hexo的文件夹，进入后右键选择git bash打开git窗口，分别输入<a href="https://hexo.io/zh-cn/index.html">hexo官网</a>的命令。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># 1下载</span><br>npm install hexo-cli -g <br><span class="hljs-comment"># 2初始化博客，运行完毕会出现blog文件夹</span><br>hexo init blog<br><span class="hljs-comment"># 3进入博客</span><br><span class="hljs-built_in">cd</span> blog<br><span class="hljs-comment"># 4下载 </span><br>npm install<br><span class="hljs-comment"># 5运行博客（为原始版本、默认主题，之后可以下载其他主题）</span><br>hexo server <br></code></pre></td></tr></table></figure>
-<h2 id="hexo与hexo主题下载">hexo与hexo主题下载</h2>
-<p><a href="https://hexo.io/zh-cn/index.html">hexo</a>，<a href="https://shen-yu.gitee.io/2019/ayer/">ayer</a>主题。</p>
-<h2 id="基本配置">基本配置</h2>
-<p>根据需求，修改<code>config.yml</code>与<code>config.ayer.yml</code>中的具体配置<br>
-<code>config.ayer.yml</code>中可以修改网页封面、公告栏、鼠标样式、广告图标、友情链接<br>
-注意，<code>config.yml</code>与<code>config.ayer.yml</code>中冒号“：”后均需要加空格，否则报错</p>
-<h2 id="Tips">Tips</h2>
-<p>当我们使用<code>hexo generate</code>命令时，hexo会生成<code>public</code>文件夹，将<code>source</code>目录中的md文件及一些依赖渲染为html等，并存储在<code>public</code>。</p>
-<p>而<code>hexo clean</code>命令会清除public文件夹，在配置正确的情况下，该命令通常能解决大部分问题。</p>
-<p>2024/4/27：注意，似乎把<code>代码块</code>放在markdown源文件的最前面，在fluid中会出现阴间问题。</p>
-<h2 id="进阶配置与插件">进阶配置与插件</h2>
-<h3 id="KaTeX配置">KaTeX配置</h3>
-<p>为了方便使用<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>LaTeX</mtext></mrow><annotation encoding="application/x-tex">\LaTeX</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8988em;vertical-align:-0.2155em;"></span><span class="mord text"><span class="mord textrm">L</span><span class="mspace" style="margin-right:-0.36em;"></span><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.6833em;"><span style="top:-2.905em;"><span class="pstrut" style="height:2.7em;"></span><span class="mord"><span class="mord textrm mtight sizing reset-size6 size3">A</span></span></span></span></span></span><span class="mspace" style="margin-right:-0.15em;"></span><span class="mord text"><span class="mord textrm">T</span><span class="mspace" style="margin-right:-0.1667em;"></span><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.4678em;"><span style="top:-2.7845em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord textrm">E</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2155em;"><span></span></span></span></span><span class="mspace" style="margin-right:-0.125em;"></span><span class="mord textrm">X</span></span></span></span></span></span>来书写漂亮的数学公式，我们需要使网页支持<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>KaTeX</mtext></mrow><annotation encoding="application/x-tex">\KaTeX</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8988em;vertical-align:-0.2155em;"></span><span class="mord text"><span class="mord textrm">K</span><span class="mspace" style="margin-right:-0.17em;"></span><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.6833em;"><span style="top:-2.905em;"><span class="pstrut" style="height:2.7em;"></span><span class="mord"><span class="mord textrm mtight sizing reset-size6 size3">A</span></span></span></span></span></span><span class="mspace" style="margin-right:-0.15em;"></span><span class="mord text"><span class="mord textrm">T</span><span class="mspace" style="margin-right:-0.1667em;"></span><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.4678em;"><span style="top:-2.7845em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord textrm">E</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2155em;"><span></span></span></span></span><span class="mspace" style="margin-right:-0.125em;"></span><span class="mord textrm">X</span></span></span></span></span></span></p>
-<h3 id="播放器">播放器</h3>
-<p>aplayer插件下载<br>
-<a href="https://github.com/MoePlayer/hexo-tag-aplayer/blob/master/docs/README-zh_cn.md">https://github.com/MoePlayer/hexo-tag-aplayer/blob/master/docs/README-zh_cn.md</a></p>
-<h3 id="代码高亮">代码高亮</h3>
-<p>highligt.js<br>
-<a href="https://highlightjs.org/">https://highlightjs.org/</a></p>
-<h3 id="图片引用">图片引用</h3>
-<p>hexo-renderer-marked</p>
-<h3 id="搜索">搜索</h3>
-<p>hexo-generator-search</p>
-<h2 id="将静态网页放在gitee-pages上">将静态网页放在gitee pages上</h2>
-<p>详见<a href="https://www.bilibili.com/video/BV1ts4y1f7Gu">b站教程</a></p>
-<h2 id="把hexo部署在自己的服务器上！（23年11月更新）">把hexo部署在自己的服务器上！（23年11月更新）</h2>
-<p>Win10环境下基于Hexo的静态博客环境搭建，及其阿里云部署<br>
-<a href="http://www.atangbiji.com/2019/12/22/buildHexoBlog/">http://www.atangbiji.com/2019/12/22/buildHexoBlog/</a></p>
-<p>Ubuntu20.04下，搭建hexo个人博客<br>
-<a href="https://blog.csdn.net/li1055107552/article/details/121897025">https://blog.csdn.net/li1055107552/article/details/121897025</a></p>
-<p>Ubuntu 20.4 + Hexo + Nginx 搭建公网博客<br>
-<a href="https://www.cnblogs.com/Huae/p/16155927.html">https://www.cnblogs.com/Huae/p/16155927.html</a></p>
-<h2 id="hexo推送更新不了的bug（24年1月更新）">hexo推送更新不了的bug（24年1月更新）</h2>
-<p>一直提示<code>fatal: unable to auto-detect email address</code><br>
-看了这篇文章，跟着操作就修好了</p>
-<p>hexo d错误：fatal: unable to auto-detect email address<br>
-<a href="https://blog.csdn.net/IThelei/article/details/104179452">https://blog.csdn.net/IThelei/article/details/104179452</a></p>
-<p>其实就是在博客目录下的<code>.deploy_git/.git/config</code>中添加user信息即可。<br>
-email和name后面的信息随便填都行。</p>
-<figure class="highlight ini"><table><tr><td class="code"><pre><code class="hljs ini"><span class="hljs-section">[user]</span><br><span class="hljs-attr">email</span>=test@example.com<br><span class="hljs-attr">name</span>=test<br></code></pre></td></tr></table></figure>
-<p>加上就解决了，不过这个bug的根本原因还未知。</p>
+<h3 id="第一种写法：代码块">第一种写法：代码块</h3>
+<p>缺点是并不会在markdown中被渲染。</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><code class="hljs css">&#123;% codeblock <span class="hljs-selector-attr">[title]</span> <span class="hljs-selector-attr">[lang:language]</span> <span class="hljs-selector-attr">[url]</span> <span class="hljs-selector-attr">[link text]</span> <span class="hljs-selector-attr">[additional options]</span> %&#125;<br><span class="hljs-selector-tag">code</span> snippet # 注意，写代码时不用加上方括号<span class="hljs-selector-attr">[]</span><br>&#123;% endcodeblock %&#125;<br></code></pre></td></tr></table></figure>
+<p>效果如下：</p>
+<figure class="highlight clean"><table><tr><td class="code"><pre><code class="hljs clean"><span class="hljs-keyword">code</span> snippet<br></code></pre></td></tr></table></figure>
+<h3 id="第二种写法：反引号代码块">第二种写法：反引号代码块</h3>
+<p>此方法在markdown中也会被渲染，极力推荐。</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><code class="hljs css">\``` <span class="hljs-selector-attr">[language]</span> <span class="hljs-selector-attr">[title]</span> <span class="hljs-selector-attr">[url]</span> <span class="hljs-selector-attr">[link text]</span> <span class="hljs-selector-attr">[additional options]</span><br><span class="hljs-selector-tag">code</span> snippet # 注意，写代码时要去除反义符号“\”，并且不用加上方括号<span class="hljs-selector-attr">[]</span><br>\```<br></code></pre></td></tr></table></figure>
+<p>效果如下：</p>
+<figure class="highlight clean"><table><tr><td class="code"><pre><code class="hljs clean"><span class="hljs-keyword">code</span> snippet<br></code></pre></td></tr></table></figure>
+<h3 id="实例测试">实例测试</h3>
+<p>python</p>
+<figure class="highlight python"><figcaption><span>python高亮</span></figcaption><table><tr><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">0</span>,<span class="hljs-number">100</span>):<br>    s = s+<span class="hljs-number">1</span><br></code></pre></td></tr></table></figure>
+<p>c++</p>
+<figure class="highlight c++"><figcaption><span>c++高亮</span></figcaption><table><tr><td class="code"><pre><code class="hljs c++"><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;stdio.h&gt;</span></span><br><span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span><br><span class="hljs-function"></span>&#123;<br>    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;Hello Markdown\n&quot;</span>);<br>    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
+<p>url = <a href="https://www.bilibili.com/">https://www.bilibili.com/</a></p>
 ]]></content>
       <categories>
         <category>计算机/折腾</category>
@@ -61,6 +28,7 @@ email和name后面的信息随便填都行。</p>
       </categories>
       <tags>
         <tag>hexo</tag>
+        <tag>markdown</tag>
       </tags>
   </entry>
   <entry>
@@ -162,37 +130,6 @@ c0 110 84 276 504 276s502.4-166 502.4-276z"/></svg></span></span></span><span cl
       </tags>
   </entry>
   <entry>
-    <title>代码块</title>
-    <url>/2023/05/02/2023-05-02-%E4%BB%A3%E7%A0%81%E5%9D%97/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>关于hexo中代码块与代码高亮的笔记。</p>
-<span id="more"></span>
-<h3 id="第一种写法：代码块">第一种写法：代码块</h3>
-<p>缺点是并不会在markdown中被渲染。</p>
-<figure class="highlight css"><table><tr><td class="code"><pre><code class="hljs css">&#123;% codeblock <span class="hljs-selector-attr">[title]</span> <span class="hljs-selector-attr">[lang:language]</span> <span class="hljs-selector-attr">[url]</span> <span class="hljs-selector-attr">[link text]</span> <span class="hljs-selector-attr">[additional options]</span> %&#125;<br><span class="hljs-selector-tag">code</span> snippet # 注意，写代码时不用加上方括号<span class="hljs-selector-attr">[]</span><br>&#123;% endcodeblock %&#125;<br></code></pre></td></tr></table></figure>
-<p>效果如下：</p>
-<figure class="highlight clean"><table><tr><td class="code"><pre><code class="hljs clean"><span class="hljs-keyword">code</span> snippet<br></code></pre></td></tr></table></figure>
-<h3 id="第二种写法：反引号代码块">第二种写法：反引号代码块</h3>
-<p>此方法在markdown中也会被渲染，极力推荐。</p>
-<figure class="highlight css"><table><tr><td class="code"><pre><code class="hljs css">\``` <span class="hljs-selector-attr">[language]</span> <span class="hljs-selector-attr">[title]</span> <span class="hljs-selector-attr">[url]</span> <span class="hljs-selector-attr">[link text]</span> <span class="hljs-selector-attr">[additional options]</span><br><span class="hljs-selector-tag">code</span> snippet # 注意，写代码时要去除反义符号“\”，并且不用加上方括号<span class="hljs-selector-attr">[]</span><br>\```<br></code></pre></td></tr></table></figure>
-<p>效果如下：</p>
-<figure class="highlight clean"><table><tr><td class="code"><pre><code class="hljs clean"><span class="hljs-keyword">code</span> snippet<br></code></pre></td></tr></table></figure>
-<h3 id="实例测试">实例测试</h3>
-<p>python</p>
-<figure class="highlight python"><figcaption><span>python高亮</span></figcaption><table><tr><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">0</span>,<span class="hljs-number">100</span>):<br>    s = s+<span class="hljs-number">1</span><br></code></pre></td></tr></table></figure>
-<p>c++</p>
-<figure class="highlight c++"><figcaption><span>c++高亮</span></figcaption><table><tr><td class="code"><pre><code class="hljs c++"><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;stdio.h&gt;</span></span><br><span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span><br><span class="hljs-function"></span>&#123;<br>    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;Hello Markdown\n&quot;</span>);<br>    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
-<p>url = <a href="https://www.bilibili.com/">https://www.bilibili.com/</a></p>
-]]></content>
-      <categories>
-        <category>计算机/折腾</category>
-        <category>hexo-md特性探索</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>markdown</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>hexo图片引用</title>
     <url>/2023/05/11/2023-05-11-hexo%E5%9B%BE%E7%89%87%E5%BC%95%E7%94%A8/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>hexo图片引用测试</p>
@@ -240,35 +177,6 @@ width的值决定图片宽度。1000=100%，70=7%，数字与百分比可以互�
       <tags>
         <tag>hexo</tag>
         <tag>markdown</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>ubuntu配置静态IP(无线网络)</title>
-    <url>/2023/06/16/2023-06-16-ubuntu%E9%9D%99%E6%80%81IP%E9%85%8D%E7%BD%AE/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>在 orangpi 上(ubuntu系统)配置静态IP(无线网络)</p>
-<span id="more"></span>
-<h2 id="1-ssh-vscode">1.ssh(vscode)</h2>
-<p>【如何优雅地访问远程主机？SSH与frp内网穿透配置教程】<br>
-<a href="https://www.bilibili.com/video/BV13L411w7XU/">https://www.bilibili.com/video/BV13L411w7XU/</a></p>
-<h2 id="2-ifconfig-netplan下载">2.ifconfig + netplan下载</h2>
-<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">sudo apt install ifconfig<br></code></pre></td></tr></table></figure>
-<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">sudo apt update<br></code></pre></td></tr></table></figure>
-<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">sudo apt install netplan<br></code></pre></td></tr></table></figure>
-<h2 id="3-修改netplan配置">3.修改netplan配置</h2>
-<p>配置静态ip</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">network:<br>  version: 2<br>  wifis:<br>    wlan0:<br>      access-points:<br>        TP-LINK <span class="hljs-comment">#wifi名称</span><br>          password: <span class="hljs-string">&quot;123456&quot;</span> <span class="hljs-comment">#密码</span><br>      dhcp4: <span class="hljs-literal">false</span> <span class="hljs-comment">#静态ip</span><br>      optional: <span class="hljs-literal">true</span><br>      addresses: [192.168.0.112/24] <span class="hljs-comment">#前者是ip，后者是子网掩码</span><br>      gateway4: 192.168.0.1  <span class="hljs-comment">#gateway</span><br>      nameservers:<br>        addresses: [192.168.0.112,8.8.8.8]  <span class="hljs-comment">#前面与ip相同即可</span><br></code></pre></td></tr></table></figure>
-<p>gateway查看：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">route -n<br></code></pre></td></tr></table></figure>
-<p>2024-06-12更新：在较为新版的ubuntu设备上，直接使用 <code>nmcli</code> 即可</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># 列出可用wifi</span><br>nmcli connection show<br><br><span class="hljs-comment"># 如果是有线连接，一般都是这个名称</span><br>Wired Connection 1<br><br><span class="hljs-comment"># 根据连接名称修改&lt;name&gt;，根据需求修改ip，注意设备的不同网段不要有冲突</span><br>sudo nmcli connection modify &lt;name&gt; ipv4.addresses 192.168.1.100/24 ipv4.gateway 192.168.1.1 ipv4.dns 8.8.8.8 ipv4.method manual<br><br><span class="hljs-comment"># 重启 NetworkManager</span><br>sudo systemctl restart NetworkManager<br></code></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>计算机/折腾</category>
-        <category>网络</category>
-      </categories>
-      <tags>
-        <tag>linux</tag>
-        <tag>网络</tag>
       </tags>
   </entry>
   <entry>
@@ -385,6 +293,69 @@ Minecraft默认端口是25565，可以通过该端口扫描网址查询端口是
       </tags>
   </entry>
   <entry>
+    <title>博客搭建与配置</title>
+    <url>/2023/04/29/2023-04-29-%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E4%B8%8E%E9%85%8D%E7%BD%AE/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>第一次尝试搭建个人博客。<br>
+本博客目前使用<a href="https://www.bilibili.com/video/BV1ts4y1f7Gu">b站教程</a>，<a href="https://hexo.io/zh-cn/index.html">hexo</a>框架，以及<a href="https://shen-yu.gitee.io/2019/ayer/">ayer</a>主题。</p>
+<span id="more"></span>
+<p>具体流程：下载<a href="https://git-scm.com/">git</a>，<a href="https://nodejs.org/zh-cn/">node.js</a><br>
+这篇文章写的挺早的，现已经过多次修改。</p>
+<h2 id="git、hexo、node-js环境搭建">git、hexo、node.js环境搭建</h2>
+<p>下载<a href="https://git-scm.com/">git</a>，<a href="https://nodejs.org/zh-cn/">Node.js</a>。<br>
+git下载完毕后，在cmd窗口中输入<code>node-v</code>查看版本号，如果出现版本号，则说明安装成功。<br>
+新建一个下载hexo的文件夹，进入后右键选择git bash打开git窗口，分别输入<a href="https://hexo.io/zh-cn/index.html">hexo官网</a>的命令。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># 1下载</span><br>npm install hexo-cli -g <br><span class="hljs-comment"># 2初始化博客，运行完毕会出现blog文件夹</span><br>hexo init blog<br><span class="hljs-comment"># 3进入博客</span><br><span class="hljs-built_in">cd</span> blog<br><span class="hljs-comment"># 4下载 </span><br>npm install<br><span class="hljs-comment"># 5运行博客（为原始版本、默认主题，之后可以下载其他主题）</span><br>hexo server <br></code></pre></td></tr></table></figure>
+<h2 id="hexo与hexo主题下载">hexo与hexo主题下载</h2>
+<p><a href="https://hexo.io/zh-cn/index.html">hexo</a>，<a href="https://shen-yu.gitee.io/2019/ayer/">ayer</a>主题。</p>
+<h2 id="基本配置">基本配置</h2>
+<p>根据需求，修改<code>config.yml</code>与<code>config.ayer.yml</code>中的具体配置<br>
+<code>config.ayer.yml</code>中可以修改网页封面、公告栏、鼠标样式、广告图标、友情链接<br>
+注意，<code>config.yml</code>与<code>config.ayer.yml</code>中冒号“：”后均需要加空格，否则报错</p>
+<h2 id="Tips">Tips</h2>
+<p>当我们使用<code>hexo generate</code>命令时，hexo会生成<code>public</code>文件夹，将<code>source</code>目录中的md文件及一些依赖渲染为html等，并存储在<code>public</code>。</p>
+<p>而<code>hexo clean</code>命令会清除public文件夹，在配置正确的情况下，该命令通常能解决大部分问题。</p>
+<p>2024/4/27：注意，似乎把<code>代码块</code>放在markdown源文件的最前面，在fluid中会出现阴间问题。</p>
+<h2 id="进阶配置与插件">进阶配置与插件</h2>
+<h3 id="KaTeX配置">KaTeX配置</h3>
+<p>为了方便使用<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>LaTeX</mtext></mrow><annotation encoding="application/x-tex">\LaTeX</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8988em;vertical-align:-0.2155em;"></span><span class="mord text"><span class="mord textrm">L</span><span class="mspace" style="margin-right:-0.36em;"></span><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.6833em;"><span style="top:-2.905em;"><span class="pstrut" style="height:2.7em;"></span><span class="mord"><span class="mord textrm mtight sizing reset-size6 size3">A</span></span></span></span></span></span><span class="mspace" style="margin-right:-0.15em;"></span><span class="mord text"><span class="mord textrm">T</span><span class="mspace" style="margin-right:-0.1667em;"></span><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.4678em;"><span style="top:-2.7845em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord textrm">E</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2155em;"><span></span></span></span></span><span class="mspace" style="margin-right:-0.125em;"></span><span class="mord textrm">X</span></span></span></span></span></span>来书写漂亮的数学公式，我们需要使网页支持<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>KaTeX</mtext></mrow><annotation encoding="application/x-tex">\KaTeX</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8988em;vertical-align:-0.2155em;"></span><span class="mord text"><span class="mord textrm">K</span><span class="mspace" style="margin-right:-0.17em;"></span><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.6833em;"><span style="top:-2.905em;"><span class="pstrut" style="height:2.7em;"></span><span class="mord"><span class="mord textrm mtight sizing reset-size6 size3">A</span></span></span></span></span></span><span class="mspace" style="margin-right:-0.15em;"></span><span class="mord text"><span class="mord textrm">T</span><span class="mspace" style="margin-right:-0.1667em;"></span><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.4678em;"><span style="top:-2.7845em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord textrm">E</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2155em;"><span></span></span></span></span><span class="mspace" style="margin-right:-0.125em;"></span><span class="mord textrm">X</span></span></span></span></span></span></p>
+<h3 id="播放器">播放器</h3>
+<p>aplayer插件下载<br>
+<a href="https://github.com/MoePlayer/hexo-tag-aplayer/blob/master/docs/README-zh_cn.md">https://github.com/MoePlayer/hexo-tag-aplayer/blob/master/docs/README-zh_cn.md</a></p>
+<h3 id="代码高亮">代码高亮</h3>
+<p>highligt.js<br>
+<a href="https://highlightjs.org/">https://highlightjs.org/</a></p>
+<h3 id="图片引用">图片引用</h3>
+<p>hexo-renderer-marked</p>
+<h3 id="搜索">搜索</h3>
+<p>hexo-generator-search</p>
+<h2 id="将静态网页放在gitee-pages上">将静态网页放在gitee pages上</h2>
+<p>详见<a href="https://www.bilibili.com/video/BV1ts4y1f7Gu">b站教程</a></p>
+<h2 id="把hexo部署在自己的服务器上！（23年11月更新）">把hexo部署在自己的服务器上！（23年11月更新）</h2>
+<p>Win10环境下基于Hexo的静态博客环境搭建，及其阿里云部署<br>
+<a href="http://www.atangbiji.com/2019/12/22/buildHexoBlog/">http://www.atangbiji.com/2019/12/22/buildHexoBlog/</a></p>
+<p>Ubuntu20.04下，搭建hexo个人博客<br>
+<a href="https://blog.csdn.net/li1055107552/article/details/121897025">https://blog.csdn.net/li1055107552/article/details/121897025</a></p>
+<p>Ubuntu 20.4 + Hexo + Nginx 搭建公网博客<br>
+<a href="https://www.cnblogs.com/Huae/p/16155927.html">https://www.cnblogs.com/Huae/p/16155927.html</a></p>
+<h2 id="hexo推送更新不了的bug（24年1月更新）">hexo推送更新不了的bug（24年1月更新）</h2>
+<p>一直提示<code>fatal: unable to auto-detect email address</code><br>
+看了这篇文章，跟着操作就修好了</p>
+<p>hexo d错误：fatal: unable to auto-detect email address<br>
+<a href="https://blog.csdn.net/IThelei/article/details/104179452">https://blog.csdn.net/IThelei/article/details/104179452</a></p>
+<p>其实就是在博客目录下的<code>.deploy_git/.git/config</code>中添加user信息即可。<br>
+email和name后面的信息随便填都行。</p>
+<figure class="highlight ini"><table><tr><td class="code"><pre><code class="hljs ini"><span class="hljs-section">[user]</span><br><span class="hljs-attr">email</span>=test@example.com<br><span class="hljs-attr">name</span>=test<br></code></pre></td></tr></table></figure>
+<p>加上就解决了，不过这个bug的根本原因还未知。</p>
+]]></content>
+      <categories>
+        <category>计算机/折腾</category>
+        <category>hexo-md特性探索</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>hexo公式环境配置</title>
     <url>/2023/11/16/2023-11-16-hexo%E5%85%AC%E5%BC%8F%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>KaTeX or MathJax？</p>
@@ -436,23 +407,6 @@ Minecraft默认端口是25565，可以通过该端口扫描网址查询端口是
       </tags>
   </entry>
   <entry>
-    <title>VSCode设置</title>
-    <url>/2023/11/24/2023-11-24-VSCode%E8%AE%BE%E7%BD%AE/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>VSCode 设置，目的是在 win 上能右键调出 VSCode。</p>
-<span id="more"></span>
-<p>在 Windows 中，为了能右键调出 VS Code，需要修改注册表。</p>
-<p>新建一个 txt 文件：输入如下内容（注意 <code>\</code> 符号数量不能变，有的地方必须要两个）</p>
-<figure class="highlight lsl"><table><tr><td class="code"><pre><code class="hljs lsl">Windows Registry Editor Version <span class="hljs-number">5.00</span><br><br>[HKEY_CLASSES_ROOT\*\shell\VSCode]<br>@=<span class="hljs-string">&quot;Open with Code&quot;</span><br><span class="hljs-string">&quot;Icon&quot;</span>=<span class="hljs-string">&quot;D:<span class="hljs-subst">\\</span>VS Code<span class="hljs-subst">\\</span>Code.exe&quot;</span><br><br>[HKEY_CLASSES_ROOT\*\shell\VSCode\command]<br>@=<span class="hljs-string">&quot;<span class="hljs-subst">\&quot;</span>D:<span class="hljs-subst">\\</span>VS Code<span class="hljs-subst">\\</span>Code.exe<span class="hljs-subst">\&quot;</span> <span class="hljs-subst">\&quot;</span>%1<span class="hljs-subst">\&quot;</span>&quot;</span><br><br>Windows Registry Editor Version <span class="hljs-number">5.00</span><br><br>[HKEY_CLASSES_ROOT\Directory\shell\VSCode]<br>@=<span class="hljs-string">&quot;Open with Code&quot;</span><br><span class="hljs-string">&quot;Icon&quot;</span>=<span class="hljs-string">&quot;D:<span class="hljs-subst">\\</span>VS Code<span class="hljs-subst">\\</span>Code.exe&quot;</span><br><br>[HKEY_CLASSES_ROOT\Directory\shell\VSCode\command]<br>@=<span class="hljs-string">&quot;<span class="hljs-subst">\&quot;</span>D:<span class="hljs-subst">\\</span>VS Code<span class="hljs-subst">\\</span>Code.exe<span class="hljs-subst">\&quot;</span> <span class="hljs-subst">\&quot;</span>%V<span class="hljs-subst">\&quot;</span>&quot;</span><br><br>Windows Registry Editor Version <span class="hljs-number">5.00</span><br><br>[HKEY_CLASSES_ROOT\Directory\Background\shell\VSCode]<br>@=<span class="hljs-string">&quot;Open with Code&quot;</span><br><span class="hljs-string">&quot;Icon&quot;</span>=<span class="hljs-string">&quot;D:<span class="hljs-subst">\\</span>VS Code<span class="hljs-subst">\\</span>Code.exe&quot;</span><br><br>[HKEY_CLASSES_ROOT\Directory\Background\shell\VSCode\command]<br>@=<span class="hljs-string">&quot;<span class="hljs-subst">\&quot;</span>D:<span class="hljs-subst">\\</span>VS Code<span class="hljs-subst">\\</span>Code.exe<span class="hljs-subst">\&quot;</span> <span class="hljs-subst">\&quot;</span>%V<span class="hljs-subst">\&quot;</span>&quot;</span><br></code></pre></td></tr></table></figure>
-<p>将 txt 改为 reg，然后点开即可修改注册表。此时即可右键调出 VS Code（包括右键文件、右键空白处）</p>
-]]></content>
-      <categories>
-        <category>计算机/折腾</category>
-      </categories>
-      <tags>
-        <tag>VSCode</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Git的基本用法</title>
     <url>/2023/12/27/2023-12-27-Git%E7%9A%84%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>Git的基本用法（大部分是GPT写的）</p>
@@ -482,6 +436,23 @@ Minecraft默认端口是25565，可以通过该端口扫描网址查询端口是
       </categories>
       <tags>
         <tag>git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>VSCode设置</title>
+    <url>/2023/11/24/2023-11-24-VSCode%E8%AE%BE%E7%BD%AE/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>VSCode 设置，目的是在 win 上能右键调出 VSCode。</p>
+<span id="more"></span>
+<p>在 Windows 中，为了能右键调出 VS Code，需要修改注册表。</p>
+<p>新建一个 txt 文件：输入如下内容（注意 <code>\</code> 符号数量不能变，有的地方必须要两个）</p>
+<figure class="highlight lsl"><table><tr><td class="code"><pre><code class="hljs lsl">Windows Registry Editor Version <span class="hljs-number">5.00</span><br><br>[HKEY_CLASSES_ROOT\*\shell\VSCode]<br>@=<span class="hljs-string">&quot;Open with Code&quot;</span><br><span class="hljs-string">&quot;Icon&quot;</span>=<span class="hljs-string">&quot;D:<span class="hljs-subst">\\</span>VS Code<span class="hljs-subst">\\</span>Code.exe&quot;</span><br><br>[HKEY_CLASSES_ROOT\*\shell\VSCode\command]<br>@=<span class="hljs-string">&quot;<span class="hljs-subst">\&quot;</span>D:<span class="hljs-subst">\\</span>VS Code<span class="hljs-subst">\\</span>Code.exe<span class="hljs-subst">\&quot;</span> <span class="hljs-subst">\&quot;</span>%1<span class="hljs-subst">\&quot;</span>&quot;</span><br><br>Windows Registry Editor Version <span class="hljs-number">5.00</span><br><br>[HKEY_CLASSES_ROOT\Directory\shell\VSCode]<br>@=<span class="hljs-string">&quot;Open with Code&quot;</span><br><span class="hljs-string">&quot;Icon&quot;</span>=<span class="hljs-string">&quot;D:<span class="hljs-subst">\\</span>VS Code<span class="hljs-subst">\\</span>Code.exe&quot;</span><br><br>[HKEY_CLASSES_ROOT\Directory\shell\VSCode\command]<br>@=<span class="hljs-string">&quot;<span class="hljs-subst">\&quot;</span>D:<span class="hljs-subst">\\</span>VS Code<span class="hljs-subst">\\</span>Code.exe<span class="hljs-subst">\&quot;</span> <span class="hljs-subst">\&quot;</span>%V<span class="hljs-subst">\&quot;</span>&quot;</span><br><br>Windows Registry Editor Version <span class="hljs-number">5.00</span><br><br>[HKEY_CLASSES_ROOT\Directory\Background\shell\VSCode]<br>@=<span class="hljs-string">&quot;Open with Code&quot;</span><br><span class="hljs-string">&quot;Icon&quot;</span>=<span class="hljs-string">&quot;D:<span class="hljs-subst">\\</span>VS Code<span class="hljs-subst">\\</span>Code.exe&quot;</span><br><br>[HKEY_CLASSES_ROOT\Directory\Background\shell\VSCode\command]<br>@=<span class="hljs-string">&quot;<span class="hljs-subst">\&quot;</span>D:<span class="hljs-subst">\\</span>VS Code<span class="hljs-subst">\\</span>Code.exe<span class="hljs-subst">\&quot;</span> <span class="hljs-subst">\&quot;</span>%V<span class="hljs-subst">\&quot;</span>&quot;</span><br></code></pre></td></tr></table></figure>
+<p>将 txt 改为 reg，然后点开即可修改注册表。此时即可右键调出 VS Code（包括右键文件、右键空白处）</p>
+]]></content>
+      <categories>
+        <category>计算机/折腾</category>
+      </categories>
+      <tags>
+        <tag>VSCode</tag>
       </tags>
   </entry>
   <entry>
@@ -1547,6 +1518,35 @@ M834 80h400000v40h-400000z"/></svg></span></span></span><span class="vlist-s">�
       </tags>
   </entry>
   <entry>
+    <title>ubuntu配置静态IP(无线网络)</title>
+    <url>/2023/06/16/2023-06-16-ubuntu%E9%9D%99%E6%80%81IP%E9%85%8D%E7%BD%AE/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>在 orangpi 上(ubuntu系统)配置静态IP(无线网络)</p>
+<span id="more"></span>
+<h2 id="1-ssh-vscode">1.ssh(vscode)</h2>
+<p>【如何优雅地访问远程主机？SSH与frp内网穿透配置教程】<br>
+<a href="https://www.bilibili.com/video/BV13L411w7XU/">https://www.bilibili.com/video/BV13L411w7XU/</a></p>
+<h2 id="2-ifconfig-netplan下载">2.ifconfig + netplan下载</h2>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">sudo apt install ifconfig<br></code></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">sudo apt update<br></code></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">sudo apt install netplan<br></code></pre></td></tr></table></figure>
+<h2 id="3-修改netplan配置">3.修改netplan配置</h2>
+<p>配置静态ip</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">network:<br>  version: 2<br>  wifis:<br>    wlan0:<br>      access-points:<br>        TP-LINK <span class="hljs-comment">#wifi名称</span><br>          password: <span class="hljs-string">&quot;123456&quot;</span> <span class="hljs-comment">#密码</span><br>      dhcp4: <span class="hljs-literal">false</span> <span class="hljs-comment">#静态ip</span><br>      optional: <span class="hljs-literal">true</span><br>      addresses: [192.168.0.112/24] <span class="hljs-comment">#前者是ip，后者是子网掩码</span><br>      gateway4: 192.168.0.1  <span class="hljs-comment">#gateway</span><br>      nameservers:<br>        addresses: [192.168.0.112,8.8.8.8]  <span class="hljs-comment">#前面与ip相同即可</span><br></code></pre></td></tr></table></figure>
+<p>gateway查看：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">route -n<br></code></pre></td></tr></table></figure>
+<p>2024-06-12更新：在较为新版的ubuntu设备上，直接使用 <code>nmcli</code> 即可</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># 列出可用wifi</span><br>nmcli connection show<br><br><span class="hljs-comment"># 如果是有线连接，一般都是这个名称</span><br>Wired Connection 1<br><br><span class="hljs-comment"># 根据连接名称修改&lt;name&gt;，根据需求修改ip，注意设备的不同网段不要有冲突</span><br>sudo nmcli connection modify &lt;name&gt; ipv4.addresses 192.168.1.100/24 ipv4.gateway 192.168.1.1 ipv4.dns 8.8.8.8 ipv4.method manual<br><br><span class="hljs-comment"># 重启 NetworkManager</span><br>sudo systemctl restart NetworkManager<br></code></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>计算机/折腾</category>
+        <category>网络</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
+        <tag>网络</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>五金和测量工具</title>
     <url>/2024/07/14/2024-07-14-%E4%BA%94%E9%87%91%E5%92%8C%E6%B5%8B%E9%87%8F%E5%B7%A5%E5%85%B7/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>常用五金和测量工具品牌推荐</p>
@@ -1653,183 +1653,6 @@ M834 80h400000v40h-400000z"/></svg></span></span></span><span class="vlist-s">�
       <tags>
         <tag>五金</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>LaTeX符号与希腊字母表</title>
-    <url>/2024/10/30/2024-10-30-LaTeX-%E7%AC%A6%E5%8F%B7%E4%B8%8E%E5%B8%8C%E8%85%8A%E5%AD%97%E6%AF%8D%E8%A1%A8/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>LaTeX 符号与希腊字母表</p>
-<span id="more"></span>
-<h2 id="LaTeX-符号">LaTeX 符号</h2>
-<embed src="symbols.pdf" width="600" height="500" type="application/pdf">
-<p><a href="https://www.cmor-faculty.rice.edu/~heinken/latex/symbols.pdf">https://www.cmor-faculty.rice.edu/~heinken/latex/symbols.pdf</a></p>
-<p><a href="https://oeis.org/wiki/List_of_LaTeX_mathematical_symbols">https://oeis.org/wiki/List_of_LaTeX_mathematical_symbols</a></p>
-<p><a href="https://artofproblemsolving.com/wiki/index.php/LaTeX:Symbols">https://artofproblemsolving.com/wiki/index.php/LaTeX:Symbols</a></p>
-<h2 id="希腊字母表">希腊字母表</h2>
-<table>
-<thead>
-<tr>
-<th>希腊字母名称</th>
-<th>大写</th>
-<th>小写</th>
-<th>常用含义或对应英文字母</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Alpha</td>
-<td>Α</td>
-<td>α</td>
-<td>a（常用于角度、系数）</td>
-</tr>
-<tr>
-<td>Beta</td>
-<td>Β</td>
-<td>β</td>
-<td>b（常用于角度、系数）</td>
-</tr>
-<tr>
-<td>Gamma</td>
-<td>Γ</td>
-<td>γ</td>
-<td>g（常用于伽玛射线、曲率）</td>
-</tr>
-<tr>
-<td>Delta</td>
-<td>Δ</td>
-<td>δ</td>
-<td>d（Δ 表示变化量）</td>
-</tr>
-<tr>
-<td>Epsilon</td>
-<td>Ε</td>
-<td>ε</td>
-<td>e（常用于误差、介电常数）</td>
-</tr>
-<tr>
-<td>Zeta</td>
-<td>Ζ</td>
-<td>ζ</td>
-<td>z（阻尼比）</td>
-</tr>
-<tr>
-<td>Eta</td>
-<td>Η</td>
-<td>η</td>
-<td>h（效率）</td>
-</tr>
-<tr>
-<td>Theta</td>
-<td>Θ</td>
-<td>θ</td>
-<td>t（常用于角度）</td>
-</tr>
-<tr>
-<td>Iota</td>
-<td>Ι</td>
-<td>ι</td>
-<td>i（少用）</td>
-</tr>
-<tr>
-<td>Kappa</td>
-<td>Κ</td>
-<td>κ</td>
-<td>k（波数、热传导率）</td>
-</tr>
-<tr>
-<td>Lambda</td>
-<td>Λ</td>
-<td>λ</td>
-<td>l（波长、特征值）</td>
-</tr>
-<tr>
-<td>Mu</td>
-<td>Μ</td>
-<td>μ</td>
-<td>m（微、摩擦系数）</td>
-</tr>
-<tr>
-<td>Nu</td>
-<td>Ν</td>
-<td>ν</td>
-<td>n（频率、黏度）</td>
-</tr>
-<tr>
-<td>Xi</td>
-<td>Ξ</td>
-<td>ξ</td>
-<td>x（随机变量）</td>
-</tr>
-<tr>
-<td>Omicron</td>
-<td>Ο</td>
-<td>ο</td>
-<td>o（少用）</td>
-</tr>
-<tr>
-<td>Pi</td>
-<td>Π</td>
-<td>π</td>
-<td>p（圆周率）</td>
-</tr>
-<tr>
-<td>Rho</td>
-<td>Ρ</td>
-<td>ρ</td>
-<td>r（密度、电阻率）</td>
-</tr>
-<tr>
-<td>Sigma</td>
-<td>Σ</td>
-<td>σ/ς</td>
-<td>s（求和、标准差、应力）</td>
-</tr>
-<tr>
-<td>Tau</td>
-<td>Τ</td>
-<td>τ</td>
-<td>t（时间常数、剪切应力）</td>
-</tr>
-<tr>
-<td>Upsilon</td>
-<td>Υ</td>
-<td>υ</td>
-<td>u（少用）</td>
-</tr>
-<tr>
-<td>Phi</td>
-<td>Φ</td>
-<td>φ</td>
-<td>f（磁通量、黄金比例）</td>
-</tr>
-<tr>
-<td>Chi</td>
-<td>Χ</td>
-<td>χ</td>
-<td>c（统计学中的卡方分布）</td>
-</tr>
-<tr>
-<td>Psi</td>
-<td>Ψ</td>
-<td>ψ</td>
-<td>ps（量子力学中的波函数）</td>
-</tr>
-<tr>
-<td>Omega</td>
-<td>Ω</td>
-<td>ω</td>
-<td>o（电阻、角速度）</td>
-</tr>
-</tbody>
-</table>
-<p><img src="/2024/10/30/2024-10-30-LaTeX-%E7%AC%A6%E5%8F%B7%E4%B8%8E%E5%B8%8C%E8%85%8A%E5%AD%97%E6%AF%8D%E8%A1%A8/%E5%B8%8C%E8%85%8A%E5%AD%97%E6%AF%8D-%E6%89%8B%E5%86%99.webp" alt="希腊字母-手写"></p>
-<p><a href="https://gitcode.csdn.net/65ea82a51a836825ed7932f4.html">https://gitcode.csdn.net/65ea82a51a836825ed7932f4.html</a></p>
-<p><a href="https://en.namu.wiki/w/%EA%B7%B8%EB%A6%AC%EC%8A%A4%20%EB%AC%B8%EC%9E%90">https://en.namu.wiki/w/그리스 문자</a></p>
-<h2 id="补充-to-do">补充(to-do)</h2>
-<p>后面这坨之后有空补充和研究，并且需要更新一下之前的&quot;hexo 图片引用&quot;文章</p>
-<img src="/2024/10/30/2024-10-30-LaTeX-%E7%AC%A6%E5%8F%B7%E4%B8%8E%E5%B8%8C%E8%85%8A%E5%AD%97%E6%AF%8D%E8%A1%A8/LaTeX_logo.svg" alt="LaTeX logo1" width="70">
-<figure class="highlight routeros"><table><tr><td class="code"><pre><code class="hljs routeros"><span class="hljs-comment">## `&lt;embed&gt;`方法</span><br><br>&lt;embed <span class="hljs-attribute">src</span>=<span class="hljs-string">&quot;./2024-10-30-LaTeX-符号与希腊字母表/symbols.pdf&quot;</span> <span class="hljs-attribute">width</span>=<span class="hljs-string">&quot;600&quot;</span> <span class="hljs-attribute">height</span>=<span class="hljs-string">&quot;500&quot;</span> <span class="hljs-attribute">type</span>=<span class="hljs-string">&quot;application/pdf&quot;</span>&gt;<br><br>&lt;embed <span class="hljs-attribute">src</span>=<span class="hljs-string">&quot;symbols.pdf&quot;</span> <span class="hljs-attribute">width</span>=<span class="hljs-string">&quot;600&quot;</span> <span class="hljs-attribute">height</span>=<span class="hljs-string">&quot;500&quot;</span> <span class="hljs-attribute">type</span>=<span class="hljs-string">&quot;application/pdf&quot;</span>&gt;<br><br><span class="hljs-comment">## `&lt;iframe&gt;`方法</span><br><br>&lt;iframe <span class="hljs-attribute">src</span>=<span class="hljs-string">&quot;2024-10-30-LaTeX-符号与希腊字母表/symbols.pdf&quot;</span> <span class="hljs-attribute">width</span>=<span class="hljs-string">&quot;600&quot;</span> <span class="hljs-attribute">height</span>=<span class="hljs-string">&quot;500&quot;</span>&gt;&lt;/iframe&gt;<br><br>&lt;iframe <span class="hljs-attribute">src</span>=<span class="hljs-string">&quot;symbols.pdf&quot;</span> <span class="hljs-attribute">width</span>=<span class="hljs-string">&quot;600&quot;</span> <span class="hljs-attribute">height</span>=<span class="hljs-string">&quot;500&quot;</span>&gt;&lt;/iframe&gt;<br><br><span class="hljs-comment">## `&lt;img&gt;`测试</span><br><br>&lt;img <span class="hljs-attribute">src</span>=<span class="hljs-string">&quot;/2023-05-11-hexo图片引用/LaTeX_logo.svg&quot;</span> <span class="hljs-attribute">alt</span>=<span class="hljs-string">&quot;LaTeX logo1&quot;</span> <span class="hljs-attribute">width</span>=<span class="hljs-string">&quot;70&quot;</span>&gt;<br></code></pre></td></tr></table></figure>
-<figure class="highlight xquery"><table><tr><td class="code"><pre><code class="hljs xquery"><span class="hljs-keyword">update</span> link as:--&gt;/<span class="hljs-number">2024</span>/<span class="hljs-number">10</span>/<span class="hljs-number">30</span>/<span class="hljs-number">2024</span>-<span class="hljs-number">10</span>-<span class="hljs-number">30</span>-LaTeX-<span class="hljs-meta">%E7</span><span class="hljs-meta">%AC</span><span class="hljs-meta">%A6</span><span class="hljs-meta">%E5</span><span class="hljs-meta">%8F</span><span class="hljs-meta">%B7</span><span class="hljs-meta">%E4</span><span class="hljs-meta">%B8</span><span class="hljs-meta">%8E</span><span class="hljs-meta">%E5</span><span class="hljs-meta">%B8</span><span class="hljs-meta">%8C</span><span class="hljs-meta">%E8</span><span class="hljs-meta">%85</span><span class="hljs-meta">%8A</span><span class="hljs-meta">%E5</span><span class="hljs-meta">%AD</span><span class="hljs-meta">%97</span><span class="hljs-meta">%E6</span><span class="hljs-meta">%AF</span><span class="hljs-meta">%8D</span><span class="hljs-meta">%E8</span><span class="hljs-meta">%A1</span><span class="hljs-meta">%A8</span>/LaTeX_logo.svg<br></code></pre></td></tr></table></figure>
-]]></content>
   </entry>
   <entry>
     <title>C++笔记</title>
@@ -2841,6 +2664,183 @@ M834 80h400000v40h-400000z"/></svg></span></span></span><span class="vlist-s">�
       </tags>
   </entry>
   <entry>
+    <title>LaTeX符号与希腊字母表</title>
+    <url>/2024/10/30/2024-10-30-LaTeX-%E7%AC%A6%E5%8F%B7%E4%B8%8E%E5%B8%8C%E8%85%8A%E5%AD%97%E6%AF%8D%E8%A1%A8/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>LaTeX 符号与希腊字母表</p>
+<span id="more"></span>
+<h2 id="LaTeX-符号">LaTeX 符号</h2>
+<embed src="symbols.pdf" width="600" height="500" type="application/pdf">
+<p><a href="https://www.cmor-faculty.rice.edu/~heinken/latex/symbols.pdf">https://www.cmor-faculty.rice.edu/~heinken/latex/symbols.pdf</a></p>
+<p><a href="https://oeis.org/wiki/List_of_LaTeX_mathematical_symbols">https://oeis.org/wiki/List_of_LaTeX_mathematical_symbols</a></p>
+<p><a href="https://artofproblemsolving.com/wiki/index.php/LaTeX:Symbols">https://artofproblemsolving.com/wiki/index.php/LaTeX:Symbols</a></p>
+<h2 id="希腊字母表">希腊字母表</h2>
+<table>
+<thead>
+<tr>
+<th>希腊字母名称</th>
+<th>大写</th>
+<th>小写</th>
+<th>常用含义或对应英文字母</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Alpha</td>
+<td>Α</td>
+<td>α</td>
+<td>a（常用于角度、系数）</td>
+</tr>
+<tr>
+<td>Beta</td>
+<td>Β</td>
+<td>β</td>
+<td>b（常用于角度、系数）</td>
+</tr>
+<tr>
+<td>Gamma</td>
+<td>Γ</td>
+<td>γ</td>
+<td>g（常用于伽玛射线、曲率）</td>
+</tr>
+<tr>
+<td>Delta</td>
+<td>Δ</td>
+<td>δ</td>
+<td>d（Δ 表示变化量）</td>
+</tr>
+<tr>
+<td>Epsilon</td>
+<td>Ε</td>
+<td>ε</td>
+<td>e（常用于误差、介电常数）</td>
+</tr>
+<tr>
+<td>Zeta</td>
+<td>Ζ</td>
+<td>ζ</td>
+<td>z（阻尼比）</td>
+</tr>
+<tr>
+<td>Eta</td>
+<td>Η</td>
+<td>η</td>
+<td>h（效率）</td>
+</tr>
+<tr>
+<td>Theta</td>
+<td>Θ</td>
+<td>θ</td>
+<td>t（常用于角度）</td>
+</tr>
+<tr>
+<td>Iota</td>
+<td>Ι</td>
+<td>ι</td>
+<td>i（少用）</td>
+</tr>
+<tr>
+<td>Kappa</td>
+<td>Κ</td>
+<td>κ</td>
+<td>k（波数、热传导率）</td>
+</tr>
+<tr>
+<td>Lambda</td>
+<td>Λ</td>
+<td>λ</td>
+<td>l（波长、特征值）</td>
+</tr>
+<tr>
+<td>Mu</td>
+<td>Μ</td>
+<td>μ</td>
+<td>m（微、摩擦系数）</td>
+</tr>
+<tr>
+<td>Nu</td>
+<td>Ν</td>
+<td>ν</td>
+<td>n（频率、黏度）</td>
+</tr>
+<tr>
+<td>Xi</td>
+<td>Ξ</td>
+<td>ξ</td>
+<td>x（随机变量）</td>
+</tr>
+<tr>
+<td>Omicron</td>
+<td>Ο</td>
+<td>ο</td>
+<td>o（少用）</td>
+</tr>
+<tr>
+<td>Pi</td>
+<td>Π</td>
+<td>π</td>
+<td>p（圆周率）</td>
+</tr>
+<tr>
+<td>Rho</td>
+<td>Ρ</td>
+<td>ρ</td>
+<td>r（密度、电阻率）</td>
+</tr>
+<tr>
+<td>Sigma</td>
+<td>Σ</td>
+<td>σ/ς</td>
+<td>s（求和、标准差、应力）</td>
+</tr>
+<tr>
+<td>Tau</td>
+<td>Τ</td>
+<td>τ</td>
+<td>t（时间常数、剪切应力）</td>
+</tr>
+<tr>
+<td>Upsilon</td>
+<td>Υ</td>
+<td>υ</td>
+<td>u（少用）</td>
+</tr>
+<tr>
+<td>Phi</td>
+<td>Φ</td>
+<td>φ</td>
+<td>f（磁通量、黄金比例）</td>
+</tr>
+<tr>
+<td>Chi</td>
+<td>Χ</td>
+<td>χ</td>
+<td>c（统计学中的卡方分布）</td>
+</tr>
+<tr>
+<td>Psi</td>
+<td>Ψ</td>
+<td>ψ</td>
+<td>ps（量子力学中的波函数）</td>
+</tr>
+<tr>
+<td>Omega</td>
+<td>Ω</td>
+<td>ω</td>
+<td>o（电阻、角速度）</td>
+</tr>
+</tbody>
+</table>
+<p><img src="/2024/10/30/2024-10-30-LaTeX-%E7%AC%A6%E5%8F%B7%E4%B8%8E%E5%B8%8C%E8%85%8A%E5%AD%97%E6%AF%8D%E8%A1%A8/%E5%B8%8C%E8%85%8A%E5%AD%97%E6%AF%8D-%E6%89%8B%E5%86%99.webp" alt="希腊字母-手写"></p>
+<p><a href="https://gitcode.csdn.net/65ea82a51a836825ed7932f4.html">https://gitcode.csdn.net/65ea82a51a836825ed7932f4.html</a></p>
+<p><a href="https://en.namu.wiki/w/%EA%B7%B8%EB%A6%AC%EC%8A%A4%20%EB%AC%B8%EC%9E%90">https://en.namu.wiki/w/그리스 문자</a></p>
+<h2 id="补充-to-do">补充(to-do)</h2>
+<p>后面这坨之后有空补充和研究，并且需要更新一下之前的&quot;hexo 图片引用&quot;文章</p>
+<img src="/2024/10/30/2024-10-30-LaTeX-%E7%AC%A6%E5%8F%B7%E4%B8%8E%E5%B8%8C%E8%85%8A%E5%AD%97%E6%AF%8D%E8%A1%A8/LaTeX_logo.svg" alt="LaTeX logo1" width="70">
+<figure class="highlight routeros"><table><tr><td class="code"><pre><code class="hljs routeros"><span class="hljs-comment">## `&lt;embed&gt;`方法</span><br><br>&lt;embed <span class="hljs-attribute">src</span>=<span class="hljs-string">&quot;./2024-10-30-LaTeX-符号与希腊字母表/symbols.pdf&quot;</span> <span class="hljs-attribute">width</span>=<span class="hljs-string">&quot;600&quot;</span> <span class="hljs-attribute">height</span>=<span class="hljs-string">&quot;500&quot;</span> <span class="hljs-attribute">type</span>=<span class="hljs-string">&quot;application/pdf&quot;</span>&gt;<br><br>&lt;embed <span class="hljs-attribute">src</span>=<span class="hljs-string">&quot;symbols.pdf&quot;</span> <span class="hljs-attribute">width</span>=<span class="hljs-string">&quot;600&quot;</span> <span class="hljs-attribute">height</span>=<span class="hljs-string">&quot;500&quot;</span> <span class="hljs-attribute">type</span>=<span class="hljs-string">&quot;application/pdf&quot;</span>&gt;<br><br><span class="hljs-comment">## `&lt;iframe&gt;`方法</span><br><br>&lt;iframe <span class="hljs-attribute">src</span>=<span class="hljs-string">&quot;2024-10-30-LaTeX-符号与希腊字母表/symbols.pdf&quot;</span> <span class="hljs-attribute">width</span>=<span class="hljs-string">&quot;600&quot;</span> <span class="hljs-attribute">height</span>=<span class="hljs-string">&quot;500&quot;</span>&gt;&lt;/iframe&gt;<br><br>&lt;iframe <span class="hljs-attribute">src</span>=<span class="hljs-string">&quot;symbols.pdf&quot;</span> <span class="hljs-attribute">width</span>=<span class="hljs-string">&quot;600&quot;</span> <span class="hljs-attribute">height</span>=<span class="hljs-string">&quot;500&quot;</span>&gt;&lt;/iframe&gt;<br><br><span class="hljs-comment">## `&lt;img&gt;`测试</span><br><br>&lt;img <span class="hljs-attribute">src</span>=<span class="hljs-string">&quot;/2023-05-11-hexo图片引用/LaTeX_logo.svg&quot;</span> <span class="hljs-attribute">alt</span>=<span class="hljs-string">&quot;LaTeX logo1&quot;</span> <span class="hljs-attribute">width</span>=<span class="hljs-string">&quot;70&quot;</span>&gt;<br></code></pre></td></tr></table></figure>
+<figure class="highlight xquery"><table><tr><td class="code"><pre><code class="hljs xquery"><span class="hljs-keyword">update</span> link as:--&gt;/<span class="hljs-number">2024</span>/<span class="hljs-number">10</span>/<span class="hljs-number">30</span>/<span class="hljs-number">2024</span>-<span class="hljs-number">10</span>-<span class="hljs-number">30</span>-LaTeX-<span class="hljs-meta">%E7</span><span class="hljs-meta">%AC</span><span class="hljs-meta">%A6</span><span class="hljs-meta">%E5</span><span class="hljs-meta">%8F</span><span class="hljs-meta">%B7</span><span class="hljs-meta">%E4</span><span class="hljs-meta">%B8</span><span class="hljs-meta">%8E</span><span class="hljs-meta">%E5</span><span class="hljs-meta">%B8</span><span class="hljs-meta">%8C</span><span class="hljs-meta">%E8</span><span class="hljs-meta">%85</span><span class="hljs-meta">%8A</span><span class="hljs-meta">%E5</span><span class="hljs-meta">%AD</span><span class="hljs-meta">%97</span><span class="hljs-meta">%E6</span><span class="hljs-meta">%AF</span><span class="hljs-meta">%8D</span><span class="hljs-meta">%E8</span><span class="hljs-meta">%A1</span><span class="hljs-meta">%A8</span>/LaTeX_logo.svg<br></code></pre></td></tr></table></figure>
+]]></content>
+  </entry>
+  <entry>
     <title>排序算法总结</title>
     <url>/2025/01/05/2025-01-05-%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%E6%80%BB%E7%BB%93/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>排序算法总结</p>
@@ -3669,6 +3669,25 @@ M834 80h400000v40h-400000z"/></svg></span></span></span><span class="vlist-s">�
       <tags>
         <tag>学习</tag>
         <tag>力学</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>typst插件tinymist的tasks</title>
+    <url>/2025/02/13/2025-02-13-typst/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>tinymist 插件的 tasks</p>
+<span id="more"></span>
+<p>tinymist 为 vscode 中 typst 的插件，比较好用（typst lsp 项目已经合并进来了）</p>
+<p>编译任务需要写进 <code>.vscode/tasks.json</code> 中，可以参考官方文档</p>
+<p>编译的 package 位于插件源代码的 <code>editors/vscode/package.json</code> 中</p>
+<p>可惜目前看起来无法像 typst 的 web 端那样编译特定页面（官方文档没解释清楚）</p>
+<p>只能自己写针对特定页数编译的 task 了（只在 win 上试过，还没有在 linux 上试过）</p>
+<figure class="highlight json"><table><tr><td class="code"><pre><code class="hljs json"><span class="hljs-punctuation">&#123;</span><br>  <span class="hljs-attr">&quot;version&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;2.0.0&quot;</span><span class="hljs-punctuation">,</span><br>  <span class="hljs-attr">&quot;inputs&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span><br>    <span class="hljs-comment">//自定义的部分，用于导出特定页面范围</span><br>    <span class="hljs-comment">//使用 typst cli 自带的语法，应该是跨平台的</span><br>    <span class="hljs-punctuation">&#123;</span><br>      <span class="hljs-attr">&quot;id&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;pageNumber&quot;</span><span class="hljs-punctuation">,</span><br>      <span class="hljs-attr">&quot;type&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;promptString&quot;</span><span class="hljs-punctuation">,</span><br>      <span class="hljs-attr">&quot;description&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;Enter the page number(s) to compile (e.g., 2, 1-3)&quot;</span><span class="hljs-punctuation">,</span><br>      <span class="hljs-attr">&quot;default&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;1&quot;</span><br>    <span class="hljs-punctuation">&#125;</span><br>  <span class="hljs-punctuation">]</span><span class="hljs-punctuation">,</span><br>  <span class="hljs-attr">&quot;tasks&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span><br>    <span class="hljs-punctuation">&#123;</span><br>      <span class="hljs-attr">&quot;label&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;Export Specific Page(s) as PDF&quot;</span><span class="hljs-punctuation">,</span><br>      <span class="hljs-attr">&quot;type&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;shell&quot;</span><span class="hljs-punctuation">,</span><br>      <span class="hljs-attr">&quot;command&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;typst&quot;</span><span class="hljs-punctuation">,</span><br>      <span class="hljs-attr">&quot;args&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span><br>        <span class="hljs-string">&quot;compile&quot;</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-string">&quot;--format&quot;</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-string">&quot;pdf&quot;</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-string">&quot;--pages&quot;</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-string">&quot;$&#123;input:pageNumber&#125;&quot;</span><span class="hljs-punctuation">,</span> <span class="hljs-comment">// 页码</span><br>        <span class="hljs-string">&quot;$&#123;file&#125;&quot;</span><span class="hljs-punctuation">,</span> <span class="hljs-comment">// 源文件</span><br>        <span class="hljs-string">&quot;$&#123;fileDirname&#125;\\$&#123;fileBasenameNoExtension&#125;.pdf&quot;</span> <span class="hljs-comment">// 输出同名 PDF</span><br>      <span class="hljs-punctuation">]</span><span class="hljs-punctuation">,</span><br>      <span class="hljs-attr">&quot;problemMatcher&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span><span class="hljs-punctuation">]</span><br>    <span class="hljs-punctuation">&#125;</span><span class="hljs-punctuation">,</span><br>    <span class="hljs-punctuation">&#123;</span><br>      <span class="hljs-attr">&quot;label&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;Export Specific Page(s) as SVG&quot;</span><span class="hljs-punctuation">,</span><br>      <span class="hljs-attr">&quot;type&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;shell&quot;</span><span class="hljs-punctuation">,</span><br>      <span class="hljs-attr">&quot;command&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;typst&quot;</span><span class="hljs-punctuation">,</span><br>      <span class="hljs-attr">&quot;args&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span><br>        <span class="hljs-string">&quot;compile&quot;</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-string">&quot;--format&quot;</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-string">&quot;svg&quot;</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-string">&quot;--pages&quot;</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-string">&quot;$&#123;input:pageNumber&#125;&quot;</span><span class="hljs-punctuation">,</span> <span class="hljs-comment">// 页码</span><br>        <span class="hljs-string">&quot;$&#123;file&#125;&quot;</span><span class="hljs-punctuation">,</span> <span class="hljs-comment">// 源文件</span><br>        <span class="hljs-string">&quot;$&#123;fileDirname&#125;\\$&#123;fileBasenameNoExtension&#125;.svg&quot;</span> <span class="hljs-comment">// 输出同名 SVG</span><br>      <span class="hljs-punctuation">]</span><span class="hljs-punctuation">,</span><br>      <span class="hljs-attr">&quot;problemMatcher&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span><span class="hljs-punctuation">]</span><br>    <span class="hljs-punctuation">&#125;</span><span class="hljs-punctuation">,</span><br>    <span class="hljs-comment">//Tinymist offcial</span><br>    <span class="hljs-punctuation">&#123;</span><br>      <span class="hljs-attr">&quot;label&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;Export as Html&quot;</span><span class="hljs-punctuation">,</span><br>      <span class="hljs-attr">&quot;type&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;typst&quot;</span><span class="hljs-punctuation">,</span><br>      <span class="hljs-attr">&quot;command&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;export&quot;</span><span class="hljs-punctuation">,</span><br>      <span class="hljs-attr">&quot;export&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">&#123;</span><br>        <span class="hljs-attr">&quot;format&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;html&quot;</span><br>      <span class="hljs-punctuation">&#125;</span><br>    <span class="hljs-punctuation">&#125;</span><span class="hljs-punctuation">,</span><br>    <span class="hljs-punctuation">&#123;</span><br>      <span class="hljs-attr">&quot;label&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;Export as Markdown&quot;</span><span class="hljs-punctuation">,</span><br>      <span class="hljs-attr">&quot;type&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;typst&quot;</span><span class="hljs-punctuation">,</span><br>      <span class="hljs-attr">&quot;command&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;export&quot;</span><span class="hljs-punctuation">,</span><br>      <span class="hljs-attr">&quot;export&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">&#123;</span><br>        <span class="hljs-attr">&quot;format&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;markdown&quot;</span><br>      <span class="hljs-punctuation">&#125;</span><br>    <span class="hljs-punctuation">&#125;</span><span class="hljs-punctuation">,</span><br>    <span class="hljs-punctuation">&#123;</span><br>      <span class="hljs-attr">&quot;label&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;Export as Plain Text&quot;</span><span class="hljs-punctuation">,</span><br>      <span class="hljs-attr">&quot;type&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;typst&quot;</span><span class="hljs-punctuation">,</span><br>      <span class="hljs-attr">&quot;command&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;export&quot;</span><span class="hljs-punctuation">,</span><br>      <span class="hljs-attr">&quot;export&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">&#123;</span><br>        <span class="hljs-attr">&quot;format&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;html&quot;</span><br>      <span class="hljs-punctuation">&#125;</span><br>    <span class="hljs-punctuation">&#125;</span><span class="hljs-punctuation">,</span><br>    <span class="hljs-punctuation">&#123;</span><br>      <span class="hljs-attr">&quot;label&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;Export as SVG&quot;</span><span class="hljs-punctuation">,</span><br>      <span class="hljs-attr">&quot;type&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;typst&quot;</span><span class="hljs-punctuation">,</span><br>      <span class="hljs-attr">&quot;command&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;export&quot;</span><span class="hljs-punctuation">,</span><br>      <span class="hljs-attr">&quot;export&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">&#123;</span><br>        <span class="hljs-attr">&quot;format&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;svg&quot;</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">&quot;merged&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">true</span></span><br>      <span class="hljs-punctuation">&#125;</span><br>    <span class="hljs-punctuation">&#125;</span><span class="hljs-punctuation">,</span><br>    <span class="hljs-punctuation">&#123;</span><br>      <span class="hljs-attr">&quot;label&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;Export as PNG&quot;</span><span class="hljs-punctuation">,</span><br>      <span class="hljs-attr">&quot;type&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;typst&quot;</span><span class="hljs-punctuation">,</span><br>      <span class="hljs-attr">&quot;command&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;export&quot;</span><span class="hljs-punctuation">,</span><br>      <span class="hljs-attr">&quot;export&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">&#123;</span><br>        <span class="hljs-attr">&quot;format&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;png&quot;</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">&quot;fill&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;#00000000&quot;</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">&quot;merged&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">true</span></span><br>      <span class="hljs-punctuation">&#125;</span><br>    <span class="hljs-punctuation">&#125;</span><span class="hljs-punctuation">,</span><br>    <span class="hljs-punctuation">&#123;</span><br>      <span class="hljs-attr">&quot;label&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;Query as Pdfpc&quot;</span><span class="hljs-punctuation">,</span><br>      <span class="hljs-attr">&quot;type&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;typst&quot;</span><span class="hljs-punctuation">,</span><br>      <span class="hljs-attr">&quot;command&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;export&quot;</span><span class="hljs-punctuation">,</span><br>      <span class="hljs-attr">&quot;export&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">&#123;</span><br>        <span class="hljs-attr">&quot;format&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;pdfpc&quot;</span><br>      <span class="hljs-punctuation">&#125;</span><br>    <span class="hljs-punctuation">&#125;</span><span class="hljs-punctuation">,</span><br>    <span class="hljs-punctuation">&#123;</span><br>      <span class="hljs-attr">&quot;label&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;Export as PNG and SVG&quot;</span><span class="hljs-punctuation">,</span><br>      <span class="hljs-attr">&quot;type&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;typst&quot;</span><span class="hljs-punctuation">,</span><br>      <span class="hljs-attr">&quot;command&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;export&quot;</span><span class="hljs-punctuation">,</span><br>      <span class="hljs-attr">&quot;export&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">&#123;</span><br>        <span class="hljs-attr">&quot;format&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span><span class="hljs-string">&quot;png&quot;</span><span class="hljs-punctuation">,</span> <span class="hljs-string">&quot;svg&quot;</span><span class="hljs-punctuation">]</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">&quot;png.ppi&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-number">24</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">&quot;merged&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">true</span></span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">&quot;merged.gap&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;100pt&quot;</span><br>      <span class="hljs-punctuation">&#125;</span><br>    <span class="hljs-punctuation">&#125;</span><br>  <span class="hljs-punctuation">]</span><br><span class="hljs-punctuation">&#125;</span><br></code></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>计算机/折腾</category>
+      </categories>
+      <tags>
+        <tag>typst</tag>
       </tags>
   </entry>
   <entry>
@@ -4564,25 +4583,6 @@ M834 80h400000v40h-400000z"/></svg></span></span></span><span class="vlist-s">�
       <tags>
         <tag>学习</tag>
         <tag>力学</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>typst插件tinymist的tasks</title>
-    <url>/2025/02/13/2025-02-13-typst/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>tinymist 插件的 tasks</p>
-<span id="more"></span>
-<p>tinymist 为 vscode 中 typst 的插件，比较好用（typst lsp 项目已经合并进来了）</p>
-<p>编译任务需要写进 <code>.vscode/tasks.json</code> 中，可以参考官方文档</p>
-<p>编译的 package 位于插件源代码的 <code>editors/vscode/package.json</code> 中</p>
-<p>可惜目前看起来无法像 typst 的 web 端那样编译特定页面（官方文档没解释清楚）</p>
-<p>只能自己写针对特定页数编译的 task 了（只在 win 上试过，还没有在 linux 上试过）</p>
-<figure class="highlight json"><table><tr><td class="code"><pre><code class="hljs json"><span class="hljs-punctuation">&#123;</span><br>  <span class="hljs-attr">&quot;version&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;2.0.0&quot;</span><span class="hljs-punctuation">,</span><br>  <span class="hljs-attr">&quot;inputs&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span><br>    <span class="hljs-comment">//自定义的部分，用于导出特定页面范围</span><br>    <span class="hljs-comment">//使用 typst cli 自带的语法，应该是跨平台的</span><br>    <span class="hljs-punctuation">&#123;</span><br>      <span class="hljs-attr">&quot;id&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;pageNumber&quot;</span><span class="hljs-punctuation">,</span><br>      <span class="hljs-attr">&quot;type&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;promptString&quot;</span><span class="hljs-punctuation">,</span><br>      <span class="hljs-attr">&quot;description&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;Enter the page number(s) to compile (e.g., 2, 1-3)&quot;</span><span class="hljs-punctuation">,</span><br>      <span class="hljs-attr">&quot;default&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;1&quot;</span><br>    <span class="hljs-punctuation">&#125;</span><br>  <span class="hljs-punctuation">]</span><span class="hljs-punctuation">,</span><br>  <span class="hljs-attr">&quot;tasks&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span><br>    <span class="hljs-punctuation">&#123;</span><br>      <span class="hljs-attr">&quot;label&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;Export Specific Page(s) as PDF&quot;</span><span class="hljs-punctuation">,</span><br>      <span class="hljs-attr">&quot;type&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;shell&quot;</span><span class="hljs-punctuation">,</span><br>      <span class="hljs-attr">&quot;command&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;typst&quot;</span><span class="hljs-punctuation">,</span><br>      <span class="hljs-attr">&quot;args&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span><br>        <span class="hljs-string">&quot;compile&quot;</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-string">&quot;--format&quot;</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-string">&quot;pdf&quot;</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-string">&quot;--pages&quot;</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-string">&quot;$&#123;input:pageNumber&#125;&quot;</span><span class="hljs-punctuation">,</span> <span class="hljs-comment">// 页码</span><br>        <span class="hljs-string">&quot;$&#123;file&#125;&quot;</span><span class="hljs-punctuation">,</span> <span class="hljs-comment">// 源文件</span><br>        <span class="hljs-string">&quot;$&#123;fileDirname&#125;\\$&#123;fileBasenameNoExtension&#125;.pdf&quot;</span> <span class="hljs-comment">// 输出同名 PDF</span><br>      <span class="hljs-punctuation">]</span><span class="hljs-punctuation">,</span><br>      <span class="hljs-attr">&quot;problemMatcher&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span><span class="hljs-punctuation">]</span><br>    <span class="hljs-punctuation">&#125;</span><span class="hljs-punctuation">,</span><br>    <span class="hljs-punctuation">&#123;</span><br>      <span class="hljs-attr">&quot;label&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;Export Specific Page(s) as SVG&quot;</span><span class="hljs-punctuation">,</span><br>      <span class="hljs-attr">&quot;type&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;shell&quot;</span><span class="hljs-punctuation">,</span><br>      <span class="hljs-attr">&quot;command&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;typst&quot;</span><span class="hljs-punctuation">,</span><br>      <span class="hljs-attr">&quot;args&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span><br>        <span class="hljs-string">&quot;compile&quot;</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-string">&quot;--format&quot;</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-string">&quot;svg&quot;</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-string">&quot;--pages&quot;</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-string">&quot;$&#123;input:pageNumber&#125;&quot;</span><span class="hljs-punctuation">,</span> <span class="hljs-comment">// 页码</span><br>        <span class="hljs-string">&quot;$&#123;file&#125;&quot;</span><span class="hljs-punctuation">,</span> <span class="hljs-comment">// 源文件</span><br>        <span class="hljs-string">&quot;$&#123;fileDirname&#125;\\$&#123;fileBasenameNoExtension&#125;.svg&quot;</span> <span class="hljs-comment">// 输出同名 SVG</span><br>      <span class="hljs-punctuation">]</span><span class="hljs-punctuation">,</span><br>      <span class="hljs-attr">&quot;problemMatcher&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span><span class="hljs-punctuation">]</span><br>    <span class="hljs-punctuation">&#125;</span><span class="hljs-punctuation">,</span><br>    <span class="hljs-comment">//Tinymist offcial</span><br>    <span class="hljs-punctuation">&#123;</span><br>      <span class="hljs-attr">&quot;label&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;Export as Html&quot;</span><span class="hljs-punctuation">,</span><br>      <span class="hljs-attr">&quot;type&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;typst&quot;</span><span class="hljs-punctuation">,</span><br>      <span class="hljs-attr">&quot;command&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;export&quot;</span><span class="hljs-punctuation">,</span><br>      <span class="hljs-attr">&quot;export&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">&#123;</span><br>        <span class="hljs-attr">&quot;format&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;html&quot;</span><br>      <span class="hljs-punctuation">&#125;</span><br>    <span class="hljs-punctuation">&#125;</span><span class="hljs-punctuation">,</span><br>    <span class="hljs-punctuation">&#123;</span><br>      <span class="hljs-attr">&quot;label&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;Export as Markdown&quot;</span><span class="hljs-punctuation">,</span><br>      <span class="hljs-attr">&quot;type&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;typst&quot;</span><span class="hljs-punctuation">,</span><br>      <span class="hljs-attr">&quot;command&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;export&quot;</span><span class="hljs-punctuation">,</span><br>      <span class="hljs-attr">&quot;export&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">&#123;</span><br>        <span class="hljs-attr">&quot;format&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;markdown&quot;</span><br>      <span class="hljs-punctuation">&#125;</span><br>    <span class="hljs-punctuation">&#125;</span><span class="hljs-punctuation">,</span><br>    <span class="hljs-punctuation">&#123;</span><br>      <span class="hljs-attr">&quot;label&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;Export as Plain Text&quot;</span><span class="hljs-punctuation">,</span><br>      <span class="hljs-attr">&quot;type&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;typst&quot;</span><span class="hljs-punctuation">,</span><br>      <span class="hljs-attr">&quot;command&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;export&quot;</span><span class="hljs-punctuation">,</span><br>      <span class="hljs-attr">&quot;export&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">&#123;</span><br>        <span class="hljs-attr">&quot;format&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;html&quot;</span><br>      <span class="hljs-punctuation">&#125;</span><br>    <span class="hljs-punctuation">&#125;</span><span class="hljs-punctuation">,</span><br>    <span class="hljs-punctuation">&#123;</span><br>      <span class="hljs-attr">&quot;label&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;Export as SVG&quot;</span><span class="hljs-punctuation">,</span><br>      <span class="hljs-attr">&quot;type&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;typst&quot;</span><span class="hljs-punctuation">,</span><br>      <span class="hljs-attr">&quot;command&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;export&quot;</span><span class="hljs-punctuation">,</span><br>      <span class="hljs-attr">&quot;export&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">&#123;</span><br>        <span class="hljs-attr">&quot;format&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;svg&quot;</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">&quot;merged&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">true</span></span><br>      <span class="hljs-punctuation">&#125;</span><br>    <span class="hljs-punctuation">&#125;</span><span class="hljs-punctuation">,</span><br>    <span class="hljs-punctuation">&#123;</span><br>      <span class="hljs-attr">&quot;label&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;Export as PNG&quot;</span><span class="hljs-punctuation">,</span><br>      <span class="hljs-attr">&quot;type&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;typst&quot;</span><span class="hljs-punctuation">,</span><br>      <span class="hljs-attr">&quot;command&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;export&quot;</span><span class="hljs-punctuation">,</span><br>      <span class="hljs-attr">&quot;export&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">&#123;</span><br>        <span class="hljs-attr">&quot;format&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;png&quot;</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">&quot;fill&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;#00000000&quot;</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">&quot;merged&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">true</span></span><br>      <span class="hljs-punctuation">&#125;</span><br>    <span class="hljs-punctuation">&#125;</span><span class="hljs-punctuation">,</span><br>    <span class="hljs-punctuation">&#123;</span><br>      <span class="hljs-attr">&quot;label&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;Query as Pdfpc&quot;</span><span class="hljs-punctuation">,</span><br>      <span class="hljs-attr">&quot;type&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;typst&quot;</span><span class="hljs-punctuation">,</span><br>      <span class="hljs-attr">&quot;command&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;export&quot;</span><span class="hljs-punctuation">,</span><br>      <span class="hljs-attr">&quot;export&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">&#123;</span><br>        <span class="hljs-attr">&quot;format&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;pdfpc&quot;</span><br>      <span class="hljs-punctuation">&#125;</span><br>    <span class="hljs-punctuation">&#125;</span><span class="hljs-punctuation">,</span><br>    <span class="hljs-punctuation">&#123;</span><br>      <span class="hljs-attr">&quot;label&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;Export as PNG and SVG&quot;</span><span class="hljs-punctuation">,</span><br>      <span class="hljs-attr">&quot;type&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;typst&quot;</span><span class="hljs-punctuation">,</span><br>      <span class="hljs-attr">&quot;command&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;export&quot;</span><span class="hljs-punctuation">,</span><br>      <span class="hljs-attr">&quot;export&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">&#123;</span><br>        <span class="hljs-attr">&quot;format&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span><span class="hljs-string">&quot;png&quot;</span><span class="hljs-punctuation">,</span> <span class="hljs-string">&quot;svg&quot;</span><span class="hljs-punctuation">]</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">&quot;png.ppi&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-number">24</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">&quot;merged&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">true</span></span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">&quot;merged.gap&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;100pt&quot;</span><br>      <span class="hljs-punctuation">&#125;</span><br>    <span class="hljs-punctuation">&#125;</span><br>  <span class="hljs-punctuation">]</span><br><span class="hljs-punctuation">&#125;</span><br></code></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>计算机/折腾</category>
-      </categories>
-      <tags>
-        <tag>typst</tag>
       </tags>
   </entry>
   <entry>
@@ -6496,7 +6496,7 @@ c-16-25.333-24-45-24-59z"/></svg></span></span></span></span></span></span></spa
     <url>/2025/08/27/2025-08-24-openwrt%E9%83%A8%E7%BD%B2%E9%82%AE%E7%AE%B1%E6%9C%8D%E5%8A%A1/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>openwrt(iStoreOS)部署邮箱服务(msmtp)</p>
 <span id="more"></span>
-<hr>
+<p>参考：</p>
 <p><a href="https://wangyougx.com:433/blog/index.php/archives/29/">https://wangyougx.com:433/blog/index.php/archives/29/</a></p>
 <p><a href="https://www.itix.fr/blog/send-mails-openwrt-msmtp-gmail/">https://www.itix.fr/blog/send-mails-openwrt-msmtp-gmail/</a></p>
 <p>安装 <code>msmtp</code> 邮件服务：</p>
@@ -6506,6 +6506,77 @@ c-16-25.333-24-45-24-59z"/></svg></span></span></span></span></span></span></spa
 <p>记得去 163 邮箱打开 POP3/SMTP/IMAP 服务，并获取令牌。</p>
 <p>测试脚本：</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">echo</span> -e <span class="hljs-string">&quot;Subject: Hello!\n\nHello, world!&quot;</span> | sendmail recipient@example.com<br></code></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>计算机/折腾</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
+        <tag>openwrt</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>2025-09-28-折腾nas</title>
+    <url>/2025/09/28/2025-09-28-%E6%8A%98%E8%85%BEnas/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>折腾nas</p>
+<span id="more"></span>
+<h2 id="需求">需求</h2>
+<p>从高到低：</p>
+<ul>
+<li>挂机下载/做种</li>
+<li>文件共享：希望能自动挂载外接磁盘</li>
+<li>魔法上网/软路由</li>
+<li>安装软件方便，但也有自定义的空间</li>
+<li>媒体库：jellyfin/emby(快乐版)</li>
+<li>照片备份：immich/mt photos/PhotoPrism</li>
+</ul>
+<p>那么应该选择什么方案？All in one？</p>
+<h2 id="PVE-Proxmox-VE">PVE(Proxmox VE)</h2>
+<p>Proxmox Virtual Environment</p>
+<h3 id="iStoreOS">iStoreOS</h3>
+<p>优点：</p>
+<ul>
+<li>界面做的很不错</li>
+<li>带有硬盘休眠功能</li>
+<li>安装 openclash 很方便</li>
+</ul>
+<p>缺点：</p>
+<ul>
+<li>自带的一些软件有点问题，居然是写的脚本来安装而不是 docker，
+<ul>
+<li>管理起来很不方便，甚至存在无法删除的问题</li>
+<li>会导致意想不到的问题，如 qbt 的设置在重启后会被覆盖</li>
+<li>脚本路径<code>/usr/libexec/istorec</code></li>
+</ul>
+</li>
+<li>基于 openwrt，需要使用 opkg，其他环境也不是很完整</li>
+<li>docker 的管理面板老是爆炸</li>
+</ul>
+<h3 id="Ubuntu">Ubuntu</h3>
+<p>设置代理：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">export</span> https_proxy=http://&lt;ip&gt;:7897<br><span class="hljs-built_in">export</span> http_proxy=http://&lt;ip&gt;:7897<br><span class="hljs-built_in">export</span> all_proxy=socks5://&lt;ip&gt;:7897<br></code></pre></td></tr></table></figure>
+<p>如果有密码验证：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">export</span> https_proxy=http://Clash:12345@192.168.50.3:7890<br><span class="hljs-built_in">export</span> http_proxy=http://Clash:12345@192.168.50.3:7890<br><span class="hljs-built_in">export</span> all_proxy=socks5://Clash:12345@192.168.50.3:7891<br></code></pre></td></tr></table></figure>
+<p>取消代理：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">unset</span> https_proxy=http://&lt;ip&gt;:7897<br><span class="hljs-built_in">export</span> http_proxy=http://&lt;ip&gt;:7897<br><span class="hljs-built_in">export</span> all_proxy=socks5://&lt;ip&gt;:7897<br></code></pre></td></tr></table></figure>
+<p>注意：ubuntu server 使用 <code>netplan</code> 来管理网络，而不是 <code>NetworkManager</code></p>
+<h3 id="黑群晖">黑群晖</h3>
+<h3 id="飞牛-fnOS">飞牛/fnOS</h3>
+<h2 id="OrangePi-安装-CasaOS">OrangePi 安装 CasaOS</h2>
+<h3 id="OrangePi-相关设置">OrangePi 相关设置</h3>
+<p>不知道为什么默认是不开启 ipv6 的，使用 <code>NetworkManager</code> 设置一下：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">sudo systemctl restart NetworkManager<br></code></pre></td></tr></table></figure>
+<p>查看温度信息：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">cat</span> /sys/class/thermal/thermal_zone0/temp<br></code></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">awk <span class="hljs-string">&#x27;&#123;printf &quot;CPU温度：%.2f°C\n&quot;, $1/1000&#125;&#x27;</span> /sys/class/thermal/thermal_zone0/temp<br></code></pre></td></tr></table></figure>
+<h3 id="CasaOS-安装与设置">CasaOS 安装与设置</h3>
+<p>安装很方便，有一键脚本（可能会有权限问题，加个 sudo 就行）：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">curl -fsSL https://get.casaos.io | sudo bash<br></code></pre></td></tr></table></figure>
+<p>CasaOS 的挂载路径 <code>/media/devmon</code> 会有权限相关的问题：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">sudo <span class="hljs-built_in">chmod</span> o+rwx /media/devmon<br></code></pre></td></tr></table></figure>
+<p>docker 中的程序 (若网络为 bridge) 默认没有 ipv6，需要修改成 host 模式，此时不需要端口映射。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">sudo docker <span class="hljs-built_in">exec</span> qbittorrent ping6 -c4 test6.ustc.edu.cn<br></code></pre></td></tr></table></figure>
+<p>1</p>
 ]]></content>
       <categories>
         <category>计算机/折腾</category>

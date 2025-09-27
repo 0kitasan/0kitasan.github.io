@@ -6,7 +6,7 @@
   <link href="https://0kitasan.github.io/atom.xml" rel="self"/>
   
   <link href="https://0kitasan.github.io/"/>
-  <updated>2025-08-27T03:44:22.439Z</updated>
+  <updated>2025-09-27T18:07:53.967Z</updated>
   <id>https://0kitasan.github.io/</id>
   
   <author>
@@ -17,11 +17,32 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>2025-09-28-折腾nas</title>
+    <link href="https://0kitasan.github.io/2025/09/28/2025-09-28-%E6%8A%98%E8%85%BEnas/"/>
+    <id>https://0kitasan.github.io/2025/09/28/2025-09-28-%E6%8A%98%E8%85%BEnas/</id>
+    <published>2025-09-27T18:06:37.000Z</published>
+    <updated>2025-09-27T18:07:53.967Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;折腾nas&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="计算机/折腾" scheme="https://0kitasan.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA-%E6%8A%98%E8%85%BE/"/>
+    
+    
+    <category term="linux" scheme="https://0kitasan.github.io/tags/linux/"/>
+    
+    <category term="openwrt" scheme="https://0kitasan.github.io/tags/openwrt/"/>
+    
+  </entry>
+  
+  <entry>
     <title>openwrt部署邮箱服务</title>
     <link href="https://0kitasan.github.io/2025/08/27/2025-08-24-openwrt%E9%83%A8%E7%BD%B2%E9%82%AE%E7%AE%B1%E6%9C%8D%E5%8A%A1/"/>
     <id>https://0kitasan.github.io/2025/08/27/2025-08-24-openwrt%E9%83%A8%E7%BD%B2%E9%82%AE%E7%AE%B1%E6%9C%8D%E5%8A%A1/</id>
     <published>2025-08-27T03:25:21.000Z</published>
-    <updated>2025-08-27T03:44:22.439Z</updated>
+    <updated>2025-09-27T18:07:41.470Z</updated>
     
     
     <summary type="html">&lt;p&gt;openwrt(iStoreOS)部署邮箱服务(msmtp)&lt;/p&gt;</summary>
@@ -362,25 +383,6 @@
     
     
     <category term="五金" scheme="https://0kitasan.github.io/tags/%E4%BA%94%E9%87%91/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ubuntu的一些命令</title>
-    <link href="https://0kitasan.github.io/2024/07/03/2024-07-03-ubuntu%E7%9A%84%E4%B8%80%E4%BA%9B%E5%91%BD%E4%BB%A4/"/>
-    <id>https://0kitasan.github.io/2024/07/03/2024-07-03-ubuntu%E7%9A%84%E4%B8%80%E4%BA%9B%E5%91%BD%E4%BB%A4/</id>
-    <published>2024-07-03T09:45:22.000Z</published>
-    <updated>2024-07-08T12:32:04.000Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;本文列举一些 ubuntu 的命令，因为不是很常用所以容易忘记。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="计算机/折腾" scheme="https://0kitasan.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA-%E6%8A%98%E8%85%BE/"/>
-    
-    
-    <category term="linux" scheme="https://0kitasan.github.io/tags/linux/"/>
     
   </entry>
   
