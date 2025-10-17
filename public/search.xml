@@ -1504,6 +1504,8 @@ M834 80h400000v40h-400000z"/></svg></span></span></span><span class="vlist-s">�
 <figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">zip -r archive_name.zip directory_to_compress<br></code></pre></td></tr></table></figure>
 <p>例如，将 <code>my_folder</code> 目录及其内容压缩成 <code>my_folder.zip</code>：</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">zip -r my_folder.zip my_folder<br></code></pre></td></tr></table></figure>
+<h2 id="快速清空文件">快速清空文件</h2>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">cat</span> /dev/null &gt; example.txt<br></code></pre></td></tr></table></figure>
 <h2 id="todo-vscode-的-markdown-设置-以及-tar-gz">todo: vscode 的 markdown 设置,以及 tar.gz</h2>
 <p>todo: Prettier 扩展<br>
 打开 vscode 设置:Ctrl+,<br>
