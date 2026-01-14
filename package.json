@@ -32,6 +32,6 @@
     "hexo-theme-ayer": "^1.9.7-0",
     "hexo-theme-fluid": "^1.9.5-a",
     "hexo-theme-landscape": "^0.0.3",
-    "highlight.js": "^11.8.0"
+    "highlight.js": "^11.11.1"
   }
 }
